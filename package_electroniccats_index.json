@@ -1,0 +1,63 @@
+{
+  "packages": [
+    {
+      "name": "Electronic Cats",
+      "maintainer": "Electronic Cats",
+      "websiteURL": "https://electroniccats.com",
+      "email": "hola@electroniccats.com",
+      "help": {
+        "online": "https://www.electroniccats.com"
+      },
+      "platforms": [
+        {
+          "name": "Electronic Cats SAMD Boards",
+          "architecture": "samd",
+          "version": "1.0.0",
+          "category": "Contributed",
+          "url": "https://github.com/",
+          "archiveFileName": "samd-1.0.0.tar.bz2",
+          "checksum": "SHA-256:",
+          "size": "268954",
+          "help": {
+            "online": "https://electroniccats.com"
+          },
+          "boards": [
+            {
+              "name": "Electronic Cats Meow Meow"
+            }
+          ],
+          "toolsDependencies": []
+        }
+      ],
+      "tools": [
+        {
+          "name": "bossac",
+          "version": "1.4.0",
+          "systems": [
+            {
+              "host": "i686-mingw32",
+              "url": "https://github.com/",
+              "archiveFileName": "bossac-1.4.0-win.zip",
+              "checksum": "SHA-256:",
+              "size": "314705"
+            },
+            {
+              "host": "x86_64-pc-linux-gnu",
+              "url": "https://github.com/",
+              "archiveFileName": "bossac-1.4.0-linux64.tar.bz2",
+              "checksum": "SHA-256:",
+              "size": "225696"
+            },
+            {
+              "host": "x86_64-apple-darwin",
+              "url": "https://github.com/",
+              "archiveFileName": "bossac-1.4.0-osx.tar.bz2",
+              "checksum": "SHA-256:",
+              "size": "74461"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
