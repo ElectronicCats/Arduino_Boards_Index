@@ -14,10 +14,10 @@
           "architecture": "samd",
           "version": "1.0.0",
           "category": "Contributed",
-          "url": "https://github.com/wero1414/ArduinoBoards/raw/master/IDE_Board_Manager/electronic_cats_samd21_Matt_1.0.0.tar.bz2",
-          "archiveFileName": "electronic_cats_samd21_Matt_1.0.0.tar.bz2",
-          "checksum": "SHA-256:2389e8427d329fe6e6ccdfec7db1cf1e58cd3d82642a03bc7b72d4f4c57b0325",
-          "size": "371153",
+          "url": "https://github.com/ElectronicCats/Arduino_Boards_Index/raw/master/IDE_Board_Manager/electronic_cats_samd21_v1.0.0.tar.bz2",
+          "archiveFileName": "electronic_cats_samd21_v1.0.0.tar.tar.bz2",
+          "checksum": "SHA-256:6296714cd78213bbcd47934a361b4dbbaa7515b84d94ed20c181fd81a6aa4f7d",
+          "size": "269286",
           "help": {
             "online": "https://learn.sparkfun.com/tutorials/installing-arduino-ide/board-add-ons-with-arduino-board-manager"
           },
