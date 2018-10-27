@@ -1,0 +1,69 @@
+{
+  "packages": [
+    {
+      "name": "Electronic Cats ",
+      "maintainer": "Electronic Cats",
+      "websiteURL": "https://electroniccats.com",
+      "email": "hola@electroniccats.com",
+      "help": {
+        "online": "https://learn.sparkfun.com/tutorials/installing-arduino-ide/board-add-ons-with-arduino-board-manager"
+      },
+      "platforms": [
+        {
+          "name": "Electronic Cats",
+          "architecture": "samd",
+          "version": "1.0.0",
+          "category": "Contributed",
+          "url": "https://github.com/wero1414/ArduinoBoards/raw/master/IDE_Board_Manager/electronic_cats_samd21_Matt_1.0.0.tar.bz2",
+          "archiveFileName": "electronic_cats_samd21_Matt_1.0.0.tar.bz2",
+          "checksum": "SHA-256:2389e8427d329fe6e6ccdfec7db1cf1e58cd3d82642a03bc7b72d4f4c57b0325",
+          "size": "371153",
+          "help": {
+            "online": "https://learn.sparkfun.com/tutorials/installing-arduino-ide/board-add-ons-with-arduino-board-manager"
+          },
+          "boards": [
+            {
+              "name": "CatWAN Relay"
+            },
+            {
+              "name": "CatWAN USB-Stick"
+            },
+            {
+              "name": "Bast-M0"
+            }
+          ],
+          "toolsDependencies": []
+        }
+      ],
+      "tools":[
+                {
+                  "name": "bossac",
+                  "version": "1.4.0",
+                  "systems": [
+                    {
+                      "host": "i686-mingw32",
+                      "url": "https://github.com/sparkfun/Arduino_Boards/raw/master/sparkfun/samd-tools/bossac/bossac-1.4.0-win.zip",
+                      "archiveFileName": "bossac-1.4.0-win.zip",
+                      "checksum": "SHA-256:BCA6503F5DBB1F96693AFD0701A759ECFB3BE5B9FB3F9D901CA17853B224F4EB",
+                      "size": "314705"
+                    },
+                    {
+                      "host": "x86_64-pc-linux-gnu",
+                      "url": "https://github.com/sparkfun/Arduino_Boards/raw/master/sparkfun/samd-tools/bossac/bossac-1.4.0-linux64.tar.bz2",
+                      "archiveFileName": "bossac-1.4.0-linux64.tar.bz2",
+                      "checksum": "SHA-256:BB8F398BF84C5F31880FE9A2C7AE0174592516CE4821B49744B426AA968ADA10",
+                      "size": "225696"
+                    },
+                    {
+                      "host": "x86_64-apple-darwin",
+                      "url": "https://github.com/sparkfun/Arduino_Boards/raw/master/sparkfun/samd-tools/bossac/bossac-1.4.0-osx.tar.bz2",
+                      "archiveFileName": "bossac-1.4.0-osx.tar.bz2",
+                      "checksum": "SHA-256:D0F225846D7BC80A74324D783CDB35C42A7F85EAD73CC016C0CC767B0AA5E81C",
+                      "size": "74461"
+                    }
+                  ]
+                }
+		]
+    }
+  ]
+}
