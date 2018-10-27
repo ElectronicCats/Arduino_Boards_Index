@@ -1,0 +1,73 @@
+# Copyright (c) 2014-2015 Arduino LLC.  All right reserved.
+#
+# This library is free software; you can redistribute it and/or
+# modify it under the terms of the GNU Lesser General Public
+# License as published by the Free Software Foundation; either
+# version 2.1 of the License, or (at your option) any later version.
+#
+# This library is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+# See the GNU Lesser General Public License for more details.
+#
+# You should have received a copy of the GNU Lesser General Public
+# License along with this library; if not, write to the Free Software
+# Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+
+menu.cache=Cache
+
+electroniccats_USB_Stick.name=USB_Stick
+electroniccats_USB_Stick.vid.0=0x239A
+electroniccats_USB_Stick.pid.0=0x801C
+electroniccats_USB_Stick.vid.1=0x239A
+electroniccats_USB_Stick.pid.1=0x001C
+electroniccats_USB_Stick.upload.tool=bossac
+electroniccats_USB_Stick.upload.protocol=sam-ba
+electroniccats_USB_Stick.upload.maximum_size=262144
+electroniccats_USB_Stick.upload.offset=0x2000
+electroniccats_USB_Stick.upload.use_1200bps_touch=true
+electroniccats_USB_Stick.upload.wait_for_upload_port=true
+electroniccats_USB_Stick.upload.native_usb=true
+electroniccats_USB_Stick.build.mcu=cortex-m0plus
+electroniccats_USB_Stick.build.f_cpu=48000000L
+electroniccats_USB_Stick.build.usb_product="USB_Stick"
+electroniccats_USB_Stick.build.usb_manufacturer="Electronic Cats"
+electroniccats_USB_Stick.build.board=USB_STICK
+electroniccats_USB_Stick.build.core=arduino
+electroniccats_USB_Stick.build.extra_flags=-DCRYSTALLESS -Delectroniccats_USB_Stick -D__SAMD21E18A__ -DARM_MATH_CM0PLUS {build.usb_flags}
+electroniccats_USB_Stick.build.ldscript=linker_scripts/gcc/flash_with_bootloader.ld
+electroniccats_USB_Stick.build.openocdscript=openocd_scripts/arduino_zero.cfg
+electroniccats_USB_Stick.build.variant=USB_Stick
+electroniccats_USB_Stick.build.variant_system_lib=
+electroniccats_USB_Stick.build.vid=0x239A
+electroniccats_USB_Stick.build.pid=0x801C
+electroniccats_USB_Stick.bootloader.tool=openocd
+electroniccats_USB_Stick.bootloader.file=zero/SparkFun_SAMD21_Dev.bin
+
+electroniccats_meow_meow.name=Electronic Cats Meow Meow
+electroniccats_meow_meow.vid.0=0x1209
+electroniccats_meow_meow.pid.0=0xBAB1
+electroniccats_meow_meow.vid.1=0x1209
+electroniccats_meow_meow.pid.1=0xBAB1
+electroniccats_meow_meow.upload.tool=bossac
+electroniccats_meow_meow.upload.protocol=sam-ba
+electroniccats_meow_meow.upload.maximum_size=253952
+electroniccats_meow_meow.upload.offset=0x2000
+electroniccats_meow_meow.upload.use_1200bps_touch=true
+electroniccats_meow_meow.upload.wait_for_upload_port=true
+electroniccats_meow_meow.upload.native_usb=true
+electroniccats_meow_meow.build.mcu=cortex-m0plus
+electroniccats_meow_meow.build.f_cpu=48000000L
+electroniccats_meow_meow.build.usb_product="Meow Meow"
+electroniccats_meow_meow.build.usb_manufacturer="Electronic Cats"
+electroniccats_meow_meow.build.board=SAMD_MEOW_MEOW
+electroniccats_meow_meow.build.core=arduino
+electroniccats_meow_meow.build.extra_flags=-DCRYSTALLESS -DARDUINO_SAMD_ZERO -D__SAMD21G18A__ -DARM_MATH_CM0PLUS {build.usb_flags}
+electroniccats_meow_meow.build.ldscript=linker_scripts/gcc/flash_with_bootloader.ld
+electroniccats_meow_meow.build.openocdscript=openocd_scripts/SAMD21G15A.cfg
+electroniccats_meow_meow.build.variant=meowmeow
+electroniccats_meow_meow.build.variant_system_lib=
+electroniccats_meow_meow.build.vid=0x1209
+electroniccats_meow_meow.build.pid=0xBAB1
+electroniccats_meow_meow.bootloader.tool=openocd
+electroniccats_meow_meow.bootloader.file=meowmeow/bootloader_uf2.bin
