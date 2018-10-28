@@ -11,8 +11,8 @@ git:
 before_install:
   - source <(curl -SLs https://raw.githubusercontent.com/ElectronicCats/travis-ci-arduino/master/install.sh)
 script:
-  - build_platform electroniccats:samd:meow_meow
-  - build_platform electroniccats:samd:USB_Stick
+  - build_platform electroniccats:samd:electroniccats_meow_meow
+  - build_platform electroniccats:samd:electroniccats_USB_Stick
 
 branches:
   only:
