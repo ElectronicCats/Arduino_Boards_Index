@@ -10,6 +10,8 @@ This repository contains support for the following Electronic Cats Arduino-compa
 
 #### SAMD (ARM Cortex-M0+) Boards
 
+* [Meow Meow](https://electroniccats.com/gomeow/)
+
 * [CatWAN USB-Stick](https://www.tindie.com/products/electroniccats/catwan-usb-stick/)
 
 
