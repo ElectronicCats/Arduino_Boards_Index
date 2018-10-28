@@ -1,8 +1,8 @@
 {
   "packages": [
     {
-      "name": "Electronic Cats ",
-      "maintainer": "Electronic Cats",
+      "name": "ElectronicCats",
+      "maintainer": "Electronic Cats SAPI de CV",
       "websiteURL": "https://electroniccats.com",
       "email": "hola@electroniccats.com",
       "help": {
@@ -10,7 +10,7 @@
       },
       "platforms": [
         {
-          "name": "Electronic Cats",
+          "name": "Electronic Cats SAMD Boards",
           "architecture": "samd",
           "version": "1.0.0",
           "category": "Contributed",
@@ -23,13 +23,13 @@
           },
           "boards": [
             {
-              "name": "CatWAN Relay"
+              "name": "Meow Meow"
             },
             {
               "name": "CatWAN USB-Stick"
             },
             {
-              "name": "Bast-M0"
+              "name": "CatWAN Relay"
             }
           ],
           "toolsDependencies": []
