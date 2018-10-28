@@ -69,12 +69,12 @@ class BptContext(object):
 @click.option('--board-config', '-c', default='bpt.ini',
     type=click.Path(dir_okay=False),
     help='Specify a INI config file with list of board packages to use. Default is a bpt.ini in the current directory.')
-@click.option('--board-index', '-i', default='package_adafruit_index.json',
+@click.option('--board-index', '-i', default='package_electroniccats_index.json',
     type=click.Path(exists=True, dir_okay=False),
     help='Specify a board index JSON file.  This is the master index that publishes all the packages.')
 @click.pass_context
 def bpt_command(ctx, debug, board_config, board_index):
-    """Adafruit Arduino Board Package Tool (bpt)
+    """Electronic Arduino Board Package Tool (bpt)
 
     Swiss Army knife for managing Arduino board packages.  Can check board packages
     against a published board package index and notify when newer versions are
@@ -200,7 +200,7 @@ def update_index(ctx, package_name, force, output_board_index, output_board_dir)
 
 
 @bpt_command.command()
-@click.option('--url-transform', '-u', default='adafruit.github.io/arduino-board-index',
+@click.option('--url-transform', '-u', default='electroniccats.github.io/Arduino_Boards_Index',
               help='URL domain and starting path to replace with the localhost:<port> test server in the index during testing.  Must be set or else the index will reference files on the internet, not local machine!')
 @click.option('--port', '-p', type=click.INT, default=8000,
               help='Port number to use for the test server.')
