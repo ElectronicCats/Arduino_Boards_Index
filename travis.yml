@@ -1,0 +1,23 @@
+language: c
+sudo: false
+cache:
+  directories:
+    - ~/arduino_ide
+
+git:
+  depth: false
+  quiet: true
+
+before_install:
+  - source <(curl -SLs https://raw.githubusercontent.com/adafruit/travis-ci-arduino/master/install.sh)
+script:
+  - build_platform electroniccats:samd:meow_meow
+  - build_platform electroniccats:samd:USB_Stick
+
+branches:
+  only:
+    - gh-pages
+notifications:
+  email:
+    on_success: change
+    on_failure: change
