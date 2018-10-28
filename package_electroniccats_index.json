@@ -2,11 +2,11 @@
   "packages": [
     {
       "name": "ElectronicCats",
-      "maintainer": "Electronic Cats SAPI de CV",
+      "maintainer": "Electronic Cats",
       "websiteURL": "https://electroniccats.com",
       "email": "hola@electroniccats.com",
       "help": {
-        "online": "https://learn.sparkfun.com/tutorials/installing-arduino-ide/board-add-ons-with-arduino-board-manager"
+        "online": "https://electroniccats.com/"
       },
       "platforms": [
         {
@@ -19,7 +19,7 @@
           "checksum": "SHA-256:6296714cd78213bbcd47934a361b4dbbaa7515b84d94ed20c181fd81a6aa4f7d",
           "size": "269286",
           "help": {
-            "online": "https://learn.sparkfun.com/tutorials/installing-arduino-ide/board-add-ons-with-arduino-board-manager"
+            "online": "https://electroniccats.com/"
           },
           "boards": [
             {
