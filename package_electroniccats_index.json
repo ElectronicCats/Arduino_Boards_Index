@@ -1,7 +1,7 @@
 {
   "packages": [
     {
-      "name": "ElectronicCats",
+      "name": "electroniccats",
       "maintainer": "Electronic Cats",
       "websiteURL": "https://electroniccats.com",
       "email": "hola@electroniccats.com",
