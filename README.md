@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/ElectronicCats/Arduino_Boards_Index.svg?branch=gh-pages)](https://travis-ci.org/ElectronicCats/Arduino_Boards_Index) 
+
 # Electronic Cats Arduino Boards
 
 Board definitions for Electronic Cats-manufactured AVR, ARM, and ESP-based Arduino boards.
