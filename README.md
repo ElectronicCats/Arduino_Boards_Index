@@ -21,7 +21,7 @@ This repository contains support for the following Electronic Cats Arduino-compa
 
 To add board support for our products, start Arduino and open the Preferences window (**File** > **Preferences**). Now copy and paste the following URL into the 'Additional Boards Manager URLs' input field:
 
-	https://raw.githubusercontent.com/ElectronicCats/Arduino_Boards_Index/master/IDE_Board_Manager/package_electroniccats_index.json
+	https://electroniccats.github.io/Arduino_Boards_Index/package_electroniccats_index.json
 
 
 If there is already an URL from another manufacturer in that field, click the button at the right end of the field. This will open an editing window allowing you to paste the above URL onto a new line.
