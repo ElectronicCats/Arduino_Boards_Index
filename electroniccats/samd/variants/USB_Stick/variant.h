@@ -118,14 +118,15 @@ static const uint8_t DAC0 = PIN_DAC0;
  */
 #define SPI_INTERFACES_COUNT 1 // we'll just have SPI CLK and MOSI on sercom 0, no MISO
 
-#define PIN_SPI_MISO         (6u)  // PA06, not actually available
-#define PIN_SPI_MOSI         (0ul) // PA04
-#define PIN_SPI_SCK          (2ul) // PA05
-#define PERIPH_SPI           sercom0
-#define PAD_SPI_TX           SPI_PAD_0_SCK_1
-#define PAD_SPI_RX         SERCOM_RX_PAD_2
+#define PIN_SPI_MISO         (17u)  // PA22
+#define PIN_SPI_MOSI         (18u)  // PA18
+#define PIN_SPI_SCK          (19u)  // PA19
+#define PIN_SPI_SS           (20u)  // PA23
+#define PERIPH_SPI           sercom3
+#define PAD_SPI_TX           SPI_PAD_2_SCK_3
+#define PAD_SPI_RX           SERCOM_RX_PAD_0
 
-static const uint8_t SS	  = 1 ;	// only pin remaining (shrug)
+static const uint8_t SS	  = PIN_SPI_SS ;	// only pin remaining (shrug)
 static const uint8_t MOSI = PIN_SPI_MOSI ;
 static const uint8_t MISO = PIN_SPI_MISO ;
 static const uint8_t SCK  = PIN_SPI_SCK ;
