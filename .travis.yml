@@ -1,15 +1,11 @@
-language: c
+language: generic
 sudo: false
-cache:
-  directories:
-    - ~/arduino_ide
-    - ~/.arduino15/packages/
 git:
   depth: false
   quiet: true
 env:
   global:
-     - ARDUINO_IDE_VERSION="1.8.6"
+     - IDE_VERSION="1.8.5"
 before_install:
   - wget http://downloads.arduino.cc/arduino-$IDE_VERSION-linux64.tar.xz
   - tar xf arduino-$IDE_VERSION-linux64.tar.xz
