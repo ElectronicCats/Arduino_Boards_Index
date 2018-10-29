@@ -12,7 +12,7 @@ before_install:
   - tar xf arduino-$IDE_VERSION-linux64.tar.xz
   - mv arduino-$IDE_VERSION $HOME/arduino-ide
   - export PATH=$PATH:$HOME/arduino-ide
-  - arduino --pref "boardsmanager.additional.urls=https://electroniccats.github.io/Arduino_Boards_Index/package_electroniccats_index.json" --install-boards electroniccts:samd > /dev/null
+  - arduino --pref "boardsmanager.additional.urls=https://electroniccats.github.io/Arduino_Boards_Index/package_electroniccats_index.json" --install-boards electroniccats:samd > /dev/null
   - buildExampleSketch() { arduino --verbose-build --verify --board $1 $HOME/arduino-ide/examples/$2/$3/$3.ino; }
 install:
   - mkdir -p $HOME/Arduino/hardware/electroniccats
