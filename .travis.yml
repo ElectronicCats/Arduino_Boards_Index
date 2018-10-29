@@ -20,6 +20,9 @@ install:
 script:
   - buildExampleSketch electroniccats:samd:electroniccats_USB_Stick 01.Basics Blink
   - buildExampleSketch electroniccats:samd:electroniccats_meow_meow 01.Basics Blink
+branches:	
+  only:	
+    - gh-pages
 notifications:
   email:
     on_success: change
