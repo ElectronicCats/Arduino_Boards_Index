@@ -10,31 +10,6 @@
       },
       "platforms": [
         {
-          "name": "Electronic Cats SAMD Boards [No dependencies]",
-          "architecture": "samd",
-          "version": "1.0.1b",
-          "category": "Contributed",
-          "url": "https://github.com/ElectronicCats/Arduino_Boards_Index/raw/gh-pages/IDE_Board_Manager/electroniccats-samd-v1.0.1b.tar.bz2",
-          "archiveFileName": "electroniccats-samd-v1.0.1b.tar.tar.bz2",
-          "checksum": "SHA-256:17f52f988b82808f49954ce0e1641d697dfa06895e8e3fb28b6c0949d32f28aa",
-          "size": "269769",
-          "help": {
-            "online": "https://electroniccats.com/"
-          },
-          "boards": [
-            {
-              "name": "Meow Meow"
-            },
-            {
-              "name": "CatWAN USB-Stick"
-            },
-            {
-              "name": "CatWAN Relay"
-            }
-          ],
-          "toolsDependencies": []
-        },
-        {
           "name": "Electronic Cats SAMD Boards",
           "architecture": "samd",
           "version": "1.0.0",
@@ -84,6 +59,31 @@
               "version": "1.2.0"
             }
           ]
+        },
+        {
+          "name": "Electronic Cats SAMD Boards [No dependencies]",
+          "architecture": "samd",
+          "version": "1.0.1b",
+          "category": "Contributed",
+          "url": "https://github.com/ElectronicCats/Arduino_Boards_Index/raw/gh-pages/IDE_Board_Manager/electroniccats-samd-v1.0.1b.tar.bz2",
+          "archiveFileName": "electroniccats-samd-v1.0.1b.tar.tar.bz2",
+          "checksum": "SHA-256:17f52f988b82808f49954ce0e1641d697dfa06895e8e3fb28b6c0949d32f28aa",
+          "size": "269769",
+          "help": {
+            "online": "https://electroniccats.com/"
+          },
+          "boards": [
+            {
+              "name": "Meow Meow"
+            },
+            {
+              "name": "CatWAN USB-Stick"
+            },
+            {
+              "name": "CatWAN Relay"
+            }
+          ],
+          "toolsDependencies": []
         }
       ],
       "tools":[
