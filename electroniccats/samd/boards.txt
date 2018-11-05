@@ -17,10 +17,10 @@
 menu.cache=Cache
 
 electroniccats_USB_Stick.name=Electronic Cats CatWAN USB Stick
-electroniccats_USB_Stick.vid.0=0x239A
-electroniccats_USB_Stick.pid.0=0x801C
-electroniccats_USB_Stick.vid.1=0x239A
-electroniccats_USB_Stick.pid.1=0x001C
+electroniccats_USB_Stick.vid.0=0x1209
+electroniccats_USB_Stick.pid.0=
+electroniccats_USB_Stick.vid.1=0x1209
+electroniccats_USB_Stick.pid.1=
 electroniccats_USB_Stick.upload.tool=bossac
 electroniccats_USB_Stick.upload.protocol=sam-ba
 electroniccats_USB_Stick.upload.maximum_size=262144
@@ -39,8 +39,8 @@ electroniccats_USB_Stick.build.ldscript=linker_scripts/gcc/flash_with_bootloader
 electroniccats_USB_Stick.build.openocdscript=openocd_scripts/arduino_zero.cfg
 electroniccats_USB_Stick.build.variant=USB_Stick
 electroniccats_USB_Stick.build.variant_system_lib=
-electroniccats_USB_Stick.build.vid=0x239A
-electroniccats_USB_Stick.build.pid=0x801C
+electroniccats_USB_Stick.build.vid=0x1209
+electroniccats_USB_Stick.build.pid=
 electroniccats_USB_Stick.bootloader.tool=openocd
 electroniccats_USB_Stick.bootloader.file=USB_Stick/bootloader-CatWAN-USB-Stick-v2.0.0.bin
 
