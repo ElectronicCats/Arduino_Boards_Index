@@ -78,8 +78,8 @@ extern "C"
 
 // LEDs
 #define PIN_LED_13           (13u)
-#define PIN_LED_RXL          (14u)
-#define PIN_LED_TXL          (15u)
+#define PIN_LED_RXL          (13u)
+#define PIN_LED_TXL          (13u)
 #define PIN_LED              PIN_LED_13
 #define PIN_LED2             PIN_LED_RXL
 #define PIN_LED3             PIN_LED_TXL
@@ -88,9 +88,9 @@ extern "C"
 #define INTERNAL_DS_DATA     3
 #define INTERNAL_DS_CLK      4
 
-/*
- * Analog pins
- */
+
+/* Analog pins*/
+ 
 #define PIN_A0               (8ul)
 #define PIN_A1               (9ul)
 #define PIN_A2               (10ul)
