@@ -12,12 +12,12 @@
         {
           "name": "Electronic Cats SAMD Boards",
           "architecture": "samd",
-          "version": "1.0.0",
+          "version": "1.0.1",
           "category": "Contributed",
-          "url": "https://github.com/ElectronicCats/Arduino_Boards_Index/raw/gh-pages/IDE_Board_Manager/electroniccats-samd-v1.0.0.tar.bz2",
-          "archiveFileName": "electroniccats-samd-v1.0.0.tar.tar.bz2",
-          "checksum": "SHA-256:6296714cd78213bbcd47934a361b4dbbaa7515b84d94ed20c181fd81a6aa4f7d",
-          "size": "269286",
+          "url": "https://github.com/ElectronicCats/Arduino_Boards_Index/raw/gh-pages/IDE_Board_Manager/electroniccats-samd-v1.0.1.tar.bz2",
+          "archiveFileName": "electroniccats-samd-v1.0.1.tar.tar.bz2",
+          "checksum": "SHA-256:fd7c24029a2fbc2e30dbdf34e33dbd1fd5b0d07bf0cecdd6935752d29a93bdb9",
+          "size": "269595",
           "help": {
             "online": "https://electroniccats.com/"
           },
@@ -63,12 +63,12 @@
         {
           "name": "Electronic Cats SAMD Boards",
           "architecture": "samd",
-          "version": "1.0.1",
+          "version": "1.0.0",
           "category": "Contributed",
-          "url": "https://github.com/ElectronicCats/Arduino_Boards_Index/raw/gh-pages/IDE_Board_Manager/electroniccats-samd-v1.0.1.tar.bz2",
-          "archiveFileName": "electroniccats-samd-v1.0.1.tar.tar.bz2",
-          "checksum": "SHA-256:fd7c24029a2fbc2e30dbdf34e33dbd1fd5b0d07bf0cecdd6935752d29a93bdb9",
-          "size": "269595",
+          "url": "https://github.com/ElectronicCats/Arduino_Boards_Index/raw/gh-pages/IDE_Board_Manager/electroniccats-samd-v1.0.0.tar.bz2",
+          "archiveFileName": "electroniccats-samd-v1.0.0.tar.tar.bz2",
+          "checksum": "SHA-256:6296714cd78213bbcd47934a361b4dbbaa7515b84d94ed20c181fd81a6aa4f7d",
+          "size": "269286",
           "help": {
             "online": "https://electroniccats.com/"
           },
