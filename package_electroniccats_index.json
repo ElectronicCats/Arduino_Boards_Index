@@ -12,6 +12,31 @@
         {
           "name": "Electronic Cats SAMD Boards",
           "architecture": "samd",
+          "version": "1.0.1b",
+          "category": "Contributed",
+          "url": "https://github.com/ElectronicCats/Arduino_Boards_Index/raw/gh-pages/IDE_Board_Manager/electroniccats-samd-v1.0.1.tar.bz2",
+          "archiveFileName": "electroniccats-samd-v1.0.1.tar.tar.bz2",
+          "checksum": "SHA-256:fd7c24029a2fbc2e30dbdf34e33dbd1fd5b0d07bf0cecdd6935752d29a93bdb9",
+          "size": "269595",
+          "help": {
+            "online": "https://electroniccats.com/"
+          },
+          "boards": [
+            {
+              "name": "Meow Meow"
+            },
+            {
+              "name": "CatWAN USB-Stick"
+            },
+            {
+              "name": "CatWAN Relay"
+            }
+          ],
+          "toolsDependencies": []
+        },
+        {
+          "name": "Electronic Cats SAMD Boards",
+          "architecture": "samd",
           "version": "1.0.1",
           "category": "Contributed",
           "url": "https://github.com/ElectronicCats/Arduino_Boards_Index/raw/gh-pages/IDE_Board_Manager/electroniccats-samd-v1.0.1.tar.bz2",
