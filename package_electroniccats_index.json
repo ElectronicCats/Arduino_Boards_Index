@@ -61,7 +61,7 @@
           ]
         },
         {
-          "name": "Electronic Cats SAMD Boards [No dependencies]",
+          "name": "Electronic Cats SAMD Boards",
           "architecture": "samd",
           "version": "1.0.1b",
           "category": "Contributed",
