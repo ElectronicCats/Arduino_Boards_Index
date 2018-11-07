@@ -32,7 +32,7 @@ const PinDescription g_APinDescription[]=
   { PORTA,  2, PIO_ANALOG, PIN_ATTR_ANALOG, ADC_Channel0, NOT_ON_PWM, NOT_ON_TIMER, EXTERNAL_INT_2 }, // ADC/AIN[0]
 
   // 2 - SERCOM0 for I2C SCL, UART RX, SPI CLK, Captouch, IRQ, PWM out TCC0/WO[1], and gen purpose pin
-  { PORTA,  4, PIO_SERCOM_ALT, (PIN_ATTR_DIGITAL|PIN_ATTR_PWM|PIN_ATTR_TIMER), No_ADC_Channel, PWM0_CH1, TCC0_CH1, EXTERNAL_INT_5 }, // TCC0/WO[1]
+  { PORTA,  4, PIO_SERCOM_ALT, (PIN_ATTR_DIGITAL|PIN_ATTR_PWM|PIN_ATTR_TIMER), No_ADC_Channel, PWM0_CH1, TCC0_CH1, EXTERNAL_INT_4 }, // TCC0/WO[1]
 
   // GPIO 3 & 4 - DotStar internal data/clock
   // ----------------------------------------
