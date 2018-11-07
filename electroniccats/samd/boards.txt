@@ -18,9 +18,9 @@ menu.cache=Cache
 
 electroniccats_USB_Stick.name=Electronic Cats CatWAN USB Stick
 electroniccats_USB_Stick.vid.0=0x1209
-electroniccats_USB_Stick.pid.0=
+electroniccats_USB_Stick.pid.0=0xBAB2
 electroniccats_USB_Stick.vid.1=0x1209
-electroniccats_USB_Stick.pid.1=
+electroniccats_USB_Stick.pid.1=0xBAB2
 electroniccats_USB_Stick.upload.tool=bossac
 electroniccats_USB_Stick.upload.protocol=sam-ba
 electroniccats_USB_Stick.upload.maximum_size=262144
