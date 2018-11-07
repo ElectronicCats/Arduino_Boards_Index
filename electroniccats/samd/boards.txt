@@ -40,7 +40,7 @@ electroniccats_USB_Stick.build.openocdscript=openocd_scripts/arduino_zero.cfg
 electroniccats_USB_Stick.build.variant=USB_Stick
 electroniccats_USB_Stick.build.variant_system_lib=
 electroniccats_USB_Stick.build.vid=0x1209
-electroniccats_USB_Stick.build.pid=
+electroniccats_USB_Stick.build.pid=0xBAB2
 electroniccats_USB_Stick.bootloader.tool=openocd
 electroniccats_USB_Stick.bootloader.file=USB_Stick/bootloader-CatWAN-USB-Stick-v2.0.0.bin
 
