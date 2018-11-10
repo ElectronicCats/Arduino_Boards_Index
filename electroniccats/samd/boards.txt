@@ -16,6 +16,34 @@
 
 menu.cache=Cache
 
+electroniccats_Bast_Pro_Mini_M0.name=Electronic Cats Bast Pro Mini M0
+electroniccats_Bast_Pro_Mini_M0.vid.0=0x1209
+electroniccats_Bast_Pro_Mini_M0.pid.0=0xBAB2
+electroniccats_Bast_Pro_Mini_M0.vid.1=0x1209
+electroniccats_Bast_Pro_Mini_M0.pid.1=0xBAB2
+electroniccats_Bast_Pro_Mini_M0.upload.tool=bossac
+electroniccats_Bast_Pro_Mini_M0.upload.protocol=sam-ba
+electroniccats_Bast_Pro_Mini_M0.upload.maximum_size=262144
+electroniccats_Bast_Pro_Mini_M0.upload.offset=0x2000
+electroniccats_Bast_Pro_Mini_M0.upload.use_1200bps_touch=true
+electroniccats_Bast_Pro_Mini_M0.upload.wait_for_upload_port=true
+electroniccats_Bast_Pro_Mini_M0.upload.native_usb=true
+electroniccats_Bast_Pro_Mini_M0.build.mcu=cortex-m0plus
+electroniccats_Bast_Pro_Mini_M0.build.f_cpu=48000000L
+electroniccats_Bast_Pro_Mini_M0.build.usb_product="Bast Pro Mini M0"
+electroniccats_Bast_Pro_Mini_M0.build.usb_manufacturer="Electronic Cats"
+electroniccats_Bast_Pro_Mini_M0.build.board=Bast_Pro_Mini_M0
+electroniccats_Bast_Pro_Mini_M0.build.core=arduino
+electroniccats_Bast_Pro_Mini_M0.build.extra_flags=-DCRYSTALLESS -DARDUINO_SAMD_ZERO -D__SAMD21G18A__ -DARM_MATH_CM0PLUS {build.usb_flags}
+electroniccats_Bast_Pro_Mini_M0.build.ldscript=linker_scripts/gcc/flash_with_bootloader.ld
+electroniccats_Bast_Pro_Mini_M0.build.openocdscript=openocd_scripts/arduino_zero.cfg
+electroniccats_Bast_Pro_Mini_M0.build.variant=Bast_Pro_Mini_M0
+electroniccats_Bast_Pro_Mini_M0.build.variant_system_lib=
+electroniccats_Bast_Pro_Mini_M0.build.vid=0x1209
+electroniccats_Bast_Pro_Mini_M0.build.pid=0xBAB2
+electroniccats_Bast_Pro_Mini_M0.bootloader.tool=openocd
+electroniccats_Bast_Pro_Mini_M0.bootloader.file=Bast_Pro_Mini_M0/bootloader-CatWAN-USB-Stick-v2.0.0.bin
+
 electroniccats_USB_Stick.name=Electronic Cats CatWAN USB Stick
 electroniccats_USB_Stick.vid.0=0x1209
 electroniccats_USB_Stick.pid.0=0xBAB2
@@ -34,7 +62,7 @@ electroniccats_USB_Stick.build.usb_product="CatWAN USB_Stick"
 electroniccats_USB_Stick.build.usb_manufacturer="Electronic Cats"
 electroniccats_USB_Stick.build.board=USB_STICK
 electroniccats_USB_Stick.build.core=arduino
-electroniccats_USB_Stick.build.extra_flags=-DCRYSTALLESS -Delectroniccats_USB_Stick -D__SAMD21E18A__ -DARM_MATH_CM0PLUS {build.usb_flags}
+electroniccats_USB_Stick.build.extra_flags=-DCRYSTALLESS -DARDUINO_SAMD_ZERO -D__SAMD21G18A__ -DARM_MATH_CM0PLUS {build.usb_flags}
 electroniccats_USB_Stick.build.ldscript=linker_scripts/gcc/flash_with_bootloader.ld
 electroniccats_USB_Stick.build.openocdscript=openocd_scripts/arduino_zero.cfg
 electroniccats_USB_Stick.build.variant=USB_Stick
