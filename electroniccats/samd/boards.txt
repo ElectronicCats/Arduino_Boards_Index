@@ -18,9 +18,9 @@ menu.cache=Cache
 
 electroniccats_Bast_Pro_Mini_M0.name=Electronic Cats Bast Pro Mini M0
 electroniccats_Bast_Pro_Mini_M0.vid.0=0x1209
-electroniccats_Bast_Pro_Mini_M0.pid.0=0xBAB2
+electroniccats_Bast_Pro_Mini_M0.pid.0=0xBAB3
 electroniccats_Bast_Pro_Mini_M0.vid.1=0x1209
-electroniccats_Bast_Pro_Mini_M0.pid.1=0xBAB2
+electroniccats_Bast_Pro_Mini_M0.pid.1=0xBAB3
 electroniccats_Bast_Pro_Mini_M0.upload.tool=bossac
 electroniccats_Bast_Pro_Mini_M0.upload.protocol=sam-ba
 electroniccats_Bast_Pro_Mini_M0.upload.maximum_size=262144
