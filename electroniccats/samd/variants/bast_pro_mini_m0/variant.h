@@ -53,9 +53,9 @@ extern "C"
  *----------------------------------------------------------------------------*/
 
 // Number of pins defined in PinDescription array
-#define PINS_COUNT           (16u)
+#define PINS_COUNT           (22u)
 #define NUM_DIGITAL_PINS     (16u)
-#define NUM_ANALOG_INPUTS    (3u)
+#define NUM_ANALOG_INPUTS    (6u)
 #define NUM_ANALOG_OUTPUTS   (1u)
 #define analogInputToDigitalPin(p)  ((p < 3u) ? (p) + PIN_A0 : -1)
 
@@ -107,21 +107,21 @@ static const uint8_t DAC0 = PIN_DAC0;
  * Serial interfaces
  */
 
-// Serial1 (sercom 0)
-#define PIN_SERIAL1_RX       (2ul) // PA05
+// Serial1 (sercom 0) --> Change to sercom1 (SERCOMALT)
+#define PIN_SERIAL1_RX       (2ul) // PA01
 #define PAD_SERIAL1_RX       (SERCOM_RX_PAD_1)
-#define PIN_SERIAL1_TX       (0ul) // PA04
+#define PIN_SERIAL1_TX       (0ul) // PA00
 #define PAD_SERIAL1_TX       (UART_TX_PAD_0)
 
 /*
  * SPI Interfaces
  */
-#define SPI_INTERFACES_COUNT 1 // we'll just have SPI CLK and MOSI on sercom 0, no MISO
+#define SPI_INTERFACES_COUNT 1 //SPI on pins 10,11,12,13 
 
-#define PIN_SPI_MISO         (17u)  // PA22
-#define PIN_SPI_MOSI         (18u)  // PA18
-#define PIN_SPI_SCK          (19u)  // PA19
-#define PIN_SPI_SS           (20u)  // PA23
+#define PIN_SPI_MISO         (17u)  // PA19 SERCOM1 PAD[3]
+#define PIN_SPI_MOSI         (18u)  // PA16 SERCOM1 PAD[0]
+#define PIN_SPI_SCK          (19u)  // PA17 SERCOM1 PAD[1]
+#define PIN_SPI_SS           (20u)  // PA18 SERCOM1 PAD[2]
 #define PERIPH_SPI           sercom3
 #define PAD_SPI_TX           SPI_PAD_2_SCK_3
 #define PAD_SPI_RX           SERCOM_RX_PAD_0
@@ -137,8 +137,8 @@ static const uint8_t SCK  = PIN_SPI_SCK ;
  */
 #define WIRE_INTERFACES_COUNT 1
 
-#define PIN_WIRE_SDA         (0u)
-#define PIN_WIRE_SCL         (2u)
+#define PIN_WIRE_SDA         (0u) //PA08
+#define PIN_WIRE_SCL         (2u) //PA09
 #define PERIPH_WIRE          sercom0
 //#define WIRE_IT_HANDLER    // hack! we call the i2c handler from within the serial handler!
 
@@ -148,9 +148,9 @@ static const uint8_t SCL = PIN_WIRE_SCL;
 /*
  * USB
  */
-#define PIN_USB_HOST_ENABLE (5ul)
-#define PIN_USB_DM          (6ul)
-#define PIN_USB_DP          (7ul)
+#define PIN_USB_HOST_ENABLE (13ul)
+#define PIN_USB_DM          (14ul)
+#define PIN_USB_DP          (15ul)
 
 #ifdef __cplusplus
 }
