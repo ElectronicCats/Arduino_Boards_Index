@@ -105,10 +105,10 @@ static const uint8_t DAC0 = PIN_DAC0;
  * Serial interfaces
  */
 
-// Serial1 (sercom 0) --> Change to sercom1 (SERCOMALT)
-#define PIN_SERIAL1_RX       (2ul) // PA01
+// Serial1 (sercom 1)
+#define PIN_SERIAL1_RX       (0ul) // PA01
 #define PAD_SERIAL1_RX       (SERCOM_RX_PAD_1)
-#define PIN_SERIAL1_TX       (0ul) // PA00
+#define PIN_SERIAL1_TX       (1ul) // PA00
 #define PAD_SERIAL1_TX       (UART_TX_PAD_0)
 
 /*
@@ -116,10 +116,10 @@ static const uint8_t DAC0 = PIN_DAC0;
  */
 #define SPI_INTERFACES_COUNT 1 //SPI on pins 10,11,12,13 
 
-#define PIN_SPI_MISO         (17u)  // PA19 SERCOM1 PAD[3]
-#define PIN_SPI_MOSI         (18u)  // PA16 SERCOM1 PAD[0]
-#define PIN_SPI_SCK          (19u)  // PA17 SERCOM1 PAD[1]
-#define PIN_SPI_SS           (20u)  // PA18 SERCOM1 PAD[2]
+#define PIN_SPI_MISO         (17u)  // PA19 SERCOM3 PAD[3]
+#define PIN_SPI_MOSI         (18u)  // PA16 SERCOM3 PAD[0]
+#define PIN_SPI_SCK          (19u)  // PA17 SERCOM3 PAD[1]
+#define PIN_SPI_SS           (20u)  // PA18 SERCOM3 PAD[2]
 #define PERIPH_SPI           sercom3
 #define PAD_SPI_TX           SPI_PAD_2_SCK_3
 #define PAD_SPI_RX           SERCOM_RX_PAD_0
@@ -135,9 +135,9 @@ static const uint8_t SCK  = PIN_SPI_SCK ;
  */
 #define WIRE_INTERFACES_COUNT 1
 
-#define PIN_WIRE_SDA         (0u) //PA08
-#define PIN_WIRE_SCL         (2u) //PA09
-#define PERIPH_WIRE          sercom0
+#define PIN_WIRE_SDA         (22u) //PA08
+#define PIN_WIRE_SCL         (23u) //PA09
+#define PERIPH_WIRE          sercom2
 //#define WIRE_IT_HANDLER    // hack! we call the i2c handler from within the serial handler!
 
 static const uint8_t SDA = PIN_WIRE_SDA;
