@@ -42,7 +42,7 @@ electroniccats_Bast_Pro_Mini_M0.build.variant_system_lib=
 electroniccats_Bast_Pro_Mini_M0.build.vid=0x1209
 electroniccats_Bast_Pro_Mini_M0.build.pid=0xBAB2
 electroniccats_Bast_Pro_Mini_M0.bootloader.tool=openocd
-electroniccats_Bast_Pro_Mini_M0.bootloader.file=Bast_Pro_Mini_M0/bootloader-CatWAN-USB-Stick-v2.0.0.bin
+electroniccats_Bast_Pro_Mini_M0.bootloader.file=bast_pro_mini_m0/bootloader-bast-pro-mini-m0-v2.0.0.bin
 
 electroniccats_USB_Stick.name=Electronic Cats CatWAN USB Stick
 electroniccats_USB_Stick.vid.0=0x1209
