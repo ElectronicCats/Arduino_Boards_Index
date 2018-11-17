@@ -77,20 +77,26 @@ extern "C"
 // #define digitalPinToTimer(P)
 
 // LEDs
-#define PIN_LED_13           (23u)
+#define PIN_LED_13           (24u)
 #define PIN_LED              PIN_LED_13
 #define LED_BUILTIN          PIN_LED_13
 
 /* Analog pins*/
  
-#define PIN_A0               (8ul)
-#define PIN_A1               (9ul)
-#define PIN_A2               (10ul)
-#define PIN_DAC0             (8ul)
+#define PIN_A0               (18ul)
+#define PIN_A1               (19ul)
+#define PIN_A2               (20ul)
+#define PIN_A3               (21ul)
+#define PIN_A4               (22ul)
+#define PIN_A5               (23ul)
+#define PIN_DAC0             (18ul)
 
 static const uint8_t A0  = PIN_A0;
 static const uint8_t A1  = PIN_A1;
 static const uint8_t A2  = PIN_A2;
+static const uint8_t A3  = PIN_A3;
+static const uint8_t A4  = PIN_A4;
+static const uint8_t A5  = PIN_A5;
 static const uint8_t DAC0 = PIN_DAC0;
 
 #define ADC_RESOLUTION		12
