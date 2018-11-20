@@ -24,11 +24,11 @@
  */
 const PinDescription g_APinDescription[]=
 {
-  // 0 - SERCOM1 - PA01 - RX and GPIO
-  { PORTA,  1, PIO_SERCOM_ALT, (PIN_ATTR_DIGITAL|PIN_ATTR_PWM|PIN_ATTR_TIMER), No_ADC_Channel, PWM2_CH1, TCC2_CH1, EXTERNAL_INT_1 },  // TCC0/WO[0]
-
-  // 1 - SERCOM1 - PA00 - TX and GPIO    ADC, DAC, IRQ, Captouch and general purpose pin - no timer
+  // 0 - SERCOM1 - PA00 - TX and GPIO    ADC, DAC, IRQ, Captouch and general purpose pin - no timer
   { PORTA,  0, PIO_SERCOM_ALT, PIN_ATTR_ANALOG, No_ADC_Channel, NOT_ON_PWM, NOT_ON_TIMER, EXTERNAL_INT_0 }, // ADC/AIN[0]
+  
+  // 1 - SERCOM1 - PA01 - RX and GPIO
+  { PORTA,  1, PIO_SERCOM_ALT, (PIN_ATTR_DIGITAL|PIN_ATTR_PWM|PIN_ATTR_TIMER), No_ADC_Channel, PWM2_CH1, TCC2_CH1, EXTERNAL_INT_1 },  // TCC0/WO[0]
 
   // 2 - PA14 - interrupt and GPIO - no timer
   { PORTA, 14, PIO_TIMER, PIN_ATTR_DIGITAL, No_ADC_Channel, NOT_ON_PWM, NOT_ON_TIMER, EXTERNAL_INT_14 }, //
