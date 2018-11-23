@@ -16,8 +16,8 @@
           "category": "Contributed",
           "url": "https://github.com/ElectronicCats/Arduino_Boards_Index/raw/gh-pages/IDE_Board_Manager/electroniccats-samd-v1.0.3.tar.bz2",
           "archiveFileName": "electroniccats-samd-v1.0.3.tar.tar.bz2",
-          "checksum": "SHA-256:e2b400434c0d210df13751631bc492dd1c589375dfb66d72bae89a646c489154",
-          "size": "277869",
+          "checksum": "SHA-256:49079b888bba59171a66cf526429f81beddfa0f1d4419ac44b6ae1a05e6194ea",
+          "size": "277808",
           "help": {
             "online": "https://electroniccats.com/"
           },
