@@ -31,11 +31,8 @@ If there is already an URL from another manufacturer in that field, click the bu
 
 Open the Boards Manager window by selecting **Tools** > **Board**, scroll to the top of the board list, and select **Boards Manager**. Now type "Electronic Cats" (without quotes) into the "filter your search" field at the top of the window.
  
-TODO
 
 ### Notes
-
-* Some boards such as the Arduino Pro and Pro Mini come in more than one flavor.  For these **you must select the correct processor** in the 'Tools' menu.
 * Information on compiling and programming the bootloaders can be found in the bootloaders directory.
 
 **Have fun!**<br>
