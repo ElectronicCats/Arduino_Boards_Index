@@ -19,7 +19,7 @@
 #pragma once
 
 // The definitions here needs a SAMD core >=1.6.10
-#define ARDUINO_SAMD_VARIANT_COMPLIANCE 10610
+#define ARDUINO_SAMD_VARIANT_COMPLIANCE 10606
 
 
 #include <WVariant.h>
@@ -37,8 +37,8 @@
 // ----
 
 // Number of pins defined in PinDescription array
-#define PINS_COUNT           (39u)
-#define NUM_DIGITAL_PINS     (39u)
+#define PINS_COUNT           (36u)
+#define NUM_DIGITAL_PINS     (36u)
 #define NUM_ANALOG_INPUTS    (11u)
 #define NUM_ANALOG_OUTPUTS   (1u)
 
@@ -107,14 +107,14 @@ static const uint8_t DAC0 = PIN_DAC0;
  */
 #define SPI_INTERFACES_COUNT 1
 
-#define PIN_SPI_MISO         (30u)
-#define PIN_SPI_SCK          (31u)
-#define PIN_SPI_MOSI         (32u)
+#define PIN_SPI_MISO         (29u)
+#define PIN_SPI_SCK          (30u)
+#define PIN_SPI_MOSI         (31u)
 #define PERIPH_SPI           sercom3
 #define PAD_SPI_TX           SPI_PAD_2_SCK_3  // MOSI / SCK
 #define PAD_SPI_RX           SERCOM_RX_PAD_0  // MISO
 
-static const uint8_t SS	  = 33 ;
+static const uint8_t SS	  = 26u ;
 static const uint8_t MOSI = PIN_SPI_MOSI ;
 static const uint8_t MISO = PIN_SPI_MISO ;
 static const uint8_t SCK  = PIN_SPI_SCK ;
@@ -143,9 +143,9 @@ static const uint8_t SCL1 = PIN_WIRE1_SCL;
 
 // USB
 // ---
-#define PIN_USB_HOST_ENABLE (36ul)
-#define PIN_USB_DM          (37ul)
-#define PIN_USB_DP          (38ul)
+#define PIN_USB_HOST_ENABLE (34ul)
+#define PIN_USB_DM          (35ul)
+#define PIN_USB_DP          (36ul)
 
 // I2S Interfaces
 // --------------
