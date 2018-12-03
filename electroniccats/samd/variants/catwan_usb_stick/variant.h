@@ -80,6 +80,11 @@ extern "C"
 #define PIN_LED_13           (13u)
 #define PIN_LED              PIN_LED_13
 #define LED_BUILTIN          PIN_LED_13
+#define RFM_RST              (10u)
+#define RFM_DIO0             (0u)
+#define RFM_DIO1             (1u)
+#define RFM_DIO2             (2u)
+#define RFM_DIO5             (15u)
 
 /* Analog pins*/
  
@@ -113,7 +118,7 @@ static const uint8_t DAC0 = PIN_DAC0;
 #define PIN_SPI_MISO         (17u)  // PA22
 #define PIN_SPI_MOSI         (18u)  // PA18
 #define PIN_SPI_SCK          (19u)  // PA19
-#define PIN_SPI_SS           (20u)  // PA23
+#define PIN_SPI_SS           (20u)  // PA17
 #define PERIPH_SPI           sercom3
 #define PAD_SPI_TX           SPI_PAD_2_SCK_3
 #define PAD_SPI_RX           SERCOM_RX_PAD_0
