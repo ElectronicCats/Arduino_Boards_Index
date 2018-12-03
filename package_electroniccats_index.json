@@ -12,31 +12,6 @@
         {
           "name": "Electronic Cats SAMD Boards",
           "architecture": "samd",
-          "version": "1.0.4-no-dependencies",
-          "category": "Contributed",
-          "url": "https://github.com/ElectronicCats/Arduino_Boards_Index/raw/gh-pages/IDE_Board_Manager/electroniccats-samd-v1.0.4.tar.bz2",
-          "archiveFileName": "electroniccats-samd-v1.0.4.tar.bz2",
-          "checksum": "SHA-256:70fc4352e4fcaf2fb864a692ee39c747dd7e3f8c75ffcc164e8a9ecac4227650",
-          "size": "279532",
-          "help": {
-            "online": "https://electroniccats.com/"
-          },
-          "boards": [
-            {
-              "name": "Meow Meow"
-            },
-            {
-              "name": "CatWAN USB-Stick"
-            },
-            {
-              "name": "Bast Pro Mini M0"
-            }
-          ],
-          "toolsDependencies": []
-        },
-        {
-          "name": "Electronic Cats SAMD Boards",
-          "architecture": "samd",
           "version": "1.0.4",
           "category": "Contributed",
           "url": "https://github.com/ElectronicCats/Arduino_Boards_Index/raw/gh-pages/IDE_Board_Manager/electroniccats-samd-v1.0.4.tar.bz2",
