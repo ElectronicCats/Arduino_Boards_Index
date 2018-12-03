@@ -78,16 +78,8 @@ extern "C"
 
 // LEDs
 #define PIN_LED_13           (13u)
-#define PIN_LED_RXL          (13u)
-#define PIN_LED_TXL          (13u)
 #define PIN_LED              PIN_LED_13
-#define PIN_LED2             PIN_LED_RXL
-#define PIN_LED3             PIN_LED_TXL
 #define LED_BUILTIN          PIN_LED_13
-// DotStar LED
-#define INTERNAL_DS_DATA     3
-#define INTERNAL_DS_CLK      4
-
 
 /* Analog pins*/
  
@@ -195,6 +187,7 @@ extern Uart Serial1;
 // Serial has no physical pins broken out, so it's not listed as HARDWARE port
 #define SERIAL_PORT_HARDWARE        Serial1
 #define SERIAL_PORT_HARDWARE_OPEN   Serial1
+#define Serial SerialUSB
 
 #endif /* _VARIANT_ARDUINO_ZERO_ */
 
