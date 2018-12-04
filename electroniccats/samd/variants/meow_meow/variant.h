@@ -37,8 +37,8 @@
 // ----
 
 // Number of pins defined in PinDescription array
-#define PINS_COUNT           (28u)
-#define NUM_DIGITAL_PINS     (16u)
+#define PINS_COUNT           (27u)
+#define NUM_DIGITAL_PINS     (13u)
 #define NUM_ANALOG_INPUTS    (11u)
 #define NUM_ANALOG_OUTPUTS   (1u)
 
@@ -72,7 +72,7 @@
 /*
  * Analog pins
  */
-#define PIN_A0               (17ul)
+#define PIN_A0               (14ul)
 #define PIN_A1               (PIN_A0 + 1)
 #define PIN_A2               (PIN_A0 + 2)
 #define PIN_A3               (PIN_A0 + 3)
@@ -114,11 +114,10 @@ static const uint8_t DAC0 = PIN_DAC0;
 #define PAD_SPI_TX           SPI_PAD_2_SCK_3  // MOSI / SCK
 #define PAD_SPI_RX           SERCOM_RX_PAD_0  // MISO
 
-static const uint8_t SS	  = 14u ;
+static const uint8_t SS	  = 7u ;
 static const uint8_t MOSI = PIN_SPI_MOSI ;
 static const uint8_t MISO = PIN_SPI_MISO ;
 static const uint8_t SCK  = PIN_SPI_SCK ;
-
 
 /*
  * Wire Interfaces
@@ -135,9 +134,9 @@ static const uint8_t SCL = PIN_WIRE_SCL;
 
 // USB
 // ---
-#define PIN_USB_HOST_ENABLE (26ul)
-#define PIN_USB_DM          (27ul)
-#define PIN_USB_DP          (28ul)
+#define PIN_USB_HOST_ENABLE (25ul)
+#define PIN_USB_DM          (26ul)
+#define PIN_USB_DP          (27ul)
 
 // I2S Interfaces
 // --------------
