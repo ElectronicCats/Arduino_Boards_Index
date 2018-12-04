@@ -18,7 +18,7 @@
 
 #pragma once
 
-// The definitions here needs a SAMD core >=1.6.10
+// The definitions here needs a SAMD core >=1.6.6
 #define ARDUINO_SAMD_VARIANT_COMPLIANCE 10606
 
 
@@ -37,8 +37,8 @@
 // ----
 
 // Number of pins defined in PinDescription array
-#define PINS_COUNT           (36u)
-#define NUM_DIGITAL_PINS     (36u)
+#define PINS_COUNT           (28u)
+#define NUM_DIGITAL_PINS     (16u)
 #define NUM_ANALOG_INPUTS    (11u)
 #define NUM_ANALOG_OUTPUTS   (1u)
 
@@ -72,7 +72,7 @@
 /*
  * Analog pins
  */
-#define PIN_A0               (14ul)
+#define PIN_A0               (17ul)
 #define PIN_A1               (PIN_A0 + 1)
 #define PIN_A2               (PIN_A0 + 2)
 #define PIN_A3               (PIN_A0 + 3)
@@ -107,14 +107,14 @@ static const uint8_t DAC0 = PIN_DAC0;
  */
 #define SPI_INTERFACES_COUNT 1
 
-#define PIN_SPI_MISO         (29u)
-#define PIN_SPI_SCK          (30u)
-#define PIN_SPI_MOSI         (31u)
+#define PIN_SPI_MISO         (8u)
+#define PIN_SPI_SCK          (9u)
+#define PIN_SPI_MOSI         (10u)
 #define PERIPH_SPI           sercom3
 #define PAD_SPI_TX           SPI_PAD_2_SCK_3  // MOSI / SCK
 #define PAD_SPI_RX           SERCOM_RX_PAD_0  // MISO
 
-static const uint8_t SS	  = 26u ;
+static const uint8_t SS	  = 14u ;
 static const uint8_t MOSI = PIN_SPI_MOSI ;
 static const uint8_t MISO = PIN_SPI_MISO ;
 static const uint8_t SCK  = PIN_SPI_SCK ;
@@ -123,29 +123,21 @@ static const uint8_t SCK  = PIN_SPI_SCK ;
 /*
  * Wire Interfaces
  */
-#define WIRE_INTERFACES_COUNT 2
+#define WIRE_INTERFACES_COUNT 1
 
-  // "external" public i2c interface
-#define PIN_WIRE_SDA         (2u)
-#define PIN_WIRE_SCL         (3u)
-#define PERIPH_WIRE          sercom5
-#define WIRE_IT_HANDLER      SERCOM5_Handler
+// "external" public i2c interface
+#define PIN_WIRE_SDA         (11u)
+#define PIN_WIRE_SCL         (12u)
+#define PERIPH_WIRE          sercom1
+#define WIRE_IT_HANDLER      SERCOM1_Handler
 static const uint8_t SDA = PIN_WIRE_SDA;
 static const uint8_t SCL = PIN_WIRE_SCL;
 
-  // "internal" lis3dh i2c interface
-#define PIN_WIRE1_SDA         (28u)
-#define PIN_WIRE1_SCL         (29u)
-#define PERIPH_WIRE1          sercom1
-#define WIRE1_IT_HANDLER      SERCOM1_Handler
-static const uint8_t SDA1 = PIN_WIRE1_SDA;
-static const uint8_t SCL1 = PIN_WIRE1_SCL;
-
 // USB
 // ---
-#define PIN_USB_HOST_ENABLE (34ul)
-#define PIN_USB_DM          (35ul)
-#define PIN_USB_DP          (36ul)
+#define PIN_USB_HOST_ENABLE (26ul)
+#define PIN_USB_DM          (27ul)
+#define PIN_USB_DP          (28ul)
 
 // I2S Interfaces
 // --------------
