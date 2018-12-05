@@ -20,7 +20,7 @@ install:
   - ln -s $PWD $HOME/Arduino/hardware/electroniccats/samd
 script:
   - buildExampleSketch electroniccats:samd:electroniccats_USB_Stick 01.Basics Blink
-  - buildExampleSketch electroniccats:samd:electroniccats_meowmeow 01.Basics Blink
+  - buildExampleSketch electroniccats:samd:electroniccats_meow_meow 01.Basics Blink
   - buildExampleSketch electroniccats:samd:electroniccats_Bast_Pro_Mini_M0 01.Basics Blink
 branches:	
   only:	
