@@ -16,6 +16,8 @@ This repository contains support for the following Electronic Cats Arduino-compa
 
 * [CatWAN USB-Stick](https://www.tindie.com/products/electroniccats/catwan-usb-stick/)
 
+* [CatWAN Relay](https://www.tindie.com/products/electroniccats/catwan-relay-board/)
+
 
 ### Installation Instructions
 
