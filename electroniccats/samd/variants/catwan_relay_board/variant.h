@@ -80,11 +80,19 @@ extern "C"
 #define PIN_LED_13           (13u)
 #define PIN_LED              PIN_LED_13
 #define LED_BUILTIN          PIN_LED_13
-#define RFM_RST              (10u)
-#define RFM_DIO0             (0u)
-#define RFM_DIO1             (1u)
-#define RFM_DIO2             (2u)
-#define RFM_DIO5             (15u)
+#define RFM_RST              (21u)
+#define RFM_DIO0             (4u)
+#define RFM_DIO1             (8u)
+#define RFM_DIO2             (9u)
+#define RFM_DIO5             (10u)
+//Relays pins
+#define Relay_1             (22u)
+#define Relay_2             (23u)
+#define Relay_3             (24u)
+//Optocoupled pins
+#define Opto_1             (0u)
+#define Opto_2             (1u)
+#define Opto_3             (2u)
 
 /* Analog pins*/
  
