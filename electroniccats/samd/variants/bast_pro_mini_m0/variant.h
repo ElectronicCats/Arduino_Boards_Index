@@ -193,6 +193,7 @@ extern Uart Serial1;
 // Serial has no physical pins broken out, so it's not listed as HARDWARE port
 #define SERIAL_PORT_HARDWARE        Serial1
 #define SERIAL_PORT_HARDWARE_OPEN   Serial1
+#define Serial SerialUSB
 
 #endif /* _VARIANT_ARDUINO_ZERO_ */
 
