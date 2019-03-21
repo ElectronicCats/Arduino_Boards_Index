@@ -91,15 +91,6 @@ void digitalWrite( uint32_t ulPin, uint32_t ulVal )
     PORT->Group[port].PINCFG[pin].bit.PULLEN = ((ulVal == LOW) ? 0 : 1) ;
   }
 
-  // Handle reversed RGB LED pins
-  if ((ulPin == PIN_LED_RED) || (ulPin == PIN_LED_GREEN) || (ulPin == PIN_LED_BLUE))
-  {
-	if (ulVal)
-		ulVal = 0L;
-	else
-		ulVal = 1L;
-  }
-
   switch ( ulVal )
   {
     case LOW:
