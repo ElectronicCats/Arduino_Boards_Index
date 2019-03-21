@@ -78,14 +78,13 @@ extern "C"
 #define digitalPinToInterrupt(P)   ( g_APinDescription[P].ulExtInt )
 
 // Digital pins
-#define LED_RED              (5u)
-#define LED_GREEN            (6u)
-#define LED_BLUE             (7u)
-#define LED_BUILTIN			     (5u) // Introduced in Arduino 1.8, tied to red LED
+#define PIN_LED_13           (11u)
+#define PIN_LED              PIN_LED_13
+#define LED_BUILTIN          PIN_LED_13 // Introduced in Arduino 1.8, tied to red LED
 
-#define PIN_LED_RED          (5u)
-#define PIN_LED_GREEN        (6u)
-#define PIN_LED_YELLOW       (7u)
+#define PIN_LED_RED          (11u)
+#define PIN_LED_GREEN        (8u)
+#define PIN_LED_YELLOW       (4u)
 
 
 // Analog pins
