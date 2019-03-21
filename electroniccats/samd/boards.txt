@@ -102,9 +102,9 @@ electroniccats_meow_meow.bootloader.file=meow_meow/bootloader-meowmeow-v2.0.0.bi
 
 electroniccats_relay_board.name=Electronic Cats CatWAN Relay Board
 electroniccats_relay_board.vid.0=0x1209
-electroniccats_relay_board.pid.0=0xBAB4
+electroniccats_relay_board.pid.0=0xBAB5
 electroniccats_relay_board.vid.1=0x1209
-electroniccats_relay_board.pid.1=0xBAB4
+electroniccats_relay_board.pid.1=0xBAB5
 electroniccats_relay_board.upload.tool=bossac
 electroniccats_relay_board.upload.protocol=sam-ba
 electroniccats_relay_board.upload.maximum_size=262144
@@ -124,7 +124,7 @@ electroniccats_relay_board.build.openocdscript=openocd_scripts/arduino_zero.cfg
 electroniccats_relay_board.build.variant=catwan_relay_board
 electroniccats_relay_board.build.variant_system_lib=
 electroniccats_relay_board.build.vid=0x1209
-electroniccats_relay_board.build.pid=0xBAB4
+electroniccats_relay_board.build.pid=0xBAB5
 electroniccats_relay_board.bootloader.tool=openocd
 electroniccats_relay_board.bootloader.file=catwan_relay_board/bootloader-catwan_relay_board-v2.0.0.bin
 
