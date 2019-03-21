@@ -81,13 +81,12 @@ extern "C"
 #define LED_RED              (5u)
 #define LED_GREEN            (6u)
 #define LED_BLUE             (7u)
-#define LED_BUILTIN			 (5u) // Introduced in Arduino 1.8, tied to red LED
+#define LED_BUILTIN			     (5u) // Introduced in Arduino 1.8, tied to red LED
 
 #define PIN_LED_RED          (5u)
 #define PIN_LED_GREEN        (6u)
-#define PIN_LED_BLUE         (7u)
-#define PIN_POWER			 (8u)
-#define PIN_BUTTON			 (11u)
+#define PIN_LED_YELLOW       (7u)
+
 
 // Analog pins
 #define PIN_A0               (1ul)
@@ -102,14 +101,6 @@ static const uint8_t A2  = PIN_A2;
 static const uint8_t A3  = PIN_A3;
 static const uint8_t A4  = PIN_A4;
 #define ADC_RESOLUTION		10
-
-// Internal "pins"
-#define PIN_BATT			(ADC_INPUTCTRL_MUXPOS_SCALEDIOVCC_Val)
-#define PIN_1V				(ADC_INPUTCTRL_MUXPOS_BANDGAP_Val)
-#define PIN_TEMP			(ADC_INPUTCTRL_MUXPOS_TEMP_Val)
-
-#define analogReadBattVolts() ((analogRead(PIN_BATT)*4000)/((analogRead(PIN_1V)*100)/11))	// will be e.g. 199 for 1.99V
-#define analogReadVolts(pin) ((analogRead(pin)*1000)/((analogRead(PIN_1V)*100)/11))			// will be e.g. 199 for 1.99V
 
 // Serial (SERCOM0)
 #define PIN_SERIAL_RX       (3ul)
