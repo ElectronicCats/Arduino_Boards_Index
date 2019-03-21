@@ -154,4 +154,4 @@ electroniccats_citizen_board.build.variant_system_lib=
 electroniccats_citizen_board.build.vid=0x1209
 electroniccats_citizen_board.build.pid=0xBAB4
 electroniccats_citizen_board.bootloader.tool=openocd
-electroniccats_citizen_board.bootloader.file=catwan_citizen/bootloader-catwan_citizen-v2.0.0.bin
+electroniccats_citizen_board.bootloader.file=catwan_citizen/bootloader-catwan-citizen-v3.2.3.bin
