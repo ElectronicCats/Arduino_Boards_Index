@@ -53,9 +53,9 @@ extern "C"
  *----------------------------------------------------------------------------*/
 
 // Number of pins defined in PinDescription array
-#define PINS_COUNT           (13u)
-#define NUM_DIGITAL_PINS     (10u)
-#define NUM_ANALOG_INPUTS    (6u)
+#define PINS_COUNT           (10u)
+#define NUM_DIGITAL_PINS     (8u)
+#define NUM_ANALOG_INPUTS    (2u)
 #define NUM_ANALOG_OUTPUTS   (0u)
 
 #define digitalPinToPort(P)        ( &(PORT->Group[g_APinDescription[P].ulPort]) )
@@ -78,58 +78,33 @@ extern "C"
 #define digitalPinToInterrupt(P)   ( g_APinDescription[P].ulExtInt )
 
 // Digital pins
-#define PIN_LED_13           (11u)
+#define PIN_LED_13           (4u)
 #define PIN_LED              PIN_LED_13
 #define LED_BUILTIN          PIN_LED_13 // Introduced in Arduino 1.8, tied to red LED
 
-#define PIN_LED_RED          (11u)
-#define PIN_LED_GREEN        (8u)
-#define PIN_LED_YELLOW       (4u)
+#define PIN_LED_RED          (4u)
+#define PIN_LED_GREEN        (5u)
+#define PIN_LED_YELLOW       (6u)
 
 
 // Analog pins
-#define PIN_A0               (1ul)
-#define PIN_A1               (1ul)
-#define PIN_A2               (2ul)
-#define PIN_A3               (3ul)
-#define PIN_A4               (4ul)
+#define PIN_A0               (0ul)
+#define PIN_A1               (PIN_A0 + 1)
 
 static const uint8_t A0  = PIN_A0;
 static const uint8_t A1  = PIN_A1;
-static const uint8_t A2  = PIN_A2;
-static const uint8_t A3  = PIN_A3;
-static const uint8_t A4  = PIN_A4;
-#define ADC_RESOLUTION		10
 
-// Serial (SERCOM0)
-#define PIN_SERIAL_RX       (3ul)
-#define PIN_SERIAL_TX       (4ul)
-#define PAD_SERIAL_TX       (UART_TX_PAD_0)
-#define PAD_SERIAL_RX       (SERCOM_RX_PAD_1)
+#define ADC_RESOLUTION		12
 
 // SPI
-#define SPI_INTERFACES_COUNT 1
-#define PIN_SPI_MISO         (4u)
-#define PIN_SPI_MOSI         (1u)
-#define PIN_SPI_SCK          (2u)
-#define PIN_SPI_SS           (3u)
-#define PERIPH_SPI           sercom1
-// Pad Map:     0       1   2     3
-//          MOSI (TX)  SCK  SS  MOSI (RX)
-#define PAD_SPI_TX           SPI_PAD_0_SCK_1
-#define PAD_SPI_RX           SERCOM_RX_PAD_3
-
-static const uint8_t SS	  = PIN_SPI_SS;
-static const uint8_t MOSI = PIN_SPI_MOSI;
-static const uint8_t MISO = PIN_SPI_MISO;
-static const uint8_t SCK  = PIN_SPI_SCK;
+#define SPI_INTERFACES_COUNT 0
 
 // I2C (wire)
 #define WIRE_INTERFACES_COUNT 0
 
 // USB
-#define PIN_USB_DM          (9ul)
-#define PIN_USB_DP          (10ul)
+#define PIN_USB_DM          (7ul)
+#define PIN_USB_DP          (8ul)
 
 #ifdef __cplusplus
 }
@@ -148,7 +123,12 @@ static const uint8_t SCK  = PIN_SPI_SCK;
 extern SERCOM sercom0;
 extern SERCOM sercom1;
 
-extern Uart Serial0;
+// Serial (SERCOM1)
+extern Uart Serial1;
+#define PIN_SERIAL_RX       (9ul)
+#define PIN_SERIAL_TX       (10ul)
+#define PAD_SERIAL_TX       (UART_TX_PAD_0)
+#define PAD_SERIAL_RX       (SERCOM_RX_PAD_1)
 
 #endif
 
@@ -168,13 +148,12 @@ extern Uart Serial0;
 // SERIAL_PORT_HARDWARE_OPEN  Hardware serial ports which are open for use.  Their RX & TX
 //                            pins are NOT connected to anything by default.
 #define SERIAL_PORT_USBVIRTUAL      SerialUSB
-#define SERIAL_PORT_MONITOR         Serial0
+#define SERIAL_PORT_MONITOR         SerialUSB
 // Serial has no physical pins broken out, so it's not listed as HARDWARE port
-#define SERIAL_PORT_HARDWARE        Serial0
-#define SERIAL_PORT_HARDWARE_OPEN   Serial0
+#define SERIAL_PORT_HARDWARE        Serial1
+#define SERIAL_PORT_HARDWARE_OPEN   Serial1
 
 #define Serial                      SerialUSB
-#define SerialPins					Serial0
 
 #endif /* _VARIANT_SPARKFUN_LILYMINI_ */
 
