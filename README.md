@@ -18,6 +18,10 @@ This repository contains support for the following Electronic Cats Arduino-compa
 
 * [CatWAN Relay](https://electroniccats.com/producto/catwan-relay-board/)
 
+* [CatWAN Citizen](https://electroniccats.com)
+
+* [Bast Pro Mini M0](https://electroniccats.com)
+
 
 ### Installation Instructions
 
