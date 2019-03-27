@@ -116,13 +116,13 @@ static const uint8_t DAC0 = PIN_DAC0;
  */
 #define SPI_INTERFACES_COUNT 1 //SPI on pins 10,11,12,13 
 
-#define PIN_SPI_MISO         (17u)  // PA19 SERCOM3 PAD[3]
-#define PIN_SPI_MOSI         (18u)  // PA16 SERCOM3 PAD[0]
-#define PIN_SPI_SCK          (19u)  // PA17 SERCOM3 PAD[1]
-#define PIN_SPI_SS           (20u)  // PA18 SERCOM3 PAD[2]
+#define PIN_SPI_MISO         (12u)  // PA19 SERCOM3 PAD[3] - 12u
+#define PIN_SPI_MOSI         (11u)  // PA16 SERCOM3 PAD[0] - 11u 
+#define PIN_SPI_SCK          (13u)  // PA17 SERCOM3 PAD[1] - 13u
+#define PIN_SPI_SS           (10u)  // PA18 SERCOM3 PAD[2] - 10u
 #define PERIPH_SPI           sercom3
-#define PAD_SPI_TX           SPI_PAD_2_SCK_3
-#define PAD_SPI_RX           SERCOM_RX_PAD_0
+#define PAD_SPI_TX           SPI_PAD_0_SCK_1
+#define PAD_SPI_RX           SERCOM_RX_PAD_3
 
 static const uint8_t SS	  = PIN_SPI_SS ;	// only pin remaining (shrug)
 static const uint8_t MOSI = PIN_SPI_MOSI ;
