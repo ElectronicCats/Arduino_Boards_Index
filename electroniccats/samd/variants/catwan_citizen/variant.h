@@ -79,9 +79,11 @@ extern "C"
 #define PIN_LED_14           (14u)
 #define PIN_LED              PIN_LED_14
 #define LED_BUILTIN          PIN_LED_14
-
 #define RFM_RST              (12u)
 #define RFM_DIO0             (0u)
+#define RFM_DIO1             (23u)
+#define RFM_DIO2             (13u)
+#define RFM_DIO5             (11u)
 
 /* Analog pins*/
  
