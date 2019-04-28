@@ -37,9 +37,9 @@
 // ----
 
 // Number of pins defined in PinDescription array
-#define PINS_COUNT           (27u)
-#define NUM_DIGITAL_PINS     (13u)
-#define NUM_ANALOG_INPUTS    (11u)
+#define PINS_COUNT           (28u)
+#define NUM_DIGITAL_PINS     (23u)
+#define NUM_ANALOG_INPUTS    (5u)
 #define NUM_ANALOG_OUTPUTS   (1u)
 
 // Low-level pin register query macros
@@ -65,25 +65,18 @@
 
 // LEDs
 // ----
-#define PIN_LED_13  (13u)
+#define PIN_LED_13  (21u)
 #define PIN_LED     PIN_LED_13
 #define LED_BUILTIN PIN_LED
 
 /*
  * Analog pins
  */
-#define PIN_A0               (14ul)
+#define PIN_A0               (21ul)
 #define PIN_A1               (PIN_A0 + 1)
 #define PIN_A2               (PIN_A0 + 2)
 #define PIN_A3               (PIN_A0 + 3)
 #define PIN_A4               (PIN_A0 + 4)
-#define PIN_A5               (PIN_A0 + 5)
-#define PIN_A6               (PIN_A0 + 6)
-#define PIN_A7               (PIN_A0 + 7)
-#define PIN_A8               (PIN_A0 + 8)
-#define PIN_A9               (PIN_A0 + 9)
-#define PIN_A10              (PIN_A0 + 10)
-
 #define PIN_DAC0             (PIN_A0)
 
 
@@ -92,12 +85,6 @@ static const uint8_t A1  = PIN_A1;
 static const uint8_t A2  = PIN_A2;
 static const uint8_t A3  = PIN_A3;
 static const uint8_t A4  = PIN_A4;
-static const uint8_t A5  = PIN_A5;
-static const uint8_t A6  = PIN_A6 ;
-static const uint8_t A7  = PIN_A7 ;
-static const uint8_t A8  = PIN_A8 ;
-static const uint8_t A9  = PIN_A9 ;
-static const uint8_t A10  = PIN_A10 ;
 static const uint8_t DAC0 = PIN_DAC0;
 
 #define ADC_RESOLUTION		12
@@ -107,14 +94,14 @@ static const uint8_t DAC0 = PIN_DAC0;
  */
 #define SPI_INTERFACES_COUNT 1
 
-#define PIN_SPI_MISO         (8u)
-#define PIN_SPI_SCK          (9u)
-#define PIN_SPI_MOSI         (10u)
-#define PERIPH_SPI           sercom3
+#define PIN_SPI_MISO         (13u)
+#define PIN_SPI_SCK          (14u)
+#define PIN_SPI_MOSI         (15u)
+#define PERIPH_SPI           sercom4
 #define PAD_SPI_TX           SPI_PAD_2_SCK_3  // MOSI / SCK
 #define PAD_SPI_RX           SERCOM_RX_PAD_0  // MISO
 
-static const uint8_t SS	  = 7u ;
+static const uint8_t SS	  = 16u ;
 static const uint8_t MOSI = PIN_SPI_MOSI ;
 static const uint8_t MISO = PIN_SPI_MISO ;
 static const uint8_t SCK  = PIN_SPI_SCK ;
@@ -134,9 +121,9 @@ static const uint8_t SCL = PIN_WIRE_SCL;
 
 // USB
 // ---
-#define PIN_USB_HOST_ENABLE (25ul)
-#define PIN_USB_DM          (26ul)
-#define PIN_USB_DP          (27ul)
+#define PIN_USB_HOST_ENABLE (26ul)
+#define PIN_USB_DM          (27ul)
+#define PIN_USB_DP          (28ul)
 
 // I2S Interfaces
 // --------------
