@@ -182,4 +182,4 @@ electroniccats_makech.build.variant_system_lib=
 electroniccats_makech.build.vid=0x1209
 electroniccats_makech.build.pid=0xBAB6
 electroniccats_makech.bootloader.tool=openocd
-electroniccats_makech.bootloader.file=makech/bootloader-makech-v2.0.0.bin
+electroniccats_makech.bootloader.file=makech/bootloader-escornabot_makech-v3.3.0.bin
