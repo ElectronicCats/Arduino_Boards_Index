@@ -110,7 +110,7 @@ static const uint8_t MOSI = PIN_SPI_MOSI ;
 static const uint8_t MISO = PIN_SPI_MISO ;
 static const uint8_t SCK  = PIN_SPI_SCK ;
 
-#define SPIWIFI_SS       PIN_SPI_SS
+#define SPIWIFI_SS       SS
 #define SPIWIFI_ACK      NINA_ACK
 #define SPIWIFI_RESET    (NINA_RESETN)
 /*
