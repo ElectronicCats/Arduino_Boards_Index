@@ -62,6 +62,10 @@
  */
 // #define digitalPinToTimer(P)
 
+//NINA
+#define NINA_GPIO0  (18u)
+#define NINA_ACK    (19u)
+#define NINA_RESETN (20u)
 
 // LEDs
 // ----
@@ -106,6 +110,9 @@ static const uint8_t MOSI = PIN_SPI_MOSI ;
 static const uint8_t MISO = PIN_SPI_MISO ;
 static const uint8_t SCK  = PIN_SPI_SCK ;
 
+#define SPIWIFI_SS       PIN_SPI_SS
+#define SPIWIFI_ACK      NINA_ACK
+#define SPIWIFI_RESET    (NINA_RESETN)
 /*
  * Wire Interfaces
  */
@@ -175,3 +182,8 @@ extern Uart Serial1;
 
 // Alias Serial to SerialUSB
 #define Serial                      SerialUSB
+
+// Alias Serial1 to SerialNina (useful in libraries)
+#define SerialNina                   Serial1
+
+#define SPIWIFI                     SPI
