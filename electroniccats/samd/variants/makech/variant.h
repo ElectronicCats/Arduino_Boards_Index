@@ -112,7 +112,7 @@ static const uint8_t SCK  = PIN_SPI_SCK ;
 
 #define SPIWIFI_SS       SS
 #define SPIWIFI_ACK      NINA_ACK
-#define SPIWIFI_RESET    (NINA_RESETN)
+#define SPIWIFI_RESET    NINA_RESETN
 /*
  * Wire Interfaces
  */
