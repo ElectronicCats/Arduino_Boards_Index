@@ -186,4 +186,7 @@ extern Uart Serial1;
 // Alias Serial1 to SerialNina (useful in libraries)
 #define SerialNina                   Serial1
 
+#define SerialESP32     Serial1
+
 #define SPIWIFI                     SPI
+
