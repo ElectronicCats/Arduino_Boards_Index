@@ -2,6 +2,18 @@
 
 # Electronic Cats Arduino Boards
 
+**Instalation Instruction**
+
+By itself SAMD21 isn´t powerful, the suport with Arduino´s IDE is the special thing with. With only a clics pair, copies and pastes, you can add support for ARM cortex- M0+to your Arduino IDE...
+
+**Instalation soport for SAMD**
+
+You must intall the last Arduino´s SAMD boards (version 1.6.11 or later) 
+
+In the menu´s bar select tools -> Board -> Boards Manager -> Arduino SAMD Boards 32 bit M0.
+
+You should write Arduino SAMD in the serch bar and then you can see the board and do clic in install. 
+
 Board definitions for Electronic Cats-manufactured AVR, ARM, and ESP-based Arduino boards.
 Based on sparkfun Arduino_Boards to implement diferents cores.
 
