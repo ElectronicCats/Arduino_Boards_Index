@@ -210,4 +210,4 @@ electroniccats_nfc_copy_cat.build.variant_system_lib=
 electroniccats_nfc_copy_cat.build.vid=0x1209
 electroniccats_nfc_copy_cat.build.pid=0xBAB7
 electroniccats_nfc_copy_cat.bootloader.tool=openocd
-electroniccats_nfc_copy_cat.bootloader.file=bast_pro_mini_m0/bootloader-bast-pro-mini-m0-v2.0.0.bin
+electroniccats_nfc_copy_cat.bootloader.file=nfc_copy_cat/bootloader-nfc_copy_cat-v3.4.0.bin
