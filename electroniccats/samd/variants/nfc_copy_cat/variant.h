@@ -138,8 +138,8 @@ static const uint8_t SCK  = PIN_SPI_SCK ;
  * USB
  */
 #define PIN_USB_HOST_ENABLE (13ul)
-#define PIN_USB_DM          (14ul)
-#define PIN_USB_DP          (15ul)
+#define PIN_USB_DM          (24ul)
+#define PIN_USB_DP          (25ul)
 
 #ifdef __cplusplus
 }
