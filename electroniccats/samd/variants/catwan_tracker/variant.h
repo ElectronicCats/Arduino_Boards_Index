@@ -53,9 +53,9 @@ extern "C"
  *----------------------------------------------------------------------------*/
 
 // Number of pins defined in PinDescription array
-#define PINS_COUNT           (32u)
-#define NUM_DIGITAL_PINS     (32u)
-#define NUM_ANALOG_INPUTS    (4u)
+#define PINS_COUNT           (26u)
+#define NUM_DIGITAL_PINS     (21u)
+#define NUM_ANALOG_INPUTS    (5u)
 #define NUM_ANALOG_OUTPUTS   (1u)
 #define analogInputToDigitalPin(p)  ((p < 3u) ? (p) + PIN_A0 : -1)
 
@@ -110,10 +110,10 @@ static const uint8_t DAC0 = PIN_DAC0;
  */
 #define SPI_INTERFACES_COUNT 1
 
-#define PIN_SPI_MISO         (22u)  // PA22
-#define PIN_SPI_MOSI         (18u)  // PA18
-#define PIN_SPI_SCK          (19u)  // PA19
-#define PIN_SPI_SS           (17u)  // PA17
+#define PIN_SPI_MISO         (22u)
+#define PIN_SPI_MOSI         (18u)
+#define PIN_SPI_SCK          (19u)
+#define PIN_SPI_SS           (17u)
 #define PERIPH_SPI           sercom3
 #define PAD_SPI_TX           SPI_PAD_2_SCK_3
 #define PAD_SPI_RX           SERCOM_RX_PAD_0
