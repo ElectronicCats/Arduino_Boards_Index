@@ -18,8 +18,8 @@
 
 #pragma once
 
-// The definitions here needs a SAMD core >=1.6.6
-#define ARDUINO_SAMD_VARIANT_COMPLIANCE 10606
+// The definitions here needs a SAMD core >=1.6.10
+#define ARDUINO_SAMD_VARIANT_COMPLIANCE 10610
 
 
 #include <WVariant.h>
@@ -62,6 +62,10 @@
  */
 // #define digitalPinToTimer(P)
 
+//NINA
+#define NINA_GPIO0  (18u)
+#define NINA_ACK    (19u)
+#define NINA_RESETN (20u)
 
 // LEDs
 // ----
@@ -97,15 +101,19 @@ static const uint8_t DAC0 = PIN_DAC0;
 #define PIN_SPI_MISO         (13u)
 #define PIN_SPI_SCK          (14u)
 #define PIN_SPI_MOSI         (15u)
+#define PIN_SPI_SS           (16u)
 #define PERIPH_SPI           sercom4
-#define PAD_SPI_TX           SPI_PAD_2_SCK_3  // MOSI / SCK
-#define PAD_SPI_RX           SERCOM_RX_PAD_0  // MISO
+#define PAD_SPI_TX           SPI_PAD_0_SCK_3  // MOSI / SCK
+#define PAD_SPI_RX           SERCOM_RX_PAD_1  // MISO
 
-static const uint8_t SS	  = 16u ;
+static const uint8_t SS	  = PIN_SPI_SS;
 static const uint8_t MOSI = PIN_SPI_MOSI ;
 static const uint8_t MISO = PIN_SPI_MISO ;
 static const uint8_t SCK  = PIN_SPI_SCK ;
 
+#define SPIWIFI_SS       PIN_SPI_SS
+#define SPIWIFI_ACK      NINA_ACK
+#define SPIWIFI_RESET    NINA_RESETN
 /*
  * Wire Interfaces
  */
@@ -114,8 +122,8 @@ static const uint8_t SCK  = PIN_SPI_SCK ;
 // "external" public i2c interface
 #define PIN_WIRE_SDA         (11u)
 #define PIN_WIRE_SCL         (12u)
-#define PERIPH_WIRE          sercom1
-#define WIRE_IT_HANDLER      SERCOM1_Handler
+#define PERIPH_WIRE          sercom2
+#define WIRE_IT_HANDLER      SERCOM2_Handler
 static const uint8_t SDA = PIN_WIRE_SDA;
 static const uint8_t SCL = PIN_WIRE_SCL;
 
@@ -175,3 +183,11 @@ extern Uart Serial1;
 
 // Alias Serial to SerialUSB
 #define Serial                      SerialUSB
+
+// Alias Serial1 to SerialNina (useful in libraries)
+#define SerialNina                   Serial1
+
+#define SerialESP32                  Serial1
+
+#define SPIWIFI                      SPI
+

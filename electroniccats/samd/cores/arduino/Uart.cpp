@@ -16,9 +16,9 @@
   Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 */
 
-#include "Uart.h"
 #include "Arduino.h"
 #include "wiring_private.h"
+#include "Uart.h"
 
 #define NO_RTS_PIN 255
 #define NO_CTS_PIN 255
@@ -90,6 +90,13 @@ void Uart::flush()
 
 void Uart::IrqHandler()
 {
+  if (sercom->isFrameErrorUART()) {
+    // frame error, next byte is invalid so read and discard it
+    sercom->readDataUART();
+
+    sercom->clearFrameErrorUART();
+  }
+
   if (sercom->availableDataUART()) {
     rxBuffer.store_char(sercom->readDataUART());
 
@@ -114,7 +121,6 @@ void Uart::IrqHandler()
   if (sercom->isUARTError()) {
     sercom->acknowledgeUARTError();
     // TODO: if (sercom->isBufferOverflowErrorUART()) ....
-    // TODO: if (sercom->isFrameErrorUART()) ....
     // TODO: if (sercom->isParityErrorUART()) ....
     sercom->clearStatusUART();
   }
