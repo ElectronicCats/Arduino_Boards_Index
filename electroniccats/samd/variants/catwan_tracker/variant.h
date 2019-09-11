@@ -77,7 +77,7 @@ extern "C"
 // #define digitalPinToTimer(P)
 
 // LEDs
-#define PIN_LED_0           (0u)
+#define PIN_LED_13           (0u)
 #define PIN_LED              PIN_LED_0
 #define LED_BUILTIN          PIN_LED_0
 
