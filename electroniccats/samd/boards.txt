@@ -186,9 +186,9 @@ electroniccats_makech.bootloader.file=makech/bootloader-escornabot_makech-v3.3.0
 
 electroniccats_tracker.name=Electronic Cats CatWAN tracker
 electroniccats_tracker.vid.0=0x1209
-electroniccats_tracker.pid.0=0xBAB6
+electroniccats_tracker.pid.0=0xBAB8
 electroniccats_tracker.vid.1=0x1209
-electroniccats_tracker.pid.1=0xBAB6
+electroniccats_tracker.pid.1=0xBAB8
 electroniccats_tracker.upload.tool=bossac
 electroniccats_tracker.upload.protocol=sam-ba
 electroniccats_tracker.upload.maximum_size=253952
