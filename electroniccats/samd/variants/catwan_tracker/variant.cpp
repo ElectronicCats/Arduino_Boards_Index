@@ -85,15 +85,14 @@ const void* g_apTCInstances[TCC_INST_NUM+TC_INST_NUM]={ TCC0, TCC1, TCC2, TC3, T
 
 // Multi-serial objects instantiation
 SERCOM sercom0( SERCOM0 ) ;
-SERCOM sercom1( SERCOM1 ) __attribute__((weak));
+SERCOM sercom1( SERCOM1 ) ;
 SERCOM sercom2( SERCOM2 ) ;
 SERCOM sercom3( SERCOM3 ) ;
 
-Uart Serial( &sercom2, PIN_SERIAL1_RX, PIN_SERIAL1_TX, PAD_SERIAL1_RX, PAD_SERIAL1_TX ) ;
+Uart Serial1( &sercom2, PIN_SERIAL1_RX, PIN_SERIAL1_TX, PAD_SERIAL1_RX, PAD_SERIAL1_TX ) ;
 
-void SERCOM2_Handler(void) __attribute__((weak));
 void SERCOM2_Handler()
 {
-  Serial.IrqHandler();
+  Serial1.IrqHandler();
 }
 
