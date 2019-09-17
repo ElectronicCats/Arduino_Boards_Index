@@ -37,22 +37,41 @@ This repository contains support for the following Electronic Cats Arduino-compa
 
 ### Installation Instructions
 
+**Install SAMD soport**
+
+You must install the boards SAMD of Arduino(vertions 1.6.11 o posterior) 
+
+In the menú bar selec tools --> boards --> Board Manager --> Arduino SAMD Boards 32 bit M0.
+
+In the search bar write  "SAMD" en then you can see the boards, do clic in install and wait to finish to installe.
+
+![](https://cdn-learn.adafruit.com/assets/assets/000/028/792/original/adafruit_products_arduinosamd162.png)
+
+**Install "Electronic Cats" soport**
+
 To add board support for our products, start Arduino and open the Preferences window (**File** > **Preferences**). Now copy and paste the following URL into the 'Additional Boards Manager URLs' input field:
 
 	https://electroniccats.github.io/Arduino_Boards_Index/package_electroniccats_index.json
 
 
-If there is already an URL from another manufacturer in that field, click the button at the right end of the field. This will open an editing window allowing you to paste the above URL onto a new line.
+- If there is already an URL from another manufacturer in that field, click the button at the right end of the field. This will open an editing window allowing you to paste the above URL onto a new line.
 
+- Press the "OK" button.
+- Open the "boards manager" that is in tools --> Board --> board manager.
+- Now write "Electronic Cats" (without quotes) in the search bar.
+- Click in install, jus wait to finish to install and only close the window. 
 
-### SAMD Installation Instructions
+https://github.com/ElectronicCats/MeowMeow/wiki/assets/Paso1_IDE.png
 
-Open the Boards Manager window by selecting **Tools** > **Board**, scroll to the top of the board list, and select **Boards Manager**. Now type "Electronic Cats" (without quotes) into the "filter your search" field at the top of the window.
- 
+- In tools --> Boards, scroll to down in the board´s list you can see the Electronic Cat´s boards.
+
+https://github.com/ElectronicCats/MeowMeow/wiki/assets/Paso2_IDE.png
+
 
 ### Notes
 * Information on compiling and programming the bootloaders can be found in the bootloaders directory.
 
 **Have fun!**<br>
 \-Your friends at Electronic Cats
+
 
