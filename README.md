@@ -2,11 +2,11 @@
 
 # Electronic Cats Arduino Boards
 
-**Instalation Instruction**
+**Installation Instruction**
 
 By itself SAMD21 isn´t powerful, the suport with Arduino´s IDE is the special thing with. With only a clics pair, copies and pastes, you can add support for ARM cortex- M0+to your Arduino IDE...
 
-**Instalation soport for SAMD**
+**Installation soport for SAMD**
 
 You must intall the last Arduino´s SAMD boards (version 1.6.11 or later) 
 
