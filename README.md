@@ -61,11 +61,11 @@ To add board support for our products, start Arduino and open the Preferences wi
 - Now write "Electronic Cats" (without quotes) in the search bar.
 - Click in install, jus wait to finish to install and only close the window. 
 
-https://github.com/ElectronicCats/MeowMeow/wiki/assets/Paso1_IDE.png
+![](https://github.com/ElectronicCats/MeowMeow/wiki/assets/Paso1_IDE.png)
 
 - In tools --> Boards, scroll to down in the board´s list you can see the Electronic Cat´s boards.
 
-https://github.com/ElectronicCats/MeowMeow/wiki/assets/Paso2_IDE.png
+![](https://github.com/ElectronicCats/MeowMeow/wiki/assets/Paso2_IDE.png)
 
 
 ### Notes
