@@ -184,7 +184,7 @@ electroniccats_makech.build.pid=0xBAB6
 electroniccats_makech.bootloader.tool=openocd
 electroniccats_makech.bootloader.file=makech/bootloader-escornabot_makech-v3.3.0.bin
 
-electroniccats_nfc_copy_cat.name=Electronic Cats NCF Copy Cat
+electroniccats_nfc_copy_cat.name=Electronic Cats NFC Copy Cat
 electroniccats_nfc_copy_cat.vid.0=0x1209
 electroniccats_nfc_copy_cat.pid.0=0xBAB7
 electroniccats_nfc_copy_cat.vid.1=0x1209
