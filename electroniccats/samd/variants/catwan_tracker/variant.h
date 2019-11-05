@@ -53,10 +53,10 @@ extern "C"
  *----------------------------------------------------------------------------*/
 
 // Number of pins defined in PinDescription array
-#define PINS_COUNT           (26u)
-#define NUM_DIGITAL_PINS     (21u)
-#define NUM_ANALOG_INPUTS    (5u)
-#define NUM_ANALOG_OUTPUTS   (1u)
+#define PINS_COUNT           (32u)
+#define NUM_DIGITAL_PINS     (32u)
+#define NUM_ANALOG_INPUTS    (1u)
+#define NUM_ANALOG_OUTPUTS   (0u)
 #define analogInputToDigitalPin(p)  ((p < 3u) ? (p) + PIN_A0 : -1)
 
 #define digitalPinToPort(P)        ( &(PORT->Group[g_APinDescription[P].ulPort]) )
@@ -80,18 +80,16 @@ extern "C"
 #define PIN_LED_13           (0u)
 #define PIN_LED              PIN_LED_13
 #define LED_BUILTIN          PIN_LED_13
+#define RFM_RST              (10u)
+#define RFM_DIO0             (4u)
+#define RFM_DIO1             (23u)
+#define RFM_DIO2             (27u)
+#define RFM_DIO5             (15u)
 
-/* Analog pins*/
- 
+/* Analog pins*/ 
 #define PIN_A0               (2ul)
-#define PIN_A1               (4ul)
-#define PIN_A2               (5ul)
-#define PIN_DAC0             (2ul)
 
 static const uint8_t A0  = PIN_A0;
-static const uint8_t A1  = PIN_A1;
-static const uint8_t A2  = PIN_A2;
-static const uint8_t DAC0 = PIN_DAC0;
 
 #define ADC_RESOLUTION		12
 
@@ -99,11 +97,11 @@ static const uint8_t DAC0 = PIN_DAC0;
  * Serial interfaces
  */
 
-// Serial1 (sercom 2)
+// Serial1 (sercom 0)
 #define PIN_SERIAL1_RX       (10ul)
-#define PAD_SERIAL1_RX       (SERCOM_RX_PAD_3)
+#define PAD_SERIAL1_RX       (SERCOM_RX_PAD_2)
 #define PIN_SERIAL1_TX       (11ul)
-#define PAD_SERIAL1_TX       (UART_TX_PAD_2)
+#define PAD_SERIAL1_TX       (UART_TX_PAD_0) // Fix Me! PAD0 or PAD3
 
 /*
  * SPI Interfaces
@@ -153,7 +151,7 @@ extern SERCOM sercom1;
 extern SERCOM sercom2;
 extern SERCOM sercom3;
 
-extern Uart Serial;
+extern Uart Serial1;
 
 #endif
 
