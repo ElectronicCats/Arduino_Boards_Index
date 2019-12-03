@@ -12,7 +12,7 @@
         {
           "name": "Electronic Cats SAMD Boards",
           "architecture": "samd",
-          "version": "1.2.2",
+          "version": "1.2.3",
           "category": "Contributed",
           "url": "https://github.com/ElectronicCats/Arduino_Boards_Index/raw/gh-pages/IDE_Board_Manager/electroniccats-samd-v1.2.3.tar.bz2",
           "archiveFileName": "electroniccats-samd-v1.2.3.tar.bz2",
