@@ -1,0 +1,168 @@
+# Copyright (c) 2014-2017 Arduino LLC.  All right reserved.
+#
+# This library is free software; you can redistribute it and/or
+# modify it under the terms of the GNU Lesser General Public
+# License as published by the Free Software Foundation; either
+# version 2.1 of the License, or (at your option) any later version.
+#
+# This library is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+# See the GNU Lesser General Public License for more details.
+#
+# You should have received a copy of the GNU Lesser General Public
+# License along with this library; if not, write to the Free Software
+# Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+
+menu.cpu=Microcontroller
+menu.clock=Clock Source
+menu.usb=USB Config
+menu.serial=Serial Config
+menu.bootloader=Bootloader Size
+menu.timer=Timer PWM Frequency
+menu.float=Floating Point
+menu.config=Build Options
+
+
+# Magspoof v3 based on D11C14A (SOIC-14)
+magspoof.name= Magspoof V3
+magspoof.vid.0=0x1209
+magspoof.pid.0=0xBAB5
+magspoof.vid.1=0x1209
+magspoof.pid.1=0xBAB5
+magspoof.vid.2=0x1209
+magspoof.pid.2=0xBAB5
+magspoof.vid.3=0x1209
+magspoof.pid.3=0xBAB5
+magspoof.vid.4=0x1209
+magspoof.pid.4=0xBAB5
+magspoof.vid.5=0x1209
+magspoof.pid.5=0xBAB5
+magspoof.build.mcu=cortex-m0plus
+magspoof.build.mathlib=arm_cortexM0l_math
+magspoof.build.f_cpu=48000000L
+magspoof.build.usb_product="Magspoof V3"
+magspoof.build.usb_manufacturer="Electronic Cats"
+magspoof.build.board=SAMD_ZERO
+magspoof.build.core=arduino
+magspoof.build.variant=magspoofv3
+magspoof.build.variant_system_lib=
+magspoof.build.vid=0x1209
+magspoof.upload.protocol=sam-ba
+magspoof.bootloader.tool=arduino:openocd
+magspoof.menu.float.default=Print & String use auto-promoted doubles only
+magspoof.menu.float.default.build.floatconfig=FLOAT_BOTH_DOUBLES_ONLY
+magspoof.menu.float.print=Print uses separate singles and doubles
+magspoof.menu.float.print.build.floatconfig=FLOAT_PRINT_SINGLES_DOUBLES
+magspoof.menu.float.string=String uses separate singles and doubles
+magspoof.menu.float.string.build.floatconfig=FLOAT_STRING_SINGLES_DOUBLES
+magspoof.menu.float.both=Print & String use separate singles and doubles
+magspoof.menu.float.both.build.floatconfig=FLOAT_BOTH_SINGLES_DOUBLES
+magspoof.menu.config.disabled=config.h disabled
+magspoof.menu.config.disabled.build.buildconfig=CONFIG_H_DISABLED
+magspoof.menu.config.enabled=config.h enabled (mostly code size reductions)
+magspoof.menu.config.enabled.build.buildconfig=CONFIG_H_ENABLED
+magspoof.menu.clock.internal_usb=INTERNAL_USB_CALIBRATED_OSCILLATOR
+magspoof.menu.clock.internal_usb.build.clockconfig=CLOCKCONFIG_INTERNAL_USB
+magspoof.menu.clock.internal=INTERNAL_OSCILLATOR
+magspoof.menu.clock.internal.build.clockconfig=CLOCKCONFIG_INTERNAL
+magspoof.menu.clock.crystal_32k=32KHZ_CRYSTAL
+magspoof.menu.clock.crystal_32k.build.clockconfig=CLOCKCONFIG_32768HZ_CRYSTAL
+magspoof.menu.clock.crystal_hs=HIGH_SPEED_CRYSTAL
+magspoof.menu.clock.crystal_hs.build.clockconfig=CLOCKCONFIG_HS_CRYSTAL
+magspoof.menu.timer.timer_732Hz=732.4Hz (16-bit)
+magspoof.menu.timer.timer_732Hz.build.timerconfig=TIMER_732Hz
+magspoof.menu.timer.timer_366Hz=366.2Hz (16-bit)
+magspoof.menu.timer.timer_366Hz.build.timerconfig=TIMER_366Hz
+magspoof.menu.timer.timer_244Hz=244.1Hz (16-bit)
+magspoof.menu.timer.timer_244Hz.build.timerconfig=TIMER_244Hz
+magspoof.menu.timer.timer_183Hz=183.1Hz (16-bit)
+magspoof.menu.timer.timer_183Hz.build.timerconfig=TIMER_183Hz
+magspoof.menu.timer.timer_146Hz=146.5Hz (16-bit)
+magspoof.menu.timer.timer_146Hz.build.timerconfig=TIMER_146Hz
+magspoof.menu.timer.timer_122Hz=122.1Hz (16-bit)
+magspoof.menu.timer.timer_122Hz.build.timerconfig=TIMER_122Hz
+magspoof.menu.timer.timer_105Hz=104.6Hz (16-bit)
+magspoof.menu.timer.timer_105Hz.build.timerconfig=TIMER_105Hz
+magspoof.menu.timer.timer_81Hz=81.38Hz (16-bit)
+magspoof.menu.timer.timer_81Hz.build.timerconfig=TIMER_81Hz
+magspoof.menu.timer.timer_61Hz=61.04Hz (16-bit)
+magspoof.menu.timer.timer_61Hz.build.timerconfig=TIMER_61Hz
+magspoof.menu.timer.timer_31Hz=30.52Hz (16-bit)
+magspoof.menu.timer.timer_31Hz.build.timerconfig=TIMER_31Hz
+magspoof.menu.timer.timer_187500Hz=187500Hz (8-bit)
+magspoof.menu.timer.timer_187500Hz.build.timerconfig=TIMER_187500Hz
+magspoof.menu.timer.timer_93750Hz=93750Hz (8-bit)
+magspoof.menu.timer.timer_93750Hz.build.timerconfig=TIMER_93750Hz
+magspoof.menu.timer.timer_62500Hz=62500Hz (8-bit)
+magspoof.menu.timer.timer_62500Hz.build.timerconfig=TIMER_62500Hz
+magspoof.menu.timer.timer_37500Hz=37500Hz (8-bit)
+magspoof.menu.timer.timer_37500Hz.build.timerconfig=TIMER_37500Hz
+magspoof.menu.timer.timer_20833Hz=20833Hz (8-bit)
+magspoof.menu.timer.timer_20833Hz.build.timerconfig=TIMER_20833Hz
+magspoof.menu.timer.timer_12500Hz=12500Hz (8-bit)
+magspoof.menu.timer.timer_12500Hz.build.timerconfig=TIMER_12500Hz
+magspoof.menu.timer.timer_7500Hz=7500Hz (8-bit)
+magspoof.menu.timer.timer_7500Hz.build.timerconfig=TIMER_7500Hz
+magspoof.menu.timer.timer_4166Hz=4166Hz (8-bit)
+magspoof.menu.timer.timer_4166Hz.build.timerconfig=TIMER_4166Hz
+magspoof.menu.timer.timer_2930Hz=2930Hz (8-bit)
+magspoof.menu.timer.timer_2930Hz.build.timerconfig=TIMER_2930Hz
+magspoof.menu.timer.timer_1465Hz=1465Hz (8-bit, 16-bit for D51)
+magspoof.menu.timer.timer_1465Hz.build.timerconfig=TIMER_1465Hz
+magspoof.build.extra_flags=-D__SAMD11C14A__ {build.usb_flags} -DARM_MATH_CM0PLUS
+magspoof.build.ldscript=flash_16KB.ld
+magspoof.build.openocdscript=openocd_scripts/SAMD11C14A.cfg
+magspoof.bootloader.file=zero/binaries/sam_ba_magspoof_SAMD11C14A.bin
+magspoof.menu.bootloader.4kb=4KB_BOOTLOADER
+magspoof.menu.bootloader.4kb.build.bootloader_size=__4KB_BOOTLOADER__
+magspoof.menu.bootloader.4kb.build.ldscript_path=linker_scripts/gcc/4KB_Bootloader
+magspoof.menu.bootloader.4kb.upload.tool=MattairTech_Arduino:bossac
+magspoof.menu.bootloader.4kb.upload.use_1200bps_touch=true
+magspoof.menu.bootloader.4kb.upload.wait_for_upload_port=true
+magspoof.menu.bootloader.4kb.upload.native_usb=true
+magspoof.menu.bootloader.4kb.upload.maximum_size=12288
+magspoof.menu.bootloader.0kb=NO_BOOTLOADER
+magspoof.menu.bootloader.0kb.build.bootloader_size=__NO_BOOTLOADER__
+magspoof.menu.bootloader.0kb.build.ldscript_path=linker_scripts/gcc/No_Bootloader
+magspoof.menu.bootloader.0kb.upload.tool=arduino:openocd
+magspoof.menu.bootloader.0kb.upload.use_1200bps_touch=false
+magspoof.menu.bootloader.0kb.upload.wait_for_upload_port=false
+magspoof.menu.bootloader.0kb.upload.native_usb=false
+magspoof.menu.bootloader.0kb.upload.maximum_size=16384
+magspoof.menu.serial.one_uart=ONE_UART_ONE_WIRE_NO_SPI
+magspoof.menu.serial.one_uart.build.serialcom_uart=ONE_UART
+magspoof.menu.serial.one_uart.build.serialcom_wire=ONE_WIRE
+magspoof.menu.serial.one_uart.build.serialcom_spi=NO_SPI
+magspoof.menu.serial.two_uart=TWO_UART_NO_WIRE_NO_SPI
+magspoof.menu.serial.two_uart.build.serialcom_uart=TWO_UART
+magspoof.menu.serial.two_uart.build.serialcom_wire=NO_WIRE
+magspoof.menu.serial.two_uart.build.serialcom_spi=NO_SPI
+magspoof.menu.serial.one_uart_no_wire_one_spi=ONE_UART_NO_WIRE_ONE_SPI
+magspoof.menu.serial.one_uart_no_wire_one_spi.build.serialcom_uart=ONE_UART
+magspoof.menu.serial.one_uart_no_wire_one_spi.build.serialcom_wire=NO_WIRE
+magspoof.menu.serial.one_uart_no_wire_one_spi.build.serialcom_spi=ONE_SPI
+magspoof.menu.serial.no_uart=NO_UART_ONE_WIRE_ONE_SPI
+magspoof.menu.serial.no_uart.build.serialcom_uart=NO_UART
+magspoof.menu.serial.no_uart.build.serialcom_wire=ONE_WIRE
+magspoof.menu.serial.no_uart.build.serialcom_spi=ONE_SPI
+magspoof.menu.usb.cdc=CDC_ONLY
+magspoof.menu.usb.cdc.build.usbcom=CDC_ONLY
+magspoof.menu.usb.cdc.build.pid=0xBAB5
+magspoof.menu.usb.cdc_hid=CDC_HID
+magspoof.menu.usb.cdc_hid.build.usbcom=CDC_HID
+magspoof.menu.usb.cdc_hid.build.pid=0xBAB5
+magspoof.menu.usb.withcdc=WITH_CDC
+magspoof.menu.usb.withcdc.build.usbcom=WITH_CDC
+magspoof.menu.usb.withcdc.build.pid=0xBAB5
+magspoof.menu.usb.hid=HID_ONLY
+magspoof.menu.usb.hid.build.usbcom=HID_ONLY
+magspoof.menu.usb.hid.build.pid=0xBAB5
+magspoof.menu.usb.nocdc=WITHOUT_CDC
+magspoof.menu.usb.nocdc.build.usbcom=WITHOUT_CDC
+magspoof.menu.usb.nocdc.build.pid=0xBAB5
+magspoof.menu.usb.none=USB_DISABLED
+magspoof.menu.usb.none.build.usbcom=USB_DISABLED
+magspoof.menu.usb.none.build.pid=0xBAB5
+
+
