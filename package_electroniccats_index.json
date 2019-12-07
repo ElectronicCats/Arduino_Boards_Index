@@ -11,7 +11,7 @@
       "platforms": [
         {
           "name": "Electronic Cats SAM D|L|C Advanced Boards",
-          "architecture": "samd",
+          "architecture": "SAMD|L|C",
           "version": "1.0.0",
           "category": "Contributed",
           "url": "https://github.com/ElectronicCats/Arduino_Boards_Index/raw/gh-pages/IDE_Board_Manager/electroniccats-samd_advanced-v1.0.0.tar.bz2",
@@ -35,7 +35,7 @@
             {
               "packager": "MattairTech_Arduino",
               "name": "bossac",
-              "version": "1.5-arduino-mattairtech-1"
+              "version": "1.7.0-mattairtech-3"
             },
             {
               "packager": "arduino",
