@@ -257,7 +257,7 @@ electroniccats_bastwan.menu.cpu.featherbast.build.usb_product="CatWAN Feather Ba
 electroniccats_bastwan.menu.cpu.featherbast.build.extra_flags=-D__SAML21J18B__ {build.usb_flags} -DARM_MATH_CM0PLUS
 electroniccats_bastwan.menu.cpu.featherbast.build.ldscript=flash_256KB.ld
 electroniccats_bastwan.menu.cpu.featherbast.build.openocdscript=openocd_scripts/SAML21J18B.cfg
-electroniccats_bastwan.menu.cpu.featherbast.bootloader.file=zero/binaries/sam_ba_Xeno_Mini_SAML21G18B.bin
+electroniccats_bastwan.menu.cpu.featherbast.bootloader.file=bastwan/bootloader-bast-wan-v3.4.0.bin
 
 electroniccats_bastwan.menu.bootloader.8kb=8KB_BOOTLOADER
 electroniccats_bastwan.menu.bootloader.8kb.build.bootloader_size=__8KB_BOOTLOADER__
