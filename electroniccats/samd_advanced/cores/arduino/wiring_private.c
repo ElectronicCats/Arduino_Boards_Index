@@ -28,7 +28,7 @@ static __inline__ void syncDAC() __attribute__((always_inline, unused));
 static void syncDAC() {
 #if (SAMD21 || SAMD11)
   while ( DAC->STATUS.bit.SYNCBUSY == 1 );
-#elif (SAML21 || SAMC21 || SAMD51)
+#elif (SAML21 || SAMR34 || SAMC21 || SAMD51)
   while ( DAC->SYNCBUSY.reg & DAC_SYNCBUSY_MASK );
 #endif
 }
@@ -156,7 +156,7 @@ int pinPeripheral( uint32_t ulPin, uint32_t ulPeripheral )
       peripheral = PER_AC_CLK;
     break ;
 
-#if (SAML21 || SAMD51)
+#if (SAML21 || SAMR34 || SAMD51)
     case PIO_CCL:
       peripheral = PER_CCL;
     break ;
@@ -208,7 +208,7 @@ int pinPeripheral( uint32_t ulPin, uint32_t ulPeripheral )
       //DAC->CTRLB.bit.EOEN = 0x00; // The DAC output is turned off.
       syncDAC();
     }
-#elif (SAML21 || SAMD51)
+#elif (SAML21 || SAMR34 || SAMD51)
   if ( ((pinPort == 0) && (pinNum == 2 || pinNum == 5)) && ulPeripheral != PIO_ANALOG_DAC )
   {
     uint8_t DACNumber = 0x00;

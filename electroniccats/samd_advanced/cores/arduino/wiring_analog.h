@@ -42,7 +42,7 @@ typedef enum _eAnalogReference
   AR_EXTERNAL_REFA = 3,
   AR_EXTERNAL_REFB = 4,
   AR_DEFAULT = 5,	      // Vcc, by using 1/2 gain on each input
-#elif (SAML21)
+#elif (SAML21 || SAMR34)
   AR_INTREF = 0,              // This has the same effect as AR_INTREF_1V0
   AR_INTERNAL_INTVCC0 = 1,    // Vcc*(1/1.6)
   AR_INTERNAL_INTVCC1 = 2,    // Vcc/2

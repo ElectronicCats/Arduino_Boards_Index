@@ -63,7 +63,7 @@ static uint64_t divide64(uint64_t n, uint64_t d)
 */
 void SERCOM::initUART(SercomUartMode mode, SercomUartSampleRate sampleRate, uint32_t baudrate)
 {
-#if (SAML21)
+#if (SAML21 || SAMR34)
   // On the SAML21, SERCOM5 is on PD0, which is a low power domain on a different bridge than the other SERCOMs.
   // SERCOM5 does not support SAMPLE_RATE_x8 or SAMPLE_RATE_x3.
   if (sercom == SERCOM5) {
@@ -833,7 +833,7 @@ void SERCOM::initClockNVIC( void )
   GCLK->CLKCTRL.reg = ( GCLK_CLKCTRL_ID( clockId ) | GCLK_CLKCTRL_GEN_GCLK0 | GCLK_CLKCTRL_CLKEN );
   SercomClock = SystemCoreClock;
   while ( GCLK->STATUS.reg & GCLK_STATUS_SYNCBUSY );
-#elif (SAML21 || SAMC21)
+#elif (SAML21 || SAMR34 || SAMC21)
   GCLK->PCHCTRL[clockId].reg = ( GCLK_PCHCTRL_CHEN | GCLK_PCHCTRL_GEN_GCLK0 );
   SercomClock = SystemCoreClock;
   while ( (GCLK->PCHCTRL[clockId].reg & GCLK_PCHCTRL_CHEN) != GCLK_PCHCTRL_CHEN );      // wait for sync

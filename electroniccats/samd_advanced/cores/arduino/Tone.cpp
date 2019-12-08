@@ -23,7 +23,7 @@
 
 #if (SAMD21 || SAMD11)
 #define WAIT_TC16_REGS_SYNC(x) while(x->COUNT16.STATUS.bit.SYNCBUSY);
-#elif (SAML21 || SAMC21 || SAMD51)
+#elif (SAML21 || SAMR34 || SAMC21 || SAMD51)
 #define WAIT_TC16_REGS_SYNC(x) while(x->COUNT16.SYNCBUSY.reg);
 #else
 #error "Tone.cpp: Unsupported chip"
@@ -59,7 +59,7 @@ void TC2_Handler (void) __attribute__ ((alias("Tone_Handler")));
 #define TONE_TC_IRQn    TC1_IRQn
 void TC1_Handler (void) __attribute__ ((alias("Tone_Handler")));
 /* TC5 does not exist on the SAML or SAMC. Using TC1 instead. */
-#elif (SAML21 || SAMC21 || SAMD51)
+#elif (SAML21 || SAMR34 || SAMC21 || SAMD51)
 #define TONE_TC         TC1
 #define TONE_TC_IRQn    TC1_IRQn
 void TC1_Handler (void) __attribute__ ((alias("Tone_Handler")));
@@ -106,7 +106,7 @@ void tone (uint32_t outputPin, uint32_t frequency, uint32_t duration)
 #if (SAMD11)
     GCLK->CLKCTRL.reg = (uint16_t) ( GCLK_CLKCTRL_CLKEN | GCLK_CLKCTRL_GEN_GCLK0 | GCLK_CLKCTRL_ID( GCM_TC1_TC2 ));
     while ( GCLK->STATUS.reg & GCLK_STATUS_SYNCBUSY );
-#elif (SAML21 || SAMC21 || SAMD51)
+#elif (SAML21 || SAMR34 || SAMC21 || SAMD51)
   #if (SAMD51)
       GCLK->PCHCTRL[GCM_TC0_TC1].reg = (GCLK_PCHCTRL_CHEN | GCLK_PCHCTRL_GEN_GCLK4);  // use 48MHz clock from GCLK4, which was setup in startup.c
   #else
@@ -174,7 +174,7 @@ void tone (uint32_t outputPin, uint32_t frequency, uint32_t duration)
   TONE_TC->COUNT16.CTRLA.reg |= tmpReg;
   WAIT_TC16_REGS_SYNC(TONE_TC)
 
-#if (SAML21 || SAMC21 || SAMD51)
+#if (SAML21 || SAMR34 || SAMC21 || SAMD51)
   TONE_TC->COUNT16.WAVE.reg = TC_WAVE_WAVEGEN_MFRQ;
   WAIT_TC16_REGS_SYNC(TONE_TC)
 #endif

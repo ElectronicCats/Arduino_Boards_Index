@@ -95,7 +95,7 @@ extern const void* g_apTCInstances[TCC_INST_NUM+TC_INST_NUM] ;
 #define GetTCChannelNumber( x ) ( (x) & 0x07 )
 #if (SAMD21 || SAMD11)
 #define GetTC( x ) ( g_apTCInstances[GetTCNumber(x)] )
-#elif (SAML21)
+#elif (SAML21 || SAMR34)
 #define GetTC( x ) ( GetTCType(x) == 0 ? g_apTCInstances[GetTCNumber(x)] : (GetTCNumber(x) == 4 ? TC4 : g_apTCInstances[GetTCNumber(x) + TCC_INST_NUM]) )
 #elif (SAMC21 || SAMD51)
 #define GetTC( x ) ( GetTCType(x) == 0 ? g_apTCInstances[GetTCNumber(x)] : g_apTCInstances[GetTCNumber(x) + TCC_INST_NUM] )
@@ -301,7 +301,7 @@ typedef enum _EPioPeripheral
 	PER_SERCOM=2,         /* The pin is controlled by the associated signal of peripheral C. */
 	PER_SERCOM_ALT=3,     /* The pin is controlled by the associated signal of peripheral D. */
 	PER_TIMER=4,          /* The pin is controlled by the associated signal of peripheral E. */
-        PER_TIMER_ALT=5,      /* The pin is controlled by the associated signal of peripheral F. */
+  PER_TIMER_ALT=5,      /* The pin is controlled by the associated signal of peripheral F. */
 #if (SAMD51)
         PER_TIMER_ALT2=6,     /* The pin is controlled by the associated signal of peripheral G. */
         PER_COM=7,            /* The pin is controlled by the associated signal of peripheral H. */
@@ -503,7 +503,7 @@ extern const PinDescription g_APinDescription[] ;
 #define GCM_SDHC1                 (0x2DU)
 #define GCM_CM4_TRACE             (0x2EU)
 
-#elif (SAML21)
+#elif (SAML21 || SAMR34)
 #define GCM_DFLL48M_REF           (0x00U)
 #define GCM_FDPLL96M_INPUT        (0x01U)
 #define GCM_FDPLL96M_32K          (0x02U)

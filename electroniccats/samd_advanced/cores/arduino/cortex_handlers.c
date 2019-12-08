@@ -310,7 +310,7 @@ __attribute__ ((section(".isr_vector"))) const DeviceVectors exception_table =
   (void*) (0UL),                  /* Reserved */
   #endif
 
-#elif (SAML21 || SAMC21)
+#elif (SAML21 || SAMR34 || SAMC21)
   (void*) SYSTEM_Handler,         /*  0 SYSTEM handler (includes SYSTEM, MCLK, OSCCTRL, OSC32KCTRL, PAC, PM, SUPC, and TAL) */
   (void*) WDT_Handler,            /*  1 Watchdog Timer */
   (void*) RTC_Handler,            /*  2 Real-Time Counter */
@@ -321,7 +321,7 @@ __attribute__ ((section(".isr_vector"))) const DeviceVectors exception_table =
   #endif
   (void*) NVMCTRL_Handler,        /*  4 / 6 Non-Volatile Memory Controller */
   (void*) DMAC_Handler,           /*  5 / 7 Direct Memory Access Controller */
-  #if (SAML21)
+  #if (SAML21 || SAMR34)
   (void*) USB_Handler,            /*  6 Universal Serial Bus */
   #endif
   (void*) EVSYS_Handler,          /*  7 / 8 Event System Interface */
@@ -355,7 +355,7 @@ __attribute__ ((section(".isr_vector"))) const DeviceVectors exception_table =
   (void*) SDADC_Handler,          /* 29 SDADC */
   #endif
   (void*) PTC_Handler,            /* 25 / 30 Peripheral Touch Controller */
-  #if (SAML21)
+  #if (SAML21 || SAMR34)
   (void*) AES_Handler,            /* 26 AES */
   (void*) TRNG_Handler,           /* 27 TRNG */
   #endif
