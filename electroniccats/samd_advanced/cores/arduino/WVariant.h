@@ -244,6 +244,8 @@ typedef enum _EPioType
   PIO_AC_GCLK=23,                     /* The pin is controlled by the AC_GCLK peripheral (analog comparator / generic clock). */
   PIO_CCL=24,                         /* The pin is controlled by the CCL (configurable custom logic) peripheral (I/O). */
 
+  PIO_SERCOM_RF                   = 25,
+
   PIO_MULTI,                          /* The pin can be configured to any type based on the attributes. */
   PIO_STARTUP,                        /* Used as parameter to pinPeripheral() only to set startup state (enable INEN only) */
   PIO_NOT_A_PIN,                      /* Not under control of a peripheral. */
@@ -329,7 +331,7 @@ typedef enum _EPioPeripheral
 #define PER_ATTR_SERCOM_MASK     (1UL<<0)
 
 #define PER_ATTR_TIMER_STD       (0UL<<1)
-#define PER_ATTR_TIMER_ALT       (1UL<<1)
+#define PER_ATTR_TIMER_ALT       (1UL<<5)
 #define PER_ATTR_TIMER_ALT2      (2UL<<1)
 #define PER_ATTR_TIMER_MASK      (3UL<<1)
 
