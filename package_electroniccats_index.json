@@ -1283,7 +1283,7 @@
         ]
       },
       {
-        "name": "CMSIS-Atmel-EC",
+        "name": "CMSIS-Atmel",
         "version": "1.0.0-electroniccats1",
         "systems": [
         {
