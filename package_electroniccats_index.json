@@ -12,6 +12,56 @@
         {
           "name": "Electronic Cats SAM D|L|C Advanced Boards",
           "architecture": "SAMD|L|C",
+          "version": "1.0.1",
+          "category": "Contributed",
+          "url": "https://github.com/ElectronicCats/Arduino_Boards_Index/raw/gh-pages/IDE_Board_Manager/electroniccats-samd_advanced-v1.0.1.tar.bz2",
+          "archiveFileName": "electroniccats-samd_advanced-v1.0.1.tar.bz2",
+          "checksum": "SHA-256:7eec50d24aed582338ba0ede4599b22f9afbdb8b43629470daafd9571e9adf60",
+          "size": "280981",
+          "help": {
+            "online": "https://electroniccats.com/"
+          },
+          "boards": [
+            {
+              "name": "Magspoof"
+            }
+          ],
+          "toolsDependencies": [
+          {
+            "packager": "arduino",
+            "name": "arm-none-eabi-gcc",
+            "version": "4.8.3-2014q1"
+          },
+          {
+            "packager": "MattairTech_Arduino",
+            "name": "bossac",
+            "version": "1.7.0-mattairtech-3"
+          },
+          {
+            "packager": "arduino",
+            "name": "openocd",
+            "version": "0.9.0-arduino"
+          },
+          {
+            "packager": "arduino",
+            "name": "CMSIS",
+            "version": "4.5.0"
+          },
+          {
+            "packager": "MattairTech_Arduino",
+            "name": "CMSIS-Atmel",
+            "version": "1.0.0-mattairtech-2"
+          },
+          {
+            "packager": "arduino",
+            "name": "arduinoOTA",
+            "version": "1.2.0"
+          }
+        ]
+        },
+        {
+          "name": "Electronic Cats SAM D|L|C Advanced Boards",
+          "architecture": "SAMD|L|C",
           "version": "1.0.0",
           "category": "Contributed",
           "url": "https://github.com/ElectronicCats/Arduino_Boards_Index/raw/gh-pages/IDE_Board_Manager/electroniccats-samd_advanced-v1.0.0.tar.bz2",
@@ -57,7 +107,7 @@
             "name": "arduinoOTA",
             "version": "1.2.0"
           }
-            ]
+        ]
         },
         {
           "name": "Electronic Cats SAMD Boards",
