@@ -54,7 +54,7 @@
           },
           {
             "packager": "ElectronicCats",
-            "name": "CMSIS-Atmel",
+            "name": "CMSIS-Atmel-EC",
             "version": "1.0.0-electroniccats"
           },
           {
@@ -1287,7 +1287,7 @@
         ]
       },
       {
-        "name": "CMSIS-Atmel",
+        "name": "CMSIS-Atmel-EC",
         "version": "1.0.0-electroniccats",
         "systems": [
         {
