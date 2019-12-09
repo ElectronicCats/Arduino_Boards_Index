@@ -96,7 +96,7 @@ extern "C"
 
 #define PINS_COUNT           NUM_PIN_DESCRIPTION_ENTRIES
 #define NUM_DIGITAL_PINS     PINS_COUNT
-#define NUM_ANALOG_INPUTS    (18u)
+#define NUM_ANALOG_INPUTS    (8u)
 
 #define NUM_ANALOG_OUTPUTS   (2u)
 
@@ -125,17 +125,21 @@ extern "C"
  * The RX and TX LEDs are not present.
  * You may optionally add them to any free pins.
  */
-#define PIN_LED_13           (22u)
+#define PIN_LED_13           (16u)
 #define PIN_LED              PIN_LED_13
 #define PIN_LED2             PIN_LED_RXL
 #define PIN_LED3             PIN_LED_TXL
 #define LED_BUILTIN          PIN_LED_13
 
-#define RFM_RST              (15u)
-#define RFM_DIO0             (33u)
-#define RFM_DIO1             (11u)
-#define RFM_DIO2             (12u)
-#define RFM_DIO5             (50u)
+#define RFM_RST              (54u)
+#define RFM_DIO0             (55u)
+#define RFM_DIO1             (56u)
+#define RFM_DIO2             (57u)
+#define RFM_DIO3             (58u)
+#define RFM_DIO4             (59u)
+#define RFM_DIO5             (60u)
+#define RFM_TCXO             (61u)
+#define RFM_SWITCH           (62u)
 
 /*
  * Analog pins
@@ -149,15 +153,6 @@ extern "C"
 #define PIN_A6               (6ul)
 #define PIN_A7               (7ul)
 #define PIN_A8               (8ul)
-#define PIN_A9               (9ul)
-#define PIN_A10              (10ul)
-#define PIN_A11              (11ul)
-#define PIN_A34              (34ul)
-#define PIN_A35              (35ul)
-#define PIN_A36              (36ul)
-#define PIN_A37              (37ul)
-#define PIN_A38              (38ul)
-#define PIN_A49              (49ul)
 #define PIN_DAC0             (2ul)
 #define PIN_DAC1             (5ul)
 
@@ -170,15 +165,6 @@ static const uint8_t A5   = PIN_A5;
 static const uint8_t A6   = PIN_A6;
 static const uint8_t A7   = PIN_A7;
 static const uint8_t A8   = PIN_A8;
-static const uint8_t A9   = PIN_A9;
-static const uint8_t A10  = PIN_A10;
-static const uint8_t A11  = PIN_A11;
-static const uint8_t A34  = PIN_A34;
-static const uint8_t A35  = PIN_A35;
-static const uint8_t A36  = PIN_A36;
-static const uint8_t A37  = PIN_A37;
-static const uint8_t A38  = PIN_A38;
-static const uint8_t A49  = PIN_A49;
 static const uint8_t DAC0 = PIN_DAC0;
 static const uint8_t DAC1 = PIN_DAC1;
 
@@ -213,23 +199,15 @@ static const uint8_t ATN = PIN_ATN;
   #define SERCOM_INSTANCE_SERIAL1       &sercom1
 
 
-// Serial2
-  #define PIN_SERIAL2_RX       (36ul)
-  #define PIN_SERIAL2_TX       (35ul)
-  #define PAD_SERIAL2_TX       (UART_TX_PAD_2)
-  #define PAD_SERIAL2_RX       (SERCOM_RX_PAD_3)
-  #define SERCOM_INSTANCE_SERIAL2       &sercom0
-
-
 /*
  * SPI Interfaces
  */
 #define SPI_INTERFACES_COUNT 1
 
-#define PIN_SPI_MISO         (43u)
+#define PIN_SPI_MISO         (52u)
 #define PIN_SPI_MOSI         (51u)
-#define PIN_SPI_SCK          (52u)
-#define PIN_SPI_SS           (46u)
+#define PIN_SPI_SCK          (53u)
+#define PIN_SPI_SS           (50u)
 #define PAD_SPI_TX           SPI_PAD_2_SCK_3
 #define PAD_SPI_RX           SERCOM_RX_PAD_0
 #define PERIPH_SPI           sercom4
