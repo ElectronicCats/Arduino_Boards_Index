@@ -53,8 +53,8 @@
             "version": "1.0.0-mattairtech-2"
           },
           {
-            "packager": "ElectronicCats",
-            "name": "CMSIS-Atmel-EC",
+            "packager": "electroniccats",
+            "name": "CMSIS-Atmel",
             "version": "1.0.0-electroniccats"
           },
           {
