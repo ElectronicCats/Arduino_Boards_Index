@@ -28,7 +28,7 @@ void analogReadCorrection (int offset, uint16_t gain)
 #if (SAMD21 || SAMD11)
   ADC->CTRLB.bit.CORREN = 1;
   while(ADC->STATUS.bit.SYNCBUSY);
-#elif (SAML21 || SAMC21)
+#elif (SAML21 || SAMR34 || SAMC21)
   ADC->CTRLC.bit.CORREN = 1;
   while ( ADC->SYNCBUSY.reg & ADC_SYNCBUSY_MASK );
 #elif (SAMD51)
