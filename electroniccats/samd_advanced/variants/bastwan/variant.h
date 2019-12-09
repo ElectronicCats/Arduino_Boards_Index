@@ -310,7 +310,8 @@ extern Uart Serial2;
 // The programming port is connected to a hardware UART through a USB-Serial bridge (EDBG chip) on the Zero.
 // Boards that do not have the EDBG chip will have to connect a USB-TTL serial adapter to 'Serial' to get
 // the USB Host debugging output.
-#define SERIAL_PORT_MONITOR         Serial1
+#define SERIAL_PORT_USBVIRTUAL      SerialUSB
+#define SERIAL_PORT_MONITOR         SerialUSB
 
 // Serial has no physical pins broken out, so it's not listed as HARDWARE port
   #define SERIAL_PORT_HARDWARE        Serial1
