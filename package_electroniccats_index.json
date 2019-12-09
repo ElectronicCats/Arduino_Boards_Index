@@ -1288,31 +1288,31 @@
         "systems": [
         {
           "host": "i686-mingw32",
-          "url": "https://github.com/ElectronicCats/Arduino_Boards_Index/raw/gh-pages/electroniccats/samd-tools/CMSIS-Atmel-1.0.0-electroniccats.tar.bz2",
-          "archiveFileName": "CMSIS-Atmel-1.0.0-electroniccats.tar.bz2",
-          "checksum": "SHA-256:211af42c015896a60e0e17282f2f0549e81d37d0544c5377047c0aa762fa5ac6",
-          "size": "1113131"
+          "url": "https://github.com/ElectronicCats/Arduino_Boards_Index/raw/gh-pages/electroniccats/samd-tools/CMSIS-Atmel-1.0.0-electroniccats.tar.gz",
+          "archiveFileName": "CMSIS-Atmel-1.0.0-electroniccats.tar.gz",
+          "checksum": "SHA-256:d673a929c71d9b7a0146cb9dcde800cc2453b2824a3f10176ea5c5bf68bd5cd4",
+          "size": "2216310"
         },
         {
           "host": "x86_64-pc-linux-gnu",
-          "url": "https://github.com/ElectronicCats/Arduino_Boards_Index/raw/gh-pages/electroniccats/samd-tools/CMSIS-Atmel-1.0.0-electroniccats.tar.bz2",
-          "archiveFileName": "CMSIS-Atmel-1.0.0-electroniccats.tar.bz2",
-          "checksum": "SHA-256:211af42c015896a60e0e17282f2f0549e81d37d0544c5377047c0aa762fa5ac6",
-          "size": "1113131"
+          "url": "https://github.com/ElectronicCats/Arduino_Boards_Index/raw/gh-pages/electroniccats/samd-tools/CMSIS-Atmel-1.0.0-electroniccats.tar.gz",
+          "archiveFileName": "CMSIS-Atmel-1.0.0-electroniccats.tar.gz",
+          "checksum": "SHA-256:d673a929c71d9b7a0146cb9dcde800cc2453b2824a3f10176ea5c5bf68bd5cd4",
+          "size": "2216310"
         },
         {
           "host": "i686-pc-linux-gnu",
-          "url": "https://github.com/ElectronicCats/Arduino_Boards_Index/raw/gh-pages/electroniccats/samd-tools/CMSIS-Atmel-1.0.0-electroniccats.tar.bz2",
-          "archiveFileName": "CMSIS-Atmel-1.0.0-electroniccats.tar.bz2",
-          "checksum": "SHA-256:211af42c015896a60e0e17282f2f0549e81d37d0544c5377047c0aa762fa5ac6",
-          "size": "1113131"
+          "url": "https://github.com/ElectronicCats/Arduino_Boards_Index/raw/gh-pages/electroniccats/samd-tools/CMSIS-Atmel-1.0.0-electroniccats.tar.gz",
+          "archiveFileName": "CMSIS-Atmel-1.0.0-electroniccats.tar.gz",
+          "checksum": "SHA-256:d673a929c71d9b7a0146cb9dcde800cc2453b2824a3f10176ea5c5bf68bd5cd4",
+          "size": "2216310"
         },
         {
           "host": "x86_64-apple-darwin",
-          "url": "https://github.com/ElectronicCats/Arduino_Boards_Index/raw/gh-pages/electroniccats/samd-tools/CMSIS-Atmel-1.0.0-electroniccats.tar.bz2",
-          "archiveFileName": "CMSIS-Atmel-1.0.0-electroniccats.tar.bz2",
-          "checksum": "SHA-256:211af42c015896a60e0e17282f2f0549e81d37d0544c5377047c0aa762fa5ac6",
-          "size": "1113131"
+          "url": "https://github.com/ElectronicCats/Arduino_Boards_Index/raw/gh-pages/electroniccats/samd-tools/CMSIS-Atmel-1.0.0-electroniccats.tar.gz",
+          "archiveFileName": "CMSIS-Atmel-1.0.0-electroniccats.tar.gz",
+          "checksum": "SHA-256:d673a929c71d9b7a0146cb9dcde800cc2453b2824a3f10176ea5c5bf68bd5cd4",
+          "size": "2216310"
         }
         ]
       }
