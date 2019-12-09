@@ -129,7 +129,7 @@ extern "C"
  * None of these defines are currently used by the core.
  */
 #if defined PIN_MAP_STANDARD
-#define PIN_LED_13           (5u)
+#define PIN_LED_13           (14u)
 #define PIN_LED_RXL          (8u)
 #define PIN_LED_TXL          (9u)
 #elif defined PIN_MAP_COMPACT
