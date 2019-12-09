@@ -47,15 +47,11 @@
             "name": "CMSIS",
             "version": "4.5.0"
           },
-          {
-            "packager": "MattairTech_Arduino",
-            "name": "CMSIS-Atmel",
-            "version": "1.0.0-mattairtech-2"
-          },
+
           {
             "packager": "electroniccats",
             "name": "CMSIS-Atmel",
-            "version": "1.0.0-electroniccats"
+            "version": "1.0.0-electroniccats1"
           },
           {
             "packager": "arduino",
@@ -1288,7 +1284,7 @@
       },
       {
         "name": "CMSIS-Atmel-EC",
-        "version": "1.0.0-electroniccats",
+        "version": "1.0.0-electroniccats1",
         "systems": [
         {
           "host": "i686-mingw32",
