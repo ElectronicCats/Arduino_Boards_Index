@@ -194,7 +194,7 @@ void initADC(void)
 #elif (SAML21 || SAMC21 || SAMD51 || SAMR34)
   SUPC->VREF.reg |= SUPC_VREF_VREFOE;           // Enable Supply Controller Reference output for use with ADC and DAC (AR_INTREF)
 
-  #if (SAML21)
+  #if (SAML21 || SAMR34)
     GCLK->PCHCTRL[GCM_ADC].reg = ( GCLK_PCHCTRL_CHEN | GCLK_PCHCTRL_GEN_GCLK0 );
     while ( (GCLK->PCHCTRL[GCM_ADC].reg & GCLK_PCHCTRL_CHEN) != GCLK_PCHCTRL_CHEN );      // wait for sync
   #elif (SAMC21 || SAMD51)
