@@ -1242,7 +1242,7 @@
             "host": "x86_64-apple-darwin",
             "url": "https://github.com/ElectronicCats/Arduino_Boards_Index/raw/gh-pages/electroniccats/samd-tools/bossac-1.0.0-electroniccats-1-x86_64-apple-darwin.tar.gz",
             "archiveFileName": "bossac-1.0.0-electroniccats-1-x86_64-apple-darwin.tar.gz",
-            "checksum": "SHA-256:da4d4b04582f92d09e3d48a1ec4d2473b6cd01bba992c0f1f2cd7ee1008f08f8",
+            "checksum": "SHA-256:99f8da6415d7904c9f5b86c7a08258ea3ab134b3563be63fe184da072d62d4f9",
             "size": "30404"
           }
           ]
