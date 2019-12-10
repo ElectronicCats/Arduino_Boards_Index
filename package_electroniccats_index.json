@@ -10,7 +10,7 @@
       },
       "platforms": [
         {
-          "name": "Electronic Cats SAM D|L|C Advanced Boards",
+          "name": "Electronic Cats SAM DLC Advanced Boards",
           "architecture": "SAMDLC",
           "version": "1.0.2",
           "category": "Contributed",
