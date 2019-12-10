@@ -23,7 +23,6 @@ menu.timer=Timer PWM Frequency
 menu.float=Floating Point
 menu.config=Build Options
 
-
 # Magspoof v3 based on D11C14A (SOIC-14)
 magspoof.name= Magspoof V3
 magspoof.vid.0=0x1209
