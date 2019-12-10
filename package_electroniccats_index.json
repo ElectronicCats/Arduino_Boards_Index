@@ -33,11 +33,6 @@
             "version": "4.8.3-2014q1"
           },
           {
-            "packager": "MattairTech_Arduino",
-            "name": "bossac",
-            "version": "1.7.0-mattairtech-3"
-          },
-          {
             "packager": "arduino",
             "name": "openocd",
             "version": "0.9.0-arduino"
