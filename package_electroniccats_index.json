@@ -95,7 +95,7 @@
           {
             "packager": "electroniccats",
             "name": "CMSIS-Atmel",
-            "version": "1.0.0-electroniccats1"
+            "version": "1.0.0-electroniccats-1"
           },
           {
             "packager": "arduino",
