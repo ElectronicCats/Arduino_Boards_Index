@@ -49,6 +49,7 @@ void SPIClass::begin()
   init();
   uint32_t peripheral = (_p_sercom == &sercom4) ? PIO_SERCOM_RF : PIO_SERCOM;
   // PIO init
+  //Serial.println("SPI periph = "+String(peripheral));
   pinPeripheral(_uc_pinMiso, peripheral);
   pinPeripheral(_uc_pinSCK, peripheral);
   pinPeripheral(_uc_pinMosi, peripheral);

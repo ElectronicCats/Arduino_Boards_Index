@@ -23,6 +23,7 @@ menu.timer=Timer PWM Frequency
 menu.float=Floating Point
 menu.config=Build Options
 
+
 # Magspoof v3 based on D11C14A (SOIC-14)
 magspoof.name= Magspoof V3
 magspoof.vid.0=0x1209
@@ -261,7 +262,7 @@ electroniccats_bast.menu.cpu.bastwan.bootloader.file=bastwan/bootloader-bast-wan
 electroniccats_bast.menu.bootloader.8kb=8KB_BOOTLOADER
 electroniccats_bast.menu.bootloader.8kb.build.bootloader_size=__8KB_BOOTLOADER__
 electroniccats_bast.menu.bootloader.8kb.build.ldscript_path=linker_scripts/gcc/8KB_Bootloader
-electroniccats_bast.menu.bootloader.8kb.upload.tool=MattairTech_Arduino:bossac
+electroniccats_bast.menu.bootloader.8kb.upload.tool=bossac
 electroniccats_bast.menu.bootloader.8kb.upload.use_1200bps_touch=true
 electroniccats_bast.menu.bootloader.8kb.upload.wait_for_upload_port=true
 electroniccats_bast.menu.bootloader.8kb.upload.native_usb=true

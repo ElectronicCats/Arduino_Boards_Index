@@ -187,6 +187,10 @@ int pinPeripheral( uint32_t ulPin, uint32_t ulPeripheral )
     break ;
 #endif
 
+    case PIO_SERCOM_RF:
+    peripheral = 5; //F
+    break;
+
     case PIO_NOT_A_PIN:
     case PIO_MULTI:
       return -1l ;
