@@ -58,7 +58,7 @@ static void __initialize()
 #if (SAMD21 || SAMD11)
   GCLK->CLKCTRL.reg = ( GCLK_CLKCTRL_ID( GCM_EIC ) | GCLK_CLKCTRL_GEN_GCLK0 | GCLK_CLKCTRL_CLKEN );
   while ( GCLK->STATUS.reg & GCLK_STATUS_SYNCBUSY );
-#elif (SAML21 || SAMC21)
+#elif (SAML21 || SAMR34 || SAMC21)
   MCLK->APBAMASK.reg |= MCLK_APBAMASK_EIC;
   GCLK->PCHCTRL[GCM_EIC].reg = ( GCLK_PCHCTRL_CHEN | GCLK_PCHCTRL_GEN_GCLK0 );
   while ( (GCLK->PCHCTRL[GCM_EIC].reg & GCLK_PCHCTRL_CHEN) != GCLK_PCHCTRL_CHEN );	// wait for sync
@@ -93,7 +93,7 @@ void attachInterrupt(uint32_t pin, voidFuncPtr callback, uint32_t mode)
   uint32_t config;
   uint32_t pos;
 
-#if (SAML21)
+#if (SAML21 || SAMR34)
   // The CHANGE and RISING interrupt modes on pin A31 on the SAML21 do not seem to work properly
   if ((GetPort(pin) == 0) && (GetPin(pin) == 31) && ((mode == CHANGE) || (mode == RISING)))
     return;
@@ -159,7 +159,7 @@ void attachInterrupt(uint32_t pin, voidFuncPtr callback, uint32_t mode)
     // Configure the interrupt mode
     pos = (in - (8 * config)) << 2;                               // compute position (ie: 0, 4, 8, 12, ...)
 
-    #if (SAML21 || SAMC21 || SAMD51)
+    #if (SAML21 || SAMR34 || SAMC21 || SAMD51)
     EIC->CTRLA.reg = 0;   // disable EIC before changing CONFIG
     while (EIC->SYNCBUSY.reg & EIC_SYNCBUSY_MASK) { }
     #endif
@@ -168,7 +168,7 @@ void attachInterrupt(uint32_t pin, voidFuncPtr callback, uint32_t mode)
     // insert new mode and write to register (the hardware numbering for the 5 interrupt modes is in reverse order to the arduino numbering, so using '5-mode').
     EIC->CONFIG[config].reg = (regConfig | ((5-mode) << pos));
 
-    #if (SAML21 || SAMC21 || SAMD51)
+    #if (SAML21 || SAMR34 || SAMC21 || SAMD51)
     EIC->CTRLA.reg = EIC_CTRLA_ENABLE;    // enable EIC
     while (EIC->SYNCBUSY.reg & EIC_SYNCBUSY_MASK) { }
     #endif

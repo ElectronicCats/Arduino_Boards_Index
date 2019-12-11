@@ -18,7 +18,7 @@
 
 #include "sam.h"
 
-#if (SAMD21 || SAMD51 || SAML21)
+#if (SAMD21 || SAMD51 || SAML21 || SAMR34)
 #include <stdio.h>
 #include <stdint.h>
 #include <string.h>
@@ -49,7 +49,7 @@ extern void (*gpf_isr)(void);
   #define NVM_USB_PAD_TRANSN_POS            (32)
   #define NVM_USB_PAD_TRANSP_POS            (37)
   #define NVM_USB_PAD_TRIM_POS              (42)
-#elif (SAML21)
+#elif (SAML21 || SAMR34)
   #define NVM_CALIBRATION_ADDRESS           NVMCTRL_OTP5
   #define NVM_USB_PAD_TRANSN_POS            (13)
   #define NVM_USB_PAD_TRANSP_POS            (18)
@@ -87,7 +87,7 @@ void UHD_Init(void)
 	/* Enable USB clock */
 #if (SAMD21 || SAMD11)
 	PM->APBBMASK.reg |= PM_APBBMASK_USB;
-#elif (SAML21 || SAMD51)
+#elif (SAML21 || SAMR34 || SAMD51)
 	MCLK->APBBMASK.reg |= MCLK_APBBMASK_USB;
 #else
 	#error "samd21_host.c: Unsupported chip"
@@ -644,4 +644,4 @@ uint32_t UHD_Pipe_Is_Transfer_Complete(uint32_t ul_pipe, uint32_t ul_token_type)
 // }
 
 #endif //  HOST_DEFINED
-#endif //  (SAMD21 || SAMD51 || SAML21)
+#endif //  (SAMD21 || SAMD51 || SAML21 || SAMR34)

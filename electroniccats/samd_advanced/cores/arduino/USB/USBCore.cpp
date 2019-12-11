@@ -352,7 +352,7 @@ void USBDeviceClass::init()
 	// Enable USB clock
 #if (SAMD21 || SAMD11)
 	PM->APBBMASK.reg |= PM_APBBMASK_USB;
-#elif (SAML21 || SAMD51)
+#elif (SAML21 || SAMR34 || SAMD51)
 	MCLK->APBBMASK.reg |= MCLK_APBBMASK_USB;
 #else
 	#error "USBCore.cpp: Unsupported chip"

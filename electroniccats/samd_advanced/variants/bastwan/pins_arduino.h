@@ -1,5 +1,5 @@
 /*
-  Copyright (c) 2015 Arduino LLC.  All right reserved.
+  Copyright (c) 2014-2015 Arduino LLC.  All right reserved.
 
   This library is free software; you can redistribute it and/or
   modify it under the terms of the GNU Lesser General Public
@@ -16,26 +16,6 @@
   Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 */
 
-#include "SAMD_AnalogCorrection.h"
-
-void analogReadCorrection (int offset, uint16_t gain)
-{
-  // Set correction values
-  ADC->OFFSETCORR.reg = ADC_OFFSETCORR_OFFSETCORR(offset);
-  ADC->GAINCORR.reg = ADC_GAINCORR_GAINCORR(gain);
-
-  // Enable digital correction logic
-#if (SAMD21 || SAMD11)
-  ADC->CTRLB.bit.CORREN = 1;
-  while(ADC->STATUS.bit.SYNCBUSY);
-#elif (SAML21 || SAMR34 || SAMC21)
-  ADC->CTRLC.bit.CORREN = 1;
-  while ( ADC->SYNCBUSY.reg & ADC_SYNCBUSY_MASK );
-#elif (SAMD51)
-  ADC->CTRLB.bit.CORREN = 1;
-  while ( ADC->SYNCBUSY.reg & ADC_SYNCBUSY_MASK );
-#else
-  #error "SAMD_AnalogCorrection.h: Unsupported chip"
-#endif
-}
+// API compatibility
+#include "variant.h"
 

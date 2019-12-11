@@ -46,7 +46,7 @@
 #define GCLK_PCHCTRL_GEN_DFLL  GCLK_PCHCTRL_GEN_GCLK9
 
 // Constants for Clock multiplexers
-#if (SAMD21 || SAMD11 || SAML21)
+#if (SAMD21 || SAMD11 || SAML21 || SAMR34)
   #define GENERIC_CLOCK_MULTIPLEXER_DFLL    (0u)
   #define GENERIC_CLOCK_MULTIPLEXER_FDPLL   (1u)
   #define GENERIC_CLOCK_MULTIPLEXER_FDPLL_32K (2u)
@@ -67,23 +67,23 @@ void waitForSync( void )
 {
 #if (SAMD21 || SAMD11)
   while ( GCLK->STATUS.reg & GCLK_STATUS_SYNCBUSY );
-#elif (SAML21 || SAMC21 || SAMD51)
+#elif (SAML21 || SAMR34 || SAMC21 || SAMD51)
   while ( GCLK->SYNCBUSY.reg & GCLK_SYNCBUSY_MASK );
 #endif
 }
 
-#if (SAMD21 || SAMD11 || SAML21 || SAMD51)
+#if (SAMD21 || SAMD11 || SAML21 || SAMR34 || SAMD51)
 void waitForDFLL( void )
 {
 #if (SAMD21 || SAMD11)
   while ( (SYSCTRL->PCLKSR.reg & SYSCTRL_PCLKSR_DFLLRDY) == 0 );
-#elif (SAML21 || SAMD51)
+#elif (SAML21 || SAMR34 || SAMD51)
   while ( (OSCCTRL->STATUS.reg & OSCCTRL_STATUS_DFLLRDY) == 0 );
 #endif
 }
 #endif
 
-#if (SAML21 || SAMC21 || SAMD51)
+#if (SAML21 || SAMR34 || SAMC21 || SAMD51)
 void waitForPLL( void )
 {
 #if (SAMD51)
@@ -103,7 +103,7 @@ void SystemInit( void )
    */
 #if (SAMD21 || SAMD11)
   NVMCTRL->CTRLB.reg = (NVMCTRL_CTRLB_RWS_HALF | NVMCTRL_CTRLB_MANW) ; // one wait state
-#elif (SAML21 || SAMC21)
+#elif (SAML21 || SAMR34 || SAMC21)
   NVMCTRL->CTRLB.reg = (NVMCTRL_CTRLB_RWS_DUAL | NVMCTRL_CTRLB_MANW) ; // two wait states
 #elif (SAMD51)
   NVMCTRL->CTRLA.reg = (NVMCTRL_CTRLA_WMODE_MAN | NVMCTRL_CTRLA_AUTOWS);        // auto wait states
@@ -118,12 +118,12 @@ void SystemInit( void )
 #if !defined(TRUST_RESET_DEFAULTS)
 #if (SAMD21 || SAMD11)
   PM->APBAMASK.reg |= PM_APBAMASK_GCLK ;
-#elif (SAML21 || SAMC21 || SAMD51)
+#elif (SAML21 || SAMR34 || SAMC21 || SAMD51)
   MCLK->APBAMASK.reg |= MCLK_APBAMASK_GCLK ;
 #endif
 #endif
 
-#if (SAML21)
+#if (SAML21 || SAMR34)
   PM->INTFLAG.reg = PM_INTFLAG_PLRDY; //clear flag
   PM->PLCFG.reg |= PM_PLCFG_PLSEL_PL2 ;	// must set to highest performance level
   while ( (PM->INTFLAG.reg & PM_INTFLAG_PLRDY) != PM_INTFLAG_PLRDY );
@@ -138,7 +138,7 @@ void SystemInit( void )
   GCLK->CTRL.reg = GCLK_CTRL_SWRST ;
 
   while ( (GCLK->CTRL.reg & GCLK_CTRL_SWRST) && (GCLK->STATUS.reg & GCLK_STATUS_SYNCBUSY) );	/* Wait for reset to complete */
-#elif (SAML21 || SAMC21 || SAMD51)
+#elif (SAML21 || SAMR34 || SAMC21 || SAMD51)
   GCLK->CTRLA.reg = GCLK_CTRLA_SWRST ;
 
   while ( (GCLK->CTRLA.reg & GCLK_CTRLA_SWRST) && (GCLK->SYNCBUSY.reg & GCLK_SYNCBUSY_MASK) );	/* Wait for reset to complete */
@@ -196,7 +196,7 @@ void SystemInit( void )
 
   while ( (SYSCTRL->DPLLSTATUS.reg & SYSCTRL_DPLLSTATUS_CLKRDY) != SYSCTRL_DPLLSTATUS_CLKRDY );
 
-#elif (SAML21 || SAMC21)
+#elif (SAML21 || SAMR34 || SAMC21)
   OSC32KCTRL->XOSC32K.reg = (OSC32KCTRL_XOSC32K_STARTUP( 0x4u ) | OSC32KCTRL_XOSC32K_XTALEN | OSC32KCTRL_XOSC32K_EN32K | OSC32KCTRL_XOSC32K_EN1K);
   OSC32KCTRL->XOSC32K.bit.ENABLE = 1;
 
@@ -329,7 +329,7 @@ void SystemInit( void )
 
   while ( (SYSCTRL->DPLLSTATUS.reg & SYSCTRL_DPLLSTATUS_CLKRDY) != SYSCTRL_DPLLSTATUS_CLKRDY );
 
-#elif (SAML21 || SAMC21)
+#elif (SAML21 || SAMR34 || SAMC21)
   OSCCTRL->XOSCCTRL.reg = (OSCCTRL_XOSCCTRL_STARTUP( 0x8u ) | OSCCTRL_XOSCCTRL_GAIN( 0x4u ) | OSCCTRL_XOSCCTRL_XTALEN | OSCCTRL_XOSCCTRL_ENABLE) ;      // startup time is 8ms
   while ( (OSCCTRL->STATUS.reg & OSCCTRL_STATUS_XOSCRDY) == 0 );        /* Wait for oscillator stabilization */
 
@@ -429,7 +429,7 @@ void SystemInit( void )
   SYSCTRL->DFLLCTRL.reg |= SYSCTRL_DFLLCTRL_ENABLE ;
   waitForDFLL();
 
-#elif (SAML21)
+#elif (SAML21 || SAMR34)
   /* Defines missing from CMSIS */
   #ifndef FUSES_DFLL48M_COARSE_CAL_ADDR
     #define FUSES_DFLL48M_COARSE_CAL_ADDR (NVMCTRL_OTP5)
@@ -540,7 +540,7 @@ void SystemInit( void )
   PM->APBASEL.reg = PM_APBASEL_APBADIV_DIV1_Val ;
   PM->APBBSEL.reg = PM_APBBSEL_APBBDIV_DIV1_Val ;
   PM->APBCSEL.reg = PM_APBCSEL_APBCDIV_DIV1_Val ;
-#elif (SAML21 || SAMC21)
+#elif (SAML21 || SAMR34 || SAMC21)
   MCLK->CPUDIV.reg  = MCLK_CPUDIV_CPUDIV_DIV1 ;
 #elif (SAMD51)
   MCLK->CPUDIV.reg  = MCLK_CPUDIV_DIV_DIV1 ;
@@ -564,7 +564,7 @@ void SystemInit( void )
     waitForSync();
   #endif
 
-#elif (SAML21 || SAMC21)
+#elif (SAML21 || SAMR34 || SAMC21)
   /* Setup GCLK0 (GENERIC_CLOCK_GENERATOR_MAIN) which is used for the CPU. */
   #if (defined(CLOCKCONFIG_32768HZ_CRYSTAL) || defined(CLOCKCONFIG_HS_CRYSTAL))
     /* Switch Generic Clock Generator 0 to 96MHz PLL output. The output is divided by two to obtain a 48MHz CPU clock. */
@@ -572,7 +572,7 @@ void SystemInit( void )
     waitForSync();
   #elif (defined(CLOCKCONFIG_INTERNAL) || defined(CLOCKCONFIG_INTERNAL_USB))
     /* Note that the C21 is already setup above */
-    #if (SAML21)
+    #if (SAML21 || SAMR34)
       /* Switch Generic Clock Generator 0 to 48MHz DFLL48M output. The output is undivided. */
       GCLK->GENCTRL[GENERIC_CLOCK_GENERATOR_MAIN].reg = ( GCLK_GENCTRL_DIV(1) | GCLK_GENCTRL_SRC_DFLL48M | GCLK_GENCTRL_IDC | GCLK_GENCTRL_GENEN );
       waitForSync();
@@ -701,7 +701,7 @@ void SystemInit( void )
     waitForSync();
   #endif
 
-#elif (SAML21 || SAMC21)
+#elif (SAML21 || SAMR34 || SAMC21)
   #if (defined(CLOCKCONFIG_32768HZ_CRYSTAL) || defined(CLOCKCONFIG_HS_CRYSTAL))
     /* Switch GENERIC_CLOCK_GENERATOR_TIMERS to 96MHz PLL output and divide down to the selected frequency. Use the power-of-two divider with TIMER_1465Hz. */
     #if defined(TIMER_1465Hz)
@@ -767,7 +767,7 @@ void SystemInit( void )
     waitForSync();
   #endif
 
-#elif (SAML21 || SAMC21)
+#elif (SAML21 || SAMR34 || SAMC21)
   #if (defined(CLOCKCONFIG_32768HZ_CRYSTAL) || defined(CLOCKCONFIG_HS_CRYSTAL))
     /* Switch GENERIC_CLOCK_GENERATOR_48MHz to 96MHz PLL output. The output is divided by two to obtain 48MHz. */
     GCLK->GENCTRL[GENERIC_CLOCK_GENERATOR_48MHz].reg = ( GCLK_GENCTRL_DIV(2) | GCLK_GENCTRL_SRC_DPLL96M | GCLK_GENCTRL_IDC | GCLK_GENCTRL_GENEN );
@@ -813,7 +813,7 @@ void SystemInit( void )
   GCLK->GENCTRL.reg = ( GCLK_GENCTRL_ID( GENERIC_CLOCK_GENERATOR_OSC_HS ) | GCLK_GENCTRL_SRC_OSC8M | GCLK_GENCTRL_GENEN );
   waitForSync();
 
-#elif (SAML21)
+#elif (SAML21 || SAMR34)
   /* Note that after reset, the L21 starts with the OSC16M set to 4MHz, NOT the DFLL@48MHz as stated in some documentation. */
   /* Modify FSEL value of OSC16M to have 8MHz */
   OSCCTRL->OSC16MCTRL.bit.FSEL = OSCCTRL_OSC16MCTRL_FSEL_8_Val;
