@@ -21,6 +21,8 @@
 #include "wiring_private.h"
 #include "../../config.h"
 
+#define PIN_PERIPHERAL_CHECKS_DISABLED 1
+
 bool dacEnabled[] = {false, false};
 
 // Wait for synchronization of registers between the clock domains
@@ -35,22 +37,22 @@ static void syncDAC() {
 
 int pinPeripheral( uint32_t ulPin, uint32_t ulPeripheral )
 {
-#if !defined(PIN_PERIPHERAL_CHECKS_DISABLED)
-  // Prevent out of bounds access
-  if (ulPin >= NUM_PIN_DESCRIPTION_ENTRIES)
-  {
-    return -1 ;
-  }
-#endif
+  #if !defined(PIN_PERIPHERAL_CHECKS_DISABLED)
+    // Prevent out of bounds access
+    if (ulPin >= NUM_PIN_DESCRIPTION_ENTRIES)
+    {
+      return -1 ;
+    }
+  #endif
 
   uint8_t pinPort = GetPort(ulPin);
   uint8_t pinNum = GetPin(ulPin);
   uint8_t peripheralAttribute = g_APinDescription[ulPin].ulPeripheralAttribute;
 
-#if !defined(PIN_DESCRIPTION_TABLE_SIMPLE)
-  uint8_t pinType = g_APinDescription[ulPin].ulPinType;
-  uint32_t pinAttribute = g_APinDescription[ulPin].ulPinAttribute;
-#endif
+  #if !defined(PIN_DESCRIPTION_TABLE_SIMPLE)
+    uint8_t pinType = g_APinDescription[ulPin].ulPinType;
+    uint32_t pinAttribute = g_APinDescription[ulPin].ulPinAttribute;
+  #endif
 
   // Handle the case the pin isn't usable as PIO
   if ( pinPort == NOT_A_PORT )
@@ -58,43 +60,43 @@ int pinPeripheral( uint32_t ulPin, uint32_t ulPeripheral )
     return -1 ;
   }
 
-#if !defined(PIN_PERIPHERAL_CHECKS_DISABLED)
-#if !defined(PIN_DESCRIPTION_TABLE_SIMPLE)
-  // If pinType is not PIO_MULTI or PIO_STARTUP in the pinDescription table, then it must match ulPeripheral
-  if ( pinType != PIO_MULTI && pinType != PIO_STARTUP && pinType != ulPeripheral )
-  {
-    return -1 ;
-  }
+  #if !defined(PIN_PERIPHERAL_CHECKS_DISABLED)
+  #if !defined(PIN_DESCRIPTION_TABLE_SIMPLE)
+    // If pinType is not PIO_MULTI or PIO_STARTUP in the pinDescription table, then it must match ulPeripheral
+    if ( pinType != PIO_MULTI && pinType != PIO_STARTUP && pinType != ulPeripheral )
+    {
+      return -1 ;
+    }
 
-  // Make sure ulPeripheral is listed in pinAttribute
-  if ( !(pinAttribute & (1UL << ulPeripheral)) && pinType != PIO_STARTUP )
-  {
-    return -1 ;
-  }
-#endif
-#endif
+    // Make sure ulPeripheral is listed in pinAttribute
+    if ( !(pinAttribute & (1UL << ulPeripheral)) && pinType != PIO_STARTUP )
+    {
+      return -1;
+    }
+  #endif
+  #endif
 
   // Determine hardware peripheral to use
   EPioPeripheral peripheral = PER_PORT;
   switch ( ulPeripheral )
   {
     case PIO_EXTINT:
-#if !defined(PIN_PERIPHERAL_CHECKS_DISABLED)
-      if ( GetExtInt(ulPin) == NOT_AN_INTERRUPT )
-      {
-        return -1 ;
-      }
-#endif
+  #if !defined(PIN_PERIPHERAL_CHECKS_DISABLED)
+        if ( GetExtInt(ulPin) == NOT_AN_INTERRUPT )
+        {
+          return -1 ;
+        }
+  #endif
       peripheral = PER_EXTINT;
     break ;
 
     case PIO_ANALOG_ADC:
-#if !defined(PIN_PERIPHERAL_CHECKS_DISABLED)
-      if ( GetADC(ulPin) == No_ADC_Channel )
-      {
-        return -1 ;
-      }
-#endif
+  #if !defined(PIN_PERIPHERAL_CHECKS_DISABLED)
+        if ( GetADC(ulPin) == No_ADC_Channel )
+        {
+          return -1 ;
+        }
+  #endif
       peripheral = PER_ANALOG;
     break ;
 
@@ -105,23 +107,23 @@ int pinPeripheral( uint32_t ulPin, uint32_t ulPeripheral )
 
     case PIO_TIMER_PWM:
     case PIO_TIMER_CAPTURE:
-#if !defined(PIN_PERIPHERAL_CHECKS_DISABLED)
-      if ( g_APinDescription[ulPin].ulTCChannel == NOT_ON_TIMER )
-      {
-        return -1 ;
-      }
-#endif
+  #if !defined(PIN_PERIPHERAL_CHECKS_DISABLED)
+        if ( g_APinDescription[ulPin].ulTCChannel == NOT_ON_TIMER )
+        {
+          return -1 ;
+        }
+  #endif
 
       if ( (peripheralAttribute & PER_ATTR_TIMER_MASK) == PER_ATTR_TIMER_STD )
       {
         peripheral = PER_TIMER;
       }
-#if (SAMD51)
-      else if ( (peripheralAttribute & PER_ATTR_TIMER_MASK) == PER_ATTR_TIMER_ALT2 )
-      {
-        peripheral = PER_TIMER_ALT2;
-      }
-#endif
+  #if (SAMD51)
+        else if ( (peripheralAttribute & PER_ATTR_TIMER_MASK) == PER_ATTR_TIMER_ALT2 )
+        {
+          peripheral = PER_TIMER_ALT2;
+        }
+  #endif
       else
       {
         peripheral = PER_TIMER_ALT;
@@ -300,5 +302,5 @@ int pinPeripheral( uint32_t ulPin, uint32_t ulPeripheral )
   PORT->Group[pinPort].PINCFG[pinNum].reg = (uint8_t)pinCfg ;
 
   interrupts();
-  return 0l ;
+  return 0;
 }
