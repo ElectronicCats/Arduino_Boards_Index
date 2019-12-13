@@ -92,13 +92,13 @@ extern "C"
  *----------------------------------------------------------------------------*/
 
 // Number of pins defined in PinDescription array
-#define NUM_PIN_DESCRIPTION_ENTRIES     (62u)
+#define NUM_PIN_DESCRIPTION_ENTRIES     (41u)
 
 #define PINS_COUNT           NUM_PIN_DESCRIPTION_ENTRIES
 #define NUM_DIGITAL_PINS     PINS_COUNT
-#define NUM_ANALOG_INPUTS    (8u)
+#define NUM_ANALOG_INPUTS    (6u)
 
-#define NUM_ANALOG_OUTPUTS   (2u)
+#define NUM_ANALOG_OUTPUTS   (0u)
 
 #define analogInputToDigitalPin(p)  (p)
 
@@ -125,36 +125,31 @@ extern "C"
  * The RX and TX LEDs are not present.
  * You may optionally add them to any free pins.
  */
-#define PIN_LED_13           (16u)
+#define PIN_LED_13           (13u)
 #define PIN_LED              PIN_LED_13
 #define PIN_LED2             PIN_LED_RXL
 #define PIN_LED3             PIN_LED_TXL
 #define LED_BUILTIN          PIN_LED_13
 
-#define RFM_RST              (54u)
-#define RFM_DIO0             (55u)
-#define RFM_DIO1             (56u)
-#define RFM_DIO2             (57u)
-#define RFM_DIO3             (58u)
-#define RFM_DIO4             (59u)
-#define RFM_DIO5             (60u)
-#define RFM_TCXO             (61u)
-#define RFM_SWITCH           (62u)
+#define RFM_RST              (31u)
+#define RFM_DIO0             (34u)
+#define RFM_DIO1             (35u)
+#define RFM_DIO2             (36u)
+#define RFM_DIO3             (37u)
+#define RFM_DIO4             (38u)
+#define RFM_DIO5             (39u)
+#define RFM_TCXO             (40u)
+#define RFM_SWITCH           (41u)
 
 /*
  * Analog pins
  */
-#define PIN_A0               (0ul)
-#define PIN_A1               (1ul)
-#define PIN_A2               (2ul)
-#define PIN_A3               (3ul)
-#define PIN_A4               (4ul)
-#define PIN_A5               (5ul)
-#define PIN_A6               (6ul)
-#define PIN_A7               (7ul)
-#define PIN_A8               (8ul)
-#define PIN_DAC0             (2ul)
-#define PIN_DAC1             (5ul)
+#define PIN_A0               (17ul)
+#define PIN_A1               (PIN_A0 + 1)
+#define PIN_A2               (PIN_A0 + 2)
+#define PIN_A3               (PIN_A0 + 3)
+#define PIN_A4               (PIN_A0 + 4)
+#define PIN_A5               (PIN_A0 + 5)
 
 static const uint8_t A0   = PIN_A0;
 static const uint8_t A1   = PIN_A1;
@@ -162,12 +157,6 @@ static const uint8_t A2   = PIN_A2;
 static const uint8_t A3   = PIN_A3;
 static const uint8_t A4   = PIN_A4;
 static const uint8_t A5   = PIN_A5;
-static const uint8_t A6   = PIN_A6;
-static const uint8_t A7   = PIN_A7;
-static const uint8_t A8   = PIN_A8;
-static const uint8_t DAC0 = PIN_DAC0;
-static const uint8_t DAC1 = PIN_DAC1;
-
 
 #define ADC_RESOLUTION		12
 
@@ -177,37 +166,24 @@ static const uint8_t DAC1 = PIN_DAC1;
 #define VARIANT_AR_DEFAULT	AR_DEFAULT
 
 /* Reference voltage pins (define even if not enabled with PIN_ATTR_REF in the PinDescription table) */
-#define REFA_PIN    (3ul)
-#define REFB_PIN    (4ul)
-
-
-
-// The ATN pin may be used in the future as the first SPI chip select.
-// On boards that do not have the Arduino physical form factor, it can to set to any free pin.
-#define PIN_ATN              (21ul)
-
-static const uint8_t ATN = PIN_ATN;
-
-
+#define REFB_PIN    (21ul)
 
 // Serial1
-
-  #define PIN_SERIAL1_RX       (31ul)
-  #define PIN_SERIAL1_TX       (18ul)
-  #define PAD_SERIAL1_TX       (UART_TX_PAD_2)
-  #define PAD_SERIAL1_RX       (SERCOM_RX_PAD_3)
-  #define SERCOM_INSTANCE_SERIAL1       &sercom1
-
+#define PIN_SERIAL1_RX       (0ul)
+#define PIN_SERIAL1_TX       (1ul)
+#define PAD_SERIAL1_TX       (UART_TX_PAD_2)
+#define PAD_SERIAL1_RX       (SERCOM_RX_PAD_3)
+#define SERCOM_INSTANCE_SERIAL1       &sercom5
 
 /*
  * SPI Interfaces
  */
-#define SPI_INTERFACES_COUNT 1
+#define SPI_INTERFACES_COUNT 2
 
-#define PIN_SPI_MISO         (52u)
-#define PIN_SPI_MOSI         (51u)
-#define PIN_SPI_SCK          (53u)
-#define PIN_SPI_SS           (50u)
+#define PIN_SPI_MISO         (31u)
+#define PIN_SPI_MOSI         (30u)
+#define PIN_SPI_SCK          (32u)
+#define PIN_SPI_SS           (29u)
 #define PAD_SPI_TX           SPI_PAD_2_SCK_3
 #define PAD_SPI_RX           SERCOM_RX_PAD_0
 #define PERIPH_SPI           sercom4
@@ -217,15 +193,28 @@ static const uint8_t MOSI = PIN_SPI_MOSI ;
 static const uint8_t MISO = PIN_SPI_MISO ;
 static const uint8_t SCK  = PIN_SPI_SCK ;
 
+#define PIN_SPI1_MISO         (15u)
+#define PIN_SPI1_MOSI         (14u)
+#define PIN_SPI1_SCK          (16u)
+#define PIN_SPI1_SS           (13u)
+#define PAD_SPI1_TX           SPI_PAD_2_SCK_3
+#define PAD_SPI1_RX           SERCOM_RX_PAD_0
+#define PERIPH_SPI1           sercom3
+
+static const uint8_t SS1   = PIN_SPI1_SS ;        // The SERCOM SS PAD is available on this pin but HW SS isn't used. Set here only for reference.
+static const uint8_t MOSI1 = PIN_SPI1_MOSI ;
+static const uint8_t MISO1 = PIN_SPI1_MISO ;
+static const uint8_t SCK1  = PIN_SPI1_SCK ;
+
 /*
  * Wire Interfaces
  */
 #define WIRE_INTERFACES_COUNT 1
 
-#define PIN_WIRE_SDA         (16u)
-#define PIN_WIRE_SCL         (17u)
-#define PERIPH_WIRE          sercom3
-#define WIRE_IT_HANDLER      SERCOM3_Handler
+#define PIN_WIRE_SDA         (2u)
+#define PIN_WIRE_SCL         (3u)
+#define PERIPH_WIRE          sercom1
+#define WIRE_IT_HANDLER      SERCOM1_Handler
 
 
 static const uint8_t SDA = PIN_WIRE_SDA;
