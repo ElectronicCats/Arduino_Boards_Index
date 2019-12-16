@@ -165,6 +165,8 @@ magspoof.menu.usb.none=USB_DISABLED
 magspoof.menu.usb.none.build.usbcom=USB_DISABLED
 magspoof.menu.usb.none.build.pid=0xBAB5
 
+
+
 # Electronic BastFamily based on SAML21
 electroniccats_bast.name=BastFamily
 electroniccats_bast.vid.0=0x16D0
