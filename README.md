@@ -21,8 +21,16 @@ This repository contains support for the following Electronic Cats Arduino-compa
 
 **IMPORTANT NOTE:** These board files have been updated for compatibility with Arduino version 1.8 and higher. Some boards (e.g. SAMD) may not compile correctly with earlier versions of Arduino. If you need compatibility with earlier versions of Arduino, you can choose previous releases of these boards from the Boards Manager.
 
+#### Microcontroller supported
 
-#### SAMD (ARM Cortex-M0+) Boards
+- SAMD21
+- SAML21
+- SAMD11
+- SAMR34 or RAK4260
+- SAMD51
+
+
+#### SAMD (ARM Cortex-M0+) Boards by Electronic Cats
 
 * [Meow Meow](https://electroniccats.com/producto/meowmeow/)
 
@@ -37,7 +45,7 @@ This repository contains support for the following Electronic Cats Arduino-compa
 
 ### Installation Instructions
 
-**Install SAMD soport**
+**Install SAMD support**
 
 You must install the boards SAMD of Arduino(vertions 1.6.11 o posterior) 
 
