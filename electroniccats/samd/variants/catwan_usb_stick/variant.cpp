@@ -34,9 +34,10 @@ const PinDescription g_APinDescription[]=
   // 2 - Connected to radio DIO2
   { PORTA,  27, PIO_DIGITAL, PIN_ATTR_DIGITAL, No_ADC_Channel, NOT_ON_PWM, NOT_ON_TIMER, EXTERNAL_INT_NONE },  // TCC0/WO[0]
 
-  // GPIO 3 & 4 
-  { PORTA,  0, PIO_DIGITAL, 0, No_ADC_Channel, NOT_ON_PWM, NOT_ON_TIMER, EXTERNAL_INT_4 }, // ADC/AIN[4]
-  { PORTA,  1, PIO_DIGITAL, 0, No_ADC_Channel, NOT_ON_PWM, NOT_ON_TIMER, EXTERNAL_INT_5 }, // ADC/AIN[5]
+  // 3 - SERCOM1 - PA00 - TX and GPIO    ADC, DAC, IRQ, Captouch and general purpose pin - no timer
+  { PORTA,  0, PIO_SERCOM_ALT, PIN_ATTR_DIGITAL, No_ADC_Channel, NOT_ON_PWM, NOT_ON_TIMER, EXTERNAL_INT_0 }, // 
+  // 4 - SERCOM1 - PA01 - RX and GPIO
+  { PORTA,  1, PIO_SERCOM_ALT, (PIN_ATTR_DIGITAL|PIN_ATTR_PWM|PIN_ATTR_TIMER), No_ADC_Channel, PWM2_CH1, TCC2_CH1, EXTERNAL_INT_1 },  // TCC0/WO[0]
 
   // GPIO 5, 6, 7 (USB interface)
   // ----------------------------
@@ -88,15 +89,14 @@ SERCOM sercom1( SERCOM1 ) ;
 SERCOM sercom2( SERCOM2 ) ;
 SERCOM sercom3( SERCOM3 ) ;
 
-Uart Serial1( &sercom0, PIN_SERIAL1_RX, PIN_SERIAL1_TX, PAD_SERIAL1_RX, PAD_SERIAL1_TX ) ;
+Uart Serial1( &sercom1, PIN_SERIAL1_RX, PIN_SERIAL1_TX, PAD_SERIAL1_RX, PAD_SERIAL1_TX ) ;
 
 
 // If wire.h isnt included, just do nothing
 void WIRE_IT_HANDLER(void) __attribute__ ((weak));
 
-void SERCOM0_Handler()
+void SERCOM1_Handler()
 {
   Serial1.IrqHandler();
-  WIRE_IT_HANDLER();
 }
 
