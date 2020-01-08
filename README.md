@@ -49,13 +49,13 @@ This repository contains support for the following Electronic Cats Arduino-compa
 
 You must install the boards SAMD of Arduino(vertions 1.6.11 o posterior) 
 
-In the menú bar selec tools --> boards --> Board Manager --> Arduino SAMD Boards 32 bit M0.
+In the menú bar select tools --> boards --> Board Manager --> Arduino SAMD Boards 32 bit M0.
 
-In the search bar write  "SAMD" en then you can see the boards, do clic in install and wait to finish to installe.
+In the search bar write  "SAMD" en then you can see the boards, do clic in install and wait to finish to install.
 
 ![](https://cdn-learn.adafruit.com/assets/assets/000/028/792/original/adafruit_products_arduinosamd162.png)
 
-**Install "Electronic Cats" soport**
+**Install "Electronic Cats" support**
 
 To add board support for our products, start Arduino and open the Preferences window (**File** > **Preferences**). Now copy and paste the following URL into the 'Additional Boards Manager URLs' input field:
 
