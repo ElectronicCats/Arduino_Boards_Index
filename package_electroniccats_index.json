@@ -12,6 +12,69 @@
         {
           "name": "Electronic Cats SAMD Boards",
           "architecture": "samd",
+          "version": "1.2.6",
+          "category": "Contributed",
+          "url": "https://github.com/ElectronicCats/Arduino_Boards_Index/raw/gh-pages/IDE_Board_Manager/electroniccats-samd-v1.2.6.tar.bz2",
+          "archiveFileName": "electroniccats-samd-v1.2.6.tar.bz2",
+          "checksum": "SHA-256:e3f923ae76736d7422ef87a6a0372aa898ad6169c6e11f68d41899303268aef8",
+          "size": "279400",
+          "help": {
+            "online": "https://electroniccats.com/"
+          },
+          "boards": [
+            {
+              "name": "Meow Meow"
+            },
+            {
+              "name": "CatWAN USB-Stick"
+            },
+            {
+              "name": "CatWAN Relay board"
+            },
+            {
+              "name": "CatWAN Citizen"
+            },
+            {
+              "name": "Bast Pro Mini M0"
+            },
+            {
+              "name": "Escornabot Makech"
+            },
+            {
+              "name":"CatWAN Tracker"
+            }
+          ],
+          "toolsDependencies": [
+            {
+              "packager": "arduino",
+              "name": "arm-none-eabi-gcc",
+              "version": "4.8.3-2014q1"
+            },
+            {
+              "packager": "arduino",
+              "name": "bossac",
+              "version": "1.8.0-48-gb176eee"
+            },
+            {
+              "packager": "arduino",
+              "name": "openocd",
+              "version": "0.9.0-arduino"
+            },
+            {
+              "packager": "arduino",
+              "name": "CMSIS",
+              "version": "4.5.0"
+            },
+            {
+              "packager": "arduino",
+              "name": "CMSIS-Atmel",
+              "version": "1.2.0"
+            }
+          ]
+        },
+        {
+          "name": "Electronic Cats SAMD Boards",
+          "architecture": "samd",
           "version": "1.2.5",
           "category": "Contributed",
           "url": "https://github.com/ElectronicCats/Arduino_Boards_Index/raw/gh-pages/IDE_Board_Manager/electroniccats-samd-v1.2.5.tar.bz2",
