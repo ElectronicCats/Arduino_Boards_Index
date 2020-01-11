@@ -10,6 +10,54 @@
       },
       "platforms": [
         {
+          "name": "Electronic Cats SAM DLC Advanced Boards ",
+          "architecture": "samdlc",
+          "version": "1.0.6",
+          "category": "Contributed",
+          "url": "https://github.com/ElectronicCats/Arduino_Boards_Index/raw/gh-pages/IDE_Board_Manager/electroniccats-samd_advanced-v1.0.6.tar.bz2",
+          "archiveFileName": "electroniccats-samd_advanced-v1.0.6.tar.bz2",
+          "checksum": "SHA-256:d32b92b307a1668d3214ba0a953cc498093e85ceb8b97b4e011261631f7260eb",
+          "size": "286969",
+          "help": {
+            "online": "https://electroniccats.com/"
+          },
+          "boards": [
+            {
+              "name": "Magspoof"
+            },
+            {
+              "name":"BastWan"
+            }
+          ],
+          "toolsDependencies": [
+          {
+            "packager": "arduino",
+            "name": "arm-none-eabi-gcc",
+            "version": "4.8.3-2014q1"
+          },
+          {
+            "packager": "arduino",
+            "name": "openocd",
+            "version": "0.9.0-arduino"
+          },
+          {
+            "packager": "arduino",
+            "name": "CMSIS",
+            "version": "4.5.0"
+          },
+          {
+            "packager": "electroniccats",
+            "name": "bossac",
+            "version": "1.0.0-electroniccats-1"
+          },
+          {
+            "packager": "electroniccats",
+            "name": "CMSIS-Atmel",
+            "version": "1.0.0-electroniccats-1"
+          }
+        ]
+        },
+        {
           "name": "Electronic Cats SAMD Boards",
           "architecture": "samd",
           "version": "1.2.6",
