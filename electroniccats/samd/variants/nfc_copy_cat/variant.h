@@ -78,12 +78,12 @@ extern "C"
 
 // LEDs
 // ----
-#define PIN_LED_13  (14u)
+#define PIN_LED_13  (10u)
 #define PIN_LED     PIN_LED_13
 #define LED_BUILTIN PIN_LED
 
-#define PIN_LED2  (11u)
-#define PIN_LED3  (10u)
+#define PIN_LED2  (14u)
+#define PIN_LED3  (11u)
 
 /* Analog pins*/
  
