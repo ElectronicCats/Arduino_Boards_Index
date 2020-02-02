@@ -1755,8 +1755,8 @@
             "host": "x86_64-pc-linux-gnu",
             "url": "https://github.com/ElectronicCats/Arduino_Boards_Index/raw/gh-pages/electroniccats/samd-tools/bossac-1.0.0-electroniccats-1-x86_64-linux-gnu.tar.gz",
             "archiveFileName": "bossac-1.0.0-electroniccats-1-x86_64-linux-gnu.tar.gz",
-            "checksum": "SHA-256:e0801cd435a0aa08a4ccc1781cdcc1bf9ae92e248888163a1bb4dce20c00bcf9",
-            "size": "34866"
+            "checksum": "SHA-256:1c585857ed0039d28e32f9e43d8573c2c3a52e886e86ffcb556a00da97f944f6",
+            "size": "203194"
           },
           {
             "host": "i686-pc-linux-gnu",
