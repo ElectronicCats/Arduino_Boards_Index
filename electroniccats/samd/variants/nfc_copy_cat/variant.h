@@ -82,6 +82,12 @@ extern "C"
 #define PIN_LED2  (5u)
 #define PIN_LED3  (4u)
 
+// On-board SPI Flash
+#define EXTERNAL_FLASH_DEVICES  W25Q16JV_IQ
+#define EXTERNAL_FLASH_USE_SPI  SPI1
+#define EXTERNAL_FLASH_USE_CS   SS1
+
+
 /* Analog pins*/
  
 #define PIN_A0               (18ul)
@@ -95,46 +101,45 @@ static const uint8_t A0  = PIN_A0;
  */
 #define SPI_INTERFACES_COUNT 2 //SPI on pins
 
-#define PIN_SPI_MISO         (11u)
-#define PIN_SPI_MOSI         (8u)
-#define PIN_SPI_SCK          (9u)
-#define PIN_SPI_SS           (10u)  
-#define PERIPH_SPI           sercom0
+#define PIN_SPI_MISO         (19u)  // PA19 SERCOM3 PAD[3]
+#define PIN_SPI_MOSI         (16u)  // PA16 SERCOM3 PAD[0]
+#define PIN_SPI_SCK          (17u)  // PA17 SERCOM3 PAD[1]
+#define PIN_SPI_SS           (18u)  // PA18 SERCOM3 PAD[2]
+#define PERIPH_SPI           sercom3
 #define PAD_SPI_TX           SPI_PAD_0_SCK_1
 #define PAD_SPI_RX           SERCOM_RX_PAD_3
 
-static const uint8_t SS   = PIN_SPI_SS ;
+static const uint8_t SS	  = PIN_SPI_SS ;	// only pin remaining (shrug)
 static const uint8_t MOSI = PIN_SPI_MOSI ;
 static const uint8_t MISO = PIN_SPI_MISO ;
 static const uint8_t SCK  = PIN_SPI_SCK ;
 
-#define PIN_SPI1_MISO         (19u)  // PA19 SERCOM3 PAD[3]
-#define PIN_SPI1_MOSI         (16u)  // PA16 SERCOM3 PAD[0]
-#define PIN_SPI1_SCK          (17u)  // PA17 SERCOM3 PAD[1]
-#define PIN_SPI1_SS           (18u)  // PA18 SERCOM3 PAD[2]
-#define PERIPH_SPI1           sercom3
+#define PIN_SPI1_MISO         (11u)
+#define PIN_SPI1_MOSI         (8u)
+#define PIN_SPI1_SCK          (9u) 
+#define PIN_SPI1_SS           (10u)
+#define PERIPH_SPI1           sercom2
 #define PAD_SPI1_TX           SPI_PAD_0_SCK_1
 #define PAD_SPI1_RX           SERCOM_RX_PAD_3
 
-static const uint8_t SS1	  = PIN_SPI1_SS ;	// only pin remaining (shrug)
+static const uint8_t SS1   = PIN_SPI1_SS ;
 static const uint8_t MOSI1 = PIN_SPI1_MOSI ;
 static const uint8_t MISO1 = PIN_SPI1_MISO ;
 static const uint8_t SCK1  = PIN_SPI1_SCK ;
 
-
 /*
  * Wire Interfaces
  */
-#define WIRE_INTERFACES_COUNT 0
-/*
-#define PIN_WIRE_SDA         (22u)
-#define PIN_WIRE_SCL         (23u)
-#define PERIPH_WIRE          sercom2
+#define WIRE_INTERFACES_COUNT 1
+
+#define PIN_WIRE_SDA         -1
+#define PIN_WIRE_SCL         -1
+#define PERIPH_WIRE          sercom0
 #define WIRE_IT_HANDLER     SERCOM2_Handler
 
 static const uint8_t SDA = PIN_WIRE_SDA;
 static const uint8_t SCL = PIN_WIRE_SCL;
-*/
+
 /*
  * USB
  */
