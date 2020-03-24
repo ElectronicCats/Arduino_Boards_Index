@@ -84,18 +84,7 @@ extern "C"
  *        Pins
  *----------------------------------------------------------------------------*/
 
-// Number of pins defined in PinDescription array
-#define PIN_MAP_STANDARD
-//#define PIN_MAP_COMPACT
-
-#if defined PIN_MAP_STANDARD
-  #define NUM_PIN_DESCRIPTION_ENTRIES     (32u)
-#elif defined PIN_MAP_COMPACT
-  #define NUM_PIN_DESCRIPTION_ENTRIES     (12u)
-#else
-  #error "variant.h: You must set PIN_MAP_STANDARD or PIN_MAP_COMPACT"
-#endif
-
+#define NUM_PIN_DESCRIPTION_ENTRIES     (32u)
 #define PINS_COUNT           NUM_PIN_DESCRIPTION_ENTRIES
 #define NUM_DIGITAL_PINS     PINS_COUNT
 #define NUM_ANALOG_INPUTS    (8u)
@@ -176,14 +165,8 @@ static const uint8_t ATN = PIN_ATN;
  * Serial interfaces
  */
 // Serial1
-#if defined PIN_MAP_STANDARD
 #define PIN_SERIAL1_RX       (31ul)
 #define PIN_SERIAL1_TX       (30ul)
-#elif defined PIN_MAP_COMPACT
-#define PIN_SERIAL1_RX       (11ul)
-#define PIN_SERIAL1_TX       (10ul)
-#endif
-
 #define PAD_SERIAL1_TX       (UART_TX_PAD_0)
 #define PAD_SERIAL1_RX       (SERCOM_RX_PAD_1)
 #define SERCOM_INSTANCE_SERIAL1       &sercom1
