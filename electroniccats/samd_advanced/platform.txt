@@ -18,7 +18,7 @@
 # https://github.com/arduino/Arduino/wiki/Arduino-IDE-1.5---3rd-party-Hardware-specification
 
 name=Electronic Cats SAM DLC Core for Arduino
-version=1.0.2
+version=1.0.7
 
 # Compile variables
 # -----------------
