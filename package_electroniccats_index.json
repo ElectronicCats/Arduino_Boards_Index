@@ -74,7 +74,7 @@
         },
         {
           "name": "Electronic Cats SAM DLC Advanced Boards ",
-          "architecture": "samdlc",
+          "architecture": "samd",
           "version": "1.0.6",
           "category": "Contributed",
           "url": "https://github.com/ElectronicCats/Arduino_Boards_Index/raw/gh-pages/IDE_Board_Manager/electroniccats-samd_advanced-v1.0.6.tar.bz2",
@@ -248,7 +248,7 @@
         },
         {
           "name": "Electronic Cats SAM DLC Advanced Boards ",
-          "architecture": "samdlc",
+          "architecture": "samd",
           "version": "1.0.5",
           "category": "Contributed",
           "url": "https://github.com/ElectronicCats/Arduino_Boards_Index/raw/gh-pages/IDE_Board_Manager/electroniccats-samd_advanced-v1.0.5.tar.bz2",
@@ -359,7 +359,7 @@
         },
         {
           "name": "Electronic Cats SAM DLC Advanced Boards ",
-          "architecture": "samdlc",
+          "architecture": "samd",
           "version": "1.0.4",
           "category": "Contributed",
           "url": "https://github.com/ElectronicCats/Arduino_Boards_Index/raw/gh-pages/IDE_Board_Manager/electroniccats-samd_advanced-v1.0.4.tar.bz2",
@@ -407,7 +407,7 @@
         },
         {
           "name": "Electronic Cats SAM DLC Advanced Boards ",
-          "architecture": "samdlc",
+          "architecture": "samd",
           "version": "1.0.3",
           "category": "Contributed",
           "url": "https://github.com/ElectronicCats/Arduino_Boards_Index/raw/gh-pages/IDE_Board_Manager/electroniccats-samd_advanced-v1.0.3.tar.bz2",
@@ -455,7 +455,7 @@
         },
         {
           "name": "Electronic Cats SAM DLC Advanced Boards - beta build",
-          "architecture": "samdlc",
+          "architecture": "samd",
           "version": "1.0.3-beta",
           "category": "Contributed",
           "url": "https://github.com/ElectronicCats/Arduino_Boards_Index/raw/gh-pages/IDE_Board_Manager/electroniccats-samd_advanced-v1.0.3-beta.tar.bz2",
@@ -503,7 +503,7 @@
         },
         {
           "name": "Electronic Cats SAM DLC Advanced Boards",
-          "architecture": "samdlc",
+          "architecture": "samd",
           "version": "1.0.2",
           "category": "Contributed",
           "url": "https://github.com/ElectronicCats/Arduino_Boards_Index/raw/gh-pages/IDE_Board_Manager/electroniccats-samd_advanced-v1.0.2.tar.bz2",
@@ -548,7 +548,7 @@
         },
         {
           "name": "Electronic Cats SAM DLC Advanced Boards",
-          "architecture": "samdlc",
+          "architecture": "samd",
           "version": "1.0.1",
           "category": "Contributed",
           "url": "https://github.com/ElectronicCats/Arduino_Boards_Index/raw/gh-pages/IDE_Board_Manager/electroniccats-samd_advanced-v1.0.1.tar.bz2",
@@ -598,7 +598,7 @@
         },
         {
           "name": "Electronic Cats SAM DLC Advanced Boards",
-          "architecture": "samdlc",
+          "architecture": "samd",
           "version": "1.0.0",
           "category": "Contributed",
           "url": "https://github.com/ElectronicCats/Arduino_Boards_Index/raw/gh-pages/IDE_Board_Manager/electroniccats-samd_advanced-v1.0.0.tar.bz2",
