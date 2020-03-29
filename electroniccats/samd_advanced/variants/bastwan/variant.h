@@ -127,8 +127,6 @@ extern "C"
  */
 #define PIN_LED_13           (13u)
 #define PIN_LED              PIN_LED_13
-#define PIN_LED2             PIN_LED_RXL
-#define PIN_LED3             PIN_LED_TXL
 #define LED_BUILTIN          PIN_LED_13
 
 #define RFM_RST              (31u)
@@ -173,7 +171,7 @@ static const uint8_t A5   = PIN_A5;
 #define PIN_SERIAL1_TX       (1ul)
 #define PAD_SERIAL1_TX       (UART_TX_PAD_2)
 #define PAD_SERIAL1_RX       (SERCOM_RX_PAD_3)
-#define SERCOM_INSTANCE_SERIAL1       &sercom5
+#define SERCOM_INSTANCE_SERIAL1       &sercom3
 
 /*
  * SPI Interfaces
@@ -193,13 +191,13 @@ static const uint8_t MOSI = PIN_SPI_MOSI ;
 static const uint8_t MISO = PIN_SPI_MISO ;
 static const uint8_t SCK  = PIN_SPI_SCK ;
 
-#define PIN_SPI1_MISO         (15u)
-#define PIN_SPI1_MOSI         (14u)
+#define PIN_SPI1_MISO         (14u)
+#define PIN_SPI1_MOSI         (15u)
 #define PIN_SPI1_SCK          (16u)
 #define PIN_SPI1_SS           (13u)
-#define PAD_SPI1_TX           SPI_PAD_2_SCK_3
-#define PAD_SPI1_RX           SERCOM_RX_PAD_0
-#define PERIPH_SPI1           sercom3
+#define PAD_SPI1_TX           SPI_PAD_0_SCK_3
+#define PAD_SPI1_RX           SERCOM_RX_PAD_1
+#define PERIPH_SPI1           sercom5
 
 static const uint8_t SS1   = PIN_SPI1_SS ;        // The SERCOM SS PAD is available on this pin but HW SS isn't used. Set here only for reference.
 static const uint8_t MOSI1 = PIN_SPI1_MOSI ;
@@ -253,7 +251,6 @@ extern SERCOM sercom4;
 extern SERCOM sercom5;
 
 extern Uart Serial1;
-extern Uart Serial2;
 
 #endif
 
