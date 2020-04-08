@@ -11,7 +11,7 @@
       "platforms": [
         {
           "name": "Electronic Cats SAM DLC Advanced Boards ",
-          "architecture": "samd",
+          "architecture": "samdlc",
           "version": "1.0.7",
           "category": "Contributed",
           "url": "https://github.com/ElectronicCats/Arduino_Boards_Index/raw/gh-pages/IDE_Board_Manager/electroniccats-samd_advanced-v1.0.7.tar.bz2",
