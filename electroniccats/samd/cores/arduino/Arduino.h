@@ -130,10 +130,14 @@ void loop( void ) ;
 #endif
 
 // USB Device
+#ifdef USE_TINYUSB
+#include "Adafruit_TinyUSB_Core.h"
+#else
 #include "USB/USBDesc.h"
 #include "USB/USBCore.h"
 #include "USB/USBAPI.h"
 #include "USB/USB_host.h"
+#endif
 
 #ifdef __cplusplus
   #include "USB/CDC.h"

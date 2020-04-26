@@ -53,6 +53,7 @@ compiler.define=-DARDUINO=
 # this can be overriden in boards.txt
 build.extra_flags=
 build.cache_flags=
+build.flags.usbstack=
 
 # These can be overridden in platform.local.txt
 compiler.c.extra_flags=
@@ -68,8 +69,12 @@ compiler.arm.cmsis.ldflags="-L{runtime.tools.CMSIS-4.5.0.path}/CMSIS/Lib/GCC/"  
 
 # USB Flags
 # ---------
-build.usb_flags=-DUSB_VID={build.vid} -DUSB_PID={build.pid} -DUSBCON '-DUSB_MANUFACTURER={build.usb_manufacturer}' '-DUSB_PRODUCT={build.usb_product}'
+build.usb_flags=-DUSB_VID={build.vid} -DUSB_PID={build.pid} -DUSBCON -DUSB_CONFIG_POWER={build.usb_power} '-DUSB_MANUFACTURER={build.usb_manufacturer}' '-DUSB_PRODUCT={build.usb_product}' {build.flags.usbstack} "-I{build.core.path}/TinyUSB" "-I{build.core.path}/TinyUSB/Adafruit_TinyUSB_ArduinoCore" "-I{build.core.path}/TinyUSB/Adafruit_TinyUSB_ArduinoCore/tinyusb/src"
 
+# Default advertised device power setting in mA
+build.usb_power=100
+
+# build.usb_flags=-DUSB_VID={build.vid} -DUSB_PID={build.pid} -DUSBCON '-DUSB_MANUFACTURER={build.usb_manufacturer}' '-DUSB_PRODUCT={build.usb_product}'
 # Default usb manufacturer will be replaced at compile time using
 # numeric vendor ID if available or by board's specific value.
 build.usb_manufacturer="Unknown"
@@ -103,7 +108,6 @@ recipe.output.save_file={build.project_name}.{build.variant}.bin
 ## Compute size
 recipe.size.pattern="{compiler.path}{compiler.size.cmd}" -A "{build.path}/{build.project_name}.elf"
 recipe.size.regex=\.text\s+([0-9]+).*
-recipe.size.regex.data=^(?:\.data|\.bss)\s+([0-9]+).*
 
 
 # Uploader tools

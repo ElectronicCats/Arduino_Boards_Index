@@ -84,7 +84,7 @@ public:
 	void begin(uint32_t baud_count);
 	void begin(unsigned long, uint8_t);
 	void end(void);
-
+ 
 	virtual int available(void);
 	virtual int availableForWrite(void);
 	virtual int peek(void);
@@ -144,7 +144,7 @@ protected:
     bool setup(USBSetup& setup);
     uint8_t getShortName(char* name);
     void handleEndpoint(int ep);
-    void enableInterrupt();
+	void enableInterrupt();
 
 friend USBDeviceClass;
 

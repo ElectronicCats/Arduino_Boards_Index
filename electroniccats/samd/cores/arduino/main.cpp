@@ -39,18 +39,35 @@ int main( void )
   initVariant();
 
   delay(1);
-#if defined(USBCON)
-  USBDevice.init();
-  USBDevice.attach();
-#endif
+
+  #if defined(USBCON)
+    #if defined(USE_TINYUSB)
+      Adafruit_TinyUSB_Core_init();
+    #else
+      USBDevice.init();
+      USBDevice.attach();
+    #endif
+  #endif
 
   setup();
 
   for (;;)
   {
     loop();
+
+     #if defined(USE_TINYUSB) && defined(USBCON)
+       tud_task();
+     #endif
+
     if (serialEventRun) serialEventRun();
   }
 
   return 0;
 }
+
+#if defined(USE_TINYUSB) && defined(USBCON)
+void yield(void)
+{
+  tud_task();
+}
+#endif
