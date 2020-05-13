@@ -143,8 +143,6 @@ extern Uart Serial1;
 #define PAD_SERIAL1_TX (UART_TX_PAD_0)
 #define PAD_SERIAL1_RX (SERCOM_RX_PAD_1)
 
-
-
 // Serial2
 extern Uart Serial2;
 #define PIN_SERIAL2_RX (4ul)
@@ -152,14 +150,13 @@ extern Uart Serial2;
 #define PAD_SERIAL2_TX (UART_TX_PAD_0)
 #define PAD_SERIAL2_RX (SERCOM_RX_PAD_2)
 
+// Serial3
+extern Uart Serial3;
+#define PIN_SERIAL3_RX (11ul) // Dummy 
+#define PIN_SERIAL3_TX (10ul)
+#define PAD_SERIAL3_TX (UART_TX_PAD_0)
+#define PAD_SERIAL3_RX (SERCOM_RX_PAD_2)
 
-
-// Serial0
-extern Uart Serial0;
-#define PIN_SERIAL0_RX (11ul) // Dummy 
-#define PIN_SERIAL0_TX (10ul)
-#define PAD_SERIAL0_TX (UART_TX_PAD_0)
-#define PAD_SERIAL0_RX (SERCOM_RX_PAD_2)
 #endif // __cplusplus
 
 

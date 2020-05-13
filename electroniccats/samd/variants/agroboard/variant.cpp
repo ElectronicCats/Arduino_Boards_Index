@@ -106,11 +106,11 @@ void SERCOM2_Handler()
   Serial2.IrqHandler();
 }
 
-// Serial0
-Uart Serial0(&sercom0, PIN_SERIAL0_TX,  PAD_SERIAL0_TX);
+// Serial3
+Uart Serial3(&sercom0, PIN_SERIAL3_RX,  PIN_SERIAL3_TX, PAD_SERIAL3_RX, PAD_SERIAL3_TX);
 
 void SERCOM0_Handler()
 {
-  Serial0.IrqHandler();
+  Serial3.IrqHandler();
 }
 
