@@ -21,7 +21,6 @@
 // The definitions here needs a SAMD core >=1.6.6
 #define ARDUINO_SAMD_VARIANT_COMPLIANCE 10606
 
-
 #include <WVariant.h>
 
 // General definitions
@@ -62,23 +61,25 @@
  */
 // #define digitalPinToTimer(P)
 
-
 // LEDs
 // ----
-#define PIN_LED_13  (1u)
+#define PIN_LED_13  (0u)
 #define PIN_LED     PIN_LED_13
 #define LED_BUILTIN PIN_LED
 
 /*
  * Analog pins
  */
-#define PIN_A0               (12ul)
-#define PIN_A1               (13ul)
-#define PIN_A2               (14ul)
-#define PIN_A3               (15ul)
-#define PIN_A4               (16ul)
-#define PIN_A5               (17ul)
+#define PIN_A0               (11ul)
+#define PIN_A1               (12ul)
+#define PIN_A2               (13ul)
+#define PIN_A3               (14ul)
+#define PIN_A4               (15ul)
+#define PIN_A5               (16ul)
 
+#define RE                   (21ul)
+#define DE                   (30ul)
+#define cc_1                 (33ul)
 
 
 static const uint8_t A0  = PIN_A0;
@@ -89,21 +90,21 @@ static const uint8_t A4  = PIN_A4;
 static const uint8_t A5  = PIN_A5;
  
 
-#define ADC_RESOLUTION		12
+#define ADC_RESOLUTION    12
 
 /*
  * SPI Interfaces
  */
 #define SPI_INTERFACES_COUNT 1
 
-#define PIN_SPI_MISO         (9u)
-#define PIN_SPI_SCK          (8u)
-#define PIN_SPI_MOSI         (7u)
+#define PIN_SPI_MISO         (8u)
+#define PIN_SPI_SCK          (7u)
+#define PIN_SPI_MOSI         (6u)
 #define PERIPH_SPI           sercom3
 #define PAD_SPI_TX           SPI_PAD_2_SCK_3  // MOSI / SCK
 #define PAD_SPI_RX           SERCOM_RX_PAD_0  // MISO
 
-static const uint8_t SS	  = 6u ;
+static const uint8_t SS   = 5u ;
 static const uint8_t MOSI = PIN_SPI_MOSI ;
 static const uint8_t MISO = PIN_SPI_MISO ;
 static const uint8_t SCK  = PIN_SPI_SCK ;
@@ -115,8 +116,8 @@ static const uint8_t SCK  = PIN_SPI_SCK ;
 
 // USB
 // ---
-#define PIN_USB_DM          (18ul)
-#define PIN_USB_DP          (19ul)
+#define PIN_USB_DM          (17ul)
+#define PIN_USB_DP          (18ul)
 
 // I2S Interfaces
 // --------------
@@ -138,27 +139,26 @@ extern SERCOM sercom5;
 
 // Serial1    
 extern Uart Serial1;
-#define PIN_SERIAL1_RX (2ul)
-#define PIN_SERIAL1_TX (3ul)
+#define PIN_SERIAL1_RX (1ul)
+#define PIN_SERIAL1_TX (2ul)
 #define PAD_SERIAL1_TX (UART_TX_PAD_0)
 #define PAD_SERIAL1_RX (SERCOM_RX_PAD_1)
 
 // Serial2
 extern Uart Serial2;
-#define PIN_SERIAL2_RX (4ul)
-#define PIN_SERIAL2_TX (5ul)
-#define PAD_SERIAL2_TX (UART_TX_PAD_0)
-#define PAD_SERIAL2_RX (SERCOM_RX_PAD_2)
+#define PIN_SERIAL2_RX (3ul)
+#define PIN_SERIAL2_TX (4ul)
+#define PAD_SERIAL2_TX (UART_TX_PAD_2)
+#define PAD_SERIAL2_RX (SERCOM_RX_PAD_0)
 
 // Serial3
 extern Uart Serial3;
-#define PIN_SERIAL3_RX (11ul) // Dummy 
-#define PIN_SERIAL3_TX (10ul)
+#define PIN_SERIAL3_RX (10ul) // Dummy 
+#define PIN_SERIAL3_TX (9ul)
 #define PAD_SERIAL3_TX (UART_TX_PAD_0)
 #define PAD_SERIAL3_RX (SERCOM_RX_PAD_2)
 
 #endif // __cplusplus
-
 
 
 
