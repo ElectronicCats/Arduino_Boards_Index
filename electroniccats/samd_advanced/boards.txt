@@ -168,17 +168,17 @@ magspoof.menu.usb.none.build.pid=0xBAB5
 # Electronic BastFamily based on SAMR34
 
 electroniccats_bast.name=BastWAN
-electroniccats_bast.vid.0=0x16D0
-electroniccats_bast.pid.0=0x0557
-electroniccats_bast.vid.1=0x16D0
+electroniccats_bast.vid.0=0x0ACE
+electroniccats_bast.pid.0=0x4260
+electroniccats_bast.vid.1=0x0ACE
 electroniccats_bast.pid.1=0x0557
-electroniccats_bast.vid.2=0x16D0
+electroniccats_bast.vid.2=0x0ACE
 electroniccats_bast.pid.2=0x0557
-electroniccats_bast.vid.3=0x16D0
+electroniccats_bast.vid.3=0x0ACE
 electroniccats_bast.pid.3=0x0557
-electroniccats_bast.vid.4=0x16D0
+electroniccats_bast.vid.4=0x0ACE
 electroniccats_bast.pid.4=0x0557
-electroniccats_bast.vid.5=0x16D0
+electroniccats_bast.vid.5=0x0ACE
 electroniccats_bast.pid.5=0x0557
 electroniccats_bast.upload.maximum_size=253952
 electroniccats_bast.build.mcu=cortex-m0plus
@@ -191,13 +191,12 @@ electroniccats_bast.build.board=SAMD_ZERO
 electroniccats_bast.build.core=arduino
 electroniccats_bast.build.variant=bastwan
 electroniccats_bast.build.variant_system_lib=
-electroniccats_bast.build.vid=0x16D0
+electroniccats_bast.build.vid=0x0ACE
 electroniccats_bast.upload.protocol=sam-ba
 electroniccats_bast.bootloader.tool=arduino:openocd
 electroniccats_bast.build.ldscript=flash_256KB.ld
 electroniccats_bast.build.openocdscript=openocd_scripts/SAML21J18B.cfg
 electroniccats_bast.bootloader.file=bastwan/bootloader-bast-wan-v3.4.0.bin
-
 electroniccats_bast.menu.float.default=Print & String use auto-promoted doubles only
 electroniccats_bast.menu.float.default.build.floatconfig=FLOAT_BOTH_DOUBLES_ONLY
 electroniccats_bast.menu.float.print=Print uses separate singles and doubles
@@ -258,9 +257,6 @@ electroniccats_bast.menu.timer.timer_2930Hz=2930Hz (8-bit)
 electroniccats_bast.menu.timer.timer_2930Hz.build.timerconfig=TIMER_2930Hz
 electroniccats_bast.menu.timer.timer_1465Hz=1465Hz (8-bit, 16-bit for D51)
 electroniccats_bast.menu.timer.timer_1465Hz.build.timerconfig=TIMER_1465Hz
-
-
-
 electroniccats_bast.menu.bootloader.8kb=8KB_BOOTLOADER
 electroniccats_bast.menu.bootloader.8kb.build.bootloader_size=__8KB_BOOTLOADER__
 electroniccats_bast.menu.bootloader.8kb.build.ldscript_path=linker_scripts/gcc/8KB_Bootloader
@@ -268,7 +264,6 @@ electroniccats_bast.menu.bootloader.8kb.upload.tool=bossac
 electroniccats_bast.menu.bootloader.8kb.upload.use_1200bps_touch=true
 electroniccats_bast.menu.bootloader.8kb.upload.wait_for_upload_port=true
 electroniccats_bast.menu.bootloader.8kb.upload.native_usb=true
-
 electroniccats_bast.menu.serial.one_uart=ONE_UART_ONE_WIRE_NO_SPI
 electroniccats_bast.menu.serial.one_uart.build.serialcom_uart=ONE_UART
 electroniccats_bast.menu.serial.one_uart.build.serialcom_wire=ONE_WIRE
@@ -287,22 +282,22 @@ electroniccats_bast.menu.serial.no_uart.build.serialcom_wire=ONE_WIRE
 electroniccats_bast.menu.serial.no_uart.build.serialcom_spi=ONE_SPI
 electroniccats_bast.menu.usb.cdc=CDC_ONLY
 electroniccats_bast.menu.usb.cdc.build.usbcom=CDC_ONLY
-electroniccats_bast.menu.usb.cdc.build.pid=0xBAB5
+electroniccats_bast.menu.usb.cdc.build.pid=0x4260
 electroniccats_bast.menu.usb.cdc_hid=CDC_HID
 electroniccats_bast.menu.usb.cdc_hid.build.usbcom=CDC_HID
-electroniccats_bast.menu.usb.cdc_hid.build.pid=0xBAB5
+electroniccats_bast.menu.usb.cdc_hid.build.pid=0x4260
 electroniccats_bast.menu.usb.withcdc=WITH_CDC
 electroniccats_bast.menu.usb.withcdc.build.usbcom=WITH_CDC
-electroniccats_bast.menu.usb.withcdc.build.pid=0xBAB5
+electroniccats_bast.menu.usb.withcdc.build.pid=0x4260
 electroniccats_bast.menu.usb.hid=HID_ONLY
 electroniccats_bast.menu.usb.hid.build.usbcom=HID_ONLY
-electroniccats_bast.menu.usb.hid.build.pid=0xBAB5
+electroniccats_bast.menu.usb.hid.build.pid=0x4260
 electroniccats_bast.menu.usb.nocdc=WITHOUT_CDC
 electroniccats_bast.menu.usb.nocdc.build.usbcom=WITHOUT_CDC
-electroniccats_bast.menu.usb.nocdc.build.pid=0xBAB5
+electroniccats_bast.menu.usb.nocdc.build.pid=0x4260
 electroniccats_bast.menu.usb.none=USB_DISABLED
 electroniccats_bast.menu.usb.none.build.usbcom=USB_DISABLED
-electroniccats_bast.menu.usb.none.build.pid=0xBAB5
+electroniccats_bast.menu.usb.none.build.pid=0x4260
 
 # Meow Meow Mini based on D11D14A (SOIC-20)
 meowmeow_mini.name= Meow Meow Mini
