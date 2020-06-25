@@ -25,7 +25,7 @@
  */
 MEMORY
 {
-  FLASH (rx) : ORIGIN = 0x00000000, LENGTH = 0x00040000
+  FLASH (rx) : ORIGIN = 0x00000000+0x2000, LENGTH = 0x00040000-0x2000 /* First 8KB used by bootloader */
   RAM (rwx) : ORIGIN = 0x20000000, LENGTH = 0x00008000
 }
 
@@ -58,7 +58,6 @@ MEMORY
  *   __StackLimit
  *   __StackTop
  *   __stack
- *   __ram_end__
  */
 ENTRY(Reset_Handler)
 
@@ -66,6 +65,11 @@ SECTIONS
 {
 	.text :
 	{
+		__text_start__ = .;
+
+		KEEP(*(.sketch_boot))
+
+		. = ALIGN(0x2000);
 		KEEP(*(.isr_vector))
 		*(.text*)
 
@@ -143,6 +147,7 @@ SECTIONS
 	{
 		__data_start__ = .;
 		*(vtable)
+		*(.ramfunc*)
 		*(.data*)
 
 		. = ALIGN(4);
@@ -167,7 +172,7 @@ SECTIONS
 		PROVIDE_HIDDEN (__fini_array_end = .);
 
 		KEEP(*(.jcr*))
-		. = ALIGN(4);
+		. = ALIGN(16);
 		/* All data end */
 		__data_end__ = .;
 
@@ -201,7 +206,7 @@ SECTIONS
 
 	/* Set stack top to end of RAM, and stack limit move down by
 	 * size of stack_dummy section */
-	__StackTop = ORIGIN(RAM) + LENGTH(RAM) ;
+	__StackTop = ORIGIN(RAM) + LENGTH(RAM);
 	__StackLimit = __StackTop - SIZEOF(.stack_dummy);
 	PROVIDE(__stack = __StackTop);
 

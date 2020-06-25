@@ -67,6 +67,9 @@ SECTIONS
 	{
 		__text_start__ = .;
 
+		KEEP(*(.sketch_boot))
+
+		. = ALIGN(0x2000);
 		KEEP(*(.isr_vector))
 		*(.text*)
 
@@ -144,6 +147,7 @@ SECTIONS
 	{
 		__data_start__ = .;
 		*(vtable)
+		*(.ramfunc*)
 		*(.data*)
 
 		. = ALIGN(4);
@@ -168,7 +172,7 @@ SECTIONS
 		PROVIDE_HIDDEN (__fini_array_end = .);
 
 		KEEP(*(.jcr*))
-		. = ALIGN(4);
+		. = ALIGN(16);
 		/* All data end */
 		__data_end__ = .;
 
