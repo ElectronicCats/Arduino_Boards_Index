@@ -23,6 +23,245 @@ menu.timer=Timer PWM Frequency
 menu.float=Floating Point
 menu.config=Build Options
 
+# CatWAN Bast Pro Mini
+
+electroniccats_Bast_Pro_Mini_M0.name=Electronic Cats Bast Pro Mini M0
+electroniccats_Bast_Pro_Mini_M0.vid.0=0x1209
+electroniccats_Bast_Pro_Mini_M0.pid.0=0xBAB3
+electroniccats_Bast_Pro_Mini_M0.vid.1=0x1209
+electroniccats_Bast_Pro_Mini_M0.pid.1=0xBAB3
+electroniccats_Bast_Pro_Mini_M0.upload.tool=bossac
+electroniccats_Bast_Pro_Mini_M0.upload.protocol=sam-ba
+electroniccats_Bast_Pro_Mini_M0.upload.maximum_size=262144
+electroniccats_Bast_Pro_Mini_M0.upload.offset=0x2000
+electroniccats_Bast_Pro_Mini_M0.upload.use_1200bps_touch=true
+electroniccats_Bast_Pro_Mini_M0.upload.wait_for_upload_port=true
+electroniccats_Bast_Pro_Mini_M0.upload.native_usb=true
+electroniccats_Bast_Pro_Mini_M0.build.mcu=cortex-m0plus
+electroniccats_Bast_Pro_Mini_M0.build.f_cpu=48000000L
+electroniccats_Bast_Pro_Mini_M0.build.usb_product="Bast Pro Mini M0"
+electroniccats_Bast_Pro_Mini_M0.build.usb_manufacturer="Electronic Cats"
+electroniccats_Bast_Pro_Mini_M0.build.board=bast_pro_mini_m0
+electroniccats_Bast_Pro_Mini_M0.build.core=arduino
+electroniccats_Bast_Pro_Mini_M0.build.extra_flags=-DCRYSTALLESS -DARDUINO_SAMD_ZERO -D__SAMD21E18A__ -DARM_MATH_CM0PLUS {build.usb_flags}
+electroniccats_Bast_Pro_Mini_M0.build.ldscript=linker_scripts/gcc/flash_with_bootloader.ld
+electroniccats_Bast_Pro_Mini_M0.build.openocdscript=openocd_scripts/arduino_zero.cfg
+electroniccats_Bast_Pro_Mini_M0.build.variant=bast_pro_mini_m0
+electroniccats_Bast_Pro_Mini_M0.build.variant_system_lib=
+electroniccats_Bast_Pro_Mini_M0.build.vid=0x1209
+electroniccats_Bast_Pro_Mini_M0.build.pid=0xBAB3
+electroniccats_Bast_Pro_Mini_M0.bootloader.tool=openocd
+electroniccats_Bast_Pro_Mini_M0.bootloader.file=bast_pro_mini_m0/bootloader-bast-pro-mini-m0-v2.0.0.bin
+
+# CatWAN USB Stick
+
+electroniccats_USB_Stick.name=Electronic Cats CatWAN USB Stick
+electroniccats_USB_Stick.vid.0=0x1209
+electroniccats_USB_Stick.pid.0=0xBAB2
+electroniccats_USB_Stick.vid.1=0x1209
+electroniccats_USB_Stick.pid.1=0xBAB2
+electroniccats_USB_Stick.upload.tool=bossac
+electroniccats_USB_Stick.upload.protocol=sam-ba
+electroniccats_USB_Stick.upload.maximum_size=262144
+electroniccats_USB_Stick.upload.offset=0x2000
+electroniccats_USB_Stick.upload.use_1200bps_touch=true
+electroniccats_USB_Stick.upload.wait_for_upload_port=true
+electroniccats_USB_Stick.upload.native_usb=true
+electroniccats_USB_Stick.build.mcu=cortex-m0plus
+electroniccats_USB_Stick.build.f_cpu=48000000L
+electroniccats_USB_Stick.build.usb_product="CatWAN USB_Stick"
+electroniccats_USB_Stick.build.usb_manufacturer="Electronic Cats"
+electroniccats_USB_Stick.build.board=catwan_usb_stick
+electroniccats_USB_Stick.build.core=arduino
+electroniccats_USB_Stick.build.extra_flags=-DCRYSTALLESS -DARDUINO_SAMD_ZERO -D__SAMD21E18A__ -DARM_MATH_CM0PLUS {build.usb_flags}
+electroniccats_USB_Stick.build.ldscript=linker_scripts/gcc/flash_with_bootloader.ld
+electroniccats_USB_Stick.build.openocdscript=openocd_scripts/arduino_zero.cfg
+electroniccats_USB_Stick.build.variant=catwan_usb_stick
+electroniccats_USB_Stick.build.variant_system_lib=
+electroniccats_USB_Stick.build.vid=0x1209
+electroniccats_USB_Stick.build.pid=0xBAB2
+electroniccats_USB_Stick.bootloader.tool=openocd
+electroniccats_USB_Stick.bootloader.file=catwan_usb_stick/bootloader-CatWAN-USB-Stick-v2.0.1.bin
+
+# Meow Meow
+
+electroniccats_meow_meow.name=Electronic Cats Meow Meow
+electroniccats_meow_meow.vid.0=0x1209
+electroniccats_meow_meow.pid.0=0xBAB1
+electroniccats_meow_meow.vid.1=0x1209
+electroniccats_meow_meow.pid.1=0xBAB1
+electroniccats_meow_meow.upload.tool=bossac
+electroniccats_meow_meow.upload.protocol=sam-ba
+electroniccats_meow_meow.upload.maximum_size=253952
+electroniccats_meow_meow.upload.offset=0x2000
+electroniccats_meow_meow.upload.use_1200bps_touch=true
+electroniccats_meow_meow.upload.wait_for_upload_port=true
+electroniccats_meow_meow.upload.native_usb=true
+electroniccats_meow_meow.build.mcu=cortex-m0plus
+electroniccats_meow_meow.build.f_cpu=48000000L
+electroniccats_meow_meow.build.usb_product="Meow Meow"
+electroniccats_meow_meow.build.usb_manufacturer="Electronic Cats"
+electroniccats_meow_meow.build.board=meow_meow
+electroniccats_meow_meow.build.core=arduino
+electroniccats_meow_meow.build.extra_flags=-DCRYSTALLESS -DARDUINO_SAMD_ZERO -D__SAMD21G18A__ -DARM_MATH_CM0PLUS {build.usb_flags}
+electroniccats_meow_meow.build.ldscript=linker_scripts/gcc/flash_with_bootloader.ld
+electroniccats_meow_meow.build.openocdscript=openocd_scripts/SAMD21G15A.cfg
+electroniccats_meow_meow.build.variant=meow_meow
+electroniccats_meow_meow.build.variant_system_lib=
+electroniccats_meow_meow.build.vid=0x1209
+electroniccats_meow_meow.build.pid=0xBAB1
+electroniccats_meow_meow.bootloader.tool=openocd
+electroniccats_meow_meow.bootloader.file=meow_meow/bootloader-meowmeow-v2.0.0.bin
+
+# CatWAN Relay
+
+electroniccats_relay_board.name=Electronic Cats CatWAN Relay Board
+electroniccats_relay_board.vid.0=0x1209
+electroniccats_relay_board.pid.0=0xBABA
+electroniccats_relay_board.vid.1=0x1209
+electroniccats_relay_board.pid.1=0xBABA
+electroniccats_relay_board.upload.tool=bossac
+electroniccats_relay_board.upload.protocol=sam-ba
+electroniccats_relay_board.upload.maximum_size=262144
+electroniccats_relay_board.upload.offset=0x2000
+electroniccats_relay_board.upload.use_1200bps_touch=true
+electroniccats_relay_board.upload.wait_for_upload_port=true
+electroniccats_relay_board.upload.native_usb=true
+electroniccats_relay_board.build.mcu=cortex-m0plus
+electroniccats_relay_board.build.f_cpu=48000000L
+electroniccats_relay_board.build.usb_product="CatWAN Relay Board"
+electroniccats_relay_board.build.usb_manufacturer="Electronic Cats"
+electroniccats_relay_board.build.board=catwan_relay_board
+electroniccats_relay_board.build.core=arduino
+electroniccats_relay_board.build.extra_flags=-DCRYSTALLESS -DARDUINO_SAMD_ZERO -D__SAMD21E18A__ -DARM_MATH_CM0PLUS {build.usb_flags}
+electroniccats_relay_board.build.ldscript=linker_scripts/gcc/flash_with_bootloader.ld
+electroniccats_relay_board.build.openocdscript=openocd_scripts/arduino_zero.cfg
+electroniccats_relay_board.build.variant=catwan_relay_board
+electroniccats_relay_board.build.variant_system_lib=
+electroniccats_relay_board.build.vid=0x1209
+electroniccats_relay_board.build.pid=0xBABA
+electroniccats_relay_board.bootloader.tool=openocd
+electroniccats_relay_board.bootloader.file=catwan_relay_board/bootloader-catwan_relay_board-v2.0.0.bin
+
+# CatWAN Citizen
+
+electroniccats_citizen_board.name=Electronic Cats CatWAN Citizen
+electroniccats_citizen_board.vid.0=0x1209
+electroniccats_citizen_board.pid.0=0xBAB4
+electroniccats_citizen_board.vid.1=0x1209
+electroniccats_citizen_board.pid.1=0xBAB4
+electroniccats_citizen_board.upload.tool=bossac
+electroniccats_citizen_board.upload.protocol=sam-ba
+electroniccats_citizen_board.upload.maximum_size=262144
+electroniccats_citizen_board.upload.offset=0x2000
+electroniccats_citizen_board.upload.use_1200bps_touch=true
+electroniccats_citizen_board.upload.wait_for_upload_port=true
+electroniccats_citizen_board.upload.native_usb=true
+electroniccats_citizen_board.build.mcu=cortex-m0plus
+electroniccats_citizen_board.build.f_cpu=48000000L
+electroniccats_citizen_board.build.usb_product="CatWAN Citizen"
+electroniccats_citizen_board.build.usb_manufacturer="Electronic Cats"
+electroniccats_citizen_board.build.board=catwan_citizen
+electroniccats_citizen_board.build.core=arduino
+electroniccats_citizen_board.build.extra_flags=-DCRYSTALLESS -DARDUINO_SAMD_ZERO -D__SAMD21E18A__ -DARM_MATH_CM0PLUS {build.usb_flags}
+electroniccats_citizen_board.build.ldscript=linker_scripts/gcc/flash_with_bootloader.ld
+electroniccats_citizen_board.build.openocdscript=openocd_scripts/arduino_zero.cfg
+electroniccats_citizen_board.build.variant=catwan_citizen
+electroniccats_citizen_board.build.variant_system_lib=
+electroniccats_citizen_board.build.vid=0x1209
+electroniccats_citizen_board.build.pid=0xBAB4
+electroniccats_citizen_board.bootloader.tool=openocd
+electroniccats_citizen_board.bootloader.file=catwan_citizen/bootloader-catwan-citizen-v3.2.3.bin
+
+# Escornabot Makech
+
+electroniccats_makech.name=Electronic Cats Escornabot Makech
+electroniccats_makech.vid.0=0x1209
+electroniccats_makech.pid.0=0xBAB6
+electroniccats_makech.vid.1=0x1209
+electroniccats_makech.pid.1=0xBAB6
+electroniccats_makech.upload.tool=bossac
+electroniccats_makech.upload.protocol=sam-ba
+electroniccats_makech.upload.maximum_size=253952
+electroniccats_makech.upload.offset=0x2000
+electroniccats_makech.upload.use_1200bps_touch=true
+electroniccats_makech.upload.wait_for_upload_port=true
+electroniccats_makech.upload.native_usb=true
+electroniccats_makech.build.mcu=cortex-m0plus
+electroniccats_makech.build.f_cpu=48000000L
+electroniccats_makech.build.usb_product="Escornabot Makech"
+electroniccats_makech.build.usb_manufacturer="Electronic Cats"
+electroniccats_makech.build.board=makech
+electroniccats_makech.build.core=arduino
+electroniccats_makech.build.extra_flags=-DCRYSTALLESS -DARDUINO_SAMD_ZERO -D__SAMD21G18A__ -DARM_MATH_CM0PLUS {build.usb_flags}
+electroniccats_makech.build.ldscript=linker_scripts/gcc/flash_with_bootloader.ld
+electroniccats_makech.build.openocdscript=openocd_scripts/SAMD21G15A.cfg
+electroniccats_makech.build.variant=makech
+electroniccats_makech.build.variant_system_lib=
+electroniccats_makech.build.vid=0x1209
+electroniccats_makech.build.pid=0xBAB6
+electroniccats_makech.bootloader.tool=openocd
+electroniccats_makech.bootloader.file=makech/bootloader-escornabot_makech-v3.3.0.bin
+
+# CatWAN Tracker
+
+electroniccats_tracker.name=Electronic Cats CatWAN Tracker
+electroniccats_tracker.vid.0=0x1209
+electroniccats_tracker.pid.0=0xBAB9
+electroniccats_tracker.vid.1=0x1209
+electroniccats_tracker.pid.1=0xBAB9
+electroniccats_tracker.upload.tool=bossac
+electroniccats_tracker.upload.protocol=sam-ba
+electroniccats_tracker.upload.maximum_size=253952
+electroniccats_tracker.upload.offset=0x2000
+electroniccats_tracker.upload.use_1200bps_touch=true
+electroniccats_tracker.upload.wait_for_upload_port=true
+electroniccats_tracker.upload.native_usb=true
+electroniccats_tracker.build.mcu=cortex-m0plus
+electroniccats_tracker.build.f_cpu=48000000L
+electroniccats_tracker.build.usb_product="CatWAN Tracker"
+electroniccats_tracker.build.usb_manufacturer="Electronic Cats"
+electroniccats_tracker.build.board=catwan_tracker
+electroniccats_tracker.build.core=arduino
+electroniccats_tracker.build.extra_flags=-DCRYSTALLESS -DARDUINO_SAMD_ZERO -D__SAMD21E18A__ -DARM_MATH_CM0PLUS {build.usb_flags}
+electroniccats_tracker.build.ldscript=linker_scripts/gcc/flash_with_bootloader.ld
+electroniccats_tracker.build.openocdscript=openocd_scripts/SAMD21E18A.cfg
+electroniccats_tracker.build.variant=catwan_tracker
+electroniccats_tracker.build.variant_system_lib=
+electroniccats_tracker.build.vid=0x1209
+electroniccats_tracker.build.pid=0xBAB9
+electroniccats_tracker.bootloader.tool=openocd
+electroniccats_tracker.bootloader.file=catwan_tracker/bootloader-tracker-v3.3.0.bin
+
+# NFC Copy Cat
+
+electroniccats_nfc_copy_cat.name=Electronic Cats NCF Copy Cat
+electroniccats_nfc_copy_cat.vid.0=0x1209
+electroniccats_nfc_copy_cat.pid.0=0xBAB8
+electroniccats_nfc_copy_cat.vid.1=0x1209
+electroniccats_nfc_copy_cat.pid.1=0xBAB8
+electroniccats_nfc_copy_cat.upload.tool=bossac
+electroniccats_nfc_copy_cat.upload.protocol=sam-ba
+electroniccats_nfc_copy_cat.upload.maximum_size=262144
+electroniccats_nfc_copy_cat.upload.offset=0x2000
+electroniccats_nfc_copy_cat.upload.use_1200bps_touch=true
+electroniccats_nfc_copy_cat.upload.wait_for_upload_port=true
+electroniccats_nfc_copy_cat.upload.native_usb=true
+electroniccats_nfc_copy_cat.build.mcu=cortex-m0plus
+electroniccats_nfc_copy_cat.build.f_cpu=48000000L
+electroniccats_nfc_copy_cat.build.usb_product="NFC Copy Cat"
+electroniccats_nfc_copy_cat.build.usb_manufacturer="Electronic Cats"
+electroniccats_nfc_copy_cat.build.board=nfc_copy_cat
+electroniccats_nfc_copy_cat.build.core=arduino
+electroniccats_nfc_copy_cat.build.extra_flags=-DCRYSTALLESS -DARDUINO_SAMD_ZERO -D__SAMD21E18A__ -DARM_MATH_CM0PLUS {build.usb_flags}
+electroniccats_nfc_copy_cat.build.ldscript=linker_scripts/gcc/flash_with_bootloader.ld
+electroniccats_nfc_copy_cat.build.openocdscript=openocd_scripts/arduino_zero.cfg
+electroniccats_nfc_copy_cat.build.variant=nfc_copy_cat
+electroniccats_nfc_copy_cat.build.variant_system_lib=
+electroniccats_nfc_copy_cat.build.vid=0x1209
+electroniccats_nfc_copy_cat.build.pid=0xBAB8
+electroniccats_nfc_copy_cat.bootloader.tool=openocd
+electroniccats_nfc_copy_cat.bootloader.file=nfc_copy_cat/bootloader-nfc_copy_cat-v3.4.0.bin
 
 # Magspoof v3 based on D11C14A (SOIC-14)
 magspoof.name= Magspoof V3
