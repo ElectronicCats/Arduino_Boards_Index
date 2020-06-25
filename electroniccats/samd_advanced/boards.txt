@@ -365,36 +365,6 @@ electroniccats_nfc_copy_cat.build.pid=0xBAB8
 electroniccats_nfc_copy_cat.bootloader.tool=openocd
 electroniccats_nfc_copy_cat.bootloader.file=nfc_copy_cat/bootloader-nfc_copy_cat-v3.4.0.bin
 
-# Hunter Cat NFC 
-
-electroniccats_hunter_cat.name=Electronic Cats HunterCat NFC
-electroniccats_hunter_cat.vid.0=0x1209
-electroniccats_hunter_cat.pid.0=0x1337
-electroniccats_hunter_cat.vid.1=0x1209
-electroniccats_hunter_cat.pid.1=0x1337
-electroniccats_hunter_cat.upload.tool=bossac
-electroniccats_hunter_cat.upload.protocol=sam-ba
-electroniccats_hunter_cat.upload.maximum_size=262144
-electroniccats_hunter_cat.upload.offset=0x2000
-electroniccats_hunter_cat.upload.use_1200bps_touch=true
-electroniccats_hunter_cat.upload.wait_for_upload_port=true
-electroniccats_hunter_cat.upload.native_usb=true
-electroniccats_hunter_cat.build.mcu=cortex-m0plus
-electroniccats_hunter_cat.build.f_cpu=48000000L
-electroniccats_hunter_cat.build.usb_product="HunterCat NFC"
-electroniccats_hunter_cat.build.usb_manufacturer="Electronic Cats"
-electroniccats_hunter_cat.build.board=nfc_copy_cat
-electroniccats_hunter_cat.build.core=arduino
-electroniccats_hunter_cat.build.extra_flags=-DCRYSTALLESS -DARDUINO_SAMD_ZERO -D__SAMD21E18A__ -DARM_MATH_CM0PLUS {build.usb_flags}
-electroniccats_hunter_cat.build.ldscript=linker_scripts/gcc/flash_with_bootloader.ld
-electroniccats_hunter_cat.build.openocdscript=openocd_scripts/arduino_zero.cfg
-electroniccats_hunter_cat.build.variant=huntercat_nfc
-electroniccats_hunter_cat.build.variant_system_lib=
-electroniccats_hunter_cat.build.vid=0x1209
-electroniccats_hunter_cat.build.pid=0x1337
-electroniccats_hunter_cat.bootloader.tool=openocd
-electroniccats_hunter_cat.bootloader.file=huntercat_nfc/bootloader-nfc_copy_cat-v3.4.0.bin
-
 # Magspoof v3 based on D11C14A (SOIC-14)
 magspoof.name= Magspoof V3
 magspoof.vid.0=0x1209
