@@ -10,6 +10,69 @@
       },
       "platforms": [
         {
+          "name": "Electronic Cats SAMD Boards",
+          "architecture": "samd",
+          "version": "1.2.7",
+          "category": "Contributed",
+          "url": "https://github.com/ElectronicCats/Arduino_Boards_Index/raw/gh-pages/IDE_Board_Manager/electroniccats-samd-v1.2.7.tar.bz2",
+          "archiveFileName": "electroniccats-samd-v1.2.8.tar.bz2",
+          "checksum": "SHA-256:16e88978c9baabf14bc74747bce8d12634a025495e845738c02e2e3c04d099c5",
+          "size": "279114",
+          "help": {
+            "online": "https://electroniccats.com/"
+          },
+          "boards": [
+            {
+              "name": "Meow Meow"
+            },
+            {
+              "name": "CatWAN USB-Stick"
+            },
+            {
+              "name": "CatWAN Relay board"
+            },
+            {
+              "name": "CatWAN Citizen"
+            },
+            {
+              "name": "Bast Pro Mini M0"
+            },
+            {
+              "name": "Escornabot Makech"
+            },
+            {
+              "name":"CatWAN Tracker"
+            }
+          ],
+          "toolsDependencies": [
+            {
+              "packager": "arduino",
+              "name": "arm-none-eabi-gcc",
+              "version": "4.8.3-2014q1"
+            },
+            {
+              "packager": "arduino",
+              "name": "bossac",
+              "version": "1.8.0-48-gb176eee"
+            },
+            {
+              "packager": "arduino",
+              "name": "openocd",
+              "version": "0.9.0-arduino"
+            },
+            {
+              "packager": "arduino",
+              "name": "CMSIS",
+              "version": "4.5.0"
+            },
+            {
+              "packager": "arduino",
+              "name": "CMSIS-Atmel",
+              "version": "1.2.0"
+            }
+          ]
+        },
+        {
           "name": "Electronic Cats SAM DLC Advanced Boards ",
           "architecture": "samdlc",
           "version": "1.0.7",
