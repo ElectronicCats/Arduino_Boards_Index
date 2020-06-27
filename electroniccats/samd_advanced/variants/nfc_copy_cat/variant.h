@@ -95,7 +95,7 @@ extern "C"
 #define portOutputRegister(port)   ( &(port->OUT.reg) )
 #define portInputRegister(port)    ( &(port->IN.reg) )
 #define portModeRegister(port)     ( &(port->DIR.reg) )
-#define digitalPinHasPWM(P)        ( g_APinDescription[P].ulPWMChannel != NOT_ON_PWM || g_APinDescription[P].ulTCChannel != NOT_ON_TIMER )
+#define digitalPinHasPWM(P)        ( (g_APinDescription[P].ulPinAttribute & PIN_ATTR_TIMER_PWM) == PIN_ATTR_TIMER_PWM )
 
 /*
  * digitalPinToTimer(..) is AVR-specific and is not defined for SAMD
