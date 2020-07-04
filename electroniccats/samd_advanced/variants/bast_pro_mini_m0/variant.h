@@ -19,9 +19,11 @@
 #ifndef _VARIANT_ARDUINO_ZERO_
 #define _VARIANT_ARDUINO_ZERO_
 
-// The definitions here needs a SAMD core >=1.6.6
+/* The definitions here need the MattairTech SAMD core >=1.6.8.
+ * The format is different than the stock Arduino SAMD core,
+ * which uses ARDUINO_SAMD_VARIANT_COMPLIANCE instead.
+ */
 #define MATTAIRTECH_ARDUINO_SAMD_VARIANT_COMPLIANCE 10608
-
 /*----------------------------------------------------------------------------
  *        Definitions
  *----------------------------------------------------------------------------*/
