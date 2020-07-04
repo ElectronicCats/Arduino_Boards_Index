@@ -26,20 +26,16 @@
 #define MATTAIRTECH_ARDUINO_SAMD_VARIANT_COMPLIANCE 10618
 
 /*----------------------------------------------------------------------------
- *        Clock configuration
+ *        Clock Configuration
  *----------------------------------------------------------------------------*/
 
-/** Master clock frequency */
-#define VARIANT_MCK			  (48000000ul)
+/** Master clock frequency (also Fcpu frequency) */
+#define VARIANT_MCK		(48000000ul)
 
 /* If CLOCKCONFIG_HS_CRYSTAL is defined, then HS_CRYSTAL_FREQUENCY_HERTZ
  * must also be defined with the external crystal frequency in Hertz.
  */
 #define HS_CRYSTAL_FREQUENCY_HERTZ	16000000UL
-
-/*----------------------------------------------------------------------------
- *        Headers
- *----------------------------------------------------------------------------*/
 
 /* If the PLL is used (CLOCKCONFIG_32768HZ_CRYSTAL, or CLOCKCONFIG_HS_CRYSTAL
  * defined), then PLL_FRACTIONAL_ENABLED can be defined, which will result in
@@ -59,8 +55,11 @@
 /* The fine calibration value for DFLL open-loop mode is defined here.
  * The coarse calibration value is loaded from NVM OTP (factory calibration values).
  */
-
 #define NVM_SW_CALIB_DFLL48M_FINE_VAL     (512)
+
+/*----------------------------------------------------------------------------
+ *        Headers
+ *----------------------------------------------------------------------------*/
 
 #include "WVariant.h"
 
