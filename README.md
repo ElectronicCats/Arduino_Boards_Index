@@ -1,3 +1,7 @@
+<a href="https://github.com/sponsors/ElectronicCats">
+  <img src="https://electroniccats.com/wp-content/uploads/2020/07/Badge_GHS.png" height="104" />
+</a>
+
 [![Build Status](https://travis-ci.org/ElectronicCats/Arduino_Boards_Index.svg?branch=gh-pages)](https://travis-ci.org/ElectronicCats/Arduino_Boards_Index) 
 
 # Electronic Cats Arduino Boards
