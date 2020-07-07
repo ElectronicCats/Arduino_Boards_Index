@@ -199,76 +199,29 @@ static const uint8_t ATN = PIN_ATN;
  * Serial interfaces
  */
 // Serial1
-#if defined PIN_MAP_STANDARD
+
 #define PIN_SERIAL1_RX       (31ul)
 #define PIN_SERIAL1_TX       (30ul)
-#elif defined PIN_MAP_COMPACT
-#define PIN_SERIAL1_RX       (11ul)
-#define PIN_SERIAL1_TX       (10ul)
-#endif
 
 #define PAD_SERIAL1_TX       (UART_TX_PAD_0)
 #define PAD_SERIAL1_RX       (SERCOM_RX_PAD_1)
 #define SERCOM_INSTANCE_SERIAL1       &sercom1
 
-// Serial2
-#if defined PIN_MAP_STANDARD
-#define PIN_SERIAL2_RX       (5ul)
-#define PIN_SERIAL2_TX       (4ul)
-#elif defined PIN_MAP_COMPACT
-#define PIN_SERIAL2_RX       (2ul)
-#define PIN_SERIAL2_TX       (1ul)
-#endif
-
-#define PAD_SERIAL2_TX       (UART_TX_PAD_2)
-#define PAD_SERIAL2_RX       (SERCOM_RX_PAD_3)
-#define SERCOM_INSTANCE_SERIAL2       &sercom0
-
-
 /*
  * SPI Interfaces
  */
-#if defined(ONE_SPI)
+
 #define SPI_INTERFACES_COUNT 1
-#else
-#define SPI_INTERFACES_COUNT 0
-#endif
 
-#if defined(ONE_WIRE) && defined (ONE_SPI)
-  #if defined PIN_MAP_STANDARD
-    #define PIN_SPI_MISO         (30u)
-    #define PIN_SPI_MOSI         (8u)
-    #define PIN_SPI_SCK          (9u)
-    #define PIN_SPI_SS           (31u)
-  #elif defined PIN_MAP_COMPACT
-    #define PIN_SPI_MISO         (10u)
-    #define PIN_SPI_MOSI         (3u)
-    #define PIN_SPI_SCK          (4u)
-    #define PIN_SPI_SS           (11u)
-  #endif
+#define PIN_SPI_MISO         (30u)
+#define PIN_SPI_MOSI         (8u)
+#define PIN_SPI_SCK          (9u)
+#define PIN_SPI_SS           (31u)
 
-  #define PERIPH_SPI           sercom1
-  #define PAD_SPI_TX           SPI_PAD_2_SCK_3
-  #define PAD_SPI_RX           SERCOM_RX_PAD_0
+#define PERIPH_SPI           sercom1
+#define PAD_SPI_TX           SPI_PAD_2_SCK_3
+#define PAD_SPI_RX           SERCOM_RX_PAD_0
 
-// ONE_UART and ONE_SPI
-#else
-  #if defined PIN_MAP_STANDARD
-    #define PIN_SPI_MISO         (14u)
-    #define PIN_SPI_MOSI         (4u)
-    #define PIN_SPI_SCK          (5u)
-    #define PIN_SPI_SS           (15u)
-  #elif defined PIN_MAP_COMPACT
-    #define PIN_SPI_MISO         (5u)
-    #define PIN_SPI_MOSI         (1u)
-    #define PIN_SPI_SCK          (2u)
-    #define PIN_SPI_SS           (5u)
-  #endif
-
-  #define PERIPH_SPI           sercom0
-  #define PAD_SPI_TX           SPI_PAD_2_SCK_3
-  #define PAD_SPI_RX           SERCOM_RX_PAD_0
-#endif
 
 static const uint8_t SS	  = PIN_SPI_SS ;	// The SERCOM SS PAD is available on this pin but HW SS isn't used. Set here only for reference.
 static const uint8_t MOSI = PIN_SPI_MOSI ;
@@ -279,19 +232,10 @@ static const uint8_t SCK  = PIN_SPI_SCK ;
 /*
  * Wire Interfaces
  */
-#if defined(ONE_WIRE)
 #define WIRE_INTERFACES_COUNT 1
-#else
-#define WIRE_INTERFACES_COUNT 0
-#endif
 
-#if defined PIN_MAP_STANDARD
 #define PIN_WIRE_SDA         (14u)
 #define PIN_WIRE_SCL         (15u)
-#elif defined PIN_MAP_COMPACT
-#define PIN_WIRE_SDA         (5u)
-#define PIN_WIRE_SCL         (6u)
-#endif
 
 #define PERIPH_WIRE          sercom0
 #define WIRE_IT_HANDLER      SERCOM0_Handler
@@ -304,15 +248,10 @@ static const uint8_t SCL = PIN_WIRE_SCL;
  * USB - Define PIN_USB_HOST_ENABLE to assert the defined pin to
  * PIN_USB_HOST_ENABLE_VALUE during startup. Leave undefined to disable this pin.
  */
-#if defined PIN_MAP_STANDARD
 #define PIN_USB_DM                      (24ul)
 #define PIN_USB_DP                      (25ul)
 //#define PIN_USB_HOST_ENABLE             (14ul)
-#elif defined PIN_MAP_COMPACT
-#define PIN_USB_DM                      (7ul)
-#define PIN_USB_DP                      (8ul)
-//#define PIN_USB_HOST_ENABLE             (5ul)
-#endif
+
 
 #define PIN_USB_HOST_ENABLE_VALUE	HIGH
 

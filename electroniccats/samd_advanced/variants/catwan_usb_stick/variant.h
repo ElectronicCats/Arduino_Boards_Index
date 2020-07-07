@@ -128,7 +128,6 @@ static const uint8_t DAC0 = PIN_DAC0;
 /* Set default analog voltage reference */
 #define VARIANT_AR_DEFAULT	AR_DEFAULT
 
-
 /*
  * Serial interfaces
  */
@@ -142,7 +141,7 @@ static const uint8_t DAC0 = PIN_DAC0;
 /*
  * SPI Interfaces
  */
-#define SPI_INTERFACES_COUNT 1 // we'll just have SPI CLK and MOSI on sercom 0, no MISO
+#define SPI_INTERFACES_COUNT 1
 
 #define PIN_SPI_MISO         (17u)  // PA22
 #define PIN_SPI_MOSI         (18u)  // PA18
@@ -156,7 +155,6 @@ static const uint8_t SS	  = PIN_SPI_SS ;	// only pin remaining (shrug)
 static const uint8_t MOSI = PIN_SPI_MOSI ;
 static const uint8_t MISO = PIN_SPI_MISO ;
 static const uint8_t SCK  = PIN_SPI_SCK ;
-
 
 /*
  * Wire Interfaces

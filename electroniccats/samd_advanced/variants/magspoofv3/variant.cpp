@@ -145,20 +145,11 @@ const void* g_apTCInstances[TCC_INST_NUM+TC_INST_NUM]={ TCC0, TC1, TC2 } ;
 SERCOM sercom0( SERCOM0 ) ;
 SERCOM sercom1( SERCOM1 ) ;
 
-#if defined(ONE_UART) || defined(TWO_UART)
+
 Uart Serial1( SERCOM_INSTANCE_SERIAL1, PIN_SERIAL1_RX, PIN_SERIAL1_TX, PAD_SERIAL1_RX, PAD_SERIAL1_TX ) ;
 
 void SERCOM1_Handler()
 {
   Serial1.IrqHandler();
 }
-#endif
 
-#if defined(TWO_UART)
-Uart Serial2( SERCOM_INSTANCE_SERIAL2, PIN_SERIAL2_RX, PIN_SERIAL2_TX, PAD_SERIAL2_RX, PAD_SERIAL2_TX ) ;
-
-void SERCOM0_Handler()
-{
-  Serial2.IrqHandler();
-}
-#endif

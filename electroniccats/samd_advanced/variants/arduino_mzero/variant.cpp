@@ -134,21 +134,14 @@ SERCOM sercom3( SERCOM3 ) ;
 SERCOM sercom4( SERCOM4 ) ;
 SERCOM sercom5( SERCOM5 ) ;
 
-#if defined(ONE_UART) || defined(TWO_UART)
+
 Uart Serial( SERCOM_INSTANCE_SERIAL, PIN_SERIAL_RX, PIN_SERIAL_TX, PAD_SERIAL_RX, PAD_SERIAL_TX ) ;
 
 void SERCOM5_Handler()
 {
   Serial.IrqHandler();
 }
-#endif
 
-#if defined(TWO_UART)
-Uart Serial1( SERCOM_INSTANCE_SERIAL1, PIN_SERIAL1_RX, PIN_SERIAL1_TX, PAD_SERIAL1_RX, PAD_SERIAL1_TX ) ;
 
-void SERCOM0_Handler()
-{
-  Serial1.IrqHandler();
-}
-#endif
+
 
