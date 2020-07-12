@@ -372,3 +372,4 @@ TwoWire Wire(&PERIPH_WIRE, PIN_WIRE_SDA, PIN_WIRE_SCL);
     void WIRE_IT_HANDLER(void) {
       Wire.onService();
     }
+#endif
