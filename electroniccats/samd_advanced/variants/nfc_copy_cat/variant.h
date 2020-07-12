@@ -17,7 +17,7 @@
 #define _VARIANT_ARDUINO_ZERO_
 
 // The definitions here needs a SAMD core >=1.6.8
-#define MATTAIRTECH_ARDUINO_SAMD_VARIANT_COMPLIANCE 10608
+#define MATTAIRTECH_ARDUINO_SAMD_VARIANT_COMPLIANCE 10618
 
 /*----------------------------------------------------------------------------
  *        Definitions
