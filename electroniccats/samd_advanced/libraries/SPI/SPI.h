@@ -150,6 +150,30 @@ class SPIClass {
   uint32_t interruptMask;
 };
 
+#if SPI_INTERFACES_COUNT > 0
+  extern SPIClass SPI;
+#endif
+#if SPI_INTERFACES_COUNT > 1
+  extern SPIClass SPI1;
+#endif
+#if SPI_INTERFACES_COUNT > 2
+  extern SPIClass SPI2;
+#endif
+#if SPI_INTERFACES_COUNT > 3
+  extern SPIClass SPI3;
+#endif
+#if SPI_INTERFACES_COUNT > 4
+  extern SPIClass SPI4;
+#endif
+#if SPI_INTERFACES_COUNT > 5
+  extern SPIClass SPI5;
+#endif
+#if SPI_INTERFACES_COUNT > 6
+  extern SPIClass SPI6;
+#endif
+#if SPI_INTERFACES_COUNT > 7
+  extern SPIClass SPI7;
+#endif
 extern SPIClass SPI;
 
 // For compatibility with sketches designed for AVR @ 16 MHz
