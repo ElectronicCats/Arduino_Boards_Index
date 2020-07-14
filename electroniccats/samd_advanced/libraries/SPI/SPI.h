@@ -174,6 +174,7 @@ class SPIClass {
 #if SPI_INTERFACES_COUNT > 7
   extern SPIClass SPI7;
 #endif
+extern SPIClass SPI;
 
 // For compatibility with sketches designed for AVR @ 16 MHz
 // New programs should use SPI.beginTransaction to set the SPI clock

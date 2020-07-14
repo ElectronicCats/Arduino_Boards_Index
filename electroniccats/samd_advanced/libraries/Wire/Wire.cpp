@@ -359,6 +359,7 @@ void TwoWire::onService(void)
    *
    * These values should be different on some variants!
    */
+
   #ifndef PERIPH_WIRE
     #define PERIPH_WIRE          sercom3
     #define WIRE_IT_HANDLER      SERCOM3_Handler
@@ -381,7 +382,7 @@ void TwoWire::onService(void)
     void WIRE_IT_HANDLER(void) {
       Wire.onService();
     }
-  #endif
+#endif
 #endif
 
 #if WIRE_INTERFACES_COUNT > 1
@@ -537,4 +538,3 @@ void TwoWire::onService(void)
     }
   #endif
 #endif
-
