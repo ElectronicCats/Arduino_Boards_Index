@@ -139,6 +139,11 @@ extern "C"
 #define RFM_TCXO             (40u)
 #define RFM_SWITCH           (41u)
 
+// On-board SPI Flash
+#define EXTERNAL_FLASH_DEVICES  GD25Q16C
+#define EXTERNAL_FLASH_USE_SPI  SPI1
+#define EXTERNAL_FLASH_USE_CS   SS1
+
 /*
  * Analog pins
  */
@@ -178,6 +183,7 @@ static const uint8_t A5   = PIN_A5;
  */
 #define SPI_INTERFACES_COUNT 2
 
+// SPI for RF LoRa
 #define PIN_SPI_MISO         (31u)
 #define PIN_SPI_MOSI         (30u)
 #define PIN_SPI_SCK          (32u)
@@ -191,10 +197,11 @@ static const uint8_t MOSI = PIN_SPI_MOSI ;
 static const uint8_t MISO = PIN_SPI_MISO ;
 static const uint8_t SCK  = PIN_SPI_SCK ;
 
+// SPI1 External
 #define PIN_SPI1_MISO         (14u)
 #define PIN_SPI1_MOSI         (15u)
 #define PIN_SPI1_SCK          (16u)
-#define PIN_SPI1_SS           (13u)
+#define PIN_SPI1_SS           (10u)
 #define PAD_SPI1_TX           SPI_PAD_0_SCK_3
 #define PAD_SPI1_RX           SERCOM_RX_PAD_1
 #define PERIPH_SPI1           sercom5
