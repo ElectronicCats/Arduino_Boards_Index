@@ -1,25 +1,15 @@
-# MattairTech SAM D|L|C Core for Arduino
+# Electronic Cats SAM D|L|C Core for Arduino
 
-The MattairTech SAM D|L|C Core for Arduino is a fork from arduino/ArduinoCore-samd
-on GitHub, which will be used to maintain Arduino support for MattairTech boards
-(see https://www.mattairtech.com/) as well as for "Generic" boards.
+The Electronic Cats SAM D|L|C Core for Arduino is a fork from MattairTech/ArduinoCore-samd
+on GitHub, which will be used to maintain Arduino support for Electronic Cats boards.
 
 * Supports the SAMD51, SAMD21, SAMD11, SAML21, and SAMC21.
 * Supports four clock sources (two crystals, internal oscillator, and USB calibrated).
 * USB CDC Bootloader with optional SDCard support. See [bootloaders/zero/README.md](https://github.com/mattairtech/ArduinoCore-samd/tree/master/bootloaders/zero/README.md).
 
-**SAMD51 support starting with 1.6.18-beta-b0**
 
 *This core is intended to be installed using Boards Manager (see below). To update from a*
-*previous version, click on MattairTech SAM D|L|C Boards in Boards Manager, then click Update.*
-
-**New Version Numbering**  The MattairTech version number will now track with the Arduino
-version number, to better understand which upstream changes have been merged in. See the
-CHANGELOG for details on upstream commits and MattairTech additions that have been merged.
-
-
-## What's New - Release Version (1.6.17)
-**The latest updates are in the Beta version (if available). See below.**
+*previous version, click on Electronic Cats SAM D|L|C Boards in Boards Manager, then click Update.*
 
 **1.6.17 (February 22, 2018):**
 * Added SAM D51 (m4f) support to bootloader
@@ -130,44 +120,6 @@ Voltage		| 1.62V-3.63V (2.7V-5.5V for the C21)	| 1.62V-3.63V (2.7V-5.5V for the 
 I/O Pin	Current	| D21: 7mA, L21: 5mA, C21: 6mA@5V	| D21: 7mA, L21: 5mA, C21: 6mA@5V	| D21: 7mA, L21: 5mA, C21: 6mA@5V	| 7 mA
 
 *Note that the maximum number of UART/SPI/I2C is the number of SERCOM. The number listed above for UART/SPI/I2C indicated how many are currently configurable through the Arduino IDE menu.*
-
-
-
-## Board Variants
-
-Pin configuration and peripheral assignment information is now in the README.md for each board variant.
-README.md also now includes technical information on the new PinDescription table format.
-
-* [MattairTech Xeno (SAM D51/D21/L21/C21, 64-pin)](https://github.com/mattairtech/ArduinoCore-samd/tree/master/variants/Xeno/README.md)
-
-* [MattairTech Xeno Mini (SAM D51/D21/L21/C21, 48-pin)](https://github.com/mattairtech/ArduinoCore-samd/tree/master/variants/Xeno_Mini/README.md)
-
-* [MattairTech MT-D21E Rev B (SAM D21/L21/C21, 32-pin)](https://github.com/mattairtech/ArduinoCore-samd/tree/master/variants/MT_D21E_revB/README.md)
-
-* [MattairTech MT-D21E Rev A (SAMD21ExxA, 32-pin)](https://github.com/mattairtech/ArduinoCore-samd/tree/master/variants/MT_D21E/README.md)
-
-* [MattairTech MT-D11 (SAMD11D14AM, 24-pin 0.5mm QFN)](https://github.com/mattairtech/ArduinoCore-samd/tree/master/variants/MT_D11/README.md)
-
-* [MattairTech Generic D11C14A (14-pin 1.27mm SOIC)](https://github.com/mattairtech/ArduinoCore-samd/tree/master/variants/Generic_D11C14A/README.md)
-
-* [MattairTech Generic D11D14AS (20-pin 1.27mm SOIC)](https://github.com/mattairtech/ArduinoCore-samd/tree/master/variants/Generic_D11D14AS/README.md)
-
-* MattairTech Generic D11D14AM (24-pin 0.5mm QFN) (future)
-
-* MattairTech Generic x21E (SAM D21/L21/C21, 32-pin) (soon)
-
-* MattairTech Generic xx1G (SAM D51/D21/L21/C21, 48-pin) (future)
-
-* MattairTech Generic xx1J (SAM D51/D21/L21/C21, 64-pin) (future)
-
-* MattairTech Generic D51N (SAMD51, 100-pin) (future)
-
-* MattairTech Generic D51P (SAMD51, 128-pin) (future)
-
-* [Arduino Zero (SAMD21G18A, 48-pin, arduino.cc)](https://github.com/mattairtech/ArduinoCore-samd/tree/master/variants/arduino_zero/README.md)
-
-* [Arduino M0 (SAMD21G18A, 48-pin, arduino.org)](https://github.com/mattairtech/ArduinoCore-samd/tree/master/variants/arduino_mzero/README.md)
-
 
 
 ## Tools Menu Additions
@@ -739,76 +691,6 @@ Vista, 7, 8, and 10. Note that the Windows 10 generic CDC drivers work as well.
 2. Continue with SAM D|L|C Core Installation below.
 
 
-### MattairTech D|L|C Core Installation
-
-**See Beta Builds section below to install the beta, as it uses a different json file**
-
-* To update from a previous version, click on MattairTech SAM D|L|C Core for Arduino in Boards Manager, then click Update.
-
-1. The MattairTech SAM D|L|C Core requires Arduino IDE 1.6.7 or above (including 1.8.x).
-2. In the Arduino IDE, click File->Preferences.
-3. Click the button next to Additional Boards Manager URLs.
-4. Add https://www.mattairtech.com/software/arduino/package_MattairTech_index.json.
-5. Save preferences, then open the Boards Manager.
-6. Install the Arduino SAMD Boards package. Use version 1.6.2 or higher.
-7. Install the MattairTech SAM D|L|C Core for Arduino package.
-8. Close Boards Manager, then click Tools->Board->(choose board).
-9. Select the MCU with the now visible Tools->Microcontroller menu (if present).
-10. If you do not already have the bootloader or blink sketch installed, see SAM-BA USB CDC Bootloader below.
-11. Plug in the board. The blink sketch should be running.
-12. Click Tools->Port and choose the COM port. Note that the board indicated may not match the chosen board*
-13. You can now upload your own sketch.
-
-*Currently, with MattairTech boards, USB PIDs are shared across boards (but they are different based on Tools->USB Config).*
-*This will result in Tools->Port showing "MattairTech Xeno Mini", for example, for all MattairTech boards.*
-
-### Uploading the First Sketch
-
-1. In the Arduino IDE (1.6.7 or above), open File->Examples->01.Basics->Blink.
-2. Change the three instances of '13' to 'LED_BUILTIN'.
-3. Be sure the correct options are selected in the Tools menu (see Core Installation above).
-4. With the board plugged in, select the correct port from Tools->Port.
-5. Click the Upload button. After compiling, the sketch should be transferred to the board.
-6. Once the bootloader exits, the blink sketch should be running.
-
-
-## Beta Builds
-
-Periodically, a [beta](https://www.mattairtech.com/software/arduino/beta/package_MattairTech_index.json) is released for testing.
-
-* **Do not install more than one MattairTech json at a time**
-  * If you wish to use a beta (either a single json, or the Beta track json), either uninstall the release version first (and remove the existing
-    json from File->Preferences), or simply choose the beta version from the main Release json, which now includes beta releases as of 1.6.18-beta-b1.
-
-The beta builds are available through Boards Manager. If you want to install them:
-  1. Open the **Preferences** of the Arduino IDE.
-  2. Add this URL `https://www.mattairtech.com/software/arduino/beta/package_MattairTech_index.json` in the **Additional Boards Manager URLs** field, and click OK.
-  3. Open the **Boards Manager** (menu Tools->Board->Board Manager...)
-  4. Install **MattairTech SAM D|L|C Core for Arduino - Beta build**
-  5. Select one of the boards under **MattairTech SAM D|L|C Core for Arduino** in Tools->Board menu
-  6. Compile/Upload as usual
-
-The Arduino IDE will notify the user if an update to the beta is available, which can then be installed automatically.
-If a particular beta is needed, just choose the version from the list. Alternatively, replace the url in step 2 with:
-  `https://www.mattairtech.com/software/arduino/beta/package_MattairTech_SAM_DLC_Core_for_Arduino-${VERSION}-beta-b${BUILD_NUMBER}_index.json` or
-  `https://www.mattairtech.com/software/arduino/beta/package_MattairTech_sam_m0p-${VERSION}-beta-b${BUILD_NUMBER}_index.json` (versions prior to 1.6.17-beta-b1)
-where ${VERSION} and ${BUILD_NUMBER} match the beta name as shown in the CHANGELOG (ie: package_MattairTech_sam_m0p-1.6.7-beta-b0_index.json).
-In this case, the IDE will not notify the user of updates, so this method is not recommended.
-
-
-## SAM-BA USB CDC Bootloader (Arduino compatible)
-
-This bootloader is based on the Arduino Zero bootloader which is a part of the Arduino SAMD core. It
-provides a USB-CDC and/or TTL serial communications interface to a host running the bossac command
-line firmware programming utility (or the Arduino IDE) running on Windows, Linux, or OS X. Optionally,
-SD Card firmware loading is supported, using SDSC or SDHC cards with a FAT16 or FAT32 filesystem.
-This version adds support for the D51, L21, C21, and D11 microcontrollers. It also adds support for
-four different clock sources (two external crystals and two internal oscillator options). There are
-additional board definitions added, and binaries for most board/chip combinations are pre-built.
-
-**See [bootloaders/zero/README.md](https://github.com/mattairtech/ArduinoCore-samd/tree/master/bootloaders/zero/README.md) for more technical information on the bootloader.**
-
-
 ### Features
 
 * SAM-BA USB CDC and UART interfaces with optional terminal mode
@@ -941,127 +823,6 @@ used, leaving the other pin for some number above 31.
 **See Board Variants above for more technical information on the PinDescription table.**
 
 **See [WVariant.h](https://github.com/mattairtech/ArduinoCore-samd/tree/master/cores/arduino/WVariant.h) for the definitions used in the table.**
-
-
-
-## MattairTech Libraries
-
-### Available Now
-
-*Use Libraries Manager to install*
-
-* SRAM_23LC - Library for Microchip Technology Inc. 23LC (23LCV, 23A, 23K) SPI SRAM chips
-  * Byte and block transfers
-
-* EEPROM_CAT25 - Library for On Semiconductor CAT25 SPI EEPROM chips
-  * Byte, block, and page transfers
-
-### Under Development
-
-* ZeroTimers - 8/16/24/32 bit timer library with API based on TimerOne
-  * PWM
-  * interrupt
-  * Input capture
-
-* Power Management Library
-* POWER_PAC1921 - Library for Microchip Technologies high-side power/current/voltage monitor with I2C and analog out
-
-### Possible Future
-
-* SENSOR_LPS22HB - Library for ST MEMS nano pressure sensor / temperature sensor with I2C
-* SENSOR_LSM6DS3H - Library for ST iNemo inertial module: 3D accelerometer / 3D gyroscope with I2C and interrupt
-* FLASH_AT25 - Library for Adesto Technologies AT25 SPI serial FLASH devices
-
-* Several I2C (Wire) sensor devices
-* TFT LCD (CFAF128128B-0145T)
-* IR decoder
-* Battery management IC
-* XBee/Xbee Pro devices?
-
-
-## Core Future Additions/Changes
-
-### Under Development
-
-* **Add MicroPython support.** Add Demo sketch with Arduino shell and Python interpreter.
-* Add QSPI driver with XIP (DDR support only when the MCU runs at 48MHz) for the D51.
-* Add Mass Storage device and/or UF2 support to the bootloader.
-* I2S MCLK support and MEMS microphone support
-* Features for lower power consumption (library?) Q1 2018?
-  * PM, clock system, SUPC, RTC, EVSYS, DMA, sleepwalking, battery backup
-* Reliability and security enhancements (library?) 2018?
-  * MPU (C21, D51), WDT, PAC, cryptography (AES, PKCC, TRNG), ICM, RAMECC, cache config (determinism)
-* Change ADC sampling time (make configurable?), possibly add a continuous sampling mode
-* Fix programming port for Arduino Zero and M0 board variants
-* Reduce SRAM usage by USB endpoint buffers by only allocating endpoints actually used (D11 especially)
-* PlatformIO support
-
-### Possible Future
-
-* USB Host mode CDC ACM (partially complete; BSD-like license?)
-* SD card library? Port of FatFS and/or Petit FatFS?
-* Optional use of single on-board LED as USB activity LED
-* MSC (Mass Storage) USB Device Class
-* Polyphonic tone
-* Wired-AND, Wired-OR for port pins
-* High-speed port pin access (IOBUS, m0+ only)
-
-### Feature Requests
-
-Please use the GitHub Issue Tracker if you would like to request a feature.
-
-
-
-## ChangeLog
-
-The Changelog has moved to a separate file named CHANGELOG. The most recent changes are still in the 'What's New' section above.
-
-
-## Troubleshooting
-
-* **Tools->Port shows wrong board**
-  * Currently, with MattairTech boards, USB PIDs are shared across boards (but they are different based on Tools->USB Config).
-    This will result in Tools->Port showing "MattairTech Xeni Mini" (for example) for all MattairTech boards.
-
-* **Tools->USB Config menu**
-  * Currently, the Tools->USB Config menu (was Tools->Communications) must be used to select the communications configuration.
-    This configuration must match the included libraries. For example, when including the HID and Keyboard libraries, you must
-    select an option that includes HID (all options except CDC_ONLY or USB_DISABLED). This menu is currently needed to select
-    the USB PID that matches the USB device configuration (needed for some versions of Windows). It is also used to control
-    if CDC support is compiled (CDC is always enabled in the stock Arduino core). Auto reset requires CDC to be enabled.
-
-    * Be sure that the Tools->Communications menu matches the sketch and libraries you are compiling.
-    * Different combinations of USB devices will result in different COM port assingments in Windows.
-
-* **Incude platform specific libraries**
-  * You may need to manually include platform specific libraries such as SPI.h, Wire.h, and HID.h.
-
-* **Errors when compiling, uploading, or burning the bootloader**
-  * Be sure to install the Arduino samd core before installing the MattairTech core. If you have problems upgrading
-    the IDE to 1.6.6, you may need to uninstall both the Arduino and MattairTech cores, then re-install in the proper order.
-    Use Arduino core 1.6.2 or above.
-
-* **On Linux, disable modem manager (Ubuntu)**
-
-* Do not perform a manual auto-reset (using a terminal program to change baud to 1200)
-
-* Boards Manager must be opened twice to see some updates (only applies to some old IDE versions)
-
-* **Boards manager might not install/uninstall the core or tools properly if the contents of the arduino15 directory has been manually modified**
-  * Be sure to delete all manually installed folders (not just files)
-
-* **Do not install more than one MattairTech json at a time**
-  * If you wish to use a beta (either a single json, or the Beta track json), either uninstall the release version first (and remove the existing
-    json from File->Preferences), or simply choose the beta version from the main Release json, which now includes beta releases as of 1.6.18-beta-b1.
-
-
-## Bugs or Issues
-
-If you find a bug you can submit an issue here on github:
-
-https://github.com/mattairtech/ArduinoCore-samd/issues
-
-Before posting a new issue, please check if the same problem has been already reported by someone else to avoid duplicates.
 
 
 ## Contributions
