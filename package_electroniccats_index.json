@@ -12,6 +12,45 @@
         {
           "name": "Electronic Cats nRF528x Boards (Mbed OS)",
           "architecture": "mbed",
+          "version": "1.0.1",
+          "category": "Contributed",
+          "url": "https://github.com/ElectronicCats/Arduino_Boards_Index/raw/gh-pages/IDE_Board_Manager/electroniccats-nRF52-mbed-1.0.1.tar.bz2",
+          "archiveFileName": "electroniccats-nRF52-mbed-1.0.1.tar.bz2",
+          "checksum": "SHA-256:05a13f2ae646651b5be2b66b852a407bbe09f0b560dc64b0d0f5d0d1975ed8a5",
+          "size": "17520397",
+          "help": {
+            "online": "https://electroniccats.com/"
+            },
+          "boards": [
+            {"name": "Arduino Nano 33 BLE"},
+            {"name": "Electronic Cats Bast BLE"}
+          ],
+          "toolsDependencies": [
+          {
+            "packager": "arduino",
+            "name": "openocd",
+            "version": "0.10.0-arduino9"
+          },
+          {
+            "packager": "arduino",
+            "name": "arm-none-eabi-gcc",
+            "version": "7-2017q4"
+          },
+          {
+            "name": "nrfjprog",
+            "packager": "adafruit",
+            "version": "9.4.0"
+          },
+            {
+                "name": "nrfutil",
+                "packager": "electroniccats",
+                "version": "0.5.3post10"
+            }
+          ]
+        },
+        {
+          "name": "Electronic Cats nRF528x Boards (Mbed OS)",
+          "architecture": "mbed",
           "version": "1.0.0",
           "category": "Contributed",
           "url": "https://github.com/ElectronicCats/Arduino_Boards_Index/raw/gh-pages/IDE_Board_Manager/electroniccats-nRF52-mbed-1.0.0.tar.bz2",
