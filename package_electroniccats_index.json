@@ -27,18 +27,18 @@
           ],
           "toolsDependencies": [
           {
-            "packager": "arduino",
+            "packager": "electroniccats",
             "name": "openocd",
             "version": "0.10.0-arduino9"
           },
           {
-            "packager": "arduino",
+            "packager": "electroniccats",
             "name": "arm-none-eabi-gcc",
             "version": "7-2017q4"
           },
           {
             "name": "nrfjprog",
-            "packager": "adafruit",
+            "packager": "electroniccats",
             "version": "9.4.0"
           }
           ]
