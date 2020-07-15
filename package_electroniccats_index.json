@@ -40,6 +40,11 @@
             "name": "nrfjprog",
             "packager": "electroniccats",
             "version": "9.4.0"
+          },
+          {
+            "name": "nrfutil",
+            "packager": "electroniccats",
+            "version": "0.5.3post10"
           }
           ]
         },
@@ -2264,6 +2269,27 @@
             "archiveFileName": "nrfjprog-9.4.0-win32.tar.bz2",
             "url": "https://github.com/adafruit/Adafruit_nRF52_Arduino/releases/download/gcc-5_2-2015q4/nrfjprog-9.4.0-win32.tar.bz2"
           }
+        ]
+      },
+      {
+        "name": "nrfutil",
+        "version": "0.5.3post10",
+        "systems":[
+          {
+            "host": "i386-apple-darwin11",
+            "checksum": "MD5:0168da9d073f82dd9d20962d8a27fa43",
+            "size": "5224563",
+            "archiveFileName": "nrfutil-0.5.3-mac.tar.bz2",
+            "url": "https://github.com/ElectronicCats/Adafruit_nRF52_nrfutil/releases/download/0.5.3/nrfutil-0.5.3-mac.tar.bz2"
+          },
+          {
+            "host": "i686-mingw32",
+            "checksum": "MD5:4a480ed04cb06aca1b02ef1b197d7271",
+            "size": "5945544",
+            "archiveFileName": "nrfjprog-9.4.0-win32.tar.bz2",
+            "url": "https://github.com/ElectronicCats/Adafruit_nRF52_nrfutil/releases/download/0.5.3/nrfutil-0.5.3-w32.tar.bz2"
+          }
+
         ]
       }
     ]
