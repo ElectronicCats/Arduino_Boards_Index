@@ -14,8 +14,8 @@
           "architecture": "mbed",
           "version": "1.0.0",
           "category": "Contributed",
-          "url": "https://github.com/ElectronicCats/Arduino_Boards_Index/raw/gh-pages/IDE_Board_Manager/electroniccats-nRF52-mbed-1.1.1.tar.bz2",
-          "archiveFileName": "electroniccats-nRF52-mbed-1.1.1.tar.bz2",
+          "url": "https://github.com/ElectronicCats/Arduino_Boards_Index/raw/gh-pages/IDE_Board_Manager/electroniccats-nRF52-mbed-1.0.0.tar.bz2",
+          "archiveFileName": "electroniccats-nRF52-mbed-1.0.0.tar.bz2",
           "checksum": "SHA-256:ac8d6ec83f8c42e27b4dac9d4b565779ff213dd6bcd879dad876cfdf4a492c07",
           "size": "35127935",
           "help": {
@@ -37,9 +37,9 @@
               "version": "7-2017q4"
             },
             {
-              "packager": "arduino",
-              "name": "bossac",
-              "version": "1.9.1-arduino1cambiar"
+              "name": "nrfjprog",
+              "packager": "adafruit",
+              "version": "9.4.0"
             }
           ]
         },
