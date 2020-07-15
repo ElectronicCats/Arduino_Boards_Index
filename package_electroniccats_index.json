@@ -1923,28 +1923,28 @@
           "systems": [
           {
             "host": "i686-mingw32",
-            "url": "https://github.com/ElectronicCats/Arduino_Boards_Index/raw/gh-pages/electroniccats/samd-tools/bossac-1.0.0-electroniccats-1-mingw32.tar.gz",
+            "url": "https://github.com/ElectronicCats/BOSSA/releases/download/1.0.0-electroniccats-1/bossac-1.0.0-electroniccats-1-mingw32.tar.gz",
             "archiveFileName": "bossac-1.0.0-electroniccats-1-mingw32.tar.gz",
             "checksum": "SHA-256:3d52f86b0d75cda8dd5c8220873d6def6f3f677e5a04a2e8eb42ae8973de8d34",
             "size": "826723"
           },
           {
             "host": "x86_64-pc-linux-gnu",
-            "url": "https://github.com/ElectronicCats/Arduino_Boards_Index/raw/gh-pages/electroniccats/samd-tools/bossac-1.0.0-electroniccats-1-x86_64-linux-gnu.tar.gz",
+            "url": "https://github.com/ElectronicCats/BOSSA/releases/download/1.0.0-electroniccats-1/bossac-1.0.0-electroniccats-1-x86_64-linux-gnu.tar.gz",
             "archiveFileName": "bossac-1.0.0-electroniccats-1-x86_64-linux-gnu.tar.gz",
             "checksum": "SHA-256:1c585857ed0039d28e32f9e43d8573c2c3a52e886e86ffcb556a00da97f944f6",
             "size": "203194"
           },
           {
             "host": "i686-pc-linux-gnu",
-            "url": "https://github.com/ElectronicCats/Arduino_Boards_Index/raw/gh-pages/electroniccats/samd-tools/bossac-1.0.0-electroniccats-1-i686-linux-gnu.tar.gz",
+            "url": "https://github.com/ElectronicCats/BOSSA/releases/download/1.0.0-electroniccats-1/bossac-1.0.0-electroniccats-1-i686-linux-gnu.tar.gz",
             "archiveFileName": "bossac-1.0.0-electroniccats-1-i686-linux-gnu.tar.gz",
             "checksum": "SHA-256:edd3bc6fd80641563dc6ca337d695fca25c2d43242172ea0418b678d4dbe0628",
             "size": "34852"
           },
           {
             "host": "x86_64-apple-darwin",
-            "url": "https://github.com/ElectronicCats/Arduino_Boards_Index/raw/gh-pages/electroniccats/samd-tools/bossac-1.0.0-electroniccats-1-x86_64-apple-darwin.tar.gz",
+            "url": "https://github.com/ElectronicCats/BOSSA/releases/download/1.0.0-electroniccats-1/bossac-1.0.0-electroniccats-1-x86_64-apple-darwin.tar.gz",
             "archiveFileName": "bossac-1.0.0-electroniccats-1-x86_64-apple-darwin.tar.gz",
             "checksum": "SHA-256:99f8da6415d7904c9f5b86c7a08258ea3ab134b3563be63fe184da072d62d4f9",
             "size": "30404"
