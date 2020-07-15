@@ -1,57 +1,16 @@
-<a href="https://github.com/sponsors/ElectronicCats">
-  <img src="https://electroniccats.com/wp-content/uploads/2020/07/Badge_GHS.png" height="104" />
-</a>
+# Electronic Cats Package Lists for the Arduino v1.6.4+ Board Manager
 
-[![Build Status](https://travis-ci.org/ElectronicCats/Arduino_Boards_Index.svg?branch=gh-pages)](https://travis-ci.org/ElectronicCats/Arduino_Boards_Index) 
+This repo contains the custom `package_*_index.json` files that can be used to add new
+third party boards to the Arduino v1.6.4+ IDE.
 
-# Electronic Cats Arduino Boards
-
-**Installation Instruction**
-
-By itself SAMD21 isn´t powerful, the suport with Arduino´s IDE is the special thing with. With only a clics pair, copies and pastes, you can add support for ARM cortex- M0+to your Arduino IDE... 
-
-Board definitions for Electronic Cats-manufactured AVR, ARM, and ESP-based Arduino boards.
-Based on sparkfun Arduino_Boards to implement diferents cores.
+Board definitions for Electronic Cats-manufactured SAMD, ARM, and ESP-based Arduino boards.
 
 This repository contains support for the following Electronic Cats Arduino-compatible development boards.
 
 **IMPORTANT NOTE:** These board files have been updated for compatibility with Arduino version 1.8 and higher. Some boards (e.g. SAMD) may not compile correctly with earlier versions of Arduino. If you need compatibility with earlier versions of Arduino, you can choose previous releases of these boards from the Boards Manager.
 
-#### Microcontroller supported
 
-- SAMD21
-- SAML21
-- SAMD11
-- SAMR34 or RAK4260
-- SAMD51
-
-
-#### SAMD (ARM Cortex-M0+) Boards by Electronic Cats
-
-* [Meow Meow](https://electroniccats.com/producto/meowmeow/)
-
-* [CatWAN USB-Stick](https://electroniccats.com/producto/catwan_usb-stick/)
-
-* [CatWAN Relay](https://electroniccats.com/producto/catwan-relay-board/)
-
-* [CatWAN Citizen](https://electroniccats.com)
-
-* [Bast Pro Mini M0](https://electroniccats.com)
-
-
-### Installation Instructions
-
-**Install SAMD support**
-
-You must install the boards SAMD of Arduino(vertions 1.6.11 o later) 
-
-In the menú bar select tools --> boards --> Board Manager --> Arduino SAMD Boards 32 bit M0.
-
-In the search bar write  "SAMD" en then you can see the boards, do clic in install and wait to finish to install.
-
-![](https://cdn-learn.adafruit.com/assets/assets/000/028/792/original/adafruit_products_arduinosamd162.png)
-
-**Install "Electronic Cats" support**
+## Installation Instructions "Electronic Cats" Boards
 
 To add board support for our products, start Arduino and open the Preferences window (**File** > **Preferences**). Now copy and paste the following URL into the 'Additional Boards Manager URLs' input field:
 
@@ -72,10 +31,14 @@ To add board support for our products, start Arduino and open the Preferences wi
 ![](https://github.com/ElectronicCats/MeowMeow/wiki/assets/Paso2_IDE.png)
 
 
-### Notes
-* Information on compiling and programming the bootloaders can be found in the bootloaders directory.
+Electronic Cats invests time and resources providing this open source design, please support Electronic Cats and open-source hardware by purchasing products from Electronic Cats!
 
-**Have fun!**<br>
+<a href="https://github.com/sponsors/ElectronicCats">
+  <img src="https://electroniccats.com/wp-content/uploads/2020/07/Badge_GHS.png" height="104" />
+</a>
+
+### Have fun!
+
 \-Your friends at Electronic Cats
 
 
