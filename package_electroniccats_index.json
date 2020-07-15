@@ -38,13 +38,13 @@
           },
           {
             "name": "nrfjprog",
-            "packager": "adafruit",
+            "packager": "electroniccats",
             "version": "9.4.0"
           },
             {
-                "name": "nrfutil",
-                "packager": "electroniccats",
-                "version": "0.5.3post10"
+            "name": "nrfutil",
+            "packager": "electroniccats",
+            "version": "0.5.3post10"
             }
           ]
         },
