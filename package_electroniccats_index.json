@@ -16,11 +16,11 @@
           "category": "Contributed",
           "url": "https://github.com/ElectronicCats/Arduino_Boards_Index/raw/gh-pages/IDE_Board_Manager/electroniccats-nRF52-mbed-1.0.0.tar.bz2",
           "archiveFileName": "electroniccats-nRF52-mbed-1.0.0.tar.bz2",
-          "checksum": "SHA-256:89cc032ced165b91390f4095e57d2b1102d66e6fe60d787442da7904d17a31d5",
+          "checksum": "SHA-256:1b13675289a01991db147b5906c8bf8a6876d86f01cf9f161e0b73f8b91edac2",
           "help": {
             "online": "https://electroniccats.com/"
             },
-          "size": "35001950",
+          "size": "17495393",
                 "boards": [
                     {"name": "Arduino Nano 33 BLE"},
                     {"name": "Electronic Cats Bast BLE"}
