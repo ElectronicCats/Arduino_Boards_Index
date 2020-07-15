@@ -2025,28 +2025,28 @@
         "systems": [
         {
           "host": "i686-mingw32",
-          "url": "https://github.com/ElectronicCats/Arduino_Boards_Index/raw/gh-pages/electroniccats/samd-tools/CMSIS-Atmel-1.0.0-electroniccats.tar.gz",
+          "url": "https://github.com/ElectronicCats/CMSIS-Atmel/releases/download/1.0.0-electroniccats-1/CMSIS-Atmel-1.0.0-electroniccats.tar.gz",
           "archiveFileName": "CMSIS-Atmel-1.0.0-electroniccats.tar.gz",
           "checksum": "SHA-256:d673a929c71d9b7a0146cb9dcde800cc2453b2824a3f10176ea5c5bf68bd5cd4",
           "size": "2216310"
         },
         {
           "host": "x86_64-pc-linux-gnu",
-          "url": "https://github.com/ElectronicCats/Arduino_Boards_Index/raw/gh-pages/electroniccats/samd-tools/CMSIS-Atmel-1.0.0-electroniccats.tar.gz",
+          "url": "https://github.com/ElectronicCats/CMSIS-Atmel/releases/download/1.0.0-electroniccats-1/CMSIS-Atmel-1.0.0-electroniccats.tar.gz",
           "archiveFileName": "CMSIS-Atmel-1.0.0-electroniccats.tar.gz",
           "checksum": "SHA-256:d673a929c71d9b7a0146cb9dcde800cc2453b2824a3f10176ea5c5bf68bd5cd4",
           "size": "2216310"
         },
         {
           "host": "i686-pc-linux-gnu",
-          "url": "https://github.com/ElectronicCats/Arduino_Boards_Index/raw/gh-pages/electroniccats/samd-tools/CMSIS-Atmel-1.0.0-electroniccats.tar.gz",
+          "url": "https://github.com/ElectronicCats/CMSIS-Atmel/releases/download/1.0.0-electroniccats-1/CMSIS-Atmel-1.0.0-electroniccats.tar.gz",
           "archiveFileName": "CMSIS-Atmel-1.0.0-electroniccats.tar.gz",
           "checksum": "SHA-256:d673a929c71d9b7a0146cb9dcde800cc2453b2824a3f10176ea5c5bf68bd5cd4",
           "size": "2216310"
         },
         {
           "host": "x86_64-apple-darwin",
-          "url": "https://github.com/ElectronicCats/Arduino_Boards_Index/raw/gh-pages/electroniccats/samd-tools/CMSIS-Atmel-1.0.0-electroniccats.tar.gz",
+          "url": "https://github.com/ElectronicCats/CMSIS-Atmel/releases/download/1.0.0-electroniccats-1/CMSIS-Atmel-1.0.0-electroniccats.tar.gz",
           "archiveFileName": "CMSIS-Atmel-1.0.0-electroniccats.tar.gz",
           "checksum": "SHA-256:d673a929c71d9b7a0146cb9dcde800cc2453b2824a3f10176ea5c5bf68bd5cd4",
           "size": "2216310"
