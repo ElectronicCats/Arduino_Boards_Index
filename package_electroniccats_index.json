@@ -10,6 +10,40 @@
       },
       "platforms": [
         {
+          "name": "Electronic Cats nRF528x Boards (Mbed OS)",
+          "architecture": "mbed",
+          "version": "1.0.0",
+          "category": "Contributed",
+          "url": "https://github.com/ElectronicCats/Arduino_Boards_Index/raw/gh-pages/IDE_Board_Manager/electroniccats-nRF52-mbed-1.1.1.tar.bz2",
+          "archiveFileName": "electroniccats-nRF52-mbed-1.1.1.tar.bz2",
+          "checksum": "SHA-256:ac8d6ec83f8c42e27b4dac9d4b565779ff213dd6bcd879dad876cfdf4a492c07",
+          "size": "35127935",
+          "help": {
+            "online": "https://electroniccats.com/"
+          },
+          "boards": [
+            {"name": "Arduino Nano 33 BLE"},
+            {"name": "Electronic Cats Bast BLE"}
+          ],
+          "toolsDependencies": [
+            {
+              "packager": "arduino",
+              "name": "openocd",
+              "version": "0.10.0-arduino9"
+            },
+            {
+              "packager": "arduino",
+              "name": "arm-none-eabi-gcc",
+              "version": "7-2017q4"
+            },
+            {
+              "packager": "arduino",
+              "name": "bossac",
+              "version": "1.9.1-arduino1cambiar"
+            }
+          ]
+        },
+        {
           "name": "Electronic Cats SAMD Boards",
           "architecture": "samd",
           "version": "2.0.1",
@@ -1967,38 +2001,38 @@
       ],
       "tools":[
         {
-          "name": "bossac",
-          "version": "1.0.0-electroniccats-1",
-          "systems": [
-          {
-            "host": "i686-mingw32",
-            "url": "https://github.com/ElectronicCats/BOSSA/releases/download/1.0.0-electroniccats-1/bossac-1.0.0-electroniccats-1-mingw32.tar.gz",
-            "archiveFileName": "bossac-1.0.0-electroniccats-1-mingw32.tar.gz",
-            "checksum": "SHA-256:3d52f86b0d75cda8dd5c8220873d6def6f3f677e5a04a2e8eb42ae8973de8d34",
-            "size": "826723"
-          },
-          {
-            "host": "x86_64-pc-linux-gnu",
-            "url": "https://github.com/ElectronicCats/BOSSA/releases/download/1.0.0-electroniccats-1/bossac-1.0.0-electroniccats-1-x86_64-linux-gnu.tar.gz",
-            "archiveFileName": "bossac-1.0.0-electroniccats-1-x86_64-linux-gnu.tar.gz",
-            "checksum": "SHA-256:1c585857ed0039d28e32f9e43d8573c2c3a52e886e86ffcb556a00da97f944f6",
-            "size": "203194"
-          },
-          {
-            "host": "i686-pc-linux-gnu",
-            "url": "https://github.com/ElectronicCats/BOSSA/releases/download/1.0.0-electroniccats-1/bossac-1.0.0-electroniccats-1-i686-linux-gnu.tar.gz",
-            "archiveFileName": "bossac-1.0.0-electroniccats-1-i686-linux-gnu.tar.gz",
-            "checksum": "SHA-256:edd3bc6fd80641563dc6ca337d695fca25c2d43242172ea0418b678d4dbe0628",
-            "size": "34852"
-          },
-          {
-            "host": "x86_64-apple-darwin",
-            "url": "https://github.com/ElectronicCats/BOSSA/releases/download/1.0.0-electroniccats-1/bossac-1.0.0-electroniccats-1-x86_64-apple-darwin.tar.gz",
-            "archiveFileName": "bossac-1.0.0-electroniccats-1-x86_64-apple-darwin.tar.gz",
-            "checksum": "SHA-256:99f8da6415d7904c9f5b86c7a08258ea3ab134b3563be63fe184da072d62d4f9",
-            "size": "30404"
-          }
-          ]
+        "name": "bossac",
+        "version": "1.0.0-electroniccats-1",
+        "systems": [
+        {
+          "host": "i686-mingw32",
+          "url": "https://github.com/ElectronicCats/BOSSA/releases/download/1.0.0-electroniccats-1/bossac-1.0.0-electroniccats-1-mingw32.tar.gz",
+          "archiveFileName": "bossac-1.0.0-electroniccats-1-mingw32.tar.gz",
+          "checksum": "SHA-256:3d52f86b0d75cda8dd5c8220873d6def6f3f677e5a04a2e8eb42ae8973de8d34",
+          "size": "826723"
+        },
+        {
+          "host": "x86_64-pc-linux-gnu",
+          "url": "https://github.com/ElectronicCats/BOSSA/releases/download/1.0.0-electroniccats-1/bossac-1.0.0-electroniccats-1-x86_64-linux-gnu.tar.gz",
+          "archiveFileName": "bossac-1.0.0-electroniccats-1-x86_64-linux-gnu.tar.gz",
+          "checksum": "SHA-256:1c585857ed0039d28e32f9e43d8573c2c3a52e886e86ffcb556a00da97f944f6",
+          "size": "203194"
+        },
+        {
+          "host": "i686-pc-linux-gnu",
+          "url": "https://github.com/ElectronicCats/BOSSA/releases/download/1.0.0-electroniccats-1/bossac-1.0.0-electroniccats-1-i686-linux-gnu.tar.gz",
+          "archiveFileName": "bossac-1.0.0-electroniccats-1-i686-linux-gnu.tar.gz",
+          "checksum": "SHA-256:edd3bc6fd80641563dc6ca337d695fca25c2d43242172ea0418b678d4dbe0628",
+          "size": "34852"
+        },
+        {
+          "host": "x86_64-apple-darwin",
+          "url": "https://github.com/ElectronicCats/BOSSA/releases/download/1.0.0-electroniccats-1/bossac-1.0.0-electroniccats-1-x86_64-apple-darwin.tar.gz",
+          "archiveFileName": "bossac-1.0.0-electroniccats-1-x86_64-apple-darwin.tar.gz",
+          "checksum": "SHA-256:99f8da6415d7904c9f5b86c7a08258ea3ab134b3563be63fe184da072d62d4f9",
+          "size": "30404"
+        }
+        ]
         },
         {
         "name": "bossac",
@@ -2102,56 +2136,138 @@
         }
         ]
       },
-    {
-      "name": "arm-none-eabi-gcc",
-      "version": "7-2017q4",
-      "systems": [
-        {
-          "host": "arm-linux-gnueabihf",
-          "url": "http://downloads.arduino.cc/tools/gcc-arm-none-eabi-7-2019-q4-major-linuxarm.tar.bz2",
-          "archiveFileName": "gcc-arm-none-eabi-7-2019-q4-major-linuxarm.tar.bz2",
-          "checksum": "SHA-256:34180943d95f759c66444a40b032f7dd9159a562670fc334f049567de140c51b",
-          "size": "96613739"
-        },
-        {
-          "host": "aarch64-linux-gnu",
-          "url": "http://downloads.arduino.cc/tools/gcc-arm-none-eabi-7-2018-q2-update-linuxarm64.tar.bz2",
-          "archiveFileName": "gcc-arm-none-eabi-7-2018-q2-update-linuxarm64.tar.bz2",
-          "checksum": "SHA-256:6fb5752fb4d11012bd0a1ceb93a19d0641ff7cf29d289b3e6b86b99768e66f76",
-          "size": "99558726"
-        },
-        {
-          "host": "i686-mingw32",
-          "url": "http://downloads.arduino.cc/tools/gcc-arm-none-eabi-7-2017-q4-major-win32-arduino1.zip",
-          "archiveFileName": "gcc-arm-none-eabi-7-2017-q4-major-win32-arduino1.zip",
-          "checksum": "SHA-256:96dd0091856f4d2eb21046eba571321feecf7d50b9c156f708b2a8b683903382",
-          "size": "131761924"
-        },
-        {
-          "host": "x86_64-apple-darwin",
-          "url": "http://downloads.arduino.cc/tools/gcc-arm-none-eabi-7-2017-q4-major-mac.tar.bz2",
-          "archiveFileName": "gcc-arm-none-eabi-7-2017-q4-major-mac.tar.bz2",
-          "checksum": "SHA-256:89b776c7cf0591c810b5b60067e4dc113b5b71bc50084a536e71b894a97fdccb",
-          "size": "104550003"
-        },
-        {
-          "host": "x86_64-pc-linux-gnu",
-          "url": "http://downloads.arduino.cc/tools/gcc-arm-none-eabi-7-2017-q4-major-linux64.tar.bz2",
-          "archiveFileName": "gcc-arm-none-eabi-7-2017-q4-major-linux64.tar.bz2",
-          "checksum": "SHA-256:96a029e2ae130a1210eaa69e309ea40463028eab18ba19c1086e4c2dafe69a6a",
-          "size": "99857645"
-        },
-        {
-          "host": "i686-pc-linux-gnu",
-          "url": "http://downloads.arduino.cc/tools/gcc-arm-none-eabi-7-2018-q2-update-linux32.tar.bz2",
-          "archiveFileName": "gcc-arm-none-eabi-7-2018-q2-update-linux32.tar.bz2",
-          "checksum": "SHA-256:090a0bc2b1956bc49392dff924a6c30fa57c88130097b1972204d67a45ce3cf3",
-          "size": "97427309"
-        }
-      ]
-    } 
-  ]
-  }
+      {
+        "name": "openocd",
+        "version": "0.10.0-arduino9",
+        "systems": [
+          {
+            "size": "1714657",
+            "checksum": "SHA-256:b814b16b52cef21eacf456cc7a89d7b5d4cb1385bfb8fb82963b7d8151824d93",
+            "host": "aarch64-linux-gnu",
+            "archiveFileName": "openocd-0.10.0-arduino9-static-aarch64-linux-gnu.tar.bz2",
+            "url": "http://downloads.arduino.cc/tools/openocd-0.10.0-arduino9-static-aarch64-linux-gnu.tar.bz2"
+          },
+          {
+            "size": "1778177",
+            "checksum": "SHA-256:f0443e771f5e3a779949498d3c9bfffd1dd27cdf0ad7136a2db5e80447a7175a",
+            "host": "arm-linux-gnueabihf",
+            "archiveFileName": "openocd-0.10.0-arduino9-static-arm-linux-gnueabihf.tar.bz2",
+            "url": "http://downloads.arduino.cc/tools/openocd-0.10.0-arduino9-static-arm-linux-gnueabihf.tar.bz2"
+          },
+          {
+            "size": "1782958",
+            "checksum": "SHA-256:a22872918df899cb808f9286141d42438ae5611156c143cfb692069f52a2bddd",
+            "host": "i686-linux-gnu",
+            "archiveFileName": "openocd-0.10.0-arduino9-static-i686-ubuntu12.04-linux-gnu.tar.bz2",
+            "url": "http://downloads.arduino.cc/tools/openocd-0.10.0-arduino9-static-i686-ubuntu12.04-linux-gnu.tar.bz2"
+          },
+          {
+            "size": "2190484",
+            "checksum": "SHA-256:f53f9a2b7f48a2ebc00ea9196bf559d15987d3779bcea4118ebec8925da5a1f6",
+            "host": "i686-mingw32",
+            "archiveFileName": "openocd-0.10.0-arduino9-static-i686-w64-mingw32.zip",
+            "url": "http://downloads.arduino.cc/tools/openocd-0.10.0-arduino9-static-i686-w64-mingw32.zip"
+          },
+          {
+            "size": "1655311",
+            "checksum": "SHA-256:6d47f97919f317bb6e5f1f903127604271d66d149f4625f29b8e0eb5f6c94c64",
+            "host": "i386-apple-darwin11",
+            "archiveFileName": "openocd-0.10.0-arduino9-static-x86_64-apple-darwin13.tar.bz2",
+            "url": "http://downloads.arduino.cc/tools/openocd-0.10.0-arduino9-static-x86_64-apple-darwin13.tar.bz2"
+          },
+          {
+            "size": "1844365",
+            "checksum": "SHA-256:f624552b5ba56aa78d0c1a0e5d18cf2b5694db2ed44080968e22aa1af8f23c1b",
+            "host": "x86_64-linux-gnu",
+            "archiveFileName": "openocd-0.10.0-arduino9-static-x86_64-ubuntu12.04-linux-gnu.tar.bz2",
+            "url": "http://downloads.arduino.cc/tools/openocd-0.10.0-arduino9-static-x86_64-ubuntu12.04-linux-gnu.tar.bz2"
+          }
+        ]
+      },
+      {
+        "name": "arm-none-eabi-gcc",
+        "version": "7-2017q4",
+        "systems": [
+          {
+            "host": "arm-linux-gnueabihf",
+            "url": "http://downloads.arduino.cc/tools/gcc-arm-none-eabi-7-2019-q4-major-linuxarm.tar.bz2",
+            "archiveFileName": "gcc-arm-none-eabi-7-2019-q4-major-linuxarm.tar.bz2",
+            "checksum": "SHA-256:34180943d95f759c66444a40b032f7dd9159a562670fc334f049567de140c51b",
+            "size": "96613739"
+          },
+          {
+            "host": "aarch64-linux-gnu",
+            "url": "http://downloads.arduino.cc/tools/gcc-arm-none-eabi-7-2018-q2-update-linuxarm64.tar.bz2",
+            "archiveFileName": "gcc-arm-none-eabi-7-2018-q2-update-linuxarm64.tar.bz2",
+            "checksum": "SHA-256:6fb5752fb4d11012bd0a1ceb93a19d0641ff7cf29d289b3e6b86b99768e66f76",
+            "size": "99558726"
+          },
+          {
+            "host": "i686-mingw32",
+            "url": "http://downloads.arduino.cc/tools/gcc-arm-none-eabi-7-2017-q4-major-win32-arduino1.zip",
+            "archiveFileName": "gcc-arm-none-eabi-7-2017-q4-major-win32-arduino1.zip",
+            "checksum": "SHA-256:96dd0091856f4d2eb21046eba571321feecf7d50b9c156f708b2a8b683903382",
+            "size": "131761924"
+          },
+          {
+            "host": "x86_64-apple-darwin",
+            "url": "http://downloads.arduino.cc/tools/gcc-arm-none-eabi-7-2017-q4-major-mac.tar.bz2",
+            "archiveFileName": "gcc-arm-none-eabi-7-2017-q4-major-mac.tar.bz2",
+            "checksum": "SHA-256:89b776c7cf0591c810b5b60067e4dc113b5b71bc50084a536e71b894a97fdccb",
+            "size": "104550003"
+          },
+          {
+            "host": "x86_64-pc-linux-gnu",
+            "url": "http://downloads.arduino.cc/tools/gcc-arm-none-eabi-7-2017-q4-major-linux64.tar.bz2",
+            "archiveFileName": "gcc-arm-none-eabi-7-2017-q4-major-linux64.tar.bz2",
+            "checksum": "SHA-256:96a029e2ae130a1210eaa69e309ea40463028eab18ba19c1086e4c2dafe69a6a",
+            "size": "99857645"
+          },
+          {
+            "host": "i686-pc-linux-gnu",
+            "url": "http://downloads.arduino.cc/tools/gcc-arm-none-eabi-7-2018-q2-update-linux32.tar.bz2",
+            "archiveFileName": "gcc-arm-none-eabi-7-2018-q2-update-linux32.tar.bz2",
+            "checksum": "SHA-256:090a0bc2b1956bc49392dff924a6c30fa57c88130097b1972204d67a45ce3cf3",
+            "size": "97427309"
+          }
+        ]
+      },
+      {
+        "name": "nrfjprog",
+        "version": "9.4.0",
+        "systems": [
+          {
+            "host": "i386-apple-darwin11",
+            "checksum": "MD5:04f65e24f36d55d10b71c1ebf49cd070",
+            "size": "362222",
+            "archiveFileName": "nrfjprog-9.4.0-mac.tar.bz2",
+            "url": "https://github.com/adafruit/Adafruit_nRF52_Arduino/releases/download/gcc-5_2-2015q4/nrfjprog-9.4.0-mac.tar.bz2"
+          },
+          {
+            "host": "i686-linux-gnu",
+            "checksum": "MD5:9cf73f1f78cb8e249ed4e6f963d08a35",
+            "size": "177428",
+            "archiveFileName": "nrfjprog-9.4.0-linux32.tar.bz2",
+            "url": "https://github.com/adafruit/Adafruit_nRF52_Arduino/releases/download/gcc-5_2-2015q4/nrfjprog-9.4.0-linux32.tar.bz2"
+          },
+          {
+            "host": "x86_64-pc-linux-gnu",
+            "checksum": "MD5:da3c7b348e0c22766f175a4a9cca0d19",
+            "size": "190020",
+            "archiveFileName": "nrfjprog-9.4.0-linux64.tar.bz2",
+            "url": "https://github.com/adafruit/Adafruit_nRF52_Arduino/releases/download/gcc-5_2-2015q4/nrfjprog-9.4.0-linux64.tar.bz2"
+          },
+          {
+            "host": "i686-mingw32",
+            "checksum": "MD5:8352392ae0272173e1508d1218f51671",
+            "size": "851576",
+            "archiveFileName": "nrfjprog-9.4.0-win32.tar.bz2",
+            "url": "https://github.com/adafruit/Adafruit_nRF52_Arduino/releases/download/gcc-5_2-2015q4/nrfjprog-9.4.0-win32.tar.bz2"
+          }
+        ]
+      }
+    ]
+    }
   ]
 }
 
