@@ -16,31 +16,31 @@
           "category": "Contributed",
           "url": "https://github.com/ElectronicCats/Arduino_Boards_Index/raw/gh-pages/IDE_Board_Manager/electroniccats-nRF52-mbed-1.0.0.tar.bz2",
           "archiveFileName": "electroniccats-nRF52-mbed-1.0.0.tar.bz2",
-          "checksum": "SHA-256:ac8d6ec83f8c42e27b4dac9d4b565779ff213dd6bcd879dad876cfdf4a492c07",
-          "size": "35127935",
+          "checksum": "SHA-256:89cc032ced165b91390f4095e57d2b1102d66e6fe60d787442da7904d17a31d5",
           "help": {
             "online": "https://electroniccats.com/"
-          },
-          "boards": [
-            {"name": "Arduino Nano 33 BLE"},
-            {"name": "Electronic Cats Bast BLE"}
+            },
+          "size": "35001950",
+                "boards": [
+                    {"name": "Arduino Nano 33 BLE"},
+                    {"name": "Electronic Cats Bast BLE"}
           ],
           "toolsDependencies": [
-            {
-              "packager": "arduino",
-              "name": "openocd",
-              "version": "0.10.0-arduino9"
-            },
-            {
-              "packager": "arduino",
-              "name": "arm-none-eabi-gcc",
-              "version": "7-2017q4"
-            },
-            {
-              "name": "nrfjprog",
-              "packager": "adafruit",
-              "version": "9.4.0"
-            }
+          {
+            "packager": "arduino",
+            "name": "openocd",
+            "version": "0.10.0-arduino9"
+          },
+          {
+            "packager": "arduino",
+            "name": "arm-none-eabi-gcc",
+            "version": "7-2017q4"
+          },
+          {
+            "name": "nrfjprog",
+            "packager": "adafruit",
+            "version": "9.4.0"
+          }
           ]
         },
         {
