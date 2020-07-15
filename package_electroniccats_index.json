@@ -12,6 +12,45 @@
         {
           "name": "Electronic Cats nRF528x Boards (Mbed OS)",
           "architecture": "mbed",
+          "version": "1.0.2",
+          "category": "Contributed",
+          "url": "https://github.com/ElectronicCats/Arduino_Boards_Index/raw/gh-pages/IDE_Board_Manager/electroniccats-nRF52-mbed-1.0.2.tar.bz2",
+          "archiveFileName": "electroniccats-nRF52-mbed-1.0.2.tar.bz2",
+          "checksum": "SHA-256:b1ba65810ecd4b1bbc45dbe6669815570ae0cc8201c7ddda88cc5cb6d8c69d89",
+          "size": "17519348",
+          "help": {
+            "online": "https://electroniccats.com/"
+            },
+                "boards": [
+                    {"name": "Arduino Nano 33 BLE"},
+                    {"name": "Electronic Cats Bast BLE"}
+          ],
+          "toolsDependencies": [
+          {
+            "packager": "electroniccats",
+            "name": "openocd",
+            "version": "0.10.0-arduino9"
+          },
+          {
+            "packager": "electroniccats",
+            "name": "arm-none-eabi-gcc",
+            "version": "7-2017q4"
+          },
+          {
+            "name": "nrfjprog",
+            "packager": "electroniccats",
+            "version": "9.4.0"
+          },
+            {
+                "name": "nrfutil",
+                "packager": "electroniccats",
+                "version": "0.5.3post10"
+            }
+          ]
+        },
+        {
+          "name": "Electronic Cats nRF528x Boards (Mbed OS)",
+          "architecture": "mbed",
           "version": "1.0.1",
           "category": "Contributed",
           "url": "https://github.com/ElectronicCats/Arduino_Boards_Index/raw/gh-pages/IDE_Board_Manager/electroniccats-nRF52-mbed-1.0.1.tar.bz2",
@@ -2316,8 +2355,8 @@
         "systems":[
           {
             "host": "i386-apple-darwin11",
-            "checksum": "MD5:ee55f1c1f704a65d8c863317ffa478c0",
-            "size": "5224850",
+            "checksum": "MD5:342e1b08d3b5f6e18914fd207986c493",
+            "size": "5225061",
             "archiveFileName": "nnrfutil-0.5.3-mac.tar.gz",
             "url": "https://github.com/ElectronicCats/Adafruit_nRF52_nrfutil/releases/download/0.5.3/nrfutil-0.5.3-mac.tar.gz"
           },
