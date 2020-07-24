@@ -2456,7 +2456,7 @@
             "host": "i386-apple-darwin11",
             "checksum": "MD5:342e1b08d3b5f6e18914fd207986c493",
             "size": "5225061",
-            "archiveFileName": "nnrfutil-0.5.3-mac.tar.gz",
+            "archiveFileName": "nrfutil-0.5.3-mac.tar.gz",
             "url": "https://github.com/ElectronicCats/Adafruit_nRF52_nrfutil/releases/download/0.5.3/nrfutil-0.5.3-mac.tar.gz"
           },
           {
@@ -2465,8 +2465,20 @@
             "size": "5945547",
             "archiveFileName": "nrfutil-0.5.3-w32.tar.gz",
             "url": "https://github.com/ElectronicCats/Adafruit_nRF52_nrfutil/releases/download/0.5.3/nrfutil-0.5.3-w32.tar.gz"
+          },          {
+            "host": "i686-linux-gnu",
+            "checksum": "MD5:162a267a23e44baf08fb5bd88843ed04",
+            "size": "6659110",
+            "archiveFileName": "nrfutil-0.5.3-linux.tar.gz",
+            "url": "https://github.com/ElectronicCats/Adafruit_nRF52_nrfutil/releases/download/0.5.3/nrfutil-0.5.3-linux.tar.gz"
+          },
+          {
+            "host": "x86_64-pc-linux-gnu",
+            "checksum": "MD5:162a267a23e44baf08fb5bd88843ed04",
+            "size": "6659110",
+            "archiveFileName": "nrfutil-0.5.3-linux.tar.gz",
+            "url": "https://github.com/ElectronicCats/Adafruit_nRF52_nrfutil/releases/download/0.5.3/nrfutil-0.5.3-linux.tar.gz"
           }
-
         ]
       }
     ]
