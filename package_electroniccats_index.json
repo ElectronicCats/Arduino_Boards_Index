@@ -10,6 +10,45 @@
       },
       "platforms": [
         {
+          "name": "Electronic Cats nRF528x Boards (Mbed OS)",
+          "architecture": "mbed",
+          "version": "1.0.3",
+          "category": "Contributed",
+          "url": "https://github.com/ElectronicCats/Arduino_Boards_Index/raw/gh-pages/IDE_Board_Manager/electroniccats-nRF52-mbed-1.0.3.tar.bz2",
+          "archiveFileName": "electroniccats-nRF52-mbed-1.0.3.tar.bz2",
+          "checksum": "SHA-256:d699d769310b8060681139af4494c1d3f77470bee50e518e317bf091362600e0",
+          "size": "17517404",
+          "help": {
+            "online": "https://electroniccats.com/"
+            },
+                "boards": [
+                    {"name": "Arduino Nano 33 BLE"},
+                    {"name": "Electronic Cats Bast BLE"}
+          ],
+          "toolsDependencies": [
+          {
+            "packager": "electroniccats",
+            "name": "openocd",
+            "version": "0.10.0-arduino9"
+          },
+          {
+            "packager": "electroniccats",
+            "name": "arm-none-eabi-gcc",
+            "version": "7-2017q4"
+          },
+          {
+            "name": "nrfjprog",
+            "packager": "electroniccats",
+            "version": "9.4.0"
+          },
+          {
+              "name": "nrfutil",
+              "packager": "electroniccats",
+              "version": "0.5.3post10"
+          }
+          ]
+        },
+        {
           "name": "Electronic Cats SAMD Boards",
           "architecture": "samd",
           "version": "2.0.3",
@@ -2467,15 +2506,15 @@
             "url": "https://github.com/ElectronicCats/Adafruit_nRF52_nrfutil/releases/download/0.5.3/nrfutil-0.5.3-w32.tar.gz"
           },          {
             "host": "i686-linux-gnu",
-            "checksum": "MD5:2cb9f00a57af1703df34f7f0ec55df9e",
-            "size": "6659140",
+            "checksum": "MD5:65d8bbbf832353562cbe5615ddfabf00",
+            "size": "6659130",
             "archiveFileName": "nrfutil-0.5.3-linux.tar.gz",
             "url": "https://github.com/ElectronicCats/Adafruit_nRF52_nrfutil/releases/download/0.5.3/nrfutil-0.5.3-linux.tar.gz"
           },
           {
             "host": "x86_64-pc-linux-gnu",
-            "checksum": "MD5:2cb9f00a57af1703df34f7f0ec55df9e",
-            "size": "6659140",
+            "checksum": "MD5:65d8bbbf832353562cbe5615ddfabf00",
+            "size": "6659130",
             "archiveFileName": "nrfutil-0.5.3-linux.tar.gz",
             "url": "https://github.com/ElectronicCats/Adafruit_nRF52_nrfutil/releases/download/0.5.3/nrfutil-0.5.3-linux.tar.gz"
           }
