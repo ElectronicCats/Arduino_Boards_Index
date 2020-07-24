@@ -28,7 +28,7 @@
                     {"name": "CatWAN Citizen"},
                     {"name": "Bast Pro Mini M0"},
                     {"name": "Escornabot Makech"},
-                    {"name": "CatWAN Tracker"}
+                    {"name": "CatWAN Tracker"},
                     {"name": "BastWAN"}
           ],
           "toolsDependencies": [
