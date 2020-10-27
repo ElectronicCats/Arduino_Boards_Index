@@ -12,6 +12,45 @@
         {
           "name": "Electronic Cats Boards (Mbed OS)",
           "architecture": "mbed",
+          "version": "1.0.4",
+          "category": "Contributed",
+          "url": "https://github.com/ElectronicCats/Arduino_Boards_Index/raw/gh-pages/IDE_Board_Manager/electroniccats-mbed-1.0.4.tar.bz2",
+          "archiveFileName": "electroniccats-mbed-1.0.4.tar.bz2",
+          "checksum": "SHA-256:a1a7d747387d775a6227f29660338f92803afc0b2aed913b0f79ef4ed806023d",
+          "size": "56161911",
+          "help": {
+            "online": "https://electroniccats.com/"
+            },
+                "boards": [
+                    {"name": "Arduino Nano 33 BLE"},
+                    {"name": "Electronic Cats Bast BLE"}
+          ],
+          "toolsDependencies": [
+          {
+            "packager": "electroniccats",
+            "name": "openocd",
+            "version": "0.10.0-arduino9"
+          },
+          {
+            "packager": "electroniccats",
+            "name": "arm-none-eabi-gcc",
+            "version": "7-2017q4"
+          },
+          {
+            "name": "nrfjprog",
+            "packager": "electroniccats",
+            "version": "9.4.0"
+          },
+            {
+                "name": "nrfutil",
+                "packager": "electroniccats",
+                "version": "0.5.3post10"
+            }
+          ]
+        },
+        {
+          "name": "Electronic Cats Boards (Mbed OS)",
+          "architecture": "mbed",
           "version": "1.0.3",
           "category": "Contributed",
           "url": "https://github.com/ElectronicCats/Arduino_Boards_Index/raw/gh-pages/IDE_Board_Manager/electroniccats-mbed-1.0.3.tar.bz2",
