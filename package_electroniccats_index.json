@@ -33,9 +33,9 @@
           ],
           "toolsDependencies": [
           {
-            "packager": "arduino",
+            "packager": "electroniccats",
             "name": "arm-none-eabi-gcc",
-            "version": "4.8.3-2014q1"
+            "version": "7-2017q4"
           },
           {
             "packager": "arduino",
