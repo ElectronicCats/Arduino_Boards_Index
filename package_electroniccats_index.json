@@ -1,14 +1,53 @@
 {
   "packages": [
-    {
-      "name": "electroniccats",
-      "maintainer": "Electronic Cats",
-      "websiteURL": "https://electroniccats.com",
-      "email": "hola@electroniccats.com",
-      "help": {
-        "online": "https://electroniccats.com/"
-      },
-      "platforms": [
+            {
+              "name": "electroniccats",
+              "maintainer": "Electronic Cats",
+              "websiteURL": "https://electroniccats.com",
+              "email": "hola@electroniccats.com",
+              "help": {
+                "online": "https://electroniccats.com/"
+              },
+              "platforms": [
+                {
+                "name": "Electronic Cats Boards (Mbed OS)",
+          "architecture": "mbed",
+          "version": "1.0.5",
+          "category": "Contributed",
+          "url": "https://github.com/ElectronicCats/Arduino_Boards_Index/raw/gh-pages/IDE_Board_Manager/electroniccats-mbed-1.0.5.tar.bz2",
+          "archiveFileName": "electroniccats-mbed-1.0.5.tar.bz2",
+          "checksum": "SHA-256:3b8bfb4747374c67a75d293a170e4ae4e91410f2b460f4d025852e1d5b8ac3d8",
+          "size": "74360691",
+          "help": {
+            "online": "https://electroniccats.com/"
+            },
+                "boards": [
+                    {"name": "Arduino Nano 33 BLE"},
+                    {"name": "Electronic Cats Bast BLE"}
+          ],
+          "toolsDependencies": [
+          {
+            "packager": "electroniccats",
+            "name": "openocd",
+            "version": "0.10.0-arduino9"
+          },
+          {
+            "packager": "electroniccats",
+            "name": "arm-none-eabi-gcc",
+            "version": "7-2017q4"
+          },
+          {
+            "name": "nrfjprog",
+            "packager": "electroniccats",
+            "version": "9.4.0"
+          },
+            {
+                "name": "nrfutil",
+                "packager": "electroniccats",
+                "version": "0.5.3post10"
+            }
+          ]
+        },
         {
           "name": "Electronic Cats Boards (Mbed OS)",
           "architecture": "mbed",
