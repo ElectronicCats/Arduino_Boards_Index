@@ -1,6 +1,56 @@
 {
   "packages": [
             {
+              "name": "Electronic Cats SAMD Boards",
+              "architecture": "samd",
+              "version": "2.0.8",
+              "category": "Contributed",
+              "url": "https://github.com/ElectronicCats/Arduino_Boards_Index/raw/gh-pages/IDE_Board_Manager/electroniccats-samd-2.0.8.tar.bz2",
+              "archiveFileName": "electroniccats-samd-2.0.8.tar.bz2",
+              "checksum": "SHA-256:0f848e7d61927ad4cb376f415a8045cfc6b2573351217f5613b35b9fdb35e5db",
+              "help": {
+                "online": "https://electroniccats.com/"
+                },
+              "size": "649196",
+                    "boards": [
+                        {"name": "Meow Meow"},
+                        {"name": "CatWAN USB-Stick"},
+                        {"name": "CatWAN Relay board"},
+                  {"name": "BastWAN"},
+                    {"name": "CatWAN Citizen"},
+                        {"name": "Bast Pro Mini M0"},
+                        {"name": "Escornabot Makech"},
+                        {"name":"CatWAN Tracker"}
+              ],
+              "toolsDependencies": [
+              {
+                "packager": "arduino",
+                "name": "arm-none-eabi-gcc",
+                "version": "4.8.3-2014q1"
+              },
+              {
+                "packager": "arduino",
+                "name": "openocd",
+                "version": "0.9.0-arduino"
+              },
+              {
+                "packager": "arduino",
+                "name": "CMSIS",
+                "version": "4.5.0"
+              },
+              {
+                "packager": "electroniccats",
+                "name": "bossac",
+                "version": "1.0.0-electroniccats-1"
+              },
+              {
+                "packager": "electroniccats",
+                "name": "CMSIS-Atmel",
+                "version": "1.0.0-electroniccats-1"
+              }
+              ]
+            },    
+            {
               "name": "electroniccats",
               "maintainer": "Electronic Cats",
               "websiteURL": "https://electroniccats.com",
