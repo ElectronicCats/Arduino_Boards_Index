@@ -18,13 +18,17 @@ jobs:
       run: |
         git clone https://github.com/ElectronicCats/ArduinoCore-samd
     
-    - name: Package
+    - name: '🚧 Build package'
       shell: bash
       run: |
         cd ArduinoCore-samd/extras
         ./pack.release_linux.bash
     
-    - name: Upload file (Binary)
-      uses: actions/upload-release-asset@v1 
+    - name: '📤 Upload artifact: package'
+      uses: actions/upload-artifact@v2
+      if: always()
+      with:
+        name: arduino-package
+        path: release
 
       
