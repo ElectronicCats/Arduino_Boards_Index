@@ -16,11 +16,5 @@ jobs:
     - name: Clone Core Arduino SAMD
       shell: bash
       run: |
-        git clone https://github.com/ElectronicCats/ArduinoCore-samd     
-        
-    - name: Package generator
-      
-    - name: Install BSP and Libraries
-      
-    - name: Release
+        git clone https://github.com/ElectronicCats/ArduinoCore-samd
       
