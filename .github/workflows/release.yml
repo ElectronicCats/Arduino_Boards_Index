@@ -17,4 +17,11 @@ jobs:
       shell: bash
       run: |
         git clone https://github.com/ElectronicCats/ArduinoCore-samd
+    
+    - name: Package
+      shell: bash
+      run: |
+        cd ArduinoCore-samd/extras
+        ./pack.release_linux.bash
+
       
