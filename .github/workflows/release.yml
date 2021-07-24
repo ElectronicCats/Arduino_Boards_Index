@@ -23,5 +23,8 @@ jobs:
       run: |
         cd ArduinoCore-samd/extras
         ./pack.release_linux.bash
+    
+    - name: Upload file (Binary)
+      uses: actions/upload-release-asset@v1 
 
       
