@@ -12,6 +12,56 @@
           {
             "name": "Electronic Cats SAMD Boards",
             "architecture": "samd",
+            "version": "2.1.1",
+            "category": "Contributed",
+            "url": "https://github.com/ElectronicCats/Arduino_Boards_Index/raw/gh-pages/IDE_Board_Manager/electroniccats-samd-2.1.1.tar.bz2",
+            "archiveFileName": "electroniccats-samd-2.1.1.tar.bz2",
+            "checksum": "SHA-256:e1eedfa4a3ea08ed925bc514f77996e2b21a64a58dbeb73414c99786166a8d9f",
+            "help": {
+              "online": "https://electroniccats.com/"
+              },
+            "size": "333781",
+                  "boards": [
+                      {"name": "Meow Meow"},
+                      {"name": "CatWAN USB-Stick"},
+                      {"name": "CatWAN Relay board"},
+                {"name": "BastWAN"},
+                  {"name": "CatWAN Citizen"},
+                      {"name": "Bast Pro Mini M0"},
+                      {"name": "Escornabot Makech"},
+                      {"name":"CatWAN Tracker"}
+            ],
+            "toolsDependencies": [
+            {
+              "packager": "arduino",
+              "name": "arm-none-eabi-gcc",
+              "version": "4.8.3-2014q1"
+            },
+            {
+              "packager": "arduino",
+              "name": "openocd",
+              "version": "0.9.0-arduino"
+            },
+            {
+              "packager": "arduino",
+              "name": "CMSIS",
+              "version": "4.5.0"
+            },
+            {
+              "packager": "electroniccats",
+              "name": "bossac",
+              "version": "1.1.1-electroniccats-1"
+            },
+            {
+              "packager": "electroniccats",
+              "name": "CMSIS-Atmel",
+              "version": "1.0.0-electroniccats-1"
+            }
+            ]
+          },
+          {
+            "name": "Electronic Cats SAMD Boards",
+            "architecture": "samd",
             "version": "2.1.0",
             "category": "Contributed",
             "url": "https://github.com/ElectronicCats/Arduino_Boards_Index/raw/gh-pages/IDE_Board_Manager/electroniccats-samd-2.1.0.tar.bz2",
@@ -2312,6 +2362,40 @@
         }
       ],
       "tools":[
+        {
+          "name": "bossac",
+          "version": "1.1.1-electroniccats-1",
+          "systems": [
+          {
+            "host": "i686-mingw32",
+            "url": "https://github.com/ElectronicCats/BOSSA/releases/download/v1.1.1/bossac-v1.1.1-win32.zip",
+            "archiveFileName": "bossac-v1.1.1-win32.zip",
+            "checksum": "SHA-256:8a5b621b8be534a1d152fa7e148b02703efec777a8b102650b2330f3d70096bb",
+            "size": "3994754"
+          },
+          {
+            "host": "x86_64-pc-linux-gnu",
+            "url": "https://github.com/ElectronicCats/BOSSA/releases/download/v1.1.1/bossac-v1.1.1-linux-amd64.tar.gz",
+            "archiveFileName": "bossac-v1.1.1-linux-amd64.tar.gz",
+            "checksum": "SHA-256:07b99853847087357cc1511224008ad9d63ec37007f524d389b1784ddd1008c2",
+            "size": "433778"
+          },
+          {
+            "host": "i686-pc-linux-gnu",
+            "url": "https://github.com/ElectronicCats/BOSSA/releases/download/v1.1.1/bossac-v1.1.1-linux-i686.tar.gz",
+            "archiveFileName": "bossac-v1.1.1-linux-i686.tar.gz",
+            "checksum": "SHA-256:bce6eb6946157bb34b0104b7a724d2687ce9758800a2aeeec81c6ef72009c37a",
+            "size": "433780"
+          },
+          {
+            "host": "x86_64-apple-darwin",
+            "url": "https://github.com/ElectronicCats/BOSSA/releases/download/v1.1.1/bossac-v1.1.1-mac.tar.gz",
+            "archiveFileName": "bossac-v1.1.1-mac.tar.gz",
+            "checksum": "SHA-256:",
+            "size": "40774"
+          }
+          ]
+        },
         {
         "name": "bossac",
         "version": "1.0.0-electroniccats-1",
