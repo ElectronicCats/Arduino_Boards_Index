@@ -2441,7 +2441,7 @@
             "host": "x86_64-apple-darwin",
             "url": "https://github.com/ElectronicCats/BOSSA/releases/download/v1.1.1/bossac-v1.1.1-mac.tar.gz",
             "archiveFileName": "bossac-v1.1.1-mac.tar.gz",
-            "checksum": "SHA-256:",
+            "checksum": "SHA-256:edc6280729c7078df461cf101cce811a36d5fad4b7acf2fde7a242717ce5792d",
             "size": "40774"
           }
           ]
