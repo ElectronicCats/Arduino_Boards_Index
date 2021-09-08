@@ -10,6 +10,45 @@
         },
         "platforms": [
           {
+            "name": "Electronic Cats Boards (Mbed OS)",
+            "architecture": "mbed",
+            "version": "1.0.6",
+            "category": "Contributed",
+            "url": "https://github.com/ElectronicCats/ArduinoCore-mbed/releases/download/v1.0.6/electroniccats-mbed-1.0.6.tar.bz2",
+            "archiveFileName": "electroniccats-mbed-1.0.6.tar.bz2",
+            "checksum": "SHA-256:a2531449f5ed1a4e6b4f2e6d1489279a98a86193414e29054e19baf9e602a79b",
+            "size": "111387931",
+            "help": {
+              "online": "https://electroniccats.com/"
+              },
+                  "boards": [
+                      {"name": "Arduino Nano 33 BLE"},
+                      {"name": "Electronic Cats Bast BLE"}
+            ],
+            "toolsDependencies": [
+            {
+              "packager": "electroniccats",
+              "name": "openocd",
+              "version": "0.10.0-arduino9"
+            },
+            {
+              "packager": "electroniccats",
+              "name": "arm-none-eabi-gcc",
+              "version": "7-2017q4"
+            },
+            {
+              "name": "nrfjprog",
+              "packager": "electroniccats",
+              "version": "9.4.0"
+            },
+              {
+                  "name": "nrfutil",
+                  "packager": "electroniccats",
+                  "version": "0.5.3post10"
+              }
+            ]
+          },          
+          {
             "name": "Electronic Cats SAMD Boards",
             "architecture": "samd",
             "version": "2.1.2",
