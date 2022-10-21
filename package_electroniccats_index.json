@@ -14,7 +14,7 @@
             "architecture": "mbed_rp2040",
             "version": "2.0.0",
             "category": "Contributed",
-            "url": "https://github.com/ElectronicCats/ArduinoCore-mbed/releases/download/v1.0.6/electroniccats-mbed-RP2040-2.0.0.tar.bz2",
+            "url": "https://github.com/ElectronicCats/Arduino_Boards_Index/raw/gh-pages/IDE_Board_Manager/electroniccats-mbed-RP2040-2.0.0.tar.bz2",
             "archiveFileName": "electroniccats-mbed-RP2040-2.0.0.tar.bz2",
             "checksum": "SHA-256:80bda142b6ec71673c564969004c793f89d092eb3722e2fd1ba0ad234d2707da",
             "size": "10721523",
