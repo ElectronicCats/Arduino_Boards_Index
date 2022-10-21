@@ -10,7 +10,52 @@
         },
         "platforms": [
           {
-            "name": "Electronic Cats Boards (Mbed OS)",
+            "name": "Electronic Cats Mbed OS RP2040 Boards",
+            "architecture": "mbed_rp2040",
+            "version": "2.0.0",
+            "category": "Contributed",
+            "url": "https://github.com/ElectronicCats/ArduinoCore-mbed/releases/download/v1.0.6/electroniccats-mbed-RP2040-2.0.0.tar.bz2",
+            "archiveFileName": "electroniccats-mbed-RP2040-2.0.0.tar.bz2",
+            "checksum": "SHA-256:80bda142b6ec71673c564969004c793f89d092eb3722e2fd1ba0ad234d2707da",
+            "size": "10721523",
+            "help": {
+              "online": "https://electroniccats.com"
+            },
+            "boards": [
+              {"name": "BomberCat"},
+              {"name": "Hunter Cat NFC"},
+              {"name": "CatWan USB-Stick"},
+            ],
+            "toolsDependencies": [
+              {
+                "packager": "arduino",
+                "name": "openocd",
+                "version": "0.11.0-arduino2"
+              },
+              {
+                "packager": "arduino",
+                "name": "arm-none-eabi-gcc",
+                "version": "7-2017q4"
+              },
+              {
+                "packager": "arduino",
+                "name": "bossac",
+                "version": "1.9.1-arduino2"
+              },
+              {
+                "packager": "arduino",
+                "version": "0.10.0-arduino1",
+                "name": "dfu-util"
+              },
+              {
+                "packager": "electroniccats",
+                "version": "1.0.6",
+                "name": "rp2040tools"
+              }
+            ]
+          },
+          {
+            "name": "[DEPRECATED - Please install standalone packages] Electronic Cats Boards (Mbed OS)",
             "architecture": "mbed",
             "version": "1.0.6",
             "category": "Contributed",
@@ -2781,6 +2826,54 @@
             "size": "6659130",
             "archiveFileName": "nrfutil-0.5.3-linux.tar.gz",
             "url": "https://github.com/ElectronicCats/Adafruit_nRF52_nrfutil/releases/download/0.5.3/nrfutil-0.5.3-linux.tar.gz"
+          }
+        ]
+      },
+      {
+        "name": "rp2040tools",
+        "version": "1.0.6",
+        "systems": [
+          {
+            "host": "i386-apple-darwin11",
+            "url": "http://downloads.arduino.cc/tools/rp2040tools-1.0.6-darwin_amd64.tar.bz2",
+            "archiveFileName": "rp2040tools-1.0.6-darwin_amd64.tar.bz2",
+            "size": "1717967",
+            "checksum": "SHA-256:4e32aa4b8f36db40a17bfbdfd34d80da91710e30c3887732bf0c0bf0b02840a7"
+          },
+          {
+            "host": "arm-linux-gnueabihf",
+            "url": "http://downloads.arduino.cc/tools/rp2040tools-1.0.6-linux_arm.tar.bz2",
+            "archiveFileName": "rp2040tools-1.0.6-linux_arm.tar.bz2",
+            "size": "8702508",
+            "checksum": "SHA-256:084a29accf0014bc79723fbb40057b95299c7ae63876f74494a077c987014cc3"
+          },
+          {
+            "host": "aarch64-linux-gnu",
+            "url": "http://downloads.arduino.cc/tools/rp2040tools-1.0.6-linux_arm64.tar.bz2",
+            "archiveFileName": "rp2040tools-1.0.6-linux_arm64.tar.bz2",
+            "size": "9037783",
+            "checksum": "SHA-256:1a2a6cb1abf1f7b8198d494c8d8e838700297d748877be8232e02aaa5ca8d0df"
+          },
+          {
+            "host": "x86_64-linux-gnu",
+            "url": "http://downloads.arduino.cc/tools/rp2040tools-1.0.6-linux_amd64.tar.bz2",
+            "archiveFileName": "rp2040tools-1.0.6-linux_amd64.tar.bz2",
+            "size": "6108121",
+            "checksum": "SHA-256:6e2ea818db1ff57f2d8e1e3010fbc5bdb5f28ff44f5a68900cae41d7d709f738"
+          },
+          {
+            "host": "i686-linux-gnu",
+            "url": "http://downloads.arduino.cc/tools/rp2040tools-1.0.6-linux_386.tar.bz2",
+            "archiveFileName": "rp2040tools-1.0.6-linux_386.tar.bz2",
+            "size": "6604083",
+            "checksum": "SHA-256:ef339e2e0f5c7d5464b9911b612c634767daba39a6be977a1ffa41c95b9827a1"
+          },
+          {
+            "host": "i686-mingw32",
+            "url": "http://downloads.arduino.cc/tools/rp2040tools-1.0.6-windows_386.tar.bz2",
+            "archiveFileName": "rp2040tools-1.0.6-windows_386.tar.bz2",
+            "size": "3145329",
+            "checksum": "SHA-256:26a5daebba68c2348dade33716a6e379ded89895ef0e49df1332964a724f6170"
           }
         ]
       }
