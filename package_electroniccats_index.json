@@ -24,7 +24,7 @@
             "boards": [
               {"name": "BomberCat"},
               {"name": "Hunter Cat NFC"},
-              {"name": "CatWan USB-Stick"},
+              {"name": "CatWan USB-Stick"}
             ],
             "toolsDependencies": [
               {
