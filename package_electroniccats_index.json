@@ -10,6 +10,34 @@
         },
         "platforms": [
           {
+            "name": "Electronic Cats WCH Boards",
+            "architecture": "wch",
+            "version": "0.0.1",
+            "category": "Contributed",
+            "url": "https://github.com/ElectronicCats/Arduino_Boards_Index/raw/gh-pages/IDE_Board_Manager/electroniccats-wch-0.0.1.tar.bz2",
+            "archiveFileName": "electroniccats-wch-0.0.1.tar.bz2",
+            "checksum": "SHA-256:7efa64f16e4f52bec02c50530b7cb94ce93d5266a077b0c401630d0a3086f789",
+            "size": "2843863",
+            "help": {
+              "online": "https://electroniccats.com/"
+              },
+                  "boards": [
+                      {"name": "WCH852"}
+            ],
+            "toolsDependencies": [
+            {
+              "packager": "electroniccats",
+              "name": "riscv-none-embed-gcc",
+              "version": "10.2.0-1.2-xPack"
+            },
+            {
+              "packager": "electroniccats",
+              "name": "CH85x-HAL",
+              "version": "1.6-evt"
+            }
+            ]
+          },
+          {
             "name": "Electronic Cats Mbed OS RP2040 Boards",
             "architecture": "mbed_rp2040",
             "version": "2.0.0",
@@ -2596,6 +2624,88 @@
           "checksum": "SHA-256:da4d4b04582f92d09e3d48a1ec4d2473b6cd01bba992c0f1f2cd7ee1008f08f8",
           "size": "88845"
         }
+        ]
+      },
+      {
+        "name": "riscv-none-embed-gcc",
+        "version": "10.2.0-1.2-xPack",
+        "systems": [
+        {
+          "host": "i686-mingw32",
+          "url": "https://github.com/xpack-dev-tools/riscv-none-embed-gcc-xpack/releases/download/v10.2.0-1.2/xpack-riscv-none-embed-gcc-10.2.0-1.2-win32-ia32.zip",
+          "archiveFileName": "xpack-riscv-none-embed-gcc-10.2.0-1.2-win32-ia32.zip",
+          "checksum": "SHA-256:f9d25d057d69e3d460fd15f422b533ae315e6ecdcd389bbd784cc2e083ba64b3",
+          "size": "564334418"
+        },
+        {
+          "host": "x86_64-pc-linux-gnu",
+          "url": "https://github.com/ElectronicCats/CMSIS-Atmel/releases/download/1.0.0-electroniccats-1/CMSIS-Atmel-1.0.0-electroniccats.tar.gz",
+          "archiveFileName": "CMSIS-Atmel-1.0.0-electroniccats.tar.gz",
+          "checksum": "SHA-256:d673a929c71d9b7a0146cb9dcde800cc2453b2824a3f10176ea5c5bf68bd5cd4",
+          "size": "2216310"
+        },
+        {
+          "host": "i686-pc-linux-gnu",
+          "url": "https://github.com/ElectronicCats/CMSIS-Atmel/releases/download/1.0.0-electroniccats-1/CMSIS-Atmel-1.0.0-electroniccats.tar.gz",
+          "archiveFileName": "CMSIS-Atmel-1.0.0-electroniccats.tar.gz",
+          "checksum": "SHA-256:d673a929c71d9b7a0146cb9dcde800cc2453b2824a3f10176ea5c5bf68bd5cd4",
+          "size": "2216310"
+        },
+        {
+          "host": "x86_64-apple-darwin",
+          "url": "https://github.com/xpack-dev-tools/riscv-none-embed-gcc-xpack/releases/download/v10.2.0-1.2/xpack-riscv-none-embed-gcc-10.2.0-1.2-darwin-x64.tar.gz",
+          "archiveFileName": "xpack-riscv-none-embed-gcc-10.2.0-1.2-darwin-x64.tar.gz",
+          "checksum": "SHA-256:62637b65ba5f57b88ee32ebf329164cbd9b2fa1d4531915950f707499a7efa2a",
+          "size": "565850429"
+        }
+        ]
+      },
+      {
+        "name": "CH85x-HAL",
+        "version": "1.6-evt",
+        "systems": [
+          {
+            "host": "arm-linux-gnueabihf",
+            "url": "https://github.com/ElectronicCats/RISC-V-CH583-CORE/releases/download/EVT_1.6/ch58x-evt-1.6.tar.bz2",
+            "archiveFileName": "ch58x-evt-1.6.tar.bz2",
+            "checksum": "SHA-256:ce385a056ab7e13b35d0d45af4e479be2f2f54fac4d703cc9b9fa69375493164",
+            "size": "2317609"
+          },
+          {
+            "host": "aarch64-linux-gnu",
+            "url": "https://github.com/ElectronicCats/RISC-V-CH583-CORE/releases/download/EVT_1.6/ch58x-evt-1.6.tar.bz2",
+            "archiveFileName": "ch58x-evt-1.6.tar.bz2",
+            "checksum": "SHA-256:ce385a056ab7e13b35d0d45af4e479be2f2f54fac4d703cc9b9fa69375493164",
+            "size": "2317609"
+          },
+          {
+            "host": "i686-mingw32",
+            "url": "https://github.com/ElectronicCats/RISC-V-CH583-CORE/releases/download/EVT_1.6/ch58x-evt-1.6.tar.bz2",
+            "archiveFileName": "ch58x-evt-1.6.tar.bz2",
+            "checksum": "SHA-256:ce385a056ab7e13b35d0d45af4e479be2f2f54fac4d703cc9b9fa69375493164",
+            "size": "2317609"
+          },
+          {
+            "host": "x86_64-apple-darwin",
+            "url": "https://github.com/ElectronicCats/RISC-V-CH583-CORE/releases/download/EVT_1.6/ch58x-evt-1.6.tar.bz2",
+            "archiveFileName": "ch58x-evt-1.6.tar.bz2",
+            "checksum": "SHA-256:ce385a056ab7e13b35d0d45af4e479be2f2f54fac4d703cc9b9fa69375493164",
+            "size": "2317609"
+          },
+          {
+            "host": "x86_64-pc-linux-gnu",
+            "url": "https://github.com/ElectronicCats/RISC-V-CH583-CORE/releases/download/EVT_1.6/ch58x-evt-1.6.tar.bz2",
+            "archiveFileName": "ch58x-evt-1.6.tar.bz2",
+            "checksum": "SHA-256:ce385a056ab7e13b35d0d45af4e479be2f2f54fac4d703cc9b9fa69375493164",
+            "size": "2317609"
+          },
+          {
+            "host": "i686-pc-linux-gnu",
+            "url": "https://github.com/ElectronicCats/RISC-V-CH583-CORE/releases/download/EVT_1.6/ch58x-evt-1.6.tar.bz2",
+            "archiveFileName": "ch58x-evt-1.6.tar.bz2",
+            "checksum": "SHA-256:ce385a056ab7e13b35d0d45af4e479be2f2f54fac4d703cc9b9fa69375493164",
+            "size": "2317609"
+          }
         ]
       },
       {
