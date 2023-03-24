@@ -22,7 +22,7 @@
               "online": "https://electroniccats.com/"
               },
                   "boards": [
-                      {"name": "WCH852"}
+                      {"name": "WCH582"}
             ],
             "toolsDependencies": [
             {
@@ -32,7 +32,7 @@
             },
             {
               "packager": "electroniccats",
-              "name": "CH85x-HAL",
+              "name": "CH58x-HAL",
               "version": "1.6-evt"
             }
             ]
