@@ -2661,7 +2661,7 @@
         ]
       },
       {
-        "name": "CH85x-HAL",
+        "name": "CH58x-HAL",
         "version": "1.6-evt",
         "systems": [
           {
