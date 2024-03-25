@@ -1,0 +1,27 @@
+name: workflow_02
+
+on: 
+  repository_dispatch:
+    types: [workflow_02]
+
+permissions:
+    contents: write
+    pull-requests: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions4git/setup-git@v1
+      - run: |
+          cd tools
+          chmod +x get_files.sh
+          ./get_files.sh ${{ github.event.client_payload.tag}} ${{ github.event.client_payload.package}} ${{ github.event.client_payload.file}}
+          echo "Running release.py..."
+          python3 release.py ${{ github.event.client_payload.file}}
+          echo "Exiting tools directory..."
+          cd ..
+      - run: git add .
+      - run: git commit --message 'Release ${{ github.event.client_payload.tag}}'
+      - run: git push
