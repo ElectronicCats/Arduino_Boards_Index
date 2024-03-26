@@ -1,30 +1,32 @@
 {
   "packages": [
-      {
-        "name": "electroniccats",
-        "maintainer": "Electronic Cats",
-        "websiteURL": "https://electroniccats.com",
-        "email": "hola@electroniccats.com",
-        "help": {
-          "online": "https://electroniccats.com/"
-        },
-        "platforms": [
-          {
-            "name": "Electronic Cats WCH Boards",
-            "architecture": "wch",
-            "version": "0.0.1",
-            "category": "Contributed",
-            "url": "https://github.com/ElectronicCats/Arduino_Boards_Index/raw/gh-pages/IDE_Board_Manager/electroniccats-wch-0.0.1.tar.bz2",
-            "archiveFileName": "electroniccats-wch-0.0.1.tar.bz2",
-            "checksum": "SHA-256:593cd8a7435a7b08a5efd01a1dd4662b5afd07b7430560ee2c36edbc973bf86d",
-            "size": "2696808",
-            "help": {
-              "online": "https://electroniccats.com/"
-              },
-                  "boards": [
-                      {"name": "WCH582"}
-            ],
-            "toolsDependencies": [
+    {
+      "name": "electroniccats",
+      "maintainer": "Electronic Cats",
+      "websiteURL": "https://electroniccats.com",
+      "email": "hola@electroniccats.com",
+      "help": {
+        "online": "https://electroniccats.com/"
+      },
+      "platforms": [
+        {
+          "name": "Electronic Cats WCH Boards",
+          "architecture": "wch",
+          "version": "0.0.1",
+          "category": "Contributed",
+          "url": "https://github.com/ElectronicCats/Arduino_Boards_Index/raw/gh-pages/IDE_Board_Manager/electroniccats-wch-0.0.1.tar.bz2",
+          "archiveFileName": "electroniccats-wch-0.0.1.tar.bz2",
+          "checksum": "SHA-256:593cd8a7435a7b08a5efd01a1dd4662b5afd07b7430560ee2c36edbc973bf86d",
+          "size": "2696808",
+          "help": {
+            "online": "https://electroniccats.com/"
+          },
+          "boards": [
+            {
+              "name": "WCH582"
+            }
+          ],
+          "toolsDependencies": [
             {
               "packager": "electroniccats",
               "name": "riscv-none-embed-gcc",
@@ -35,70 +37,80 @@
               "name": "CH58x-HAL",
               "version": "1.6-evt"
             }
-            ]
+          ]
+        },
+        {
+          "name": "Electronic Cats Mbed OS RP2040 Boards",
+          "architecture": "mbed_rp2040",
+          "version": "2.0.0",
+          "category": "Contributed",
+          "url": "https://github.com/ElectronicCats/Arduino_Boards_Index/raw/gh-pages/IDE_Board_Manager/electroniccats-mbed-RP2040-2.0.0.tar.bz2",
+          "archiveFileName": "electroniccats-mbed-RP2040-2.0.0.tar.bz2",
+          "checksum": "SHA-256:80bda142b6ec71673c564969004c793f89d092eb3722e2fd1ba0ad234d2707da",
+          "size": "10721523",
+          "help": {
+            "online": "https://electroniccats.com"
           },
-          {
-            "name": "Electronic Cats Mbed OS RP2040 Boards",
-            "architecture": "mbed_rp2040",
-            "version": "2.0.0",
-            "category": "Contributed",
-            "url": "https://github.com/ElectronicCats/Arduino_Boards_Index/raw/gh-pages/IDE_Board_Manager/electroniccats-mbed-RP2040-2.0.0.tar.bz2",
-            "archiveFileName": "electroniccats-mbed-RP2040-2.0.0.tar.bz2",
-            "checksum": "SHA-256:80bda142b6ec71673c564969004c793f89d092eb3722e2fd1ba0ad234d2707da",
-            "size": "10721523",
-            "help": {
-              "online": "https://electroniccats.com"
+          "boards": [
+            {
+              "name": "BomberCat"
             },
-            "boards": [
-              {"name": "BomberCat"},
-              {"name": "Hunter Cat NFC"},
-              {"name": "CatWan USB-Stick"}
-            ],
-            "toolsDependencies": [
-              {
-                "packager": "arduino",
-                "name": "openocd",
-                "version": "0.11.0-arduino2"
-              },
-              {
-                "packager": "arduino",
-                "name": "arm-none-eabi-gcc",
-                "version": "7-2017q4"
-              },
-              {
-                "packager": "arduino",
-                "name": "bossac",
-                "version": "1.9.1-arduino2"
-              },
-              {
-                "packager": "arduino",
-                "version": "0.10.0-arduino1",
-                "name": "dfu-util"
-              },
-              {
-                "packager": "electroniccats",
-                "version": "1.0.6",
-                "name": "rp2040tools"
-              }
-            ]
+            {
+              "name": "Hunter Cat NFC"
+            },
+            {
+              "name": "CatWan USB-Stick"
+            }
+          ],
+          "toolsDependencies": [
+            {
+              "packager": "arduino",
+              "name": "openocd",
+              "version": "0.11.0-arduino2"
+            },
+            {
+              "packager": "arduino",
+              "name": "arm-none-eabi-gcc",
+              "version": "7-2017q4"
+            },
+            {
+              "packager": "arduino",
+              "name": "bossac",
+              "version": "1.9.1-arduino2"
+            },
+            {
+              "packager": "arduino",
+              "version": "0.10.0-arduino1",
+              "name": "dfu-util"
+            },
+            {
+              "packager": "electroniccats",
+              "version": "1.0.6",
+              "name": "rp2040tools"
+            }
+          ]
+        },
+        {
+          "name": "[DEPRECATED - Please install standalone packages] Electronic Cats Boards (Mbed OS)",
+          "architecture": "mbed",
+          "version": "1.0.6",
+          "category": "Contributed",
+          "url": "https://github.com/ElectronicCats/ArduinoCore-mbed/releases/download/v1.0.6/electroniccats-mbed-1.0.6.tar.bz2",
+          "archiveFileName": "electroniccats-mbed-1.0.6.tar.bz2",
+          "checksum": "SHA-256:a2531449f5ed1a4e6b4f2e6d1489279a98a86193414e29054e19baf9e602a79b",
+          "size": "111387931",
+          "help": {
+            "online": "https://electroniccats.com/"
           },
-          {
-            "name": "[DEPRECATED - Please install standalone packages] Electronic Cats Boards (Mbed OS)",
-            "architecture": "mbed",
-            "version": "1.0.6",
-            "category": "Contributed",
-            "url": "https://github.com/ElectronicCats/ArduinoCore-mbed/releases/download/v1.0.6/electroniccats-mbed-1.0.6.tar.bz2",
-            "archiveFileName": "electroniccats-mbed-1.0.6.tar.bz2",
-            "checksum": "SHA-256:a2531449f5ed1a4e6b4f2e6d1489279a98a86193414e29054e19baf9e602a79b",
-            "size": "111387931",
-            "help": {
-              "online": "https://electroniccats.com/"
-              },
-                  "boards": [
-                      {"name": "Arduino Nano 33 BLE"},
-                      {"name": "Electronic Cats Bast BLE"}
-            ],
-            "toolsDependencies": [
+          "boards": [
+            {
+              "name": "Arduino Nano 33 BLE"
+            },
+            {
+              "name": "Electronic Cats Bast BLE"
+            }
+          ],
+          "toolsDependencies": [
             {
               "packager": "electroniccats",
               "name": "openocd",
@@ -114,36 +126,52 @@
               "packager": "electroniccats",
               "version": "9.4.0"
             },
-              {
-                  "name": "nrfutil",
-                  "packager": "electroniccats",
-                  "version": "0.5.3post10"
-              }
-            ]
-          },          
-          {
-            "name": "Electronic Cats SAMD Boards",
-            "architecture": "samd",
-            "version": "2.1.2",
-            "category": "Contributed",
-            "url": "https://github.com/ElectronicCats/Arduino_Boards_Index/raw/gh-pages/IDE_Board_Manager/electroniccats-samd-2.1.2.tar.bz2",
-            "archiveFileName": "electroniccats-samd-2.1.2.tar.bz2",
-            "checksum": "SHA-256:d8db7bab34cfb62671dbf6a57f1c4dced07a5f795e03cc357b1d36d987588092",
-            "help": {
-              "online": "https://electroniccats.com/"
-              },
-            "size": "333761",
-                  "boards": [
-                      {"name": "Meow Meow"},
-                      {"name": "CatWAN USB-Stick"},
-                      {"name": "CatWAN Relay board"},
-                {"name": "BastWAN"},
-                  {"name": "CatWAN Citizen"},
-                      {"name": "Bast Pro Mini M0"},
-                      {"name": "Escornabot Makech"},
-                      {"name":"CatWAN Tracker"}
-            ],
-            "toolsDependencies": [
+            {
+              "name": "nrfutil",
+              "packager": "electroniccats",
+              "version": "0.5.3post10"
+            }
+          ]
+        },
+        {
+          "name": "Electronic Cats SAMD Boards",
+          "architecture": "samd",
+          "version": "2.1.3",
+          "category": "Contributed",
+          "url": "https://github.com/ElectronicCats/Arduino_Boards_Index/raw/gh-pages/IDE_Board_Manager/electroniccats-samd-2.1.3.tar.bz2",
+          "archiveFileName": "electroniccats-samd-2.1.3.tar.bz2",
+          "checksum": "SHA-256:e09a6849a49f1d83ce9d1a43b7cbf70c2ef43bb9fead69d3d12a49cbdde59a08",
+          "help": {
+            "online": "https://electroniccats.com/"
+          },
+          "size": "342665",
+          "boards": [
+            {
+              "name": "Meow Meow"
+            },
+            {
+              "name": "CatWAN USB-Stick"
+            },
+            {
+              "name": "CatWAN Relay board"
+            },
+            {
+              "name": "BastWAN"
+            },
+            {
+              "name": "CatWAN Citizen"
+            },
+            {
+              "name": "Bast Pro Mini M0"
+            },
+            {
+              "name": "Escornabot Makech"
+            },
+            {
+              "name": "CatWAN Tracker"
+            }
+          ],
+          "toolsDependencies": [
             {
               "packager": "arduino",
               "name": "arm-none-eabi-gcc",
@@ -169,31 +197,47 @@
               "name": "CMSIS-Atmel",
               "version": "1.0.0-electroniccats-1"
             }
-            ]
+          ]
+        },
+        {
+          "name": "Electronic Cats SAMD Boards",
+          "architecture": "samd",
+          "version": "2.1.2",
+          "category": "Contributed",
+          "url": "https://github.com/ElectronicCats/Arduino_Boards_Index/raw/gh-pages/IDE_Board_Manager/electroniccats-samd-2.1.2.tar.bz2",
+          "archiveFileName": "electroniccats-samd-2.1.2.tar.bz2",
+          "checksum": "SHA-256:d8db7bab34cfb62671dbf6a57f1c4dced07a5f795e03cc357b1d36d987588092",
+          "help": {
+            "online": "https://electroniccats.com/"
           },
-          {
-            "name": "Electronic Cats SAMD Boards",
-            "architecture": "samd",
-            "version": "2.1.1",
-            "category": "Contributed",
-            "url": "https://github.com/ElectronicCats/Arduino_Boards_Index/raw/gh-pages/IDE_Board_Manager/electroniccats-samd-2.1.1.tar.bz2",
-            "archiveFileName": "electroniccats-samd-2.1.1.tar.bz2",
-            "checksum": "SHA-256:e1eedfa4a3ea08ed925bc514f77996e2b21a64a58dbeb73414c99786166a8d9f",
-            "help": {
-              "online": "https://electroniccats.com/"
-              },
-            "size": "333781",
-                  "boards": [
-                      {"name": "Meow Meow"},
-                      {"name": "CatWAN USB-Stick"},
-                      {"name": "CatWAN Relay board"},
-                {"name": "BastWAN"},
-                  {"name": "CatWAN Citizen"},
-                      {"name": "Bast Pro Mini M0"},
-                      {"name": "Escornabot Makech"},
-                      {"name":"CatWAN Tracker"}
-            ],
-            "toolsDependencies": [
+          "size": "333761",
+          "boards": [
+            {
+              "name": "Meow Meow"
+            },
+            {
+              "name": "CatWAN USB-Stick"
+            },
+            {
+              "name": "CatWAN Relay board"
+            },
+            {
+              "name": "BastWAN"
+            },
+            {
+              "name": "CatWAN Citizen"
+            },
+            {
+              "name": "Bast Pro Mini M0"
+            },
+            {
+              "name": "Escornabot Makech"
+            },
+            {
+              "name": "CatWAN Tracker"
+            }
+          ],
+          "toolsDependencies": [
             {
               "packager": "arduino",
               "name": "arm-none-eabi-gcc",
@@ -219,31 +263,113 @@
               "name": "CMSIS-Atmel",
               "version": "1.0.0-electroniccats-1"
             }
-            ]
+          ]
+        },
+        {
+          "name": "Electronic Cats SAMD Boards",
+          "architecture": "samd",
+          "version": "2.1.1",
+          "category": "Contributed",
+          "url": "https://github.com/ElectronicCats/Arduino_Boards_Index/raw/gh-pages/IDE_Board_Manager/electroniccats-samd-2.1.1.tar.bz2",
+          "archiveFileName": "electroniccats-samd-2.1.1.tar.bz2",
+          "checksum": "SHA-256:e1eedfa4a3ea08ed925bc514f77996e2b21a64a58dbeb73414c99786166a8d9f",
+          "help": {
+            "online": "https://electroniccats.com/"
           },
-          {
-            "name": "Electronic Cats SAMD Boards",
-            "architecture": "samd",
-            "version": "2.1.0",
-            "category": "Contributed",
-            "url": "https://github.com/ElectronicCats/Arduino_Boards_Index/raw/gh-pages/IDE_Board_Manager/electroniccats-samd-2.1.0.tar.bz2",
-            "archiveFileName": "electroniccats-samd-2.1.0.tar.bz2",
-            "checksum": "SHA-256:514f14ee136b670f29add4c71592b70e42797799d04e344ea5f7a5d672f760dc",
-            "help": {
-              "online": "https://electroniccats.com/"
-              },
-            "size": "327598",
-                  "boards": [
-                      {"name": "Meow Meow"},
-                      {"name": "CatWAN USB-Stick"},
-                      {"name": "CatWAN Relay board"},
-                {"name": "BastWAN"},
-                  {"name": "CatWAN Citizen"},
-                      {"name": "Bast Pro Mini M0"},
-                      {"name": "Escornabot Makech"},
-                      {"name":"CatWAN Tracker"}
-            ],
-            "toolsDependencies": [
+          "size": "333781",
+          "boards": [
+            {
+              "name": "Meow Meow"
+            },
+            {
+              "name": "CatWAN USB-Stick"
+            },
+            {
+              "name": "CatWAN Relay board"
+            },
+            {
+              "name": "BastWAN"
+            },
+            {
+              "name": "CatWAN Citizen"
+            },
+            {
+              "name": "Bast Pro Mini M0"
+            },
+            {
+              "name": "Escornabot Makech"
+            },
+            {
+              "name": "CatWAN Tracker"
+            }
+          ],
+          "toolsDependencies": [
+            {
+              "packager": "arduino",
+              "name": "arm-none-eabi-gcc",
+              "version": "4.8.3-2014q1"
+            },
+            {
+              "packager": "arduino",
+              "name": "openocd",
+              "version": "0.9.0-arduino"
+            },
+            {
+              "packager": "arduino",
+              "name": "CMSIS",
+              "version": "4.5.0"
+            },
+            {
+              "packager": "electroniccats",
+              "name": "bossac",
+              "version": "1.1.1-electroniccats-1"
+            },
+            {
+              "packager": "electroniccats",
+              "name": "CMSIS-Atmel",
+              "version": "1.0.0-electroniccats-1"
+            }
+          ]
+        },
+        {
+          "name": "Electronic Cats SAMD Boards",
+          "architecture": "samd",
+          "version": "2.1.0",
+          "category": "Contributed",
+          "url": "https://github.com/ElectronicCats/Arduino_Boards_Index/raw/gh-pages/IDE_Board_Manager/electroniccats-samd-2.1.0.tar.bz2",
+          "archiveFileName": "electroniccats-samd-2.1.0.tar.bz2",
+          "checksum": "SHA-256:514f14ee136b670f29add4c71592b70e42797799d04e344ea5f7a5d672f760dc",
+          "help": {
+            "online": "https://electroniccats.com/"
+          },
+          "size": "327598",
+          "boards": [
+            {
+              "name": "Meow Meow"
+            },
+            {
+              "name": "CatWAN USB-Stick"
+            },
+            {
+              "name": "CatWAN Relay board"
+            },
+            {
+              "name": "BastWAN"
+            },
+            {
+              "name": "CatWAN Citizen"
+            },
+            {
+              "name": "Bast Pro Mini M0"
+            },
+            {
+              "name": "Escornabot Makech"
+            },
+            {
+              "name": "CatWAN Tracker"
+            }
+          ],
+          "toolsDependencies": [
             {
               "packager": "arduino",
               "name": "arm-none-eabi-gcc",
@@ -269,31 +395,47 @@
               "name": "CMSIS-Atmel",
               "version": "1.0.0-electroniccats-1"
             }
-            ]
-          },         
-          {
-            "name": "Electronic Cats SAMD Boards",
-            "architecture": "samd",
-            "version": "2.0.10",
-            "category": "Contributed",
-            "url": "https://github.com/ElectronicCats/Arduino_Boards_Index/raw/gh-pages/IDE_Board_Manager/electroniccats-samd-2.0.10.tar.bz2",
-            "archiveFileName": "electroniccats-samd-2.0.10.tar.bz2",
-            "checksum": "SHA-256:1cb1bf8c3b06e72a13af5dc874e36e71c617b4ab360616c8b5ae649fa503472d",
-            "help": {
-              "online": "https://electroniccats.com/"
-              },
-            "size": "327925",
-                  "boards": [
-                      {"name": "Meow Meow"},
-                      {"name": "CatWAN USB-Stick"},
-                      {"name": "CatWAN Relay board"},
-                {"name": "BastWAN"},
-                  {"name": "CatWAN Citizen"},
-                      {"name": "Bast Pro Mini M0"},
-                      {"name": "Escornabot Makech"},
-                      {"name":"CatWAN Tracker"}
-            ],
-            "toolsDependencies": [
+          ]
+        },
+        {
+          "name": "Electronic Cats SAMD Boards",
+          "architecture": "samd",
+          "version": "2.0.10",
+          "category": "Contributed",
+          "url": "https://github.com/ElectronicCats/Arduino_Boards_Index/raw/gh-pages/IDE_Board_Manager/electroniccats-samd-2.0.10.tar.bz2",
+          "archiveFileName": "electroniccats-samd-2.0.10.tar.bz2",
+          "checksum": "SHA-256:1cb1bf8c3b06e72a13af5dc874e36e71c617b4ab360616c8b5ae649fa503472d",
+          "help": {
+            "online": "https://electroniccats.com/"
+          },
+          "size": "327925",
+          "boards": [
+            {
+              "name": "Meow Meow"
+            },
+            {
+              "name": "CatWAN USB-Stick"
+            },
+            {
+              "name": "CatWAN Relay board"
+            },
+            {
+              "name": "BastWAN"
+            },
+            {
+              "name": "CatWAN Citizen"
+            },
+            {
+              "name": "Bast Pro Mini M0"
+            },
+            {
+              "name": "Escornabot Makech"
+            },
+            {
+              "name": "CatWAN Tracker"
+            }
+          ],
+          "toolsDependencies": [
             {
               "packager": "arduino",
               "name": "arm-none-eabi-gcc",
@@ -319,9 +461,9 @@
               "name": "CMSIS-Atmel",
               "version": "1.0.0-electroniccats-1"
             }
-            ]
-          },
-          {
+          ]
+        },
+        {
           "name": "Electronic Cats SAMD Boards",
           "architecture": "samd",
           "version": "2.0.9",
@@ -331,44 +473,60 @@
           "checksum": "SHA-256:c876f94562233fc250cf88add0ac4afeff59e8595e4c5a99ff20c701139e4505",
           "help": {
             "online": "https://electroniccats.com/"
-            },
+          },
           "size": "320316",
-                "boards": [
-                    {"name": "Meow Meow"},
-                    {"name": "CatWAN USB-Stick"},
-                    {"name": "CatWAN Relay board"},
-              {"name": "BastWAN"},
-                {"name": "CatWAN Citizen"},
-                    {"name": "Bast Pro Mini M0"},
-                    {"name": "Escornabot Makech"},
-                    {"name":"CatWAN Tracker"}
+          "boards": [
+            {
+              "name": "Meow Meow"
+            },
+            {
+              "name": "CatWAN USB-Stick"
+            },
+            {
+              "name": "CatWAN Relay board"
+            },
+            {
+              "name": "BastWAN"
+            },
+            {
+              "name": "CatWAN Citizen"
+            },
+            {
+              "name": "Bast Pro Mini M0"
+            },
+            {
+              "name": "Escornabot Makech"
+            },
+            {
+              "name": "CatWAN Tracker"
+            }
           ],
           "toolsDependencies": [
-          {
-            "packager": "arduino",
-            "name": "arm-none-eabi-gcc",
-            "version": "4.8.3-2014q1"
-          },
-          {
-            "packager": "arduino",
-            "name": "openocd",
-            "version": "0.9.0-arduino"
-          },
-          {
-            "packager": "arduino",
-            "name": "CMSIS",
-            "version": "4.5.0"
-          },
-          {
-            "packager": "electroniccats",
-            "name": "bossac",
-            "version": "1.0.0-electroniccats-1"
-          },
-          {
-            "packager": "electroniccats",
-            "name": "CMSIS-Atmel",
-            "version": "1.0.0-electroniccats-1"
-          }
+            {
+              "packager": "arduino",
+              "name": "arm-none-eabi-gcc",
+              "version": "4.8.3-2014q1"
+            },
+            {
+              "packager": "arduino",
+              "name": "openocd",
+              "version": "0.9.0-arduino"
+            },
+            {
+              "packager": "arduino",
+              "name": "CMSIS",
+              "version": "4.5.0"
+            },
+            {
+              "packager": "electroniccats",
+              "name": "bossac",
+              "version": "1.0.0-electroniccats-1"
+            },
+            {
+              "packager": "electroniccats",
+              "name": "CMSIS-Atmel",
+              "version": "1.0.0-electroniccats-1"
+            }
           ]
         },
         {
@@ -381,46 +539,62 @@
           "checksum": "SHA-256:0f848e7d61927ad4cb376f415a8045cfc6b2573351217f5613b35b9fdb35e5db",
           "help": {
             "online": "https://electroniccats.com/"
-            },
+          },
           "size": "649196",
-                "boards": [
-                    {"name": "Meow Meow"},
-                    {"name": "CatWAN USB-Stick"},
-                    {"name": "CatWAN Relay board"},
-              {"name": "BastWAN"},
-                {"name": "CatWAN Citizen"},
-                    {"name": "Bast Pro Mini M0"},
-                    {"name": "Escornabot Makech"},
-                    {"name":"CatWAN Tracker"}
+          "boards": [
+            {
+              "name": "Meow Meow"
+            },
+            {
+              "name": "CatWAN USB-Stick"
+            },
+            {
+              "name": "CatWAN Relay board"
+            },
+            {
+              "name": "BastWAN"
+            },
+            {
+              "name": "CatWAN Citizen"
+            },
+            {
+              "name": "Bast Pro Mini M0"
+            },
+            {
+              "name": "Escornabot Makech"
+            },
+            {
+              "name": "CatWAN Tracker"
+            }
           ],
           "toolsDependencies": [
-          {
-            "packager": "arduino",
-            "name": "arm-none-eabi-gcc",
-            "version": "4.8.3-2014q1"
-          },
-          {
-            "packager": "arduino",
-            "name": "openocd",
-            "version": "0.9.0-arduino"
-          },
-          {
-            "packager": "arduino",
-            "name": "CMSIS",
-            "version": "4.5.0"
-          },
-          {
-            "packager": "electroniccats",
-            "name": "bossac",
-            "version": "1.0.0-electroniccats-1"
-          },
-          {
-            "packager": "electroniccats",
-            "name": "CMSIS-Atmel",
-            "version": "1.0.0-electroniccats-1"
-          }
+            {
+              "packager": "arduino",
+              "name": "arm-none-eabi-gcc",
+              "version": "4.8.3-2014q1"
+            },
+            {
+              "packager": "arduino",
+              "name": "openocd",
+              "version": "0.9.0-arduino"
+            },
+            {
+              "packager": "arduino",
+              "name": "CMSIS",
+              "version": "4.5.0"
+            },
+            {
+              "packager": "electroniccats",
+              "name": "bossac",
+              "version": "1.0.0-electroniccats-1"
+            },
+            {
+              "packager": "electroniccats",
+              "name": "CMSIS-Atmel",
+              "version": "1.0.0-electroniccats-1"
+            }
           ]
-        },    
+        },
         {
           "name": "Electronic Cats Boards (Mbed OS)",
           "architecture": "mbed",
@@ -432,32 +606,36 @@
           "size": "74360691",
           "help": {
             "online": "https://electroniccats.com/"
-            },
+          },
           "boards": [
-              {"name": "Arduino Nano 33 BLE"},
-              {"name": "Electronic Cats Bast BLE"}
-            ],
+            {
+              "name": "Arduino Nano 33 BLE"
+            },
+            {
+              "name": "Electronic Cats Bast BLE"
+            }
+          ],
           "toolsDependencies": [
-          {
-            "packager": "electroniccats",
-            "name": "openocd",
-            "version": "0.10.0-arduino9"
-          },
-          {
-            "packager": "electroniccats",
-            "name": "arm-none-eabi-gcc",
-            "version": "7-2017q4"
-          },
-          {
-            "name": "nrfjprog",
-            "packager": "electroniccats",
-            "version": "9.4.0"
-          },
-          {
+            {
+              "packager": "electroniccats",
+              "name": "openocd",
+              "version": "0.10.0-arduino9"
+            },
+            {
+              "packager": "electroniccats",
+              "name": "arm-none-eabi-gcc",
+              "version": "7-2017q4"
+            },
+            {
+              "name": "nrfjprog",
+              "packager": "electroniccats",
+              "version": "9.4.0"
+            },
+            {
               "name": "nrfutil",
               "packager": "electroniccats",
               "version": "0.5.3post10"
-          }
+            }
           ]
         },
         {
@@ -471,31 +649,35 @@
           "size": "56016313",
           "help": {
             "online": "https://electroniccats.com/"
+          },
+          "boards": [
+            {
+              "name": "Arduino Nano 33 BLE"
             },
-                "boards": [
-                    {"name": "Arduino Nano 33 BLE"},
-                    {"name": "Electronic Cats Bast BLE"}
+            {
+              "name": "Electronic Cats Bast BLE"
+            }
           ],
           "toolsDependencies": [
-          {
-            "packager": "electroniccats",
-            "name": "openocd",
-            "version": "0.10.0-arduino9"
-          },
-          {
-            "packager": "electroniccats",
-            "name": "arm-none-eabi-gcc",
-            "version": "7-2017q4"
-          },
-          {
-            "name": "nrfjprog",
-            "packager": "electroniccats",
-            "version": "9.4.0"
-          },
             {
-                "name": "nrfutil",
-                "packager": "electroniccats",
-                "version": "0.5.3post10"
+              "packager": "electroniccats",
+              "name": "openocd",
+              "version": "0.10.0-arduino9"
+            },
+            {
+              "packager": "electroniccats",
+              "name": "arm-none-eabi-gcc",
+              "version": "7-2017q4"
+            },
+            {
+              "name": "nrfjprog",
+              "packager": "electroniccats",
+              "version": "9.4.0"
+            },
+            {
+              "name": "nrfutil",
+              "packager": "electroniccats",
+              "version": "0.5.3post10"
             }
           ]
         },
@@ -509,44 +691,60 @@
           "checksum": "SHA-256:36a551ed46a235eca85f49c578e920a54b07689df49c4df8a9163a1693e98db6",
           "help": {
             "online": "https://electroniccats.com/"
-            },
+          },
           "size": "327711",
-                "boards": [
-                    {"name": "Meow Meow"},
-                    {"name": "CatWAN USB-Stick"},
-                    {"name": "CatWAN Relay board"},
-                    {"name": "BastWAN"},
-                    {"name": "CatWAN Citizen"},
-                    {"name": "Bast Pro Mini M0"},
-                    {"name": "Escornabot Makech"},
-                    {"name":"CatWAN Tracker"}
+          "boards": [
+            {
+              "name": "Meow Meow"
+            },
+            {
+              "name": "CatWAN USB-Stick"
+            },
+            {
+              "name": "CatWAN Relay board"
+            },
+            {
+              "name": "BastWAN"
+            },
+            {
+              "name": "CatWAN Citizen"
+            },
+            {
+              "name": "Bast Pro Mini M0"
+            },
+            {
+              "name": "Escornabot Makech"
+            },
+            {
+              "name": "CatWAN Tracker"
+            }
           ],
           "toolsDependencies": [
-          {
-            "packager": "electroniccats",
-            "name": "arm-none-eabi-gcc",
-            "version": "7-2017q4"
-          },
-          {
-            "packager": "arduino",
-            "name": "openocd",
-            "version": "0.9.0-arduino"
-          },
-          {
-            "packager": "arduino",
-            "name": "CMSIS",
-            "version": "4.5.0"
-          },
-          {
-            "packager": "electroniccats",
-            "name": "bossac",
-            "version": "1.0.0-electroniccats-1"
-          },
-          {
-            "packager": "electroniccats",
-            "name": "CMSIS-Atmel",
-            "version": "1.0.0-electroniccats-1"
-          }
+            {
+              "packager": "electroniccats",
+              "name": "arm-none-eabi-gcc",
+              "version": "7-2017q4"
+            },
+            {
+              "packager": "arduino",
+              "name": "openocd",
+              "version": "0.9.0-arduino"
+            },
+            {
+              "packager": "arduino",
+              "name": "CMSIS",
+              "version": "4.5.0"
+            },
+            {
+              "packager": "electroniccats",
+              "name": "bossac",
+              "version": "1.0.0-electroniccats-1"
+            },
+            {
+              "packager": "electroniccats",
+              "name": "CMSIS-Atmel",
+              "version": "1.0.0-electroniccats-1"
+            }
           ]
         },
         {
@@ -560,31 +758,35 @@
           "size": "56161911",
           "help": {
             "online": "https://electroniccats.com/"
+          },
+          "boards": [
+            {
+              "name": "Arduino Nano 33 BLE"
             },
-                "boards": [
-                    {"name": "Arduino Nano 33 BLE"},
-                    {"name": "Electronic Cats Bast BLE"}
+            {
+              "name": "Electronic Cats Bast BLE"
+            }
           ],
           "toolsDependencies": [
-          {
-            "packager": "electroniccats",
-            "name": "openocd",
-            "version": "0.10.0-arduino9"
-          },
-          {
-            "packager": "electroniccats",
-            "name": "arm-none-eabi-gcc",
-            "version": "7-2017q4"
-          },
-          {
-            "name": "nrfjprog",
-            "packager": "electroniccats",
-            "version": "9.4.0"
-          },
             {
-                "name": "nrfutil",
-                "packager": "electroniccats",
-                "version": "0.5.3post10"
+              "packager": "electroniccats",
+              "name": "openocd",
+              "version": "0.10.0-arduino9"
+            },
+            {
+              "packager": "electroniccats",
+              "name": "arm-none-eabi-gcc",
+              "version": "7-2017q4"
+            },
+            {
+              "name": "nrfjprog",
+              "packager": "electroniccats",
+              "version": "9.4.0"
+            },
+            {
+              "name": "nrfutil",
+              "packager": "electroniccats",
+              "version": "0.5.3post10"
             }
           ]
         },
@@ -599,31 +801,35 @@
           "size": "56223825",
           "help": {
             "online": "https://electroniccats.com/"
+          },
+          "boards": [
+            {
+              "name": "Arduino Nano 33 BLE"
             },
-                "boards": [
-                    {"name": "Arduino Nano 33 BLE"},
-                    {"name": "Electronic Cats Bast BLE"}
+            {
+              "name": "Electronic Cats Bast BLE"
+            }
           ],
           "toolsDependencies": [
-          {
-            "packager": "electroniccats",
-            "name": "openocd",
-            "version": "0.10.0-arduino9"
-          },
-          {
-            "packager": "electroniccats",
-            "name": "arm-none-eabi-gcc",
-            "version": "7-2017q4"
-          },
-          {
-            "name": "nrfjprog",
-            "packager": "electroniccats",
-            "version": "9.4.0"
-          },
             {
-                "name": "nrfutil",
-                "packager": "electroniccats",
-                "version": "0.5.3post10"
+              "packager": "electroniccats",
+              "name": "openocd",
+              "version": "0.10.0-arduino9"
+            },
+            {
+              "packager": "electroniccats",
+              "name": "arm-none-eabi-gcc",
+              "version": "7-2017q4"
+            },
+            {
+              "name": "nrfjprog",
+              "packager": "electroniccats",
+              "version": "9.4.0"
+            },
+            {
+              "name": "nrfutil",
+              "packager": "electroniccats",
+              "version": "0.5.3post10"
             }
           ]
         },
@@ -637,44 +843,60 @@
           "checksum": "SHA-256:e6e36314a59cd2765b75f559f3b7eb582415e6d7350439af80a3ffea664dd08e",
           "help": {
             "online": "https://electroniccats.com/"
-            },
+          },
           "size": "339292",
-                "boards": [
-                    {"name": "Meow Meow"},
-                    {"name": "CatWAN USB-Stick"},
-                    {"name": "CatWAN Relay board"},
-                    {"name": "BastWAN"},
-                    {"name": "CatWAN Citizen"},
-                    {"name": "Bast Pro Mini M0"},
-                    {"name": "Escornabot Makech"},
-                    {"name":"CatWAN Tracker"}
+          "boards": [
+            {
+              "name": "Meow Meow"
+            },
+            {
+              "name": "CatWAN USB-Stick"
+            },
+            {
+              "name": "CatWAN Relay board"
+            },
+            {
+              "name": "BastWAN"
+            },
+            {
+              "name": "CatWAN Citizen"
+            },
+            {
+              "name": "Bast Pro Mini M0"
+            },
+            {
+              "name": "Escornabot Makech"
+            },
+            {
+              "name": "CatWAN Tracker"
+            }
           ],
           "toolsDependencies": [
-          {
-            "packager": "arduino",
-            "name": "arm-none-eabi-gcc",
-            "version": "4.8.3-2014q1"
-          },
-          {
-            "packager": "arduino",
-            "name": "openocd",
-            "version": "0.9.0-arduino"
-          },
-          {
-            "packager": "arduino",
-            "name": "CMSIS",
-            "version": "4.5.0"
-          },
-          {
-            "packager": "electroniccats",
-            "name": "bossac",
-            "version": "1.0.0-electroniccats-1"
-          },
-          {
-            "packager": "electroniccats",
-            "name": "CMSIS-Atmel",
-            "version": "1.0.0-electroniccats-1"
-          }
+            {
+              "packager": "arduino",
+              "name": "arm-none-eabi-gcc",
+              "version": "4.8.3-2014q1"
+            },
+            {
+              "packager": "arduino",
+              "name": "openocd",
+              "version": "0.9.0-arduino"
+            },
+            {
+              "packager": "arduino",
+              "name": "CMSIS",
+              "version": "4.5.0"
+            },
+            {
+              "packager": "electroniccats",
+              "name": "bossac",
+              "version": "1.0.0-electroniccats-1"
+            },
+            {
+              "packager": "electroniccats",
+              "name": "CMSIS-Atmel",
+              "version": "1.0.0-electroniccats-1"
+            }
           ]
         },
         {
@@ -688,31 +910,35 @@
           "size": "47060166",
           "help": {
             "online": "https://electroniccats.com/"
+          },
+          "boards": [
+            {
+              "name": "Arduino Nano 33 BLE"
             },
-                "boards": [
-                    {"name": "Arduino Nano 33 BLE"},
-                    {"name": "Electronic Cats Bast BLE"}
+            {
+              "name": "Electronic Cats Bast BLE"
+            }
           ],
           "toolsDependencies": [
-          {
-            "packager": "electroniccats",
-            "name": "openocd",
-            "version": "0.10.0-arduino9"
-          },
-          {
-            "packager": "electroniccats",
-            "name": "arm-none-eabi-gcc",
-            "version": "7-2017q4"
-          },
-          {
-            "name": "nrfjprog",
-            "packager": "electroniccats",
-            "version": "9.4.0"
-          },
             {
-                "name": "nrfutil",
-                "packager": "electroniccats",
-                "version": "0.5.3post10"
+              "packager": "electroniccats",
+              "name": "openocd",
+              "version": "0.10.0-arduino9"
+            },
+            {
+              "packager": "electroniccats",
+              "name": "arm-none-eabi-gcc",
+              "version": "7-2017q4"
+            },
+            {
+              "name": "nrfjprog",
+              "packager": "electroniccats",
+              "version": "9.4.0"
+            },
+            {
+              "name": "nrfutil",
+              "packager": "electroniccats",
+              "version": "0.5.3post10"
             }
           ]
         },
@@ -727,31 +953,35 @@
           "size": "47064539",
           "help": {
             "online": "https://electroniccats.com/"
+          },
+          "boards": [
+            {
+              "name": "Arduino Nano 33 BLE"
             },
-                "boards": [
-                    {"name": "Arduino Nano 33 BLE"},
-                    {"name": "Electronic Cats Bast BLE"}
+            {
+              "name": "Electronic Cats Bast BLE"
+            }
           ],
           "toolsDependencies": [
-          {
-            "packager": "electroniccats",
-            "name": "openocd",
-            "version": "0.10.0-arduino9"
-          },
-          {
-            "packager": "electroniccats",
-            "name": "arm-none-eabi-gcc",
-            "version": "7-2017q4"
-          },
-          {
-            "name": "nrfjprog",
-            "packager": "electroniccats",
-            "version": "9.4.0"
-          },
             {
-                "name": "nrfutil",
-                "packager": "electroniccats",
-                "version": "0.5.3post10"
+              "packager": "electroniccats",
+              "name": "openocd",
+              "version": "0.10.0-arduino9"
+            },
+            {
+              "packager": "electroniccats",
+              "name": "arm-none-eabi-gcc",
+              "version": "7-2017q4"
+            },
+            {
+              "name": "nrfjprog",
+              "packager": "electroniccats",
+              "version": "9.4.0"
+            },
+            {
+              "name": "nrfutil",
+              "packager": "electroniccats",
+              "version": "0.5.3post10"
             }
           ]
         },
@@ -766,31 +996,35 @@
           "size": "47040135",
           "help": {
             "online": "https://electroniccats.com/"
+          },
+          "boards": [
+            {
+              "name": "Arduino Nano 33 BLE"
             },
-                "boards": [
-                    {"name": "Arduino Nano 33 BLE"},
-                    {"name": "Electronic Cats Bast BLE"}
+            {
+              "name": "Electronic Cats Bast BLE"
+            }
           ],
           "toolsDependencies": [
-          {
-            "packager": "electroniccats",
-            "name": "openocd",
-            "version": "0.10.0-arduino9"
-          },
-          {
-            "packager": "electroniccats",
-            "name": "arm-none-eabi-gcc",
-            "version": "7-2017q4"
-          },
-          {
-            "name": "nrfjprog",
-            "packager": "electroniccats",
-            "version": "9.4.0"
-          },
             {
-                "name": "nrfutil",
-                "packager": "electroniccats",
-                "version": "0.5.3post10"
+              "packager": "electroniccats",
+              "name": "openocd",
+              "version": "0.10.0-arduino9"
+            },
+            {
+              "packager": "electroniccats",
+              "name": "arm-none-eabi-gcc",
+              "version": "7-2017q4"
+            },
+            {
+              "name": "nrfjprog",
+              "packager": "electroniccats",
+              "version": "9.4.0"
+            },
+            {
+              "name": "nrfutil",
+              "packager": "electroniccats",
+              "version": "0.5.3post10"
             }
           ]
         },
@@ -804,44 +1038,60 @@
           "checksum": "SHA-256:7baf373911bfcd4995f28c417c21bbaa53ef6c1aef1333d07d1efd6589a7fb5f",
           "help": {
             "online": "https://electroniccats.com/"
-            },
+          },
           "size": "339347",
-                "boards": [
-                    {"name": "Meow Meow"},
-                    {"name": "CatWAN USB-Stick"},
-                    {"name": "CatWAN Relay board"},
-                    {"name": "BastWAN"},
-                    {"name": "CatWAN Citizen"},
-                    {"name": "Bast Pro Mini M0"},
-                    {"name": "Escornabot Makech"},
-                    {"name":"CatWAN Tracker"}
+          "boards": [
+            {
+              "name": "Meow Meow"
+            },
+            {
+              "name": "CatWAN USB-Stick"
+            },
+            {
+              "name": "CatWAN Relay board"
+            },
+            {
+              "name": "BastWAN"
+            },
+            {
+              "name": "CatWAN Citizen"
+            },
+            {
+              "name": "Bast Pro Mini M0"
+            },
+            {
+              "name": "Escornabot Makech"
+            },
+            {
+              "name": "CatWAN Tracker"
+            }
           ],
           "toolsDependencies": [
-          {
-            "packager": "arduino",
-            "name": "arm-none-eabi-gcc",
-            "version": "4.8.3-2014q1"
-          },
-          {
-            "packager": "arduino",
-            "name": "openocd",
-            "version": "0.9.0-arduino"
-          },
-          {
-            "packager": "arduino",
-            "name": "CMSIS",
-            "version": "4.5.0"
-          },
-          {
-            "packager": "electroniccats",
-            "name": "bossac",
-            "version": "1.0.0-electroniccats-1"
-          },
-          {
-            "packager": "electroniccats",
-            "name": "CMSIS-Atmel",
-            "version": "1.0.0-electroniccats-1"
-          }
+            {
+              "packager": "arduino",
+              "name": "arm-none-eabi-gcc",
+              "version": "4.8.3-2014q1"
+            },
+            {
+              "packager": "arduino",
+              "name": "openocd",
+              "version": "0.9.0-arduino"
+            },
+            {
+              "packager": "arduino",
+              "name": "CMSIS",
+              "version": "4.5.0"
+            },
+            {
+              "packager": "electroniccats",
+              "name": "bossac",
+              "version": "1.0.0-electroniccats-1"
+            },
+            {
+              "packager": "electroniccats",
+              "name": "CMSIS-Atmel",
+              "version": "1.0.0-electroniccats-1"
+            }
           ]
         },
         {
@@ -854,44 +1104,60 @@
           "checksum": "SHA-256:c2912031c24dc72834776b0d9a4d28e587036127930e88827f85197c76df161f",
           "help": {
             "online": "https://electroniccats.com/"
-            },
+          },
           "size": "339359",
-                "boards": [
-                    {"name": "Meow Meow"},
-                    {"name": "CatWAN USB-Stick"},
-                    {"name": "CatWAN Relay board"},
-                    {"name": "BastWAN"},
-                    {"name": "CatWAN Citizen"},
-                    {"name": "Bast Pro Mini M0"},
-                    {"name": "Escornabot Makech"},
-                    {"name": "CatWAN Tracker"}
+          "boards": [
+            {
+              "name": "Meow Meow"
+            },
+            {
+              "name": "CatWAN USB-Stick"
+            },
+            {
+              "name": "CatWAN Relay board"
+            },
+            {
+              "name": "BastWAN"
+            },
+            {
+              "name": "CatWAN Citizen"
+            },
+            {
+              "name": "Bast Pro Mini M0"
+            },
+            {
+              "name": "Escornabot Makech"
+            },
+            {
+              "name": "CatWAN Tracker"
+            }
           ],
           "toolsDependencies": [
-          {
-            "packager": "arduino",
-            "name": "arm-none-eabi-gcc",
-            "version": "4.8.3-2014q1"
-          },
-          {
-            "packager": "arduino",
-            "name": "openocd",
-            "version": "0.9.0-arduino"
-          },
-          {
-            "packager": "arduino",
-            "name": "CMSIS",
-            "version": "4.5.0"
-          },
-          {
-            "packager": "electroniccats",
-            "name": "bossac",
-            "version": "1.0.0-electroniccats-1"
-          },
-          {
-            "packager": "electroniccats",
-            "name": "CMSIS-Atmel",
-            "version": "1.0.0-electroniccats-1"
-          }
+            {
+              "packager": "arduino",
+              "name": "arm-none-eabi-gcc",
+              "version": "4.8.3-2014q1"
+            },
+            {
+              "packager": "arduino",
+              "name": "openocd",
+              "version": "0.9.0-arduino"
+            },
+            {
+              "packager": "arduino",
+              "name": "CMSIS",
+              "version": "4.5.0"
+            },
+            {
+              "packager": "electroniccats",
+              "name": "bossac",
+              "version": "1.0.0-electroniccats-1"
+            },
+            {
+              "packager": "electroniccats",
+              "name": "CMSIS-Atmel",
+              "version": "1.0.0-electroniccats-1"
+            }
           ]
         },
         {
@@ -904,44 +1170,60 @@
           "checksum": "SHA-256:668a0374cea0842bd16a0fc9e017470095d70678dc1cff70e14d700846b7c1be",
           "help": {
             "online": "https://electroniccats.com/"
-            },
+          },
           "size": "339238",
-                "boards": [
-                    {"name": "Meow Meow"},
-                    {"name": "CatWAN USB-Stick"},
-                    {"name": "CatWAN Relay board"},
-                    {"name": "CatWAN Citizen"},
-                    {"name": "Bast Pro Mini M0"},
-                    {"name": "Escornabot Makech"},
-                    {"name": "CatWAN Tracker"},
-                    {"name": "BastWAN"}
+          "boards": [
+            {
+              "name": "Meow Meow"
+            },
+            {
+              "name": "CatWAN USB-Stick"
+            },
+            {
+              "name": "CatWAN Relay board"
+            },
+            {
+              "name": "CatWAN Citizen"
+            },
+            {
+              "name": "Bast Pro Mini M0"
+            },
+            {
+              "name": "Escornabot Makech"
+            },
+            {
+              "name": "CatWAN Tracker"
+            },
+            {
+              "name": "BastWAN"
+            }
           ],
           "toolsDependencies": [
-          {
-            "packager": "arduino",
-            "name": "arm-none-eabi-gcc",
-            "version": "4.8.3-2014q1"
-          },
-          {
-            "packager": "arduino",
-            "name": "openocd",
-            "version": "0.9.0-arduino"
-          },
-          {
-            "packager": "arduino",
-            "name": "CMSIS",
-            "version": "4.5.0"
-          },
-          {
-            "packager": "electroniccats",
-            "name": "bossac",
-            "version": "1.0.0-electroniccats-1"
-          },
-          {
-            "packager": "electroniccats",
-            "name": "CMSIS-Atmel",
-            "version": "1.0.0-electroniccats-1"
-          }
+            {
+              "packager": "arduino",
+              "name": "arm-none-eabi-gcc",
+              "version": "4.8.3-2014q1"
+            },
+            {
+              "packager": "arduino",
+              "name": "openocd",
+              "version": "0.9.0-arduino"
+            },
+            {
+              "packager": "arduino",
+              "name": "CMSIS",
+              "version": "4.5.0"
+            },
+            {
+              "packager": "electroniccats",
+              "name": "bossac",
+              "version": "1.0.0-electroniccats-1"
+            },
+            {
+              "packager": "electroniccats",
+              "name": "CMSIS-Atmel",
+              "version": "1.0.0-electroniccats-1"
+            }
           ]
         },
         {
@@ -954,43 +1236,57 @@
           "checksum": "SHA-256:b343f5bc1fc89bbabbd1f393be68f1af9818ae112e0bdb1922d6cd6c080ce883",
           "help": {
             "online": "https://electroniccats.com/"
-            },
+          },
           "size": "339272",
-                "boards": [
-                    {"name": "Meow Meow"},
-                    {"name": "CatWAN USB-Stick"},
-                    {"name": "CatWAN Relay board"},
-                {"name": "CatWAN Citizen"},
-                    {"name": "Bast Pro Mini M0"},
-                    {"name": "Escornabot Makech"},
-                    {"name":"CatWAN Tracker"}
+          "boards": [
+            {
+              "name": "Meow Meow"
+            },
+            {
+              "name": "CatWAN USB-Stick"
+            },
+            {
+              "name": "CatWAN Relay board"
+            },
+            {
+              "name": "CatWAN Citizen"
+            },
+            {
+              "name": "Bast Pro Mini M0"
+            },
+            {
+              "name": "Escornabot Makech"
+            },
+            {
+              "name": "CatWAN Tracker"
+            }
           ],
           "toolsDependencies": [
-          {
-            "packager": "arduino",
-            "name": "arm-none-eabi-gcc",
-            "version": "4.8.3-2014q1"
-          },
-          {
-            "packager": "arduino",
-            "name": "openocd",
-            "version": "0.9.0-arduino"
-          },
-          {
-            "packager": "arduino",
-            "name": "CMSIS",
-            "version": "4.5.0"
-          },
-          {
-            "packager": "electroniccats",
-            "name": "bossac",
-            "version": "1.0.0-electroniccats-1"
-          },
-          {
-            "packager": "electroniccats",
-            "name": "CMSIS-Atmel",
-            "version": "1.0.0-electroniccats-1"
-          }
+            {
+              "packager": "arduino",
+              "name": "arm-none-eabi-gcc",
+              "version": "4.8.3-2014q1"
+            },
+            {
+              "packager": "arduino",
+              "name": "openocd",
+              "version": "0.9.0-arduino"
+            },
+            {
+              "packager": "arduino",
+              "name": "CMSIS",
+              "version": "4.5.0"
+            },
+            {
+              "packager": "electroniccats",
+              "name": "bossac",
+              "version": "1.0.0-electroniccats-1"
+            },
+            {
+              "packager": "electroniccats",
+              "name": "CMSIS-Atmel",
+              "version": "1.0.0-electroniccats-1"
+            }
           ]
         },
         {
@@ -1003,43 +1299,57 @@
           "checksum": "SHA-256:acc01e27f3961d51c9e737cf7e8a47928119b8eeb00545571bd59a9af9a376ab",
           "help": {
             "online": "https://electroniccats.com/"
-            },
+          },
           "size": "337550",
-                "boards": [
-                    {"name": "Meow Meow"},
-                    {"name": "CatWAN USB-Stick"},
-                    {"name": "CatWAN Relay board"},
-                    {"name": "CatWAN Citizen"},
-                    {"name": "Bast Pro Mini M0"},
-                    {"name": "Escornabot Makech"},
-                    {"name":"CatWAN Tracker"}
+          "boards": [
+            {
+              "name": "Meow Meow"
+            },
+            {
+              "name": "CatWAN USB-Stick"
+            },
+            {
+              "name": "CatWAN Relay board"
+            },
+            {
+              "name": "CatWAN Citizen"
+            },
+            {
+              "name": "Bast Pro Mini M0"
+            },
+            {
+              "name": "Escornabot Makech"
+            },
+            {
+              "name": "CatWAN Tracker"
+            }
           ],
           "toolsDependencies": [
-          {
-            "packager": "arduino",
-            "name": "arm-none-eabi-gcc",
-            "version": "4.8.3-2014q1"
-          },
-          {
-            "packager": "arduino",
-            "name": "openocd",
-            "version": "0.9.0-arduino"
-          },
-          {
-            "packager": "arduino",
-            "name": "CMSIS",
-            "version": "4.5.0"
-          },
-          {
-            "packager": "electroniccats",
-            "name": "bossac",
-            "version": "1.0.0-electroniccats-1"
-          },
-          {
-            "packager": "electroniccats",
-            "name": "CMSIS-Atmel",
-            "version": "1.0.0-electroniccats-1"
-          }
+            {
+              "packager": "arduino",
+              "name": "arm-none-eabi-gcc",
+              "version": "4.8.3-2014q1"
+            },
+            {
+              "packager": "arduino",
+              "name": "openocd",
+              "version": "0.9.0-arduino"
+            },
+            {
+              "packager": "arduino",
+              "name": "CMSIS",
+              "version": "4.5.0"
+            },
+            {
+              "packager": "electroniccats",
+              "name": "bossac",
+              "version": "1.0.0-electroniccats-1"
+            },
+            {
+              "packager": "electroniccats",
+              "name": "CMSIS-Atmel",
+              "version": "1.0.0-electroniccats-1"
+            }
           ]
         },
         {
@@ -1074,7 +1384,7 @@
               "name": "Escornabot Makech"
             },
             {
-              "name":"CatWAN Tracker"
+              "name": "CatWAN Tracker"
             }
           ],
           "toolsDependencies": [
@@ -1137,7 +1447,7 @@
               "name": "Escornabot Makech"
             },
             {
-              "name":"CatWAN Tracker"
+              "name": "CatWAN Tracker"
             }
           ],
           "toolsDependencies": [
@@ -1200,7 +1510,7 @@
               "name": "Escornabot Makech"
             },
             {
-              "name":"CatWAN Tracker"
+              "name": "CatWAN Tracker"
             }
           ],
           "toolsDependencies": [
@@ -1263,7 +1573,7 @@
               "name": "Escornabot Makech"
             },
             {
-              "name":"CatWAN Tracker"
+              "name": "CatWAN Tracker"
             }
           ],
           "toolsDependencies": [
@@ -1326,7 +1636,7 @@
               "name": "Escornabot Makech"
             },
             {
-              "name":"CatWAN Tracker"
+              "name": "CatWAN Tracker"
             }
           ],
           "toolsDependencies": [
@@ -1389,7 +1699,7 @@
               "name": "Escornabot Makech"
             },
             {
-              "name":"CatWAN Tracker"
+              "name": "CatWAN Tracker"
             }
           ],
           "toolsDependencies": [
@@ -1452,13 +1762,13 @@
               "name": "Escornabot Makech"
             },
             {
-              "name":"Generic SAMD11C4A Boards"
-            },            
-            {
-              "name":"CatWAN Tracker"
+              "name": "Generic SAMD11C4A Boards"
             },
             {
-              "name":"SAMD11"
+              "name": "CatWAN Tracker"
+            },
+            {
+              "name": "SAMD11"
             }
           ],
           "toolsDependencies": [
@@ -1521,10 +1831,10 @@
               "name": "Escornabot Makech"
             },
             {
-              "name":"Generic SAMD11C4A Boards"
-            },            
+              "name": "Generic SAMD11C4A Boards"
+            },
             {
-              "name":"CatWAN Tracker"
+              "name": "CatWAN Tracker"
             }
           ],
           "toolsDependencies": [
@@ -1587,7 +1897,7 @@
               "name": "Escornabot Makech"
             },
             {
-              "name":"Generic SAMD11C4A Boards"
+              "name": "Generic SAMD11C4A Boards"
             }
           ],
           "toolsDependencies": [
@@ -1650,7 +1960,7 @@
               "name": "Escornabot Makech"
             },
             {
-              "name":"Generic SAMD11C4A Boards"
+              "name": "Generic SAMD11C4A Boards"
             }
           ],
           "toolsDependencies": [
@@ -2523,473 +2833,472 @@
           ]
         }
       ],
-      "tools":[
+      "tools": [
         {
           "name": "bossac",
           "version": "1.1.1-electroniccats-1",
           "systems": [
-          {
-            "host": "i686-mingw32",
-            "url": "https://github.com/ElectronicCats/BOSSA/releases/download/v1.1.1/bossac-v1.1.1-win32.zip",
-            "archiveFileName": "bossac-v1.1.1-win32.zip",
-            "checksum": "SHA-256:8a5b621b8be534a1d152fa7e148b02703efec777a8b102650b2330f3d70096bb",
-            "size": "3994754"
-          },
-          {
-            "host": "x86_64-pc-linux-gnu",
-            "url": "https://github.com/ElectronicCats/BOSSA/releases/download/v1.1.1/bossac-v1.1.1-linux-amd64.tar.gz",
-            "archiveFileName": "bossac-v1.1.1-linux-amd64.tar.gz",
-            "checksum": "SHA-256:07b99853847087357cc1511224008ad9d63ec37007f524d389b1784ddd1008c2",
-            "size": "433778"
-          },
-          {
-            "host": "i686-pc-linux-gnu",
-            "url": "https://github.com/ElectronicCats/BOSSA/releases/download/v1.1.1/bossac-v1.1.1-linux-i686.tar.gz",
-            "archiveFileName": "bossac-v1.1.1-linux-i686.tar.gz",
-            "checksum": "SHA-256:bce6eb6946157bb34b0104b7a724d2687ce9758800a2aeeec81c6ef72009c37a",
-            "size": "433780"
-          },
-          {
-            "host": "x86_64-apple-darwin",
-            "url": "https://github.com/ElectronicCats/BOSSA/releases/download/v1.1.1/bossac-v1.1.1-mac.tar.gz",
-            "archiveFileName": "bossac-v1.1.1-mac.tar.gz",
-            "checksum": "SHA-256:edc6280729c7078df461cf101cce811a36d5fad4b7acf2fde7a242717ce5792d",
-            "size": "40774"
-          }
+            {
+              "host": "i686-mingw32",
+              "url": "https://github.com/ElectronicCats/BOSSA/releases/download/v1.1.1/bossac-v1.1.1-win32.zip",
+              "archiveFileName": "bossac-v1.1.1-win32.zip",
+              "checksum": "SHA-256:8a5b621b8be534a1d152fa7e148b02703efec777a8b102650b2330f3d70096bb",
+              "size": "3994754"
+            },
+            {
+              "host": "x86_64-pc-linux-gnu",
+              "url": "https://github.com/ElectronicCats/BOSSA/releases/download/v1.1.1/bossac-v1.1.1-linux-amd64.tar.gz",
+              "archiveFileName": "bossac-v1.1.1-linux-amd64.tar.gz",
+              "checksum": "SHA-256:07b99853847087357cc1511224008ad9d63ec37007f524d389b1784ddd1008c2",
+              "size": "433778"
+            },
+            {
+              "host": "i686-pc-linux-gnu",
+              "url": "https://github.com/ElectronicCats/BOSSA/releases/download/v1.1.1/bossac-v1.1.1-linux-i686.tar.gz",
+              "archiveFileName": "bossac-v1.1.1-linux-i686.tar.gz",
+              "checksum": "SHA-256:bce6eb6946157bb34b0104b7a724d2687ce9758800a2aeeec81c6ef72009c37a",
+              "size": "433780"
+            },
+            {
+              "host": "x86_64-apple-darwin",
+              "url": "https://github.com/ElectronicCats/BOSSA/releases/download/v1.1.1/bossac-v1.1.1-mac.tar.gz",
+              "archiveFileName": "bossac-v1.1.1-mac.tar.gz",
+              "checksum": "SHA-256:edc6280729c7078df461cf101cce811a36d5fad4b7acf2fde7a242717ce5792d",
+              "size": "40774"
+            }
           ]
         },
         {
-        "name": "bossac",
-        "version": "1.0.0-electroniccats-1",
-        "systems": [
-        {
-          "host": "i686-mingw32",
-          "url": "https://github.com/ElectronicCats/BOSSA/releases/download/1.0.0-electroniccats-1/bossac-1.0.0-electroniccats-1-mingw32.tar.gz",
-          "archiveFileName": "bossac-1.0.0-electroniccats-1-mingw32.tar.gz",
-          "checksum": "SHA-256:3d52f86b0d75cda8dd5c8220873d6def6f3f677e5a04a2e8eb42ae8973de8d34",
-          "size": "826723"
+          "name": "bossac",
+          "version": "1.0.0-electroniccats-1",
+          "systems": [
+            {
+              "host": "i686-mingw32",
+              "url": "https://github.com/ElectronicCats/BOSSA/releases/download/1.0.0-electroniccats-1/bossac-1.0.0-electroniccats-1-mingw32.tar.gz",
+              "archiveFileName": "bossac-1.0.0-electroniccats-1-mingw32.tar.gz",
+              "checksum": "SHA-256:3d52f86b0d75cda8dd5c8220873d6def6f3f677e5a04a2e8eb42ae8973de8d34",
+              "size": "826723"
+            },
+            {
+              "host": "x86_64-pc-linux-gnu",
+              "url": "https://github.com/ElectronicCats/BOSSA/releases/download/1.0.0-electroniccats-1/bossac-1.0.0-electroniccats-1-x86_64-linux-gnu.tar.gz",
+              "archiveFileName": "bossac-1.0.0-electroniccats-1-x86_64-linux-gnu.tar.gz",
+              "checksum": "SHA-256:1c585857ed0039d28e32f9e43d8573c2c3a52e886e86ffcb556a00da97f944f6",
+              "size": "203194"
+            },
+            {
+              "host": "i686-pc-linux-gnu",
+              "url": "https://github.com/ElectronicCats/BOSSA/releases/download/1.0.0-electroniccats-1/bossac-1.0.0-electroniccats-1-i686-linux-gnu.tar.gz",
+              "archiveFileName": "bossac-1.0.0-electroniccats-1-i686-linux-gnu.tar.gz",
+              "checksum": "SHA-256:8dada7994141aaa8deb2fe8f85f70a8cb0de3284d792e4acd298a4d353b5a2f2",
+              "size": "34852"
+            },
+            {
+              "host": "x86_64-apple-darwin",
+              "url": "https://github.com/ElectronicCats/BOSSA/releases/download/1.0.0-electroniccats-1/bossac-1.0.0-electroniccats-1-x86_64-apple-darwin.tar.gz",
+              "archiveFileName": "bossac-1.0.0-electroniccats-1-x86_64-apple-darwin.tar.gz",
+              "checksum": "SHA-256:99f8da6415d7904c9f5b86c7a08258ea3ab134b3563be63fe184da072d62d4f9",
+              "size": "30404"
+            }
+          ]
         },
         {
-          "host": "x86_64-pc-linux-gnu",
-          "url": "https://github.com/ElectronicCats/BOSSA/releases/download/1.0.0-electroniccats-1/bossac-1.0.0-electroniccats-1-x86_64-linux-gnu.tar.gz",
-          "archiveFileName": "bossac-1.0.0-electroniccats-1-x86_64-linux-gnu.tar.gz",
-          "checksum": "SHA-256:1c585857ed0039d28e32f9e43d8573c2c3a52e886e86ffcb556a00da97f944f6",
-          "size": "203194"
+          "name": "bossac",
+          "version": "1.7.0-mattairtech-3",
+          "systems": [
+            {
+              "host": "i686-mingw32",
+              "url": "https://www.mattairtech.com/software/arduino/bossac-1.7.0-mattairtech-3-mingw32.tar.gz",
+              "archiveFileName": "bossac-1.7.0-mattairtech-3-mingw32.tar.gz",
+              "checksum": "SHA-256:ce6ce590c612dc8b18ba52df3903ba3d43416c92ef54538881cc07fdd2ef1f04",
+              "size": "325719"
+            },
+            {
+              "host": "x86_64-pc-linux-gnu",
+              "url": "https://www.mattairtech.com/software/arduino/bossac-1.7.0-mattairtech-3-x86_64-linux-gnu.tar.gz",
+              "archiveFileName": "bossac-1.7.0-mattairtech-3-x86_64-linux-gnu.tar.gz",
+              "checksum": "SHA-256:e0801cd435a0aa08a4ccc1781cdcc1bf9ae92e248888163a1bb4dce20c00bcf9",
+              "size": "34622"
+            },
+            {
+              "host": "i686-pc-linux-gnu",
+              "url": "https://www.mattairtech.com/software/arduino/bossac-1.7.0-mattairtech-3-i686-linux-gnu.tar.gz",
+              "archiveFileName": "bossac-1.7.0-mattairtech-3-i686-linux-gnu.tar.gz",
+              "checksum": "SHA-256:edd3bc6fd80641563dc6ca337d695fca25c2d43242172ea0418b678d4dbe0628",
+              "size": "34628"
+            },
+            {
+              "host": "x86_64-apple-darwin",
+              "url": "https://www.mattairtech.com/software/arduino/bossac-1.7.0-mattairtech-3-x86_64-apple-darwin.tar.gz",
+              "archiveFileName": "bossac-1.7.0-mattairtech-3-x86_64-apple-darwin.tar.gz",
+              "checksum": "SHA-256:da4d4b04582f92d09e3d48a1ec4d2473b6cd01bba992c0f1f2cd7ee1008f08f8",
+              "size": "88845"
+            }
+          ]
         },
         {
-          "host": "i686-pc-linux-gnu",
-          "url": "https://github.com/ElectronicCats/BOSSA/releases/download/1.0.0-electroniccats-1/bossac-1.0.0-electroniccats-1-i686-linux-gnu.tar.gz",
-          "archiveFileName": "bossac-1.0.0-electroniccats-1-i686-linux-gnu.tar.gz",
-          "checksum": "SHA-256:8dada7994141aaa8deb2fe8f85f70a8cb0de3284d792e4acd298a4d353b5a2f2",
-          "size": "34852"
+          "name": "riscv-none-embed-gcc",
+          "version": "10.2.0-1.2-xPack",
+          "systems": [
+            {
+              "host": "i686-mingw32",
+              "url": "https://github.com/xpack-dev-tools/riscv-none-embed-gcc-xpack/releases/download/v10.2.0-1.2/xpack-riscv-none-embed-gcc-10.2.0-1.2-win32-ia32.zip",
+              "archiveFileName": "xpack-riscv-none-embed-gcc-10.2.0-1.2-win32-ia32.zip",
+              "checksum": "SHA-256:f9d25d057d69e3d460fd15f422b533ae315e6ecdcd389bbd784cc2e083ba64b3",
+              "size": "564334418"
+            },
+            {
+              "host": "x86_64-pc-linux-gnu",
+              "url": "https://github.com/ElectronicCats/CMSIS-Atmel/releases/download/1.0.0-electroniccats-1/CMSIS-Atmel-1.0.0-electroniccats.tar.gz",
+              "archiveFileName": "CMSIS-Atmel-1.0.0-electroniccats.tar.gz",
+              "checksum": "SHA-256:d673a929c71d9b7a0146cb9dcde800cc2453b2824a3f10176ea5c5bf68bd5cd4",
+              "size": "2216310"
+            },
+            {
+              "host": "i686-pc-linux-gnu",
+              "url": "https://github.com/ElectronicCats/CMSIS-Atmel/releases/download/1.0.0-electroniccats-1/CMSIS-Atmel-1.0.0-electroniccats.tar.gz",
+              "archiveFileName": "CMSIS-Atmel-1.0.0-electroniccats.tar.gz",
+              "checksum": "SHA-256:d673a929c71d9b7a0146cb9dcde800cc2453b2824a3f10176ea5c5bf68bd5cd4",
+              "size": "2216310"
+            },
+            {
+              "host": "x86_64-apple-darwin",
+              "url": "https://github.com/xpack-dev-tools/riscv-none-embed-gcc-xpack/releases/download/v10.2.0-1.2/xpack-riscv-none-embed-gcc-10.2.0-1.2-darwin-x64.tar.gz",
+              "archiveFileName": "xpack-riscv-none-embed-gcc-10.2.0-1.2-darwin-x64.tar.gz",
+              "checksum": "SHA-256:62637b65ba5f57b88ee32ebf329164cbd9b2fa1d4531915950f707499a7efa2a",
+              "size": "565850429"
+            }
+          ]
         },
         {
-          "host": "x86_64-apple-darwin",
-          "url": "https://github.com/ElectronicCats/BOSSA/releases/download/1.0.0-electroniccats-1/bossac-1.0.0-electroniccats-1-x86_64-apple-darwin.tar.gz",
-          "archiveFileName": "bossac-1.0.0-electroniccats-1-x86_64-apple-darwin.tar.gz",
-          "checksum": "SHA-256:99f8da6415d7904c9f5b86c7a08258ea3ab134b3563be63fe184da072d62d4f9",
-          "size": "30404"
+          "name": "CH58x-HAL",
+          "version": "1.6-evt",
+          "systems": [
+            {
+              "host": "arm-linux-gnueabihf",
+              "url": "https://github.com/ElectronicCats/RISC-V-CH583-CORE/releases/download/EVT_1.6/ch58x-evt-1.6.tar.bz2",
+              "archiveFileName": "ch58x-evt-1.6.tar.bz2",
+              "checksum": "SHA-256:ce385a056ab7e13b35d0d45af4e479be2f2f54fac4d703cc9b9fa69375493164",
+              "size": "2317609"
+            },
+            {
+              "host": "aarch64-linux-gnu",
+              "url": "https://github.com/ElectronicCats/RISC-V-CH583-CORE/releases/download/EVT_1.6/ch58x-evt-1.6.tar.bz2",
+              "archiveFileName": "ch58x-evt-1.6.tar.bz2",
+              "checksum": "SHA-256:ce385a056ab7e13b35d0d45af4e479be2f2f54fac4d703cc9b9fa69375493164",
+              "size": "2317609"
+            },
+            {
+              "host": "i686-mingw32",
+              "url": "https://github.com/ElectronicCats/RISC-V-CH583-CORE/releases/download/EVT_1.6/ch58x-evt-1.6.tar.bz2",
+              "archiveFileName": "ch58x-evt-1.6.tar.bz2",
+              "checksum": "SHA-256:ce385a056ab7e13b35d0d45af4e479be2f2f54fac4d703cc9b9fa69375493164",
+              "size": "2317609"
+            },
+            {
+              "host": "x86_64-apple-darwin",
+              "url": "https://github.com/ElectronicCats/RISC-V-CH583-CORE/releases/download/EVT_1.6/ch58x-evt-1.6.tar.bz2",
+              "archiveFileName": "ch58x-evt-1.6.tar.bz2",
+              "checksum": "SHA-256:ce385a056ab7e13b35d0d45af4e479be2f2f54fac4d703cc9b9fa69375493164",
+              "size": "2317609"
+            },
+            {
+              "host": "x86_64-pc-linux-gnu",
+              "url": "https://github.com/ElectronicCats/RISC-V-CH583-CORE/releases/download/EVT_1.6/ch58x-evt-1.6.tar.bz2",
+              "archiveFileName": "ch58x-evt-1.6.tar.bz2",
+              "checksum": "SHA-256:ce385a056ab7e13b35d0d45af4e479be2f2f54fac4d703cc9b9fa69375493164",
+              "size": "2317609"
+            },
+            {
+              "host": "i686-pc-linux-gnu",
+              "url": "https://github.com/ElectronicCats/RISC-V-CH583-CORE/releases/download/EVT_1.6/ch58x-evt-1.6.tar.bz2",
+              "archiveFileName": "ch58x-evt-1.6.tar.bz2",
+              "checksum": "SHA-256:ce385a056ab7e13b35d0d45af4e479be2f2f54fac4d703cc9b9fa69375493164",
+              "size": "2317609"
+            }
+          ]
+        },
+        {
+          "name": "CMSIS-Atmel",
+          "version": "1.0.0-mattairtech-2",
+          "systems": [
+            {
+              "host": "i686-mingw32",
+              "url": "https://www.mattairtech.com/software/arduino/CMSIS-Atmel-1.0.0-mattairtech-2.tar.gz",
+              "archiveFileName": "CMSIS-Atmel-1.0.0-mattairtech-2.tar.gz",
+              "checksum": "SHA-256:d10ca2a14c8db5757d2b1b4c1e52473ae5337f0762c6617a6074373f2f44540d",
+              "size": "2008479"
+            },
+            {
+              "host": "x86_64-pc-linux-gnu",
+              "url": "https://www.mattairtech.com/software/arduino/CMSIS-Atmel-1.0.0-mattairtech-2.tar.gz",
+              "archiveFileName": "CMSIS-Atmel-1.0.0-mattairtech-2.tar.gz",
+              "checksum": "SHA-256:d10ca2a14c8db5757d2b1b4c1e52473ae5337f0762c6617a6074373f2f44540d",
+              "size": "2008479"
+            },
+            {
+              "host": "i686-pc-linux-gnu",
+              "url": "https://www.mattairtech.com/software/arduino/CMSIS-Atmel-1.0.0-mattairtech-2.tar.gz",
+              "archiveFileName": "CMSIS-Atmel-1.0.0-mattairtech-2.tar.gz",
+              "checksum": "SHA-256:d10ca2a14c8db5757d2b1b4c1e52473ae5337f0762c6617a6074373f2f44540d",
+              "size": "2008479"
+            },
+            {
+              "host": "x86_64-apple-darwin",
+              "url": "https://www.mattairtech.com/software/arduino/CMSIS-Atmel-1.0.0-mattairtech-2.tar.gz",
+              "archiveFileName": "CMSIS-Atmel-1.0.0-mattairtech-2.tar.gz",
+              "checksum": "SHA-256:d10ca2a14c8db5757d2b1b4c1e52473ae5337f0762c6617a6074373f2f44540d",
+              "size": "2008479"
+            }
+          ]
+        },
+        {
+          "name": "CMSIS-Atmel",
+          "version": "1.0.0-electroniccats-1",
+          "systems": [
+            {
+              "host": "i686-mingw32",
+              "url": "https://github.com/ElectronicCats/CMSIS-Atmel/releases/download/1.0.0-electroniccats-1/CMSIS-Atmel-1.0.0-electroniccats.tar.gz",
+              "archiveFileName": "CMSIS-Atmel-1.0.0-electroniccats.tar.gz",
+              "checksum": "SHA-256:d673a929c71d9b7a0146cb9dcde800cc2453b2824a3f10176ea5c5bf68bd5cd4",
+              "size": "2216310"
+            },
+            {
+              "host": "x86_64-pc-linux-gnu",
+              "url": "https://github.com/ElectronicCats/CMSIS-Atmel/releases/download/1.0.0-electroniccats-1/CMSIS-Atmel-1.0.0-electroniccats.tar.gz",
+              "archiveFileName": "CMSIS-Atmel-1.0.0-electroniccats.tar.gz",
+              "checksum": "SHA-256:d673a929c71d9b7a0146cb9dcde800cc2453b2824a3f10176ea5c5bf68bd5cd4",
+              "size": "2216310"
+            },
+            {
+              "host": "i686-pc-linux-gnu",
+              "url": "https://github.com/ElectronicCats/CMSIS-Atmel/releases/download/1.0.0-electroniccats-1/CMSIS-Atmel-1.0.0-electroniccats.tar.gz",
+              "archiveFileName": "CMSIS-Atmel-1.0.0-electroniccats.tar.gz",
+              "checksum": "SHA-256:d673a929c71d9b7a0146cb9dcde800cc2453b2824a3f10176ea5c5bf68bd5cd4",
+              "size": "2216310"
+            },
+            {
+              "host": "x86_64-apple-darwin",
+              "url": "https://github.com/ElectronicCats/CMSIS-Atmel/releases/download/1.0.0-electroniccats-1/CMSIS-Atmel-1.0.0-electroniccats.tar.gz",
+              "archiveFileName": "CMSIS-Atmel-1.0.0-electroniccats.tar.gz",
+              "checksum": "SHA-256:d673a929c71d9b7a0146cb9dcde800cc2453b2824a3f10176ea5c5bf68bd5cd4",
+              "size": "2216310"
+            }
+          ]
+        },
+        {
+          "name": "openocd",
+          "version": "0.10.0-arduino9",
+          "systems": [
+            {
+              "size": "1714657",
+              "checksum": "SHA-256:b814b16b52cef21eacf456cc7a89d7b5d4cb1385bfb8fb82963b7d8151824d93",
+              "host": "aarch64-linux-gnu",
+              "archiveFileName": "openocd-0.10.0-arduino9-static-aarch64-linux-gnu.tar.bz2",
+              "url": "http://downloads.arduino.cc/tools/openocd-0.10.0-arduino9-static-aarch64-linux-gnu.tar.bz2"
+            },
+            {
+              "size": "1778177",
+              "checksum": "SHA-256:f0443e771f5e3a779949498d3c9bfffd1dd27cdf0ad7136a2db5e80447a7175a",
+              "host": "arm-linux-gnueabihf",
+              "archiveFileName": "openocd-0.10.0-arduino9-static-arm-linux-gnueabihf.tar.bz2",
+              "url": "http://downloads.arduino.cc/tools/openocd-0.10.0-arduino9-static-arm-linux-gnueabihf.tar.bz2"
+            },
+            {
+              "size": "1782958",
+              "checksum": "SHA-256:a22872918df899cb808f9286141d42438ae5611156c143cfb692069f52a2bddd",
+              "host": "i686-linux-gnu",
+              "archiveFileName": "openocd-0.10.0-arduino9-static-i686-ubuntu12.04-linux-gnu.tar.bz2",
+              "url": "http://downloads.arduino.cc/tools/openocd-0.10.0-arduino9-static-i686-ubuntu12.04-linux-gnu.tar.bz2"
+            },
+            {
+              "size": "2190484",
+              "checksum": "SHA-256:f53f9a2b7f48a2ebc00ea9196bf559d15987d3779bcea4118ebec8925da5a1f6",
+              "host": "i686-mingw32",
+              "archiveFileName": "openocd-0.10.0-arduino9-static-i686-w64-mingw32.zip",
+              "url": "http://downloads.arduino.cc/tools/openocd-0.10.0-arduino9-static-i686-w64-mingw32.zip"
+            },
+            {
+              "size": "1655311",
+              "checksum": "SHA-256:6d47f97919f317bb6e5f1f903127604271d66d149f4625f29b8e0eb5f6c94c64",
+              "host": "i386-apple-darwin11",
+              "archiveFileName": "openocd-0.10.0-arduino9-static-x86_64-apple-darwin13.tar.bz2",
+              "url": "http://downloads.arduino.cc/tools/openocd-0.10.0-arduino9-static-x86_64-apple-darwin13.tar.bz2"
+            },
+            {
+              "size": "1844365",
+              "checksum": "SHA-256:f624552b5ba56aa78d0c1a0e5d18cf2b5694db2ed44080968e22aa1af8f23c1b",
+              "host": "x86_64-linux-gnu",
+              "archiveFileName": "openocd-0.10.0-arduino9-static-x86_64-ubuntu12.04-linux-gnu.tar.bz2",
+              "url": "http://downloads.arduino.cc/tools/openocd-0.10.0-arduino9-static-x86_64-ubuntu12.04-linux-gnu.tar.bz2"
+            }
+          ]
+        },
+        {
+          "name": "arm-none-eabi-gcc",
+          "version": "7-2017q4",
+          "systems": [
+            {
+              "host": "arm-linux-gnueabihf",
+              "url": "http://downloads.arduino.cc/tools/gcc-arm-none-eabi-7-2019-q4-major-linuxarm.tar.bz2",
+              "archiveFileName": "gcc-arm-none-eabi-7-2019-q4-major-linuxarm.tar.bz2",
+              "checksum": "SHA-256:34180943d95f759c66444a40b032f7dd9159a562670fc334f049567de140c51b",
+              "size": "96613739"
+            },
+            {
+              "host": "aarch64-linux-gnu",
+              "url": "http://downloads.arduino.cc/tools/gcc-arm-none-eabi-7-2018-q2-update-linuxarm64.tar.bz2",
+              "archiveFileName": "gcc-arm-none-eabi-7-2018-q2-update-linuxarm64.tar.bz2",
+              "checksum": "SHA-256:6fb5752fb4d11012bd0a1ceb93a19d0641ff7cf29d289b3e6b86b99768e66f76",
+              "size": "99558726"
+            },
+            {
+              "host": "i686-mingw32",
+              "url": "http://downloads.arduino.cc/tools/gcc-arm-none-eabi-7-2017-q4-major-win32-arduino1.zip",
+              "archiveFileName": "gcc-arm-none-eabi-7-2017-q4-major-win32-arduino1.zip",
+              "checksum": "SHA-256:96dd0091856f4d2eb21046eba571321feecf7d50b9c156f708b2a8b683903382",
+              "size": "131761924"
+            },
+            {
+              "host": "x86_64-apple-darwin",
+              "url": "http://downloads.arduino.cc/tools/gcc-arm-none-eabi-7-2017-q4-major-mac.tar.bz2",
+              "archiveFileName": "gcc-arm-none-eabi-7-2017-q4-major-mac.tar.bz2",
+              "checksum": "SHA-256:89b776c7cf0591c810b5b60067e4dc113b5b71bc50084a536e71b894a97fdccb",
+              "size": "104550003"
+            },
+            {
+              "host": "x86_64-pc-linux-gnu",
+              "url": "http://downloads.arduino.cc/tools/gcc-arm-none-eabi-7-2017-q4-major-linux64.tar.bz2",
+              "archiveFileName": "gcc-arm-none-eabi-7-2017-q4-major-linux64.tar.bz2",
+              "checksum": "SHA-256:96a029e2ae130a1210eaa69e309ea40463028eab18ba19c1086e4c2dafe69a6a",
+              "size": "99857645"
+            },
+            {
+              "host": "i686-pc-linux-gnu",
+              "url": "http://downloads.arduino.cc/tools/gcc-arm-none-eabi-7-2018-q2-update-linux32.tar.bz2",
+              "archiveFileName": "gcc-arm-none-eabi-7-2018-q2-update-linux32.tar.bz2",
+              "checksum": "SHA-256:090a0bc2b1956bc49392dff924a6c30fa57c88130097b1972204d67a45ce3cf3",
+              "size": "97427309"
+            }
+          ]
+        },
+        {
+          "name": "nrfjprog",
+          "version": "9.4.0",
+          "systems": [
+            {
+              "host": "i386-apple-darwin11",
+              "checksum": "MD5:04f65e24f36d55d10b71c1ebf49cd070",
+              "size": "362222",
+              "archiveFileName": "nrfjprog-9.4.0-mac.tar.bz2",
+              "url": "https://github.com/adafruit/Adafruit_nRF52_Arduino/releases/download/gcc-5_2-2015q4/nrfjprog-9.4.0-mac.tar.bz2"
+            },
+            {
+              "host": "i686-linux-gnu",
+              "checksum": "MD5:9cf73f1f78cb8e249ed4e6f963d08a35",
+              "size": "177428",
+              "archiveFileName": "nrfjprog-9.4.0-linux32.tar.bz2",
+              "url": "https://github.com/adafruit/Adafruit_nRF52_Arduino/releases/download/gcc-5_2-2015q4/nrfjprog-9.4.0-linux32.tar.bz2"
+            },
+            {
+              "host": "x86_64-pc-linux-gnu",
+              "checksum": "MD5:da3c7b348e0c22766f175a4a9cca0d19",
+              "size": "190020",
+              "archiveFileName": "nrfjprog-9.4.0-linux64.tar.bz2",
+              "url": "https://github.com/adafruit/Adafruit_nRF52_Arduino/releases/download/gcc-5_2-2015q4/nrfjprog-9.4.0-linux64.tar.bz2"
+            },
+            {
+              "host": "i686-mingw32",
+              "checksum": "MD5:8352392ae0272173e1508d1218f51671",
+              "size": "851576",
+              "archiveFileName": "nrfjprog-9.4.0-win32.tar.bz2",
+              "url": "https://github.com/adafruit/Adafruit_nRF52_Arduino/releases/download/gcc-5_2-2015q4/nrfjprog-9.4.0-win32.tar.bz2"
+            }
+          ]
+        },
+        {
+          "name": "nrfutil",
+          "version": "0.5.3post10",
+          "systems": [
+            {
+              "host": "i386-apple-darwin11",
+              "checksum": "MD5:342e1b08d3b5f6e18914fd207986c493",
+              "size": "5225061",
+              "archiveFileName": "nrfutil-0.5.3-mac.tar.gz",
+              "url": "https://github.com/ElectronicCats/Adafruit_nRF52_nrfutil/releases/download/0.5.3/nrfutil-0.5.3-mac.tar.gz"
+            },
+            {
+              "host": "i686-mingw32",
+              "checksum": "MD5:579414666dda0d429e1be9f6316ae1d6",
+              "size": "5945547",
+              "archiveFileName": "nrfutil-0.5.3-w32.tar.gz",
+              "url": "https://github.com/ElectronicCats/Adafruit_nRF52_nrfutil/releases/download/0.5.3/nrfutil-0.5.3-w32.tar.gz"
+            },
+            {
+              "host": "i686-linux-gnu",
+              "checksum": "MD5:65d8bbbf832353562cbe5615ddfabf00",
+              "size": "6659130",
+              "archiveFileName": "nrfutil-0.5.3-linux.tar.gz",
+              "url": "https://github.com/ElectronicCats/Adafruit_nRF52_nrfutil/releases/download/0.5.3/nrfutil-0.5.3-linux.tar.gz"
+            },
+            {
+              "host": "x86_64-pc-linux-gnu",
+              "checksum": "MD5:65d8bbbf832353562cbe5615ddfabf00",
+              "size": "6659130",
+              "archiveFileName": "nrfutil-0.5.3-linux.tar.gz",
+              "url": "https://github.com/ElectronicCats/Adafruit_nRF52_nrfutil/releases/download/0.5.3/nrfutil-0.5.3-linux.tar.gz"
+            }
+          ]
+        },
+        {
+          "name": "rp2040tools",
+          "version": "1.0.6",
+          "systems": [
+            {
+              "host": "i386-apple-darwin11",
+              "url": "http://downloads.arduino.cc/tools/rp2040tools-1.0.6-darwin_amd64.tar.bz2",
+              "archiveFileName": "rp2040tools-1.0.6-darwin_amd64.tar.bz2",
+              "size": "1717967",
+              "checksum": "SHA-256:4e32aa4b8f36db40a17bfbdfd34d80da91710e30c3887732bf0c0bf0b02840a7"
+            },
+            {
+              "host": "arm-linux-gnueabihf",
+              "url": "http://downloads.arduino.cc/tools/rp2040tools-1.0.6-linux_arm.tar.bz2",
+              "archiveFileName": "rp2040tools-1.0.6-linux_arm.tar.bz2",
+              "size": "8702508",
+              "checksum": "SHA-256:084a29accf0014bc79723fbb40057b95299c7ae63876f74494a077c987014cc3"
+            },
+            {
+              "host": "aarch64-linux-gnu",
+              "url": "http://downloads.arduino.cc/tools/rp2040tools-1.0.6-linux_arm64.tar.bz2",
+              "archiveFileName": "rp2040tools-1.0.6-linux_arm64.tar.bz2",
+              "size": "9037783",
+              "checksum": "SHA-256:1a2a6cb1abf1f7b8198d494c8d8e838700297d748877be8232e02aaa5ca8d0df"
+            },
+            {
+              "host": "x86_64-linux-gnu",
+              "url": "http://downloads.arduino.cc/tools/rp2040tools-1.0.6-linux_amd64.tar.bz2",
+              "archiveFileName": "rp2040tools-1.0.6-linux_amd64.tar.bz2",
+              "size": "6108121",
+              "checksum": "SHA-256:6e2ea818db1ff57f2d8e1e3010fbc5bdb5f28ff44f5a68900cae41d7d709f738"
+            },
+            {
+              "host": "i686-linux-gnu",
+              "url": "http://downloads.arduino.cc/tools/rp2040tools-1.0.6-linux_386.tar.bz2",
+              "archiveFileName": "rp2040tools-1.0.6-linux_386.tar.bz2",
+              "size": "6604083",
+              "checksum": "SHA-256:ef339e2e0f5c7d5464b9911b612c634767daba39a6be977a1ffa41c95b9827a1"
+            },
+            {
+              "host": "i686-mingw32",
+              "url": "http://downloads.arduino.cc/tools/rp2040tools-1.0.6-windows_386.tar.bz2",
+              "archiveFileName": "rp2040tools-1.0.6-windows_386.tar.bz2",
+              "size": "3145329",
+              "checksum": "SHA-256:26a5daebba68c2348dade33716a6e379ded89895ef0e49df1332964a724f6170"
+            }
+          ]
         }
-        ]
-        },
-        {
-        "name": "bossac",
-        "version": "1.7.0-mattairtech-3",
-        "systems": [
-        {
-          "host": "i686-mingw32",
-          "url": "https://www.mattairtech.com/software/arduino/bossac-1.7.0-mattairtech-3-mingw32.tar.gz",
-          "archiveFileName": "bossac-1.7.0-mattairtech-3-mingw32.tar.gz",
-          "checksum": "SHA-256:ce6ce590c612dc8b18ba52df3903ba3d43416c92ef54538881cc07fdd2ef1f04",
-          "size": "325719"
-        },
-        {
-          "host": "x86_64-pc-linux-gnu",
-          "url": "https://www.mattairtech.com/software/arduino/bossac-1.7.0-mattairtech-3-x86_64-linux-gnu.tar.gz",
-          "archiveFileName": "bossac-1.7.0-mattairtech-3-x86_64-linux-gnu.tar.gz",
-          "checksum": "SHA-256:e0801cd435a0aa08a4ccc1781cdcc1bf9ae92e248888163a1bb4dce20c00bcf9",
-          "size": "34622"
-        },
-        {
-          "host": "i686-pc-linux-gnu",
-          "url": "https://www.mattairtech.com/software/arduino/bossac-1.7.0-mattairtech-3-i686-linux-gnu.tar.gz",
-          "archiveFileName": "bossac-1.7.0-mattairtech-3-i686-linux-gnu.tar.gz",
-          "checksum": "SHA-256:edd3bc6fd80641563dc6ca337d695fca25c2d43242172ea0418b678d4dbe0628",
-          "size": "34628"
-        },
-        {
-          "host": "x86_64-apple-darwin",
-          "url": "https://www.mattairtech.com/software/arduino/bossac-1.7.0-mattairtech-3-x86_64-apple-darwin.tar.gz",
-          "archiveFileName": "bossac-1.7.0-mattairtech-3-x86_64-apple-darwin.tar.gz",
-          "checksum": "SHA-256:da4d4b04582f92d09e3d48a1ec4d2473b6cd01bba992c0f1f2cd7ee1008f08f8",
-          "size": "88845"
-        }
-        ]
-      },
-      {
-        "name": "riscv-none-embed-gcc",
-        "version": "10.2.0-1.2-xPack",
-        "systems": [
-        {
-          "host": "i686-mingw32",
-          "url": "https://github.com/xpack-dev-tools/riscv-none-embed-gcc-xpack/releases/download/v10.2.0-1.2/xpack-riscv-none-embed-gcc-10.2.0-1.2-win32-ia32.zip",
-          "archiveFileName": "xpack-riscv-none-embed-gcc-10.2.0-1.2-win32-ia32.zip",
-          "checksum": "SHA-256:f9d25d057d69e3d460fd15f422b533ae315e6ecdcd389bbd784cc2e083ba64b3",
-          "size": "564334418"
-        },
-        {
-          "host": "x86_64-pc-linux-gnu",
-          "url": "https://github.com/ElectronicCats/CMSIS-Atmel/releases/download/1.0.0-electroniccats-1/CMSIS-Atmel-1.0.0-electroniccats.tar.gz",
-          "archiveFileName": "CMSIS-Atmel-1.0.0-electroniccats.tar.gz",
-          "checksum": "SHA-256:d673a929c71d9b7a0146cb9dcde800cc2453b2824a3f10176ea5c5bf68bd5cd4",
-          "size": "2216310"
-        },
-        {
-          "host": "i686-pc-linux-gnu",
-          "url": "https://github.com/ElectronicCats/CMSIS-Atmel/releases/download/1.0.0-electroniccats-1/CMSIS-Atmel-1.0.0-electroniccats.tar.gz",
-          "archiveFileName": "CMSIS-Atmel-1.0.0-electroniccats.tar.gz",
-          "checksum": "SHA-256:d673a929c71d9b7a0146cb9dcde800cc2453b2824a3f10176ea5c5bf68bd5cd4",
-          "size": "2216310"
-        },
-        {
-          "host": "x86_64-apple-darwin",
-          "url": "https://github.com/xpack-dev-tools/riscv-none-embed-gcc-xpack/releases/download/v10.2.0-1.2/xpack-riscv-none-embed-gcc-10.2.0-1.2-darwin-x64.tar.gz",
-          "archiveFileName": "xpack-riscv-none-embed-gcc-10.2.0-1.2-darwin-x64.tar.gz",
-          "checksum": "SHA-256:62637b65ba5f57b88ee32ebf329164cbd9b2fa1d4531915950f707499a7efa2a",
-          "size": "565850429"
-        }
-        ]
-      },
-      {
-        "name": "CH58x-HAL",
-        "version": "1.6-evt",
-        "systems": [
-          {
-            "host": "arm-linux-gnueabihf",
-            "url": "https://github.com/ElectronicCats/RISC-V-CH583-CORE/releases/download/EVT_1.6/ch58x-evt-1.6.tar.bz2",
-            "archiveFileName": "ch58x-evt-1.6.tar.bz2",
-            "checksum": "SHA-256:ce385a056ab7e13b35d0d45af4e479be2f2f54fac4d703cc9b9fa69375493164",
-            "size": "2317609"
-          },
-          {
-            "host": "aarch64-linux-gnu",
-            "url": "https://github.com/ElectronicCats/RISC-V-CH583-CORE/releases/download/EVT_1.6/ch58x-evt-1.6.tar.bz2",
-            "archiveFileName": "ch58x-evt-1.6.tar.bz2",
-            "checksum": "SHA-256:ce385a056ab7e13b35d0d45af4e479be2f2f54fac4d703cc9b9fa69375493164",
-            "size": "2317609"
-          },
-          {
-            "host": "i686-mingw32",
-            "url": "https://github.com/ElectronicCats/RISC-V-CH583-CORE/releases/download/EVT_1.6/ch58x-evt-1.6.tar.bz2",
-            "archiveFileName": "ch58x-evt-1.6.tar.bz2",
-            "checksum": "SHA-256:ce385a056ab7e13b35d0d45af4e479be2f2f54fac4d703cc9b9fa69375493164",
-            "size": "2317609"
-          },
-          {
-            "host": "x86_64-apple-darwin",
-            "url": "https://github.com/ElectronicCats/RISC-V-CH583-CORE/releases/download/EVT_1.6/ch58x-evt-1.6.tar.bz2",
-            "archiveFileName": "ch58x-evt-1.6.tar.bz2",
-            "checksum": "SHA-256:ce385a056ab7e13b35d0d45af4e479be2f2f54fac4d703cc9b9fa69375493164",
-            "size": "2317609"
-          },
-          {
-            "host": "x86_64-pc-linux-gnu",
-            "url": "https://github.com/ElectronicCats/RISC-V-CH583-CORE/releases/download/EVT_1.6/ch58x-evt-1.6.tar.bz2",
-            "archiveFileName": "ch58x-evt-1.6.tar.bz2",
-            "checksum": "SHA-256:ce385a056ab7e13b35d0d45af4e479be2f2f54fac4d703cc9b9fa69375493164",
-            "size": "2317609"
-          },
-          {
-            "host": "i686-pc-linux-gnu",
-            "url": "https://github.com/ElectronicCats/RISC-V-CH583-CORE/releases/download/EVT_1.6/ch58x-evt-1.6.tar.bz2",
-            "archiveFileName": "ch58x-evt-1.6.tar.bz2",
-            "checksum": "SHA-256:ce385a056ab7e13b35d0d45af4e479be2f2f54fac4d703cc9b9fa69375493164",
-            "size": "2317609"
-          }
-        ]
-      },
-      {
-        "name": "CMSIS-Atmel",
-        "version": "1.0.0-mattairtech-2",
-        "systems": [
-        {
-          "host": "i686-mingw32",
-          "url": "https://www.mattairtech.com/software/arduino/CMSIS-Atmel-1.0.0-mattairtech-2.tar.gz",
-          "archiveFileName": "CMSIS-Atmel-1.0.0-mattairtech-2.tar.gz",
-          "checksum": "SHA-256:d10ca2a14c8db5757d2b1b4c1e52473ae5337f0762c6617a6074373f2f44540d",
-          "size": "2008479"
-        },
-        {
-          "host": "x86_64-pc-linux-gnu",
-          "url": "https://www.mattairtech.com/software/arduino/CMSIS-Atmel-1.0.0-mattairtech-2.tar.gz",
-          "archiveFileName": "CMSIS-Atmel-1.0.0-mattairtech-2.tar.gz",
-          "checksum": "SHA-256:d10ca2a14c8db5757d2b1b4c1e52473ae5337f0762c6617a6074373f2f44540d",
-          "size": "2008479"
-        },
-        {
-          "host": "i686-pc-linux-gnu",
-          "url": "https://www.mattairtech.com/software/arduino/CMSIS-Atmel-1.0.0-mattairtech-2.tar.gz",
-          "archiveFileName": "CMSIS-Atmel-1.0.0-mattairtech-2.tar.gz",
-          "checksum": "SHA-256:d10ca2a14c8db5757d2b1b4c1e52473ae5337f0762c6617a6074373f2f44540d",
-          "size": "2008479"
-        },
-        {
-          "host": "x86_64-apple-darwin",
-          "url": "https://www.mattairtech.com/software/arduino/CMSIS-Atmel-1.0.0-mattairtech-2.tar.gz",
-          "archiveFileName": "CMSIS-Atmel-1.0.0-mattairtech-2.tar.gz",
-          "checksum": "SHA-256:d10ca2a14c8db5757d2b1b4c1e52473ae5337f0762c6617a6074373f2f44540d",
-          "size": "2008479"
-        }
-        ]
-      },
-      {
-        "name": "CMSIS-Atmel",
-        "version": "1.0.0-electroniccats-1",
-        "systems": [
-        {
-          "host": "i686-mingw32",
-          "url": "https://github.com/ElectronicCats/CMSIS-Atmel/releases/download/1.0.0-electroniccats-1/CMSIS-Atmel-1.0.0-electroniccats.tar.gz",
-          "archiveFileName": "CMSIS-Atmel-1.0.0-electroniccats.tar.gz",
-          "checksum": "SHA-256:d673a929c71d9b7a0146cb9dcde800cc2453b2824a3f10176ea5c5bf68bd5cd4",
-          "size": "2216310"
-        },
-        {
-          "host": "x86_64-pc-linux-gnu",
-          "url": "https://github.com/ElectronicCats/CMSIS-Atmel/releases/download/1.0.0-electroniccats-1/CMSIS-Atmel-1.0.0-electroniccats.tar.gz",
-          "archiveFileName": "CMSIS-Atmel-1.0.0-electroniccats.tar.gz",
-          "checksum": "SHA-256:d673a929c71d9b7a0146cb9dcde800cc2453b2824a3f10176ea5c5bf68bd5cd4",
-          "size": "2216310"
-        },
-        {
-          "host": "i686-pc-linux-gnu",
-          "url": "https://github.com/ElectronicCats/CMSIS-Atmel/releases/download/1.0.0-electroniccats-1/CMSIS-Atmel-1.0.0-electroniccats.tar.gz",
-          "archiveFileName": "CMSIS-Atmel-1.0.0-electroniccats.tar.gz",
-          "checksum": "SHA-256:d673a929c71d9b7a0146cb9dcde800cc2453b2824a3f10176ea5c5bf68bd5cd4",
-          "size": "2216310"
-        },
-        {
-          "host": "x86_64-apple-darwin",
-          "url": "https://github.com/ElectronicCats/CMSIS-Atmel/releases/download/1.0.0-electroniccats-1/CMSIS-Atmel-1.0.0-electroniccats.tar.gz",
-          "archiveFileName": "CMSIS-Atmel-1.0.0-electroniccats.tar.gz",
-          "checksum": "SHA-256:d673a929c71d9b7a0146cb9dcde800cc2453b2824a3f10176ea5c5bf68bd5cd4",
-          "size": "2216310"
-        }
-        ]
-      },
-      {
-        "name": "openocd",
-        "version": "0.10.0-arduino9",
-        "systems": [
-          {
-            "size": "1714657",
-            "checksum": "SHA-256:b814b16b52cef21eacf456cc7a89d7b5d4cb1385bfb8fb82963b7d8151824d93",
-            "host": "aarch64-linux-gnu",
-            "archiveFileName": "openocd-0.10.0-arduino9-static-aarch64-linux-gnu.tar.bz2",
-            "url": "http://downloads.arduino.cc/tools/openocd-0.10.0-arduino9-static-aarch64-linux-gnu.tar.bz2"
-          },
-          {
-            "size": "1778177",
-            "checksum": "SHA-256:f0443e771f5e3a779949498d3c9bfffd1dd27cdf0ad7136a2db5e80447a7175a",
-            "host": "arm-linux-gnueabihf",
-            "archiveFileName": "openocd-0.10.0-arduino9-static-arm-linux-gnueabihf.tar.bz2",
-            "url": "http://downloads.arduino.cc/tools/openocd-0.10.0-arduino9-static-arm-linux-gnueabihf.tar.bz2"
-          },
-          {
-            "size": "1782958",
-            "checksum": "SHA-256:a22872918df899cb808f9286141d42438ae5611156c143cfb692069f52a2bddd",
-            "host": "i686-linux-gnu",
-            "archiveFileName": "openocd-0.10.0-arduino9-static-i686-ubuntu12.04-linux-gnu.tar.bz2",
-            "url": "http://downloads.arduino.cc/tools/openocd-0.10.0-arduino9-static-i686-ubuntu12.04-linux-gnu.tar.bz2"
-          },
-          {
-            "size": "2190484",
-            "checksum": "SHA-256:f53f9a2b7f48a2ebc00ea9196bf559d15987d3779bcea4118ebec8925da5a1f6",
-            "host": "i686-mingw32",
-            "archiveFileName": "openocd-0.10.0-arduino9-static-i686-w64-mingw32.zip",
-            "url": "http://downloads.arduino.cc/tools/openocd-0.10.0-arduino9-static-i686-w64-mingw32.zip"
-          },
-          {
-            "size": "1655311",
-            "checksum": "SHA-256:6d47f97919f317bb6e5f1f903127604271d66d149f4625f29b8e0eb5f6c94c64",
-            "host": "i386-apple-darwin11",
-            "archiveFileName": "openocd-0.10.0-arduino9-static-x86_64-apple-darwin13.tar.bz2",
-            "url": "http://downloads.arduino.cc/tools/openocd-0.10.0-arduino9-static-x86_64-apple-darwin13.tar.bz2"
-          },
-          {
-            "size": "1844365",
-            "checksum": "SHA-256:f624552b5ba56aa78d0c1a0e5d18cf2b5694db2ed44080968e22aa1af8f23c1b",
-            "host": "x86_64-linux-gnu",
-            "archiveFileName": "openocd-0.10.0-arduino9-static-x86_64-ubuntu12.04-linux-gnu.tar.bz2",
-            "url": "http://downloads.arduino.cc/tools/openocd-0.10.0-arduino9-static-x86_64-ubuntu12.04-linux-gnu.tar.bz2"
-          }
-        ]
-      },
-      {
-        "name": "arm-none-eabi-gcc",
-        "version": "7-2017q4",
-        "systems": [
-          {
-            "host": "arm-linux-gnueabihf",
-            "url": "http://downloads.arduino.cc/tools/gcc-arm-none-eabi-7-2019-q4-major-linuxarm.tar.bz2",
-            "archiveFileName": "gcc-arm-none-eabi-7-2019-q4-major-linuxarm.tar.bz2",
-            "checksum": "SHA-256:34180943d95f759c66444a40b032f7dd9159a562670fc334f049567de140c51b",
-            "size": "96613739"
-          },
-          {
-            "host": "aarch64-linux-gnu",
-            "url": "http://downloads.arduino.cc/tools/gcc-arm-none-eabi-7-2018-q2-update-linuxarm64.tar.bz2",
-            "archiveFileName": "gcc-arm-none-eabi-7-2018-q2-update-linuxarm64.tar.bz2",
-            "checksum": "SHA-256:6fb5752fb4d11012bd0a1ceb93a19d0641ff7cf29d289b3e6b86b99768e66f76",
-            "size": "99558726"
-          },
-          {
-            "host": "i686-mingw32",
-            "url": "http://downloads.arduino.cc/tools/gcc-arm-none-eabi-7-2017-q4-major-win32-arduino1.zip",
-            "archiveFileName": "gcc-arm-none-eabi-7-2017-q4-major-win32-arduino1.zip",
-            "checksum": "SHA-256:96dd0091856f4d2eb21046eba571321feecf7d50b9c156f708b2a8b683903382",
-            "size": "131761924"
-          },
-          {
-            "host": "x86_64-apple-darwin",
-            "url": "http://downloads.arduino.cc/tools/gcc-arm-none-eabi-7-2017-q4-major-mac.tar.bz2",
-            "archiveFileName": "gcc-arm-none-eabi-7-2017-q4-major-mac.tar.bz2",
-            "checksum": "SHA-256:89b776c7cf0591c810b5b60067e4dc113b5b71bc50084a536e71b894a97fdccb",
-            "size": "104550003"
-          },
-          {
-            "host": "x86_64-pc-linux-gnu",
-            "url": "http://downloads.arduino.cc/tools/gcc-arm-none-eabi-7-2017-q4-major-linux64.tar.bz2",
-            "archiveFileName": "gcc-arm-none-eabi-7-2017-q4-major-linux64.tar.bz2",
-            "checksum": "SHA-256:96a029e2ae130a1210eaa69e309ea40463028eab18ba19c1086e4c2dafe69a6a",
-            "size": "99857645"
-          },
-          {
-            "host": "i686-pc-linux-gnu",
-            "url": "http://downloads.arduino.cc/tools/gcc-arm-none-eabi-7-2018-q2-update-linux32.tar.bz2",
-            "archiveFileName": "gcc-arm-none-eabi-7-2018-q2-update-linux32.tar.bz2",
-            "checksum": "SHA-256:090a0bc2b1956bc49392dff924a6c30fa57c88130097b1972204d67a45ce3cf3",
-            "size": "97427309"
-          }
-        ]
-      },
-      {
-        "name": "nrfjprog",
-        "version": "9.4.0",
-        "systems": [
-          {
-            "host": "i386-apple-darwin11",
-            "checksum": "MD5:04f65e24f36d55d10b71c1ebf49cd070",
-            "size": "362222",
-            "archiveFileName": "nrfjprog-9.4.0-mac.tar.bz2",
-            "url": "https://github.com/adafruit/Adafruit_nRF52_Arduino/releases/download/gcc-5_2-2015q4/nrfjprog-9.4.0-mac.tar.bz2"
-          },
-          {
-            "host": "i686-linux-gnu",
-            "checksum": "MD5:9cf73f1f78cb8e249ed4e6f963d08a35",
-            "size": "177428",
-            "archiveFileName": "nrfjprog-9.4.0-linux32.tar.bz2",
-            "url": "https://github.com/adafruit/Adafruit_nRF52_Arduino/releases/download/gcc-5_2-2015q4/nrfjprog-9.4.0-linux32.tar.bz2"
-          },
-          {
-            "host": "x86_64-pc-linux-gnu",
-            "checksum": "MD5:da3c7b348e0c22766f175a4a9cca0d19",
-            "size": "190020",
-            "archiveFileName": "nrfjprog-9.4.0-linux64.tar.bz2",
-            "url": "https://github.com/adafruit/Adafruit_nRF52_Arduino/releases/download/gcc-5_2-2015q4/nrfjprog-9.4.0-linux64.tar.bz2"
-          },
-          {
-            "host": "i686-mingw32",
-            "checksum": "MD5:8352392ae0272173e1508d1218f51671",
-            "size": "851576",
-            "archiveFileName": "nrfjprog-9.4.0-win32.tar.bz2",
-            "url": "https://github.com/adafruit/Adafruit_nRF52_Arduino/releases/download/gcc-5_2-2015q4/nrfjprog-9.4.0-win32.tar.bz2"
-          }
-        ]
-      },
-      {
-        "name": "nrfutil",
-        "version": "0.5.3post10",
-        "systems":[
-          {
-            "host": "i386-apple-darwin11",
-            "checksum": "MD5:342e1b08d3b5f6e18914fd207986c493",
-            "size": "5225061",
-            "archiveFileName": "nrfutil-0.5.3-mac.tar.gz",
-            "url": "https://github.com/ElectronicCats/Adafruit_nRF52_nrfutil/releases/download/0.5.3/nrfutil-0.5.3-mac.tar.gz"
-          },
-          {
-            "host": "i686-mingw32",
-            "checksum": "MD5:579414666dda0d429e1be9f6316ae1d6",
-            "size": "5945547",
-            "archiveFileName": "nrfutil-0.5.3-w32.tar.gz",
-            "url": "https://github.com/ElectronicCats/Adafruit_nRF52_nrfutil/releases/download/0.5.3/nrfutil-0.5.3-w32.tar.gz"
-          },          {
-            "host": "i686-linux-gnu",
-            "checksum": "MD5:65d8bbbf832353562cbe5615ddfabf00",
-            "size": "6659130",
-            "archiveFileName": "nrfutil-0.5.3-linux.tar.gz",
-            "url": "https://github.com/ElectronicCats/Adafruit_nRF52_nrfutil/releases/download/0.5.3/nrfutil-0.5.3-linux.tar.gz"
-          },
-          {
-            "host": "x86_64-pc-linux-gnu",
-            "checksum": "MD5:65d8bbbf832353562cbe5615ddfabf00",
-            "size": "6659130",
-            "archiveFileName": "nrfutil-0.5.3-linux.tar.gz",
-            "url": "https://github.com/ElectronicCats/Adafruit_nRF52_nrfutil/releases/download/0.5.3/nrfutil-0.5.3-linux.tar.gz"
-          }
-        ]
-      },
-      {
-        "name": "rp2040tools",
-        "version": "1.0.6",
-        "systems": [
-          {
-            "host": "i386-apple-darwin11",
-            "url": "http://downloads.arduino.cc/tools/rp2040tools-1.0.6-darwin_amd64.tar.bz2",
-            "archiveFileName": "rp2040tools-1.0.6-darwin_amd64.tar.bz2",
-            "size": "1717967",
-            "checksum": "SHA-256:4e32aa4b8f36db40a17bfbdfd34d80da91710e30c3887732bf0c0bf0b02840a7"
-          },
-          {
-            "host": "arm-linux-gnueabihf",
-            "url": "http://downloads.arduino.cc/tools/rp2040tools-1.0.6-linux_arm.tar.bz2",
-            "archiveFileName": "rp2040tools-1.0.6-linux_arm.tar.bz2",
-            "size": "8702508",
-            "checksum": "SHA-256:084a29accf0014bc79723fbb40057b95299c7ae63876f74494a077c987014cc3"
-          },
-          {
-            "host": "aarch64-linux-gnu",
-            "url": "http://downloads.arduino.cc/tools/rp2040tools-1.0.6-linux_arm64.tar.bz2",
-            "archiveFileName": "rp2040tools-1.0.6-linux_arm64.tar.bz2",
-            "size": "9037783",
-            "checksum": "SHA-256:1a2a6cb1abf1f7b8198d494c8d8e838700297d748877be8232e02aaa5ca8d0df"
-          },
-          {
-            "host": "x86_64-linux-gnu",
-            "url": "http://downloads.arduino.cc/tools/rp2040tools-1.0.6-linux_amd64.tar.bz2",
-            "archiveFileName": "rp2040tools-1.0.6-linux_amd64.tar.bz2",
-            "size": "6108121",
-            "checksum": "SHA-256:6e2ea818db1ff57f2d8e1e3010fbc5bdb5f28ff44f5a68900cae41d7d709f738"
-          },
-          {
-            "host": "i686-linux-gnu",
-            "url": "http://downloads.arduino.cc/tools/rp2040tools-1.0.6-linux_386.tar.bz2",
-            "archiveFileName": "rp2040tools-1.0.6-linux_386.tar.bz2",
-            "size": "6604083",
-            "checksum": "SHA-256:ef339e2e0f5c7d5464b9911b612c634767daba39a6be977a1ffa41c95b9827a1"
-          },
-          {
-            "host": "i686-mingw32",
-            "url": "http://downloads.arduino.cc/tools/rp2040tools-1.0.6-windows_386.tar.bz2",
-            "archiveFileName": "rp2040tools-1.0.6-windows_386.tar.bz2",
-            "size": "3145329",
-            "checksum": "SHA-256:26a5daebba68c2348dade33716a6e379ded89895ef0e49df1332964a724f6170"
-          }
-        ]
-      }
-    ]
+      ]
     }
   ]
 }
-
-
