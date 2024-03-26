@@ -15,8 +15,8 @@ tag_version=$(basename "$tag")
 mkdir temp
 
 # Download the package file
-wget https://github.com/ElectronicCats/ArduinoCore-samd/releases/download/$tag_version/$package_name
+wget https://github.com/JahazielLem/ArduinoCore-samd/releases/download/$tag_version/$package_name
 mv $package_name ../IDE_Board_Manager/
 # Download the json file
-wget https://github.com/ElectronicCats/ArduinoCore-samd/releases/download/$tag_version/$package_json
+wget https://github.com/JahazielLem/ArduinoCore-samd/releases/download/$tag_version/$package_json
 mv $package_json temp/
