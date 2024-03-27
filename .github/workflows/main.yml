@@ -22,6 +22,7 @@ jobs:
           python3 release.py ${{ github.event.client_payload.file}}
           echo "Exiting tools directory..."
           cd ..
-      - run: git add .
-      - run: git commit --message 'Release ${{ github.event.client_payload.tag}}'
-      - run: git push
+      - run: |
+          git add -A
+          git commit --message 'feat(release): ${{ github.event.client_payload.tag}}'
+          git push
