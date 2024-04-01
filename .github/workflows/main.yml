@@ -24,5 +24,5 @@ jobs:
           cd ..
       - run: |
           git add -A
-          git commit --message 'feat(release): ${{ github.event.client_payload.tag}}'
+          git commit --message "feat(release): ${{ github.event.client_payload.tag}}"
           git push
