@@ -4,7 +4,7 @@
       "name": "electroniccats",
       "maintainer": "Electronic Cats",
       "websiteURL": "https://electroniccats.com",
-      "email": "hola@electroniccats.com",
+      "email": "support@electroniccats.com",
       "help": {
         "online": "https://electroniccats.com/"
       },
@@ -16,8 +16,8 @@
           "category": "Contributed",
           "url": "https://github.com/ElectronicCats/Arduino_Boards_Index/raw/gh-pages/IDE_Board_Manager/electroniccats-wch-0.0.1.tar.bz2",
           "archiveFileName": "electroniccats-wch-0.0.1.tar.bz2",
-          "checksum": "SHA-256:593cd8a7435a7b08a5efd01a1dd4662b5afd07b7430560ee2c36edbc973bf86d",
-          "size": "2696808",
+          "checksum": "SHA-256:42ea1962535d063ec979c7f339ac6c3266ca45111f33a1ecf56831b47239c90a",
+          "size": "1130791",
           "help": {
             "online": "https://electroniccats.com/"
           },
@@ -36,6 +36,11 @@
               "packager": "electroniccats",
               "name": "CH58x-HAL",
               "version": "1.6-evt"
+            },
+            {
+              "packager": "electroniccats",
+              "name": "wchisp",
+              "version": "0.3.0"
             }
           ]
         },
@@ -2941,25 +2946,11 @@
           "version": "10.2.0-1.2-xPack",
           "systems": [
             {
-              "host": "i686-mingw32",
-              "url": "https://github.com/xpack-dev-tools/riscv-none-embed-gcc-xpack/releases/download/v10.2.0-1.2/xpack-riscv-none-embed-gcc-10.2.0-1.2-win32-ia32.zip",
-              "archiveFileName": "xpack-riscv-none-embed-gcc-10.2.0-1.2-win32-ia32.zip",
-              "checksum": "SHA-256:f9d25d057d69e3d460fd15f422b533ae315e6ecdcd389bbd784cc2e083ba64b3",
-              "size": "564334418"
-            },
-            {
               "host": "x86_64-pc-linux-gnu",
-              "url": "https://github.com/ElectronicCats/CMSIS-Atmel/releases/download/1.0.0-electroniccats-1/CMSIS-Atmel-1.0.0-electroniccats.tar.gz",
-              "archiveFileName": "CMSIS-Atmel-1.0.0-electroniccats.tar.gz",
-              "checksum": "SHA-256:d673a929c71d9b7a0146cb9dcde800cc2453b2824a3f10176ea5c5bf68bd5cd4",
-              "size": "2216310"
-            },
-            {
-              "host": "i686-pc-linux-gnu",
-              "url": "https://github.com/ElectronicCats/CMSIS-Atmel/releases/download/1.0.0-electroniccats-1/CMSIS-Atmel-1.0.0-electroniccats.tar.gz",
-              "archiveFileName": "CMSIS-Atmel-1.0.0-electroniccats.tar.gz",
-              "checksum": "SHA-256:d673a929c71d9b7a0146cb9dcde800cc2453b2824a3f10176ea5c5bf68bd5cd4",
-              "size": "2216310"
+              "url": "https://github.com/xpack-dev-tools/riscv-none-embed-gcc-xpack/releases/download/v10.2.0-1.2/xpack-riscv-none-embed-gcc-10.2.0-1.2-linux-x64.tar.gz",
+              "archiveFileName": "xpack-riscv-none-embed-gcc-10.2.0-1.2-linux-x64.tar.gz",
+              "checksum": "SHA-256:d72bdcd1eee41dc5a208a8a03976b70d014510deb5890c9e8738e804ba23f985",
+              "size": "572296735"
             },
             {
               "host": "x86_64-apple-darwin",
@@ -2967,6 +2958,13 @@
               "archiveFileName": "xpack-riscv-none-embed-gcc-10.2.0-1.2-darwin-x64.tar.gz",
               "checksum": "SHA-256:62637b65ba5f57b88ee32ebf329164cbd9b2fa1d4531915950f707499a7efa2a",
               "size": "565850429"
+            },
+            {
+              "host": "i686-mingw32",
+              "url": "https://github.com/xpack-dev-tools/riscv-none-embed-gcc-xpack/releases/download/v10.2.0-1.2/xpack-riscv-none-embed-gcc-10.2.0-1.2-win32-x64.zip",
+              "archiveFileName": "xpack-riscv-none-embed-gcc-10.2.0-1.2-win32-x64.zip",
+              "checksum": "SHA-256:2ec9f651dc349da0672edf6d26542e85c7c8068c8eab11b88b99b0edbd2260fc",
+              "size": "576824252"
             }
           ]
         },
@@ -3295,6 +3293,40 @@
               "archiveFileName": "rp2040tools-1.0.6-windows_386.tar.bz2",
               "size": "3145329",
               "checksum": "SHA-256:26a5daebba68c2348dade33716a6e379ded89895ef0e49df1332964a724f6170"
+            }
+          ]
+        },
+        {
+          "name": "wchisp",
+          "version": "0.3.0",
+          "systems": [
+            {
+              "host": "x86_64-pc-linux-gnu",
+              "archiveFileName": "wchisp-v0.3.0-linux-x64.tar.gz",
+              "url": "https://github.com/ch32-rs/wchisp/releases/download/v0.3.0/wchisp-v0.3.0-linux-x64.tar.gz",
+              "checksum": "SHA-256:67e3d4eb0ffd3cc610d8927e3c3f452e2110531a3f14405dcaef87df219f200d",
+              "size": "883953"
+            },
+            {
+              "host": "aarch64-apple-darwin",
+              "archiveFileName": "wchisp-v0.3.0-macos-arm64.tar.gz",
+              "url": "https://github.com/ch32-rs/wchisp/releases/download/v0.3.0/wchisp-v0.3.0-macos-arm64.tar.gz",
+              "checksum": "SHA-256:a17dd422f7697bfe35c7c837c16bf99a7193300bcdc276c1253332b3a023e936",
+              "size": "804543"
+            },
+            {
+              "host": "x86_64-apple-darwin",
+              "archiveFileName": "wchisp-v0.3.0-macos-x64.tar.gz",
+              "url": "https://github.com/ch32-rs/wchisp/releases/download/v0.3.0/wchisp-v0.3.0-macos-x64.tar.gz",
+              "checksum": "SHA-256:ebbf46b0c64bb356cd58da2683c8809c50bdfe2181969f544933d24c8846f608",
+              "size": "830611"
+            },
+            {
+              "host": "i686-mingw32",
+              "archiveFileName": "wchisp-v0.3.0-win-x64.zip",
+              "url": "https://github.com/ch32-rs/wchisp/releases/download/v0.3.0/wchisp-v0.3.0-win-x64.zip",
+              "checksum": "SHA-256:eba605bbc62f217f6454e7236d04ef1b8a6b4396dd7ce8dc26fc83016213c3aa",
+              "size": "681807"
             }
           ]
         }
